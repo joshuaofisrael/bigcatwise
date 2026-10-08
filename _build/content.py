@@ -1,7 +1,7 @@
 from build import add, BASE_URL
 from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT
 
-SPECIES_REL = [("Big cat comparison table", "compare.html"), ("Big cat behavior", "behavior.html"),
+SPECIES_REL = [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Big cat comparison table", "compare.html"), ("Big cat behavior", "behavior.html"),
                ("Where big cats live", "habitats.html"), ("Big cat conservation", "conservation.html")]
 
 def facts(rows):

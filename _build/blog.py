@@ -79,7 +79,7 @@ post("leopard-vs-jaguar-vs-cheetah", "Leopard vs Jaguar vs Cheetah: How to Tell 
 <section class="card"><h2>Other spotted cats that cause confusion</h2>
 <p><b>Snow leopards</b> have pale smoky grey fur with open rosettes and an extremely long, thick tail, and live in the mountains of Central and South Asia. <b>Clouded leopards</b> are smaller forest cats of South and Southeast Asia with large, cloud shaped blotches. <b>Servals</b> in Africa are much smaller, with very large ears and long legs, and <b>ocelots</b> in the Americas are small cats with chain like markings.</p></section>
 <section class="card"><h2>Quick checklist</h2><ul>
-<li>Americas? Jaguar.</li><li>Solid spots and tear marks? Cheetah.</li><li>Empty rosettes, lithe body, Africa or Asia? Leopard.</li><li>Dotted rosettes, big head, stocky body? Jaguar.</li><li>Grey coat and huge tail in the mountains? Snow leopard.</li></ul></section>''',
+<li>Americas? Jaguar.</li><li>Solid spots and tear marks? Cheetah.</li><li>Empty rosettes, lithe body, Africa or Asia? Leopard.</li><li>Dotted rosettes, big head, stocky body? Jaguar.</li><li>Grey coat and huge tail in the mountains? Snow leopard.</li></ul><p>For all six species and a region by region list, see <a href="../which-big-cat-is-it.html">which big cat is it?</a></p></section>''',
      related=[("Leopard facts", "leopard.html"), ("Jaguar facts", "jaguar.html"), ("Cheetah facts", "cheetah.html"), ("Big cat comparison table", "compare.html"), ("Blog home", "blog/index.html")],
      sources=[CSG["leopard"], CSG["jaguar"], CSG["cheetah"], SDZ["leopard"], SDZ["jaguar"], SDZ["cheetah"]])
 

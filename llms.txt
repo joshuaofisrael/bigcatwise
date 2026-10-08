@@ -20,6 +20,8 @@ Content is general education. Population figures are estimates that change as ne
 - [Big cat glossary](https://joshuaofisrael.github.io/bigcatwise/glossary.html): Plain English definitions of big cat terms: pride, coalition, rosette, melanism, flehmen response, IUCN Red List categories, CITES appendices and more.
 
 ## Tools
+- [Which big cat is it? ID guide](https://joshuaofisrael.github.io/bigcatwise/which-big-cat-is-it.html): Identify any big cat: leopard vs jaguar vs cheetah, snow leopard, tiger and lion compared side by side, plus a region by region guide to which big cats live where.
+- [Big cats by region](https://joshuaofisrael.github.io/bigcatwise/which-big-cat-is-it.html#by-region): deep links #africa, #asia, #south-asia, #southeast-asia, #east-asia, #central-asia, #middle-east, #americas (also #north-america, #central-america, #south-america), #elsewhere (also #europe, #australia)
 - [Big cat comparison table](https://joshuaofisrael.github.io/bigcatwise/compare.html): Compare lions, tigers, leopards, jaguars, cheetahs and snow leopards side by side: weight, length, range, habitat, social life, roaring, IUCN status and numbers.
 - [Comparison table rows](https://joshuaofisrael.github.io/bigcatwise/compare.html#table): deep links such as #row-tiger and #row-cheetah
 

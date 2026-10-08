@@ -26,7 +26,7 @@ OG_IMAGE = BASE_URL + "og.png"
 
 NAV = [("index.html", "Home"), ("lion.html", "Lion"), ("tiger.html", "Tiger"), ("leopard.html", "Leopard"),
        ("jaguar.html", "Jaguar"), ("cheetah.html", "Cheetah"), ("snow-leopard.html", "Snow Leopard"),
-       ("compare.html", "Compare"), ("behavior.html", "Behavior"), ("habitats.html", "Habitats"),
+       ("which-big-cat-is-it.html", "ID Guide"), ("compare.html", "Compare"), ("behavior.html", "Behavior"), ("habitats.html", "Habitats"),
        ("conservation.html", "Conservation"), ("faq.html", "FAQ"), ("glossary.html", "Glossary"),
        ("blog/index.html", "Blog")]
 

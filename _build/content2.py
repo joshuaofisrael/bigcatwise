@@ -36,7 +36,7 @@ add("compare.html", "Big Cat Comparison Table: Size, Range, Status & Population 
 <li><b>Leopard:</b> rosettes usually without a central spot, medium build; Africa and Asia only.</li>
 <li><b>Jaguar:</b> larger rosettes usually with spots inside, stocky build, big head, shorter tail; Americas only.</li>
 <li><b>Snow leopard:</b> smoky grey coat, very long thick tail, high mountains of Asia.</li></ul>
-<p>Full guide: <a href="blog/leopard-vs-jaguar-vs-cheetah.html">leopard vs jaguar vs cheetah</a>.</p></section>
+<p>Full guides: <a href="which-big-cat-is-it.html">which big cat is it? ID guide</a> and <a href="blog/leopard-vs-jaguar-vs-cheetah.html">leopard vs jaguar vs cheetah</a>.</p></section>
 <section class="card" id="status"><h2>Which big cat is most endangered?</h2>
 <p>On the IUCN Red List the tiger is the only one of the six listed as Endangered at species level. Lion, leopard, cheetah and snow leopard are Vulnerable, and the jaguar is Near Threatened. Species level labels hide serious local crises, though: the Asiatic cheetah in Iran and the Indochinese leopard are Critically Endangered, and the northern lion subspecies is Endangered. See <a href="conservation.html">big cat conservation</a> and <a href="blog/how-many-big-cats-are-left.html">how many big cats are left</a>.</p></section>
 <section class="card" id="definition"><h2>What counts as a big cat?</h2>
@@ -113,7 +113,7 @@ add("habitats.html", "Where Do Big Cats Live? Habitats & Range by Species | BigC
 <p>In much of eastern and southern Africa, lions, leopards and cheetahs live side by side. Lions are dominant: they steal kills and kill cubs of the other two, so leopards cache food in trees and cheetahs hunt by day and often do best where lions are scarce, including on farmland. In parts of India and Nepal, tigers and leopards share forests, with leopards tending to use edges and areas near villages. In the Himalayas, leopards and snow leopards can meet where forests give way to open alpine slopes.</p></section>
 <section class="card" id="shrinking"><h2>How much of their range have big cats lost?</h2>
 <p>All six species occupy only part of their former ranges. Less than 7 percent of the tiger's original range remains; lions held about 6 percent of their historical range in 2025; and cheetahs are confined to around 9 percent of theirs. Leopard range shrank by 11 percent between 2016 and 2023 alone. Read <a href="conservation.html">big cat conservation</a> for the causes.</p></section>''',
-    related=SP + [("Big cat behavior", "behavior.html"), ("Compare big cats", "compare.html")],
+    related=SP + [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Big cat behavior", "behavior.html"), ("Compare big cats", "compare.html")],
     sources=ALLCSG + [DURANT], priority="0.8")
 
 # ------------------------------------------------------------------ CONSERVATION
@@ -182,7 +182,7 @@ add("faq.html", "Big Cat FAQ: Myths, Records & Quick Answers | BigCatWise",
     lead="Short answers to the questions people ask most about lions, tigers, leopards, jaguars, cheetahs and snow leopards, including the common myths. Each answer links to a fuller explanation elsewhere on the site.",
     kind="article", headline="Big cat FAQ",
     body='<section class="card"><h2>Myths vs facts</h2><ul><li class="myth">Myth: lions are the king of the jungle.</li><li class="fact">Fact: lions live in savanna and open woodland, not rainforest. <a href="lion.html#range">Lion range</a></li><li class="myth">Myth: black panthers are their own species.</li><li class="fact">Fact: they are melanistic leopards or jaguars. <a href="leopard.html#black">Black panthers</a></li><li class="myth">Myth: tigers live in Africa.</li><li class="fact">Fact: wild tigers live only in Asia. <a href="tiger.html#range">Tiger range</a></li><li class="myth">Myth: every big cat roars.</li><li class="fact">Fact: snow leopards and cheetahs cannot roar. <a href="blog/which-big-cats-can-roar.html">Which cats roar</a></li></ul></section>',
-    faq=FAQ, related=SP + [("Compare big cats", "compare.html"), ("Big cat glossary", "glossary.html")],
+    faq=FAQ, related=SP + [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Compare big cats", "compare.html"), ("Big cat glossary", "glossary.html")],
     sources=ALLCSG + [WILSON, KLEMUK], priority="0.8")
 
 # ------------------------------------------------------------------ GLOSSARY
@@ -221,6 +221,7 @@ add("glossary.html", "Big Cat Glossary: Terms Explained Simply | BigCatWise",
     related=SP + [("Big cat FAQ", "faq.html")], sources=[IUCN] + ALLCSG[:2], priority="0.6")
 
 import blog  # noqa  registers blog posts
+import content3  # noqa  ID guide
 from blog import POSTS
 
 # ------------------------------------------------------------------ HOME
@@ -228,7 +229,7 @@ tiles = "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % t for t i
  ("lion.html", "Lion", "The only social big cat"), ("tiger.html", "Tiger", "The largest cat on Earth"),
  ("leopard.html", "Leopard", "The most widespread big cat"), ("jaguar.html", "Jaguar", "Big cat of the Americas"),
  ("cheetah.html", "Cheetah", "The fastest land animal"), ("snow-leopard.html", "Snow leopard", "Ghost of the mountains"),
- ("compare.html", "Compare all six", "Size, range, status, numbers"), ("behavior.html", "Behavior", "Hunting, prides, roaring"),
+ ("which-big-cat-is-it.html", "Which big cat is it?", "ID guide and big cats by region"), ("compare.html", "Compare all six", "Size, range, status, numbers"), ("behavior.html", "Behavior", "Hunting, prides, roaring"),
  ("habitats.html", "Habitats", "Where each species lives"), ("conservation.html", "Conservation", "Threats and what helps"),
  ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
 posts = "".join('<li><a href="blog/%s">%s</a></li>' % (p.path.split("/")[1], p.headline or p.h1) for p in POSTS)
@@ -236,7 +237,7 @@ add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
     "BigCatWise is a free, sourced guide to big cats: lions, tigers, leopards, jaguars, cheetahs and snow leopards. Species facts, behavior, habitats and conservation.",
     "Big cat facts: lions, tigers, leopards, jaguars, cheetahs and snow leopards", kind="home",
     body='''<section class="hero"><p class="lead">BigCatWise is a free, plain English guide to the world's big cats. It covers what each species looks like, how it hunts and lives, where it is found and how it is faring in the wild, with sources from the IUCN Cat Specialist Group, leading zoos, conservation groups and peer reviewed research.</p>
-<a class="btn" href="compare.html">Compare all six big cats</a> <a class="btn alt" href="faq.html">Quick answers</a></section>
+<a class="btn" href="compare.html">Compare all six big cats</a> <a class="btn alt" href="which-big-cat-is-it.html">Which big cat is it?</a></section>
 <div class="grid">''' + tiles + '''</div>
 <section class="card"><h2>Big cats at a glance</h2><ul>
 <li>The <a href="tiger.html">tiger</a> is the largest cat, at up to about 325 kg, and every tiger's stripes are unique.</li>
@@ -306,7 +307,7 @@ def llms(base):
     for s in ["lion.html", "tiger.html", "leopard.html", "jaguar.html", "cheetah.html", "snow-leopard.html"]:
         L.append(item(s))
     L += ["", "## Topic guides"] + [item(s) for s in ["behavior.html", "habitats.html", "conservation.html", "faq.html", "glossary.html"]]
-    L += ["", "## Tools", item("compare.html"),
+    L += ["", "## Tools", item("which-big-cat-is-it.html"), "- [Big cats by region](%swhich-big-cat-is-it.html#by-region): deep links #africa, #asia, #south-asia, #southeast-asia, #east-asia, #central-asia, #middle-east, #americas (also #north-america, #central-america, #south-america), #elsewhere (also #europe, #australia)" % base, item("compare.html"),
           "- [Comparison table rows](%scompare.html#table): deep links such as #row-tiger and #row-cheetah" % base]
     L += ["", "## Blog"] + [item(p.path) for p in POSTS]
     L += ["", "## Optional", item("about.html"), item("contact.html"), item("privacy.html"), ""]

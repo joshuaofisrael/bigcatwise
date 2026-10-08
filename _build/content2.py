@@ -231,12 +231,12 @@ tiles = "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % t for t i
  ("cheetah.html", "Cheetah", "The fastest land animal"), ("snow-leopard.html", "Snow leopard", "Ghost of the mountains"),
  ("which-big-cat-is-it.html", "Which big cat is it?", "ID guide and big cats by region"), ("compare.html", "Compare all six", "Size, range, status, numbers"), ("behavior.html", "Behavior", "Hunting, prides, roaring"),
  ("habitats.html", "Habitats", "Where each species lives"), ("conservation.html", "Conservation", "Threats and what helps"),
- ("games/index.html", "Big cat games", "Three free fact based games"), ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
+ ("games/index.html", "Big cat games", "Three free fact based games"), ("teachers/index.html", "For teachers", "Free printables and lesson plans"), ("research/index.html", "Research", "The papers behind our facts"), ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
 posts = "".join('<li><a href="blog/%s">%s</a></li>' % (p.path.split("/")[1], p.headline or p.h1) for p in POSTS)
 add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
     "BigCatWise is a free, sourced guide to big cats: lions, tigers, leopards, jaguars, cheetahs and snow leopards. Species facts, behavior, habitats and conservation.",
     "Big cat facts: lions, tigers, leopards, jaguars, cheetahs and snow leopards", kind="home",
-    body='''<section class="hero"><p class="lead">BigCatWise is a free, plain English guide to the world's big cats. It covers what each species looks like, how it hunts and lives, where it is found and how it is faring in the wild, with sources from the IUCN Cat Specialist Group, leading zoos, conservation groups and peer reviewed research.</p>
+    body='''<section class="hero">{photo}<p class="lead">BigCatWise is a free, plain English guide to the world's big cats. It covers what each species looks like, how it hunts and lives, where it is found and how it is faring in the wild, with sources from the IUCN Cat Specialist Group, leading zoos, conservation groups and peer reviewed research.</p>
 <a class="btn" href="compare.html">Compare all six big cats</a> <a class="btn alt" href="which-big-cat-is-it.html">Which big cat is it?</a> <a class="btn" href="games/">Play big cat games</a></section>
 <div class="grid">''' + tiles + '''</div>
 <section class="card"><h2>Big cats at a glance</h2><ul>
@@ -342,5 +342,6 @@ def llms(base):
           "- [Comparison table rows](%scompare.html#table): deep links such as #row-tiger and #row-cheetah" % base]
     L += ["", "## Blog"] + [item(p.path) for p in POSTS]
     L += ["", "## Games (free, no sign up, no data collected)"] + [item(s) for s in ["games/index.html", "games/rosette-detective/index.html", "games/cheetah-burst/index.html", "games/range-roundup/index.html"]]
-    L += ["", "## Optional", item("about.html"), item("contact.html"), item("terms.html"), item("privacy.html"), item("disclaimer.html"), ""]
+    L += ["", "## For teachers and students (free printables, lesson plans, research list)"] + [item(s) for s in ["teachers/index.html", "teachers/big-cat-fact-sheets.html", "teachers/big-cat-worksheets.html", "teachers/answer-keys.html", "teachers/big-cat-vocabulary.html", "teachers/big-cat-adaptations-lesson-plan.html", "teachers/cheetah-worksheet-3rd-grade.html", "teachers/lion-pride-lesson-plan.html", "research/index.html"]]
+    L += ["", "## Optional", item("about.html"), item("credits/index.html"), item("contact.html"), item("terms.html"), item("privacy.html"), item("disclaimer.html"), ""]
     return "\n".join(L)

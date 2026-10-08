@@ -213,4 +213,5 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
 
 import content2  # noqa  other pages and blog
 import games  # noqa  games hub and games
+import edu  # noqa  teachers, research, credits
 from content2 import llms  # noqa

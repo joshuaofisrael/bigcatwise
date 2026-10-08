@@ -28,7 +28,7 @@ NAV = [("index.html", "Home"), ("lion.html", "Lion"), ("tiger.html", "Tiger"), (
        ("jaguar.html", "Jaguar"), ("cheetah.html", "Cheetah"), ("snow-leopard.html", "Snow Leopard"),
        ("which-big-cat-is-it.html", "ID Guide"), ("compare.html", "Compare"), ("behavior.html", "Behavior"), ("habitats.html", "Habitats"),
        ("conservation.html", "Conservation"), ("faq.html", "FAQ"), ("glossary.html", "Glossary"),
-       ("blog/index.html", "Blog"), ("games/index.html", "Games")]
+       ("blog/index.html", "Blog"), ("games/index.html", "Games"), ("teachers/index.html", "Teachers")]
 
 LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><title>BigCatWise logo</title>'
         '<path d="M12 26 L14 6 L28 18 Q32 17 36 18 L50 6 L52 26 Q56 34 52 44 Q46 58 32 58 Q18 58 12 44 Q8 34 12 26Z" fill="#f0a830"/>'
@@ -60,7 +60,7 @@ def footer(rel):
             '<p class="legal">&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. %s is owned and operated by Joshua Israel Ventures LLC.</p>'
             '<p class="legal">Operated by %s</p>'
             '<p class="flinks"><a href="%sterms.html">Terms</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
-            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a></p></footer>') % (SITE, SITE, LEGAL, rel, rel, rel, rel, rel)
+            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a></p></footer>') % (SITE, SITE, LEGAL, rel, rel, rel, rel, rel, rel)
 
 def header(rel, current):
     links = []
@@ -81,8 +81,10 @@ def url_for(path):
 class Page:
     def __init__(self, path, title, description, h1, body, kind="article", crumbs=None, faq=None,
                  sources=None, related=None, lead=None, published=TODAY, modified=TODAY, sitemap=True,
-                 priority="0.7", headline=None, extra_ld=None, noindex=False, show_dates=True):
+                 priority="0.7", headline=None, extra_ld=None, noindex=False, show_dates=True, reviewed=None, cite=None):
         self.__dict__.update(locals()); del self.__dict__["self"]
+
+from photos import PHOTOS, photo_html  # noqa: E402
 
 PAGES = []
 def add(*a, **k):
@@ -104,7 +106,7 @@ def render(p):
     else:
         head.append('<link rel="canonical" href="%s">' % canon)
     head.append('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-                '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;display=swap">')
+                '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@400;700&amp;display=swap">')
     head.append('<link rel="stylesheet" href="%sstyle.css"><link rel="icon" href="%sfavicon.svg" type="image/svg+xml">' % (rel, rel))
     og_type = "website" if p.kind in ("home", "page") else "article"
     head.append('<meta property="og:type" content="%s"><meta property="og:site_name" content="%s">'
@@ -144,11 +146,18 @@ def render(p):
     if p.h1:
         out.append('<h1>%s</h1>' % p.h1)
     if p.kind == "article" and p.show_dates:
-        out.append('<p class="meta">By the %s team | Published <time datetime="%s">%s</time> | Last updated <time datetime="%s">%s</time></p>'
-                   % (SITE, p.published, fmt(p.published), p.modified, fmt(p.modified)))
+        rv = p.reviewed or p.modified
+        out.append('<p class="meta">By the %s team | Published <time datetime="%s">%s</time> | Last updated <time datetime="%s">%s</time> | '
+                   '<span class="reviewed">Last reviewed <time datetime="%s">%s</time></span></p>'
+                   % (SITE, p.published, fmt(p.published), p.modified, fmt(p.modified), rv, fmt(rv)))
+    elif p.cite:
+        rv = p.reviewed or p.modified
+        out.append('<p class="meta"><span class="reviewed">Last reviewed <time datetime="%s">%s</time></span></p>' % (rv, fmt(rv)))
     if p.lead:
         out.append('<p class="lead">%s</p>' % p.lead)
-    out.append(p.body.replace("{rel}", rel))
+    if p.path in PHOTOS and p.kind != "home":
+        out.append(photo_html(p.path, rel, lazy=True))
+    out.append(p.body.replace("{rel}", rel).replace("{photo}", photo_html(p.path, rel, lazy=False) if p.path in PHOTOS else ""))
     if p.faq:
         out.append('<section class="card" id="faq"><h2>Frequently asked questions</h2>')
         for q, a in p.faq:
@@ -157,11 +166,24 @@ def render(p):
     if p.related:
         out.append('<aside class="card related"><h2>Keep exploring</h2><ul>%s</ul></aside>' %
                    "".join('<li><a href="%s%s">%s</a></li>' % (rel, u, esc(n)) for n, u in p.related))
+    if (p.kind == "article" and p.show_dates and not p.noindex) or p.cite:
+        out.append(cite_box(p, canon))
     if p.sources:
         out.append('<section class="card sources"><h2>Sources</h2><ul>%s</ul><p class="note">Figures are rounded summaries of the sources above. Wild populations are hard to count, so estimates change as new surveys are published.</p></section>' %
                    "".join('<li><a href="%s" rel="noopener">%s</a></li>' % (esc(u), esc(n)) for n, u in p.sources))
     out.append('</main>' + footer(rel) + beacon() + '</body></html>\n')
     return "\n".join(out)
+
+def cite_box(p, canon):
+    title = esc(p.headline or p.h1)
+    d = datetime.date.fromisoformat(p.modified)
+    apa = '%s. (%d, %s %d). <i>%s</i>. %s. %s' % (SITE, d.year, d.strftime("%B"), d.day, title, LEGAL, canon)
+    mon = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."][d.month - 1]
+    mla = '"%s." <i>%s</i>, %s, %d %s %d, %s.' % (title, SITE, LEGAL, d.day, mon, d.year, canon.replace("https://", ""))
+    chi = '%s. "%s." %s. Last modified %s %d, %d. %s.' % (SITE, title, LEGAL, d.strftime("%B"), d.day, d.year, canon)
+    return ('<section class="cite" aria-labelledby="cite-h"><h2 id="cite-h">Cite this page</h2>'
+            '<p><b>APA:</b> %s</p><p><b>MLA:</b> %s</p><p><b>Chicago:</b> %s</p>'
+            '<p class="note">Please check the date you accessed the page and adjust to your teacher\'s or journal\'s style guide.</p></section>') % (apa, mla, chi)
 
 def fmt(d):
     return datetime.date.fromisoformat(d).strftime("%-d %B %Y")

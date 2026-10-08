@@ -41,3 +41,9 @@ No GSC or analytics data yet (no verification token, no beacon token).
 ## 2026-10-08 restyle + legal pages
 - Restyle (Joshua via PA): light savanna theme (sandy #fbf3e4 background, soft orange and gold accents, rounded cards and pill buttons), Fredoka 500/600 from Google Fonts for headings (preconnect, display=swap), CSS only paw print and spot doodles as inline SVG data URIs. All text colours checked for WCAG AA (body 12.4:1, links 5.9:1, headings 6.8:1, muted 6.3:1 on the page background). No URL, content or structure changes apart from the font link tags.
 - Legal rule: footer now says "© 2026 Joshua Israel Ventures LLC. All rights reserved. BigCatWise is owned and operated by Joshua Israel Ventures LLC." plus Terms, Privacy, Disclaimer, Contact links; Contact us mailto and "Operated by" line kept. New terms.html and disclaimer.html; privacy rewritten (LLC as data controller, FormSubmit, conditional analytics wording, Google Fonts, no ads or affiliate cookies); About says "BigCatWise is a brand of Joshua Israel Ventures LLC." JSON-LD publisher and author are now Organization "Joshua Israel Ventures LLC" with brand BigCatWise.
+
+## 2026-10-09 neon redesign photos live (about 00:26 London)
+- Image batch finally run (it was held during the 8 Oct freeze): 14 Wikimedia Commons photos, 960x640 and 480x320 WebP, 11 CC0 and 3 CC BY-SA 3.0. Licences rechecked on Commons just before download; none had changed.
+- Full build (41 pages) and check.py: 0 problems. Every photo has alt, width, height and a credit figcaption; loading=lazy everywhere except the home hero (eager, fetchpriority=high). /credits/ lists all 14.
+- Commit 32d9f51 pushed; Pages built. Live 200: /, lion, tiger, leopard, jaguar, cheetah, snow-leopard, /games/, /teachers/, /research/, /credits/, img/home-tiger-cub-960.webp.
+- IndexNow: ./indexnow.sh (all 41 sitemap URLs): HTTP 200.

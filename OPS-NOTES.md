@@ -1,6 +1,6 @@
 # BigCatWise ops notes (Big Cat Site Bot)
 
-Last updated 8 Oct 2026. Operated by Joshua Israel Ventures LLC.
+Last updated 9 Oct 2026. Operated by Joshua Israel Ventures LLC.
 
 ## Where things are
 - Repo: https://github.com/joshuaofisrael/bigcatwise (public). Local clone: /workspace/bigcatwise
@@ -67,6 +67,8 @@ Contrast ratios (WCAG, all AA 4.5:1 or better):
 - Files: img/<slug>-960.webp and -480.webp (3:2, 960x640 and 480x320), made by /workspace/animal-sites/big-cats/photos/batch.py (run under the flock). Inserted after the lead on species pages and key posts (loading=lazy), home hero via `{photo}` (eager, fetchpriority=high). Each has width/height, alt and a credit line.
 - Credits page: https://bigcatwise.com/credits/ (file, source page, author, licence link, used on), linked as "Photo credits" in the footer next to the legal links.
 - To add a photo: add a dict to PHOTOS_LIST, add it to chosen.json, run batch.py under the flock, rebuild.
+- LIVE since 9 Oct 2026 00:26 London (commit 32d9f51): all 14 photos in img/ (28 WebP files). Licences rechecked via the Commons API (extmetadata LicenseShortName) just before the batch: 11 CC0, 3 CC BY-SA 3.0 (lion-yawn, cheetah-run, lion-pride), all unchanged, none dropped. Raw 1600px downloads are kept in /workspace/animal-sites/big-cats/photos/raw/ (outside the repo). batch.py skips raws that already exist; one Commons API call failed with an SSL error mid-batch and the remaining 5 succeeded on retry.
+- Screenshots: /workspace/animal-sites/big-cats/screens/ (home-desktop, home-mobile, games-desktop, games-mobile), taken with headless /usr/bin/google-chrome under the flock.
 
 ### Education
 - Teachers hub https://bigcatwise.com/teachers/ with fact sheets, worksheets, answer keys, vocabulary, lesson ideas K-2/3-5/6-8/9-12, games as classroom activities. Teacher search pages: big-cat-adaptations-lesson-plan.html, cheetah-worksheet-3rd-grade.html, lion-pride-lesson-plan.html. Source: _build/edu.py. NGSS codes verified on nextgenscience.org (notes in /workspace/animal-sites/big-cats/edu/ngss-verified.md). LearningResource JSON-LD with educationalLevel and the LLC as publisher.

@@ -13,8 +13,8 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
 # ---- single place to change for a custom domain ------------------------------------------
-BASE_URL = "https://joshuaofisrael.github.io/bigcatwise/"   # must end with /
-BASE_PATH = "/bigcatwise/"                                   # absolute path prefix, used by 404.html only
+BASE_URL = "https://bigcatwise.com/"   # must end with /
+BASE_PATH = "/"                                   # absolute path prefix, used by 404.html only
 # ------------------------------------------------------------------------------------------
 SITE = "BigCatWise"
 LEGAL = "Joshua Israel Ventures LLC"

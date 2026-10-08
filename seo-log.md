@@ -30,3 +30,7 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - IndexNow: ./indexnow.sh submitted all 24 sitemap URLs (host joshuaofisrael.github.io, keyLocation /bigcatwise/<key>.txt): HTTP 202.
 - Cloudflare Web Analytics: API create and list return Authentication error (10000) with both box tokens. No beacon yet.
 - GSC: no token yet. FormSubmit: not yet activated (first submission sends the activation email).
+
+## 2026-10-08 custom domain bigcatwise.com
+- DNS confirmed via dns.google: apex A 185.199.108.153/109/110/111, www CNAME joshuaofisrael.github.io.
+- Added CNAME (bigcatwise.com), BASE_URL https://bigcatwise.com/, BASE_PATH /. Rebuilt: canonicals, og:url, og:image, JSON-LD, sitemap, robots Sitemap line, llms.txt now on bigcatwise.com. No github.io or /bigcatwise/ paths left in built files. indexnow.sh HOST switched.

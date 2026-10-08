@@ -46,4 +46,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://joshuaofisrael.github.io/bigcatwise/sitemap.xml
+Sitemap: https://bigcatwise.com/sitemap.xml

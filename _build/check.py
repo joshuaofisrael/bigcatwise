@@ -1,6 +1,6 @@
 import re,json,os,glob,html
 root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-files=sorted(glob.glob(root+'/*.html')+glob.glob(root+'/blog/*.html'))
+files=sorted(f for f in glob.glob(root+'/**/*.html',recursive=True) if '/_build/' not in f and '/outreach/' not in f)
 titles={};descs={};bad=0
 for f in files:
     s=open(f).read(); rel=os.path.relpath(f,root)

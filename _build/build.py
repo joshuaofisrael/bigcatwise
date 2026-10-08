@@ -28,7 +28,7 @@ NAV = [("index.html", "Home"), ("lion.html", "Lion"), ("tiger.html", "Tiger"), (
        ("jaguar.html", "Jaguar"), ("cheetah.html", "Cheetah"), ("snow-leopard.html", "Snow Leopard"),
        ("which-big-cat-is-it.html", "ID Guide"), ("compare.html", "Compare"), ("behavior.html", "Behavior"), ("habitats.html", "Habitats"),
        ("conservation.html", "Conservation"), ("faq.html", "FAQ"), ("glossary.html", "Glossary"),
-       ("blog/index.html", "Blog")]
+       ("blog/index.html", "Blog"), ("games/index.html", "Games")]
 
 LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><title>BigCatWise logo</title>'
         '<path d="M12 26 L14 6 L28 18 Q32 17 36 18 L50 6 L52 26 Q56 34 52 44 Q46 58 32 58 Q18 58 12 44 Q8 34 12 26Z" fill="#f0a830"/>'

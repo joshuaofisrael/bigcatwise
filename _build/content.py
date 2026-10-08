@@ -212,4 +212,5 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
     sources=[CSG["snow"], WWF["snow"], SLT, SDZ["snow"], PAN["snow"], IUCN], priority="0.9")
 
 import content2  # noqa  other pages and blog
+import games  # noqa  games hub and games
 from content2 import llms  # noqa

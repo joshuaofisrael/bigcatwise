@@ -231,13 +231,13 @@ tiles = "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % t for t i
  ("cheetah.html", "Cheetah", "The fastest land animal"), ("snow-leopard.html", "Snow leopard", "Ghost of the mountains"),
  ("which-big-cat-is-it.html", "Which big cat is it?", "ID guide and big cats by region"), ("compare.html", "Compare all six", "Size, range, status, numbers"), ("behavior.html", "Behavior", "Hunting, prides, roaring"),
  ("habitats.html", "Habitats", "Where each species lives"), ("conservation.html", "Conservation", "Threats and what helps"),
- ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
+ ("games/index.html", "Big cat games", "Three free fact based games"), ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
 posts = "".join('<li><a href="blog/%s">%s</a></li>' % (p.path.split("/")[1], p.headline or p.h1) for p in POSTS)
 add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
     "BigCatWise is a free, sourced guide to big cats: lions, tigers, leopards, jaguars, cheetahs and snow leopards. Species facts, behavior, habitats and conservation.",
     "Big cat facts: lions, tigers, leopards, jaguars, cheetahs and snow leopards", kind="home",
     body='''<section class="hero"><p class="lead">BigCatWise is a free, plain English guide to the world's big cats. It covers what each species looks like, how it hunts and lives, where it is found and how it is faring in the wild, with sources from the IUCN Cat Specialist Group, leading zoos, conservation groups and peer reviewed research.</p>
-<a class="btn" href="compare.html">Compare all six big cats</a> <a class="btn alt" href="which-big-cat-is-it.html">Which big cat is it?</a></section>
+<a class="btn" href="compare.html">Compare all six big cats</a> <a class="btn alt" href="which-big-cat-is-it.html">Which big cat is it?</a> <a class="btn" href="games/">Play big cat games</a></section>
 <div class="grid">''' + tiles + '''</div>
 <section class="card"><h2>Big cats at a glance</h2><ul>
 <li>The <a href="tiger.html">tiger</a> is the largest cat, at up to about 325 kg, and every tiger's stripes are unique.</li>
@@ -288,6 +288,7 @@ add("privacy.html", "Privacy Policy | BigCatWise",
 <section class="card"><h2>What we collect</h2><ul>
 <li><b>Contact form messages.</b> If you use our contact form, your name, email address and message are processed by FormSubmit (formsubmit.co), a third party form service, and delivered to our inbox.</li>
 <li><b>Emails you send us.</b> If you email us directly, we receive your email address and whatever you include in the message.</li>
+<li><b>Games.</b> Our <a href="games/">games</a> save your best score only in your own browser (local storage) so you can try to beat it. It is never sent to us or anyone else, and you can clear it by clearing your browser's site data. The games need no sign up and collect no personal data.</li>
 <li><b>Analytics.</b> ''' + analytics + '''</li></ul>
 <p>We use contact details only to reply to you and to handle your request. We do not sell, rent or share them for marketing.</p></section>
 <section class="card"><h2>Hosting and fonts</h2><p>The site is hosted on GitHub Pages. Like any web host, GitHub may log technical data such as IP addresses for security and operations; see GitHub's privacy statement. Headings use the free Fredoka font served by Google Fonts, so your browser requests the font from Google's servers, which receive your IP address as part of that request. We use no other Google services on this site.</p></section>
@@ -340,5 +341,6 @@ def llms(base):
     L += ["", "## Tools", item("which-big-cat-is-it.html"), "- [Big cats by region](%swhich-big-cat-is-it.html#by-region): deep links #africa, #asia, #south-asia, #southeast-asia, #east-asia, #central-asia, #middle-east, #americas (also #north-america, #central-america, #south-america), #elsewhere (also #europe, #australia)" % base, item("compare.html"),
           "- [Comparison table rows](%scompare.html#table): deep links such as #row-tiger and #row-cheetah" % base]
     L += ["", "## Blog"] + [item(p.path) for p in POSTS]
+    L += ["", "## Games (free, no sign up, no data collected)"] + [item(s) for s in ["games/index.html", "games/rosette-detective/index.html", "games/cheetah-burst/index.html", "games/range-roundup/index.html"]]
     L += ["", "## Optional", item("about.html"), item("contact.html"), item("terms.html"), item("privacy.html"), item("disclaimer.html"), ""]
     return "\n".join(L)

@@ -26,5 +26,9 @@
 <url><loc>https://bigcatwise.com/privacy.html</loc><lastmod>2026-10-08</lastmod><priority>0.2</priority></url>
 <url><loc>https://bigcatwise.com/terms.html</loc><lastmod>2026-10-08</lastmod><priority>0.2</priority></url>
 <url><loc>https://bigcatwise.com/disclaimer.html</loc><lastmod>2026-10-08</lastmod><priority>0.2</priority></url>
+<url><loc>https://bigcatwise.com/games/</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
+<url><loc>https://bigcatwise.com/games/rosette-detective/</loc><lastmod>2026-10-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://bigcatwise.com/games/cheetah-burst/</loc><lastmod>2026-10-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://bigcatwise.com/games/range-roundup/</loc><lastmod>2026-10-08</lastmod><priority>0.7</priority></url>
 <url><loc>https://bigcatwise.com/llms.txt</loc><lastmod>2026-10-08</lastmod><priority>0.3</priority></url>
 </urlset>

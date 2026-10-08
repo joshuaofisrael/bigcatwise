@@ -47,3 +47,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Full build (41 pages) and check.py: 0 problems. Every photo has alt, width, height and a credit figcaption; loading=lazy everywhere except the home hero (eager, fetchpriority=high). /credits/ lists all 14.
 - Commit 32d9f51 pushed; Pages built. Live 200: /, lion, tiger, leopard, jaguar, cheetah, snow-leopard, /games/, /teachers/, /research/, /credits/, img/home-tiger-cub-960.webp.
 - IndexNow: ./indexnow.sh (all 41 sitemap URLs): HTTP 200.
+- Screenshots (headless Chrome, flock+timeout): /workspace/animal-sites/big-cats/screens/home-desktop.png, home-mobile.png, games-desktop.png, games-mobile.png. Visual check OK: neon glow borders, hero tiger cub with CC0 credit, games hub three teal tiles, no layout breakage on 1280 or 390.

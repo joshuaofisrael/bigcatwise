@@ -68,7 +68,7 @@ Contrast ratios (WCAG, all AA 4.5:1 or better):
 - Credits page: https://bigcatwise.com/credits/ (file, source page, author, licence link, used on), linked as "Photo credits" in the footer next to the legal links.
 - To add a photo: add a dict to PHOTOS_LIST, add it to chosen.json, run batch.py under the flock, rebuild.
 - LIVE since 9 Oct 2026 00:26 London (commit 32d9f51): all 14 photos in img/ (28 WebP files). Licences rechecked via the Commons API (extmetadata LicenseShortName) just before the batch: 11 CC0, 3 CC BY-SA 3.0 (lion-yawn, cheetah-run, lion-pride), all unchanged, none dropped. Raw 1600px downloads are kept in /workspace/animal-sites/big-cats/photos/raw/ (outside the repo). batch.py skips raws that already exist; one Commons API call failed with an SSL error mid-batch and the remaining 5 succeeded on retry.
-- Screenshots: /workspace/animal-sites/big-cats/screens/ (home-desktop, home-mobile, games-desktop, games-mobile), taken with headless /usr/bin/google-chrome under the flock.
+- Screenshots DONE 9 Oct 2026 ~00:47 London: /workspace/animal-sites/big-cats/screens/home-desktop.png, home-mobile.png, games-desktop.png, games-mobile.png (headless /usr/bin/google-chrome under flock; visual check OK).
 
 ### Education
 - Teachers hub https://bigcatwise.com/teachers/ with fact sheets, worksheets, answer keys, vocabulary, lesson ideas K-2/3-5/6-8/9-12, games as classroom activities. Teacher search pages: big-cat-adaptations-lesson-plan.html, cheetah-worksheet-3rd-grade.html, lion-pride-lesson-plan.html. Source: _build/edu.py. NGSS codes verified on nextgenscience.org (notes in /workspace/animal-sites/big-cats/edu/ngss-verified.md). LearningResource JSON-LD with educationalLevel and the LLC as publisher.

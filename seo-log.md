@@ -34,3 +34,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 ## 2026-10-08 custom domain bigcatwise.com
 - DNS confirmed via dns.google: apex A 185.199.108.153/109/110/111, www CNAME joshuaofisrael.github.io.
 - Added CNAME (bigcatwise.com), BASE_URL https://bigcatwise.com/, BASE_PATH /. Rebuilt: canonicals, og:url, og:image, JSON-LD, sitemap, robots Sitemap line, llms.txt now on bigcatwise.com. No github.io or /bigcatwise/ paths left in built files. indexnow.sh HOST switched.
+- Pages custom domain set via API; certificate approved for bigcatwise.com and www.bigcatwise.com (expires 2027-01-06); Enforce HTTPS enabled at 12:31 London.
+- Live checks 12:31: https://bigcatwise.com/ 200; http and www redirect 301 to https://bigcatwise.com/; old github.io URLs 301 to the domain. robots.txt, sitemap.xml, llms.txt, tiger.html, which-big-cat-is-it.html, blog post, IndexNow key file all 200 over HTTPS. All 24 sitemap URLs 200.
+- IndexNow on bigcatwise.com (key at https://bigcatwise.com/ae0cfa5bdd787ac71a16b2a7f4e0107d.txt): 24 URLs submitted, HTTP 202.

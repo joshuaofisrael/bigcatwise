@@ -254,12 +254,12 @@ add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
 add("about.html", "About BigCatWise: Who We Are & How We Write | BigCatWise",
     "About BigCatWise: an independent big cat education site operated by Joshua Israel Ventures LLC. How we research, source and update our content.",
     "About BigCatWise", kind="page", headline="About",
-    lead="BigCatWise is an independent educational website about the world's big cats, operated by Joshua Israel Ventures LLC.",
+    lead="BigCatWise is a brand of Joshua Israel Ventures LLC: an independent educational website about the world's big cats.",
     body='''<section class="card"><h2>What we cover</h2><p>We explain the biology, behavior, habitats and conservation of six species: the lion, tiger, leopard, jaguar, cheetah and snow leopard. Our aim is clear, accurate, answer first pages that are useful to students, teachers, travellers and anyone curious about big cats.</p></section>
 <section class="card"><h2>How we write and source</h2><p>All text and illustrations on this site are original. Facts and figures are drawn from reputable sources, principally the IUCN SSC Cat Specialist Group and IUCN Red List, Smithsonian's National Zoo and Conservation Biology Institute, San Diego Zoo Wildlife Alliance, WWF, Panthera, the Snow Leopard Trust and peer reviewed research. Each page lists its sources and shows when it was last updated. We do not claim field expertise we do not have, and we do not invent statistics.</p>
 <p>Wild population estimates change as new surveys are published. If you spot something out of date or wrong, please <a href="contact.html">tell us</a> and we will check and correct it.</p></section>
-<section class="card"><h2>Who runs BigCatWise</h2><p>BigCatWise is operated by Joshua Israel Ventures LLC. The site carries no advertising or affiliate links at present; if that changes, we will say so clearly on the affected pages and in our <a href="privacy.html">privacy policy</a>.</p></section>''',
-    related=[("Contact", "contact.html"), ("Privacy", "privacy.html"), ("Compare big cats", "compare.html")], priority="0.4")
+<section class="card"><h2>Who runs BigCatWise</h2><p>BigCatWise is a brand of Joshua Israel Ventures LLC. The site is owned and operated by Joshua Israel Ventures LLC. The site carries no advertising or affiliate links at present; if that changes, we will say so clearly on the affected pages and in our <a href="privacy.html">privacy policy</a>.</p></section>''',
+    related=[("Contact", "contact.html"), ("Terms of use", "terms.html"), ("Privacy", "privacy.html"), ("Disclaimer", "disclaimer.html"), ("Compare big cats", "compare.html")], priority="0.4")
 
 add("contact.html", "Contact BigCatWise | BigCatWise",
     "Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Email us or use the contact form.",
@@ -281,15 +281,45 @@ analytics = ("We use Cloudflare Web Analytics to count page views. It is cookiel
              if CF_BEACON_TOKEN else
              "We do not currently run any analytics script. We plan to add Cloudflare Web Analytics, which is cookieless and does not collect personal data or track you across sites, and will update this page when we do.")
 add("privacy.html", "Privacy Policy | BigCatWise",
-    "BigCatWise privacy policy: what data we collect, how contact form messages are handled, analytics, and your choices.",
+    "BigCatWise privacy policy: Joshua Israel Ventures LLC is the data controller. What we collect, how contact messages are handled, analytics and your choices.",
     "Privacy policy", kind="page", headline="Privacy",
-    lead="BigCatWise collects as little information as possible. This page explains what we collect and why.",
-    body='''<section class="card"><h2>Hosting</h2><p>The site is hosted on GitHub Pages. Like any web host, GitHub may log technical data such as IP addresses for security and operations; see GitHub's own privacy statement.</p></section>
-<section class="card"><h2>Analytics</h2><p>''' + analytics + '''</p></section>
-<section class="card"><h2>Contact form and email</h2><p>If you use our contact form, your name, email address and message are processed by FormSubmit and delivered to our inbox. If you email us directly, we receive your email address and message. We use these details only to reply to you and do not sell or share them.</p></section>
-<section class="card"><h2>Cookies, ads and affiliates</h2><p>We do not set cookies and we do not currently show ads or use affiliate links. If this changes we will update this policy first.</p></section>
-<section class="card"><h2>Contact</h2><p>Questions about privacy: <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. This site is operated by Joshua Israel Ventures LLC.</p><p>Last updated ''' + "8 October 2026" + '''.</p></section>''',
-    related=[("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
+    lead="BigCatWise is a brand of Joshua Israel Ventures LLC. Joshua Israel Ventures LLC is the data controller for personal information collected through this website. We collect as little information as possible, and this page explains what we collect and why.",
+    body='''<section class="card"><h2>Who we are</h2><p>This website, bigcatwise.com, is owned and operated by Joshua Israel Ventures LLC ("we", "us"). You can contact us about privacy at <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>
+<section class="card"><h2>What we collect</h2><ul>
+<li><b>Contact form messages.</b> If you use our contact form, your name, email address and message are processed by FormSubmit (formsubmit.co), a third party form service, and delivered to our inbox.</li>
+<li><b>Emails you send us.</b> If you email us directly, we receive your email address and whatever you include in the message.</li>
+<li><b>Analytics.</b> ''' + analytics + '''</li></ul>
+<p>We use contact details only to reply to you and to handle your request. We do not sell, rent or share them for marketing.</p></section>
+<section class="card"><h2>Hosting and fonts</h2><p>The site is hosted on GitHub Pages. Like any web host, GitHub may log technical data such as IP addresses for security and operations; see GitHub's privacy statement. Headings use the free Fredoka font served by Google Fonts, so your browser requests the font from Google's servers, which receive your IP address as part of that request. We use no other Google services on this site.</p></section>
+<section class="card"><h2>Cookies, ads and affiliates</h2><p>We do not set cookies. There is no Google AdSense or other advertising code and there are no affiliate links or affiliate cookies on this site. If that changes, we will update this policy and our <a href="disclaimer.html">disclaimer</a> before it goes live.</p></section>
+<section class="card"><h2>Retention and your choices</h2><p>We keep contact messages only as long as needed to respond and keep a reasonable record of the conversation. You can ask us to access, correct or delete the personal information you sent us by emailing <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>
+<section class="card"><h2>Children</h2><p>The site is general educational content and is not directed at collecting information from children. Please do not send us personal information about a child.</p></section>
+<section class="card"><h2>Changes</h2><p>We will post any changes to this policy on this page. Last updated 8 October 2026.</p></section>''',
+    related=[("Terms of use", "terms.html"), ("Disclaimer", "disclaimer.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
+
+add("terms.html", "Terms of Use | BigCatWise",
+    "BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, general information only, no warranties, limitation of liability, Michigan law.",
+    "Terms of use", kind="page", headline="Terms of use",
+    lead="These terms govern your use of bigcatwise.com. By using the site you agree to them. If you do not agree, please do not use the site.",
+    body='''<section class="card"><h2>Who you are agreeing with</h2><p>BigCatWise is a brand owned by Joshua Israel Ventures LLC. BigCatWise is a brand name, not a separate company or a registered assumed name. When you use this website, your agreement is with Joshua Israel Ventures LLC ("we", "us").</p></section>
+<section class="card"><h2>General information only</h2><p>All content on BigCatWise is general educational information about big cats. It is not professional advice of any kind, including veterinary advice, wildlife handling or animal management advice, travel or travel safety advice, or legal advice. Never approach, feed or handle wild or captive big cats. For safety, travel or animal welfare decisions, follow official guidance and qualified professionals. Facts and population figures are summaries of published sources and may change as new research appears.</p></section>
+<section class="card"><h2>No warranties</h2><p>The site and all content are provided "as is" and "as available", without warranties of any kind, express or implied, including warranties of accuracy, completeness, fitness for a particular purpose and non infringement. We do not warrant that the site will be uninterrupted or error free.</p></section>
+<section class="card"><h2>Limitation of liability</h2><p>To the fullest extent permitted by law, Joshua Israel Ventures LLC and its members, managers and contributors will not be liable for any direct, indirect, incidental, consequential, special or punitive damages, or any loss of data, profits or goodwill, arising from or related to your use of, or inability to use, the site or its content, even if advised of the possibility of such damages. Where liability cannot be excluded, it is limited to the maximum extent the law allows.</p></section>
+<section class="card"><h2>Intellectual property</h2><p>The BigCatWise name and logo, and all original text and illustrations on this site, are owned by Joshua Israel Ventures LLC. You may share links and short quotations with attribution. Please do not copy or republish substantial parts of the site without written permission.</p></section>
+<section class="card"><h2>External links</h2><p>We link to outside sources such as zoos, conservation organisations and scientific journals. We are not responsible for their content or policies.</p></section>
+<section class="card"><h2>Governing law</h2><p>These terms are governed by the laws of the State of Michigan, United States, without regard to its conflict of law rules.</p></section>
+<section class="card"><h2>Changes and contact</h2><p>We may update these terms by posting a new version on this page. Questions: <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. Last updated 8 October 2026.</p></section>''',
+    related=[("Privacy", "privacy.html"), ("Disclaimer", "disclaimer.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
+
+add("disclaimer.html", "Disclaimer & Affiliate Disclosure | BigCatWise",
+    "BigCatWise disclaimer: accuracy of our big cat information, no professional relationship, and our advertising and affiliate disclosure.",
+    "Disclaimer and affiliate disclosure", kind="page", headline="Disclaimer",
+    lead="BigCatWise is a brand of Joshua Israel Ventures LLC. Please read this disclaimer together with our terms of use.",
+    body='''<section class="card"><h2>Accuracy</h2><p>We research every page carefully and cite reputable sources such as the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed studies. Even so, wild animal populations, conservation status and scientific understanding change, and errors can happen. We make no guarantee that any information is complete, current or error free. If you spot a mistake, please <a href="contact.html">tell us</a>.</p></section>
+<section class="card"><h2>No professional relationship</h2><p>Using this site, or contacting us, does not create any professional, advisory or client relationship. Our content is general information, not veterinary, wildlife handling, travel safety or legal advice. Always follow official guidance and qualified professionals, and never approach wild or captive big cats.</p></section>
+<section class="card" id="affiliate"><h2>Advertising and affiliate disclosure</h2><p>There are currently no paid placements, sponsored posts, advertisements or affiliate links on BigCatWise, and we receive no compensation for mentioning any organisation, product or service. Links to zoos, conservation groups and research are provided purely as sources.</p><p>If we add advertising or affiliate links in future, we will disclose them clearly and conspicuously on the pages where they appear, in line with the US Federal Trade Commission's guidance on endorsements, and we will update this page and our <a href="privacy.html">privacy policy</a>.</p></section>
+<section class="card"><h2>Contact</h2><p>Questions about this disclaimer: <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. Last updated 8 October 2026.</p></section>''',
+    related=[("Terms of use", "terms.html"), ("Privacy", "privacy.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
 
 add("404.html", "Page Not Found | BigCatWise", "This page could not be found.", "This page has wandered off",
     kind="page", noindex=True, sitemap=False,
@@ -310,5 +340,5 @@ def llms(base):
     L += ["", "## Tools", item("which-big-cat-is-it.html"), "- [Big cats by region](%swhich-big-cat-is-it.html#by-region): deep links #africa, #asia, #south-asia, #southeast-asia, #east-asia, #central-asia, #middle-east, #americas (also #north-america, #central-america, #south-america), #elsewhere (also #europe, #australia)" % base, item("compare.html"),
           "- [Comparison table rows](%scompare.html#table): deep links such as #row-tiger and #row-cheetah" % base]
     L += ["", "## Blog"] + [item(p.path) for p in POSTS]
-    L += ["", "## Optional", item("about.html"), item("contact.html"), item("privacy.html"), ""]
+    L += ["", "## Optional", item("about.html"), item("contact.html"), item("terms.html"), item("privacy.html"), item("disclaimer.html"), ""]
     return "\n".join(L)

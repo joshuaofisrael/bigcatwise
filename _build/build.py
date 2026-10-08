@@ -36,7 +36,8 @@ LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden=
         '<path d="M28 44 L36 44 L32 48Z" fill="#1a140c"/><path d="M32 48 v4 M32 52 q-5 3 -9 0 M32 52 q5 3 9 0" stroke="#1a140c" stroke-width="2.2" fill="none" stroke-linecap="round"/>'
         '<path d="M18 22 l5 6 M46 22 l-5 6 M32 20 v8" stroke="#1a140c" stroke-width="3" stroke-linecap="round"/></svg>')
 
-PUBLISHER = {"@type": "Organization", "name": SITE, "url": BASE_URL, "legalName": LEGAL,
+PUBLISHER = {"@type": "Organization", "@id": BASE_URL + "#organization", "name": LEGAL, "legalName": LEGAL, "url": BASE_URL,
+             "email": "joshuaofisrael@gmail.com", "brand": {"@type": "Brand", "name": SITE, "logo": OG_IMAGE},
              "logo": {"@type": "ImageObject", "url": OG_IMAGE}}
 
 def esc(s):
@@ -55,10 +56,11 @@ def footer(rel):
     return ('<footer><section class="contact-us" aria-labelledby="contact-us"><h2 id="contact-us">Contact us</h2>'
             '<p>Questions, corrections or suggestions? Email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a> '
             'or use our <a href="%scontact.html">contact form</a>.</p></section>' % rel +
-            '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. '
-            'All text and illustrations are original.</p><p>Operated by %s</p><p>&copy; 2026 Joshua Israel</p>'
-            '<p class="flinks"><a href="%sabout.html">About</a> | <a href="%scontact.html">Contact</a> | '
-            '<a href="%sprivacy.html">Privacy</a> | <a href="%sllms.txt">llms.txt</a></p></footer>') % (SITE, LEGAL, rel, rel, rel, rel)
+            '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. All text and illustrations are original.</p>'
+            '<p class="legal">&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. %s is owned and operated by Joshua Israel Ventures LLC.</p>'
+            '<p class="legal">Operated by %s</p>'
+            '<p class="flinks"><a href="%sterms.html">Terms</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
+            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a></p></footer>') % (SITE, SITE, LEGAL, rel, rel, rel, rel, rel)
 
 def header(rel, current):
     links = []
@@ -101,6 +103,8 @@ def render(p):
         head.append('<meta name="robots" content="noindex">')
     else:
         head.append('<link rel="canonical" href="%s">' % canon)
+    head.append('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+                '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;display=swap">')
     head.append('<link rel="stylesheet" href="%sstyle.css"><link rel="icon" href="%sfavicon.svg" type="image/svg+xml">' % (rel, rel))
     og_type = "website" if p.kind in ("home", "page") else "article"
     head.append('<meta property="og:type" content="%s"><meta property="og:site_name" content="%s">'
@@ -109,14 +113,14 @@ def render(p):
                 '<meta name="twitter:card" content="summary_large_image">' % (og_type, SITE, esc(p.title), esc(p.description), canon, OG_IMAGE))
     blocks = []
     if p.kind == "home":
-        blocks.append({"@context": "https://schema.org", "@type": "WebSite", "name": SITE, "url": BASE_URL,
+        blocks.append({"@context": "https://schema.org", "@type": "WebSite", "name": SITE, "url": BASE_URL, "inLanguage": "en",
                        "publisher": PUBLISHER})
         blocks.append(dict({"@context": "https://schema.org"}, **PUBLISHER))
     elif not p.noindex:
         if p.kind == "article":
             blocks.append({"@context": "https://schema.org", "@type": "Article", "headline": p.headline or p.h1,
                            "description": p.description, "image": OG_IMAGE,
-                           "author": {"@type": "Organization", "name": SITE, "url": BASE_URL},
+                           "author": {"@type": "Organization", "@id": BASE_URL + "#organization", "name": LEGAL, "url": BASE_URL},
                            "publisher": PUBLISHER, "datePublished": p.published, "dateModified": p.modified,
                            "mainEntityOfPage": canon, "inLanguage": "en"})
         elif p.kind == "page":

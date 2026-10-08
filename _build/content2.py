@@ -298,7 +298,7 @@ add("privacy.html", "Privacy Policy | BigCatWise",
     related=[("Terms of use", "terms.html"), ("Disclaimer", "disclaimer.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
 
 add("terms.html", "Terms of Use | BigCatWise",
-    "BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, general information only, no warranties, limitation of liability, Michigan law.",
+    "BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, general information only, no warranties, limitation of liability, Florida law.",
     "Terms of use", kind="page", headline="Terms of use",
     lead="These terms govern your use of bigcatwise.com. By using the site you agree to them. If you do not agree, please do not use the site.",
     body='''<section class="card"><h2>Who you are agreeing with</h2><p>BigCatWise is a brand owned by Joshua Israel Ventures LLC. BigCatWise is a brand name, not a separate company or a registered assumed name. When you use this website, your agreement is with Joshua Israel Ventures LLC ("we", "us").</p></section>
@@ -307,7 +307,7 @@ add("terms.html", "Terms of Use | BigCatWise",
 <section class="card"><h2>Limitation of liability</h2><p>To the fullest extent permitted by law, Joshua Israel Ventures LLC and its members, managers and contributors will not be liable for any direct, indirect, incidental, consequential, special or punitive damages, or any loss of data, profits or goodwill, arising from or related to your use of, or inability to use, the site or its content, even if advised of the possibility of such damages. Where liability cannot be excluded, it is limited to the maximum extent the law allows.</p></section>
 <section class="card"><h2>Intellectual property</h2><p>The BigCatWise name and logo, and all original text and illustrations on this site, are owned by Joshua Israel Ventures LLC. You may share links and short quotations with attribution. Please do not copy or republish substantial parts of the site without written permission.</p></section>
 <section class="card"><h2>External links</h2><p>We link to outside sources such as zoos, conservation organisations and scientific journals. We are not responsible for their content or policies.</p></section>
-<section class="card"><h2>Governing law</h2><p>These terms are governed by the laws of the State of Michigan, United States, without regard to its conflict of law rules.</p></section>
+<section class="card"><h2>Governing law</h2><p>These terms are governed by the laws of the State of Florida, United States, without regard to its conflict of law rules. Any dispute arising from these terms or this site will be heard in the state or federal courts located in Florida.</p></section>
 <section class="card"><h2>Changes and contact</h2><p>We may update these terms by posting a new version on this page. Questions: <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. Last updated 8 October 2026.</p></section>''',
     related=[("Privacy", "privacy.html"), ("Disclaimer", "disclaimer.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
 

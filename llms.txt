@@ -35,6 +35,6 @@ Content is general education. Population figures are estimates that change as ne
 ## Optional
 - [About](https://bigcatwise.com/about.html): About BigCatWise: an independent big cat education site operated by Joshua Israel Ventures LLC. How we research, source and update our content.
 - [Contact](https://bigcatwise.com/contact.html): Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Email us or use the contact form.
-- [Terms of use](https://bigcatwise.com/terms.html): BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, general information only, no warranties, limitation of liability, Michigan law.
+- [Terms of use](https://bigcatwise.com/terms.html): BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, general information only, no warranties, limitation of liability, Florida law.
 - [Privacy](https://bigcatwise.com/privacy.html): BigCatWise privacy policy: Joshua Israel Ventures LLC is the data controller. What we collect, how contact messages are handled, analytics and your choices.
 - [Disclaimer](https://bigcatwise.com/disclaimer.html): BigCatWise disclaimer: accuracy of our big cat information, no professional relationship, and our advertising and affiliate disclosure.

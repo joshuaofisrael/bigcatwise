@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -182,9 +182,49 @@ post("how-many-big-cats-are-left", "How Many Big Cats Are Left in the Wild? 2026
      related=[("Big cat conservation", "conservation.html"), ("Big cat comparison table", "compare.html"), ("Tiger facts", "tiger.html"), ("Snow leopard facts", "snow-leopard.html"), ("Blog home", "blog/index.html")],
      sources=[CSG["tiger"], CSG["lion"], CSG["leopard"], CSG["jaguar"], CSG["cheetah"], CSG["snow"], DURANT, IUCN])
 
+# ---------------------------------------------------------------- 6 LION PRIDES (8 Oct 2026)
+post("why-do-lions-live-in-prides", "Why Do Lions Live in Prides? What the Research Shows | BigCatWise",
+     "Why lions live in groups when other big cats live alone: the field research on hunting, cub defence and territory, and what DNA revealed about pride kinship.",
+     "Why do lions live in prides? It is not mainly about hunting", headline="Why do lions live in prides?",
+     published="2026-10-08", modified="2026-10-08",
+     lead="Lions live in prides mainly to protect their cubs and to hold on to good territory, not because group hunting gets each lion more food. Long term research in Tanzania's Serengeti found that females in groups did not reliably eat better than lone females, but groups of mothers were effective at defending cubs from infanticidal males, and larger groups won territorial contests against smaller ones.",
+     body='''<section class="card"><h2>The short answer</h2>
+<ul><li><b>Cub defence:</b> mothers pool their cubs in a nursery group, called a cr&egrave;che, and defend them together against males that would kill them.</li>
+<li><b>Territory:</b> prides compete with neighbouring prides, and bigger groups tend to win.</li>
+<li><b>Family:</b> the females in a pride are close relatives, so helping each other also helps shared genes.</li>
+<li><b>Food is not the main reason:</b> group hunting does not consistently raise each lion's share of the meal.</li></ul></section>
+<section class="card"><h2>Lions are the odd cat out</h2>
+<p>Most wild cats spend their adult lives alone. Tigers, leopards, jaguars and snow leopards mostly live and hunt solo, meeting mainly to mate, and a mother raises her cubs by herself. The IUCN Cat Specialist Group describes the lion as the most social of all cat species, living in complex social systems called prides and showing group territorial behaviour. It adds that females engage in several cooperative behaviours unique among cats: pride members often give birth around the same time, and the young are reared communally.</p>
+<p>A typical African pride is built around four to six adult lionesses, though prides can range from 1 to 21 females, according to the Cat Specialist Group. The lionesses are the core and the most stable part of the pride. One or more adult males, usually a coalition of two, hold tenure over the pride, typically for one breeding cycle of about two to three years. In India's Gir forest, most prides contain only two females. The closest thing to this among the other big cats is the cheetah, where some males form coalitions, often brothers, but female cheetahs live alone (see our <a href="../cheetah.html">cheetah facts</a>).</p></section>
+<section class="card"><h2>The obvious idea: hunting together</h2>
+<p>For a long time the natural assumption was that lions live in groups because cooperative hunting lets them catch more and bigger prey. Craig Packer, David Scheel and Anne Pusey tested this with years of observations of foraging female lions in the Serengeti, published in <i>The American Naturalist</i> in 1990 under a telling title: "Why lions form groups: food is not enough."</p>
+<p>They found that when prey was scarce, two group sizes gave the best foraging success per lion: a single female hunting alone, or a group of five or six. When prey was plentiful, group size made no significant difference. If food alone explained grouping, females in small prides should have hunted alone in the lean season. Instead, radio collar data showed that females in small prides usually foraged in as large a group as they could, even when that lowered their feeding efficiency. Something other than food was holding them together.</p></section>
+<section class="card"><h2>Reason 1: defending cubs from infanticide</h2>
+<p>When new males take over a pride, they often kill young cubs fathered by the previous males. The Cat Specialist Group notes that infanticide is common after a takeover if cubs are under about 12 months old, and that most females lose their cubs within about a month; the lionesses then come back into breeding condition sooner, so the new males can father cubs earlier.</p>
+<p>The 1990 Serengeti study found that mothers keep their cubs in a cr&egrave;che and form highly stable maternity groups that are effective in defending the cubs against infanticidal males. Most large prides contained a cr&egrave;che of four or five mothers, which lines up neatly with the group sizes those prides used.</p></section>
+<section class="card"><h2>Reason 2: holding the best territory</h2>
+<p>Prides defend territories, and neighbouring prides clash. The same study reported that females compete aggressively against neighbouring prides and that larger groups successfully repel smaller ones in territorial disputes. So lionesses in small prides stick together even at a cost in food.</p>
+<p>Territorial defence is not perfectly fair, though. In experiments reported in <i>Science</i> in 1995, Robert Heinsohn and Craig Packer played recordings of roars from unfamiliar lions to simulate an intruding group. Some females consistently led the approach toward the "intruder," while others lagged behind and avoided the risks of fighting. The leaders seemed to recognise the laggards but did not punish them, which the authors argued is hard to explain with simple theories of cooperation.</p></section>
+<section class="card"><h2>Reason 3: it is a family business</h2>
+<p>Female lions usually stay in the pride where they were born, while young males leave. In 1991, Packer and colleagues used DNA fingerprinting to map relatedness in lion prides and reported their results in <i>Nature</i>. Female pride companions were always closely related. Male companions in a coalition were either closely related or unrelated, and mating partners were usually unrelated.</p>
+<p>The DNA work also showed that breeding success among coalition males becomes more uneven as coalitions get larger, and that males rarely form large coalitions with non relatives. In other words, a male only accepts the role of a non breeding "helper" in a big coalition when his partners are close kin, so helping them still passes on some of his genes.</p></section>
+<section class="card"><h2>So does hunting together matter at all?</h2>
+<p>Yes, but it is not the whole story. Lionesses often hunt together and a group can tackle large prey that a single lion would struggle with. The point of the 1990 research is that hunting success per lion does not, by itself, explain why prides exist or why lionesses gather in the group sizes they do. Protecting cubs and holding territory explain the pattern much better.</p>
+<p>Pride sizes also shrink where human hunting pressure is high and prey is scarce, according to the Cat Specialist Group. For more on pride roles, see our <a href="../lion.html#pride">lion pride guide</a> and <a href="../behavior.html">big cat behavior</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>The lion is the most social cat species; a pride centres on related females.</li>
+<li>Serengeti research showed food alone does not explain why lions group.</li>
+<li>Groups of mothers defend cubs against infanticidal males, and bigger prides win territorial contests.</li>
+<li>Female pridemates are close kin; males in large coalitions are usually relatives.</li></ul></section>''',
+     faq=[("Why do lions live in groups when other big cats live alone?", "Research in the Serengeti found that lionesses group mainly to defend their cubs against infanticidal males and to hold territory against neighbouring prides. Food gains from group hunting are not enough on their own to explain it."),
+          ("How many lions are in a pride?", "According to the IUCN Cat Specialist Group, African prides average four to six adult lionesses, ranging from 1 to 21, usually with a coalition of about two adult males plus cubs and subadults. In India's Gir forest most prides have only two females."),
+          ("Are the lionesses in a pride related?", "Yes. A 1991 DNA fingerprinting study published in Nature found that female pride companions are always closely related, while male coalition partners may be related or unrelated.")],
+     related=[("Lion facts", "lion.html"), ("Big cat behavior", "behavior.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Blog home", "blog/index.html")],
+     sources=[PACKER1990, HEINSOHN1995, PACKER1991, CSG["lion"], CSG["cheetah"]])
+
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",
-    "The BigCatWise blog answers specific big cat questions in depth: roaring, cheetah speed, tiger stripes, telling spotted cats apart and how many big cats are left.",
+    "The BigCatWise blog answers specific big cat questions in depth: roaring, lion prides, cheetah speed, tiger stripes, telling spotted cats apart and how many big cats are left.",
     "BigCatWise blog", kind="page", headline="Blog",
     lead="In depth, sourced answers to specific questions about big cats. New posts are added when there is something genuinely useful to say.",
     body='<div class="grid">' + "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % (p.path.split("/")[1], p.headline, p.description) for p in POSTS) + '</div>',

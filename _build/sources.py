@@ -41,3 +41,6 @@ KLEMUK = ("Klemuk et al. (2011) Adapted to roar: functional morphology of tiger 
 WEISS = ("Weissengruber et al. (2002) Hyoid apparatus and pharynx in the lion, jaguar, tiger, cheetah and domestic cat, Journal of Anatomy", "https://doi.org/10.1046/j.1469-7580.2002.00088.x")
 FENNELL = ("Fennell et al. (2019) Optimizing colour for camouflage and visibility using deep learning, Journal of the Royal Society Interface", "https://doi.org/10.1098/rsif.2019.0183")
 SLT = ("Snow Leopard Trust", "https://snowleopard.org/")
+PACKER1990 = ("Packer, Scheel and Pusey (1990) Why lions form groups: food is not enough, The American Naturalist 136(1): 1-19. DOI 10.1086/285079", "https://doi.org/10.1086/285079")
+PACKER1991 = ("Packer, Gilbert, Pusey and O'Brien (1991) A molecular genetic analysis of kinship and cooperation in African lions, Nature 351: 562-565. DOI 10.1038/351562a0", "https://doi.org/10.1038/351562a0")
+HEINSOHN1995 = ("Heinsohn and Packer (1995) Complex cooperative strategies in group-territorial African lions, Science 269(5228): 1260-1262. DOI 10.1126/science.7652573", "https://doi.org/10.1126/science.7652573")

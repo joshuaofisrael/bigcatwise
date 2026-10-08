@@ -11,6 +11,7 @@ Last updated 8 Oct 2026. Operated by Joshua Israel Ventures LLC.
 ## How the site is built
 - `python3 _build/build.py` from the repo root regenerates every HTML page, sitemap.xml, robots.txt, llms.txt and the IndexNow key file. Commit the built output.
 - `_build/build.py` holds all config: BASE_URL, BASE_PATH, INDEXNOW_KEY, CF_BEACON_TOKEN, GSC_TOKEN, TODAY, nav.
+- Signature asset: which-big-cat-is-it.html (`_build/content3.py`), ID guide plus big cats by region with anchors.
 - Content: `_build/content.py` (6 species pages), `_build/content2.py` (compare, behavior, habitats, conservation, FAQ, glossary, home, about, contact, privacy, 404, llms.txt), `_build/blog.py` (posts + blog index), `_build/sources.py` (verified source URLs).
 - `python3 _build/check.py` checks JSON-LD parses, footer text, Contact us mailto, canonicals, no em/en dashes, no broken internal links, unique titles/descriptions.
 - Jekyll (Pages default) ignores the `_build` folder, so build scripts are not published.

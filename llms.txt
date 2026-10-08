@@ -1,0 +1,36 @@
+# BigCatWise
+
+> BigCatWise is a free, original educational website about big cats: the lion, tiger, leopard, jaguar, cheetah and snow leopard. It explains each species' appearance, behavior, habitat and range, and conservation status, with population estimates and facts sourced from the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed research. Operated by Joshua Israel Ventures LLC.
+
+Content is general education. Population figures are estimates that change as new surveys are published.
+
+## Species guides
+- [Lion facts](https://joshuaofisrael.github.io/bigcatwise/lion.html): Lion facts in plain English: how prides work, who does the hunting, where wild lions live today, how many are left and why the species is Vulnerable.
+- [Tiger facts](https://joshuaofisrael.github.io/bigcatwise/tiger.html): Tiger facts: the largest cat, why stripes are unique, where wild tigers survive, what they hunt and the latest IUCN population estimate.
+- [Leopard facts](https://joshuaofisrael.github.io/bigcatwise/leopard.html): Leopard facts: the most widespread big cat, how leopards hunt and cache prey in trees, what a black panther is, and why the leopard is Vulnerable.
+- [Jaguar facts](https://joshuaofisrael.github.io/bigcatwise/jaguar.html): Jaguar facts: the largest cat in the Americas, its skull piercing bite, love of water, rosettes with central spots, range and Near Threatened status.
+- [Cheetah facts](https://joshuaofisrael.github.io/bigcatwise/cheetah.html): Cheetah facts: how fast cheetahs really run, why they cannot roar, how they hunt by day, where they live and why only about 6,500 mature adults remain.
+- [Snow leopard facts](https://joshuaofisrael.github.io/bigcatwise/snow-leopard.html): Snow leopard facts: how this mountain cat survives at 3,000 to 5,000 m, why it cannot roar, what it eats, where it lives and how many remain.
+
+## Topic guides
+- [Big cat behavior](https://joshuaofisrael.github.io/bigcatwise/behavior.html): How big cats behave: who lives in groups and who lives alone, how each species hunts, how they communicate by roaring and scent marking, and how cubs grow up.
+- [Big cat habitats](https://joshuaofisrael.github.io/bigcatwise/habitats.html): Where lions, tigers, leopards, jaguars, cheetahs and snow leopards live: continents, habitats from rainforest to 5,000 m mountains, and which species share ranges.
+- [Big cat conservation](https://joshuaofisrael.github.io/bigcatwise/conservation.html): Big cat conservation explained: IUCN Red List status for all six species, latest population estimates, the main threats, and the measures that actually help.
+- [Big cat FAQ](https://joshuaofisrael.github.io/bigcatwise/faq.html): Quick, sourced answers to common big cat questions: which cats count as big cats, the biggest and fastest, black panthers, white tigers, roaring and more.
+- [Big cat glossary](https://joshuaofisrael.github.io/bigcatwise/glossary.html): Plain English definitions of big cat terms: pride, coalition, rosette, melanism, flehmen response, IUCN Red List categories, CITES appendices and more.
+
+## Tools
+- [Big cat comparison table](https://joshuaofisrael.github.io/bigcatwise/compare.html): Compare lions, tigers, leopards, jaguars, cheetahs and snow leopards side by side: weight, length, range, habitat, social life, roaring, IUCN status and numbers.
+- [Comparison table rows](https://joshuaofisrael.github.io/bigcatwise/compare.html#table): deep links such as #row-tiger and #row-cheetah
+
+## Blog
+- [Which big cats can roar?](https://joshuaofisrael.github.io/bigcatwise/blog/which-big-cats-can-roar.html): Lions, tigers, leopards and jaguars can roar; snow leopards and cheetahs cannot. Here is what the anatomy research says about why, and what the others say instead.
+- [Leopard vs jaguar vs cheetah](https://joshuaofisrael.github.io/bigcatwise/blog/leopard-vs-jaguar-vs-cheetah.html): How to tell a leopard, jaguar and cheetah apart in seconds: location, spot pattern, build, face and behavior, with a side by side comparison table.
+- [How fast is a cheetah?](https://joshuaofisrael.github.io/bigcatwise/blog/how-fast-is-a-cheetah.html): How fast cheetahs really run: 93 km/h measured in wild cheetahs, why most hunts are slower, how long a sprint lasts and what makes them so quick.
+- [Why do tigers have stripes?](https://joshuaofisrael.github.io/bigcatwise/blog/why-do-tigers-have-stripes.html): Why tigers have stripes: camouflage for an ambush hunter, why an orange coat looks green to deer, and how unique stripe patterns let scientists count tigers.
+- [How many big cats are left in the wild?](https://joshuaofisrael.github.io/bigcatwise/blog/how-many-big-cats-are-left.html): Latest estimates of how many lions, tigers, leopards, jaguars, cheetahs and snow leopards remain in the wild, what the numbers mean, and which is rarest.
+
+## Optional
+- [About](https://joshuaofisrael.github.io/bigcatwise/about.html): About BigCatWise: an independent big cat education site operated by Joshua Israel Ventures LLC. How we research, source and update our content.
+- [Contact](https://joshuaofisrael.github.io/bigcatwise/contact.html): Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Email us or use the contact form.
+- [Privacy](https://joshuaofisrael.github.io/bigcatwise/privacy.html): BigCatWise privacy policy: what data we collect, how contact form messages are handled, analytics, and your choices.

@@ -32,6 +32,7 @@ Content is general education. Population figures are estimates that change as ne
 - [Why do tigers have stripes?](https://bigcatwise.com/blog/why-do-tigers-have-stripes.html): Why tigers have stripes: camouflage for an ambush hunter, why an orange coat looks green to deer, and how unique stripe patterns let scientists count tigers.
 - [How many big cats are left in the wild?](https://bigcatwise.com/blog/how-many-big-cats-are-left.html): Latest estimates of how many lions, tigers, leopards, jaguars, cheetahs and snow leopards remain in the wild, what the numbers mean, and which is rarest.
 - [Why do lions live in prides?](https://bigcatwise.com/blog/why-do-lions-live-in-prides.html): Why lions live in groups when other big cats live alone: the field research on hunting, cub defence and territory, and what DNA revealed about pride kinship.
+- [How big is a tiger's territory?](https://bigcatwise.com/blog/how-big-is-a-tigers-territory.html): A tiger's territory can be 12 km² or more than 1,000 km². Radio collar studies from Russia, Thailand and Bangladesh show why prey decides the size.
 
 ## Games (free, no sign up, no data collected)
 - [Games](https://bigcatwise.com/games/): Free big cat games that teach real facts: identify big cats by their coats, sprint like a cheetah and round up big cats by habitat. No sign up, no ads.
@@ -48,7 +49,7 @@ Content is general education. Population figures are estimates that change as ne
 - [Big cat adaptations lesson plan](https://bigcatwise.com/teachers/big-cat-adaptations-lesson-plan.html): A free 45 minute big cat adaptations lesson plan for grades 3 to 5: structure and function cards, a camouflage investigation, exit ticket and NGSS 4-LS1-1 alignment.
 - [Cheetah worksheet for 3rd grade](https://bigcatwise.com/teachers/cheetah-worksheet-3rd-grade.html): A free printable cheetah worksheet for 3rd grade: a short reading passage about the fastest land animal, comprehension questions, speed math and an answer key.
 - [Lion pride lesson plan](https://bigcatwise.com/teachers/lion-pride-lesson-plan.html): A free grade 3 lesson plan on why some animals live in groups, using real lion pride research. Includes argument writing, a sorting activity and a high school extension.
-- [Research](https://bigcatwise.com/research/): The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, lion prides and cheetah decline, each with a verified DOI.
+- [Research](https://bigcatwise.com/research/): The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, tiger territory, lion prides and cheetah decline, each with a verified DOI.
 
 ## Optional
 - [About](https://bigcatwise.com/about.html): About BigCatWise: an independent big cat education site operated by Joshua Israel Ventures LLC. How we research, source and update our content.

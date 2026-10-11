@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -222,9 +222,50 @@ post("why-do-lions-live-in-prides", "Why Do Lions Live in Prides? What the Resea
      related=[("Lion facts", "lion.html"), ("Big cat behavior", "behavior.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Blog home", "blog/index.html")],
      sources=[PACKER1990, HEINSOHN1995, PACKER1991, CSG["lion"], CSG["cheetah"]])
 
+# ---------------------------------------------------------------- 7 TIGER TERRITORY (11 Oct 2026)
+post("how-big-is-a-tigers-territory", "How Big Is a Tiger's Territory? Home Range Research | BigCatWise",
+     "A tiger's territory can be 12 km\u00b2 or more than 1,000 km\u00b2. Radio collar studies from Russia, Thailand and Bangladesh show why prey decides the size.",
+     "How big is a tiger's territory? From 12 to over 1,000 km\u00b2", headline="How big is a tiger's territory?",
+     published="2026-10-11", modified="2026-10-11",
+     lead="A tiger's territory can be as small as about 12 to 14 km&sup2; or bigger than 1,000 km&sup2;, depending mainly on how much prey is around. Radio collar studies found female tigers using about 12 to 14 km&sup2; in the Bangladesh Sundarbans, about 70 to 84 km&sup2; in western Thailand and about 390 km&sup2; in the Russian Far East, where males averaged about 1,385 km&sup2;. Males' ranges are several times larger than females', and both sexes keep largely separate territories.",
+     body='''<section class="card"><h2>The short answer</h2>
+<div class="tablewrap"><table><thead><tr><th>Study area</th><th>Female home range</th><th>Male home range</th><th>Study</th></tr></thead><tbody>
+<tr><td>Sundarbans mangroves, Bangladesh</td><td>About 12 to 14 km&sup2; (2 females)</td><td>Not measured</td><td>Barlow et al. 2011</td></tr>
+<tr><td>Huai Kha Khaeng, Thailand</td><td>About 70 to 84 km&sup2; (7 females)</td><td>About 267 to 294 km&sup2; (4 males)</td><td>Simcharoen et al. 2014</td></tr>
+<tr><td>Sikhote-Alin, Russian Far East</td><td>About 390 km&sup2; (14 females)</td><td>About 1,385 km&sup2; (5 males)</td><td>Goodrich et al. 2010</td></tr>
+</tbody></table></div>
+<p class="note">Figures are study means. Researchers used different methods (minimum convex polygons or kernel estimates), so the ranges in each row reflect the method used, and small samples mean individual tigers can differ a lot.</p></section>
+<section class="card"><h2>Territory or home range?</h2>
+<p>A home range is the whole area an animal uses for its everyday life: hunting, resting and raising young. A territory is an area an animal defends or keeps for itself. For tigers the two are close to the same thing, because adult tigers are solitary and neighbours of the same sex barely overlap. In the Russian study, the average overlap between neighbouring females was only about 0.11, and between neighbouring males about 0.14, on a scale where 1 would mean sharing the same ground completely. In Thailand, the researchers found that territories of both males and females had little overlap, which indicated that both sexes were territorial. For the basics of tiger life, see our <a href="../tiger.html#life">tiger facts</a>.</p></section>
+<section class="card"><h2>The biggest territories: Amur tigers in Russia</h2>
+<p>The largest home ranges come from the cold forests of the Russian Far East. J. Marc Goodrich, Dale Miquelle and colleagues followed radio collared Amur tigers on the Sikhote-Alin Biosphere Zapovednik from 1992 to 2006 and published the results in the <i>Journal of Mammalogy</i> in 2010.</p>
+<p>Resident females used home ranges averaging about 390 km&sup2; (20 home ranges of 14 females), while males averaged about 1,385 km&sup2; (6 home ranges of 5 males). The difference between the sexes was statistically significant.</p>
+<p>The study also tracked what young tigers did when they grew up. All seven radio collared male cubs left their mother's home range, but only two of six female cubs did. Daughters tended to settle next to, or inside part of, their mother's range.</p></section>
+<section class="card"><h2>Mid sized territories: tigers in Thailand</h2>
+<p>In Huai Kha Khaeng Wildlife Sanctuary in western Thailand, Achara Simcharoen and colleagues fitted GPS collars to 11 tigers, four males and seven females, and reported the results in <i>Oryx</i> in 2014. Male home ranges averaged 267 to 294 km&sup2; and female ranges averaged 70 to 84 km&sup2;, depending on the method. That is roughly a fifth of the Russian female figure.</p></section>
+<section class="card"><h2>The smallest: tigers in mangrove forest</h2>
+<p>In the Bangladesh Sundarbans, the world's largest mangrove forest, Adam Barlow and colleagues collared two adult females and published preliminary results in <i>Oryx</i> in 2011. Their home ranges averaged only 12.3 to 14.2 km&sup2;. The authors calculated that a range of about 14.2 km&sup2; would mean roughly seven adult females per 100 km&sup2; in that part of the forest. Even in this small range, one tiger moved up to 11.3 km in a single day. The authors cautioned that the estimates are preliminary, based on just two tigers, but said they point to good quality tiger habitat in the Sundarbans.</p></section>
+<section class="card"><h2>Why the size varies so much: prey</h2>
+<p>The main driver is food. When the Thailand team compared female home range size and prey abundance at six locations in Thailand and at sites in India, Nepal, Bangladesh and Russia, they found a significant negative correlation: the more prey an area had, the smaller the female tigers' home ranges. A female needs a range big enough to feed herself and her cubs, so where prey is thin, she has to cover far more ground. The IUCN Cat Specialist Group estimates that a tiger needs around 50 to 60 large prey animals a year, which helps explain why prey poor forests demand such huge ranges.</p>
+<p>Males range more widely than females. A male's range often overlaps those of one to three females.</p></section>
+<section class="card"><h2>Why territory size matters for conservation</h2>
+<p>Territory size sets how many tigers a reserve can hold. A reserve that could support many females in rich mangrove or lowland forest might hold only a handful in the Russian Far East. That is why the Thailand authors suggested that monitoring prey abundance and home range size can give managers practical targets for tiger conservation.</p>
+<p>The Russian study found a second link. When human caused deaths were low, females survived long enough to split their home range with their daughters, which produced smaller home ranges and a higher density of breeding females. When human caused deaths were high, females often died before they could hand over part of their range, and tiger density stayed well below what the habitat could support. The authors concluded that the effects of poaching reach beyond the animals killed, and that reserves must be well protected if they are to act as source populations for nearby unprotected forest. For more on threats and recovery, see <a href="../conservation.html">big cat conservation</a> and <a href="how-many-big-cats-are-left.html">how many big cats are left</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Tiger territories range from about 12 km&sup2; in the Sundarbans to more than 1,000 km&sup2; for males in Russia.</li>
+<li>Male ranges are several times larger than female ranges.</li>
+<li>Neighbouring tigers of the same sex barely overlap, so tigers are territorial.</li>
+<li>More prey means smaller female home ranges, and poaching keeps tiger density below what the habitat could support.</li></ul></section>''',
+     faq=[("How big is a tiger's territory?", "It depends on prey. Radio collar studies found female home ranges averaging about 12 to 14 km&sup2; in the Bangladesh Sundarbans, about 70 to 84 km&sup2; in western Thailand and about 390 km&sup2; in the Russian Far East, where males averaged about 1,385 km&sup2;."),
+          ("Do male tigers have bigger territories than females?", "Yes. In Thailand male ranges averaged 267 to 294 km&sup2; against 70 to 84 km&sup2; for females, and in Russia males averaged about 1,385 km&sup2; against about 390 km&sup2; for females."),
+          ("Why do tiger territories vary so much in size?", "Mainly because of prey. A 2014 study comparing sites in Thailand, India, Nepal, Bangladesh and Russia found that female home ranges were smaller where prey was more abundant."),
+          ("Do tigers share territory?", "Very little. Neighbouring tigers of the same sex had only slight overlap in Russia and Thailand. Young females often settle next to or within part of their mother's range, while young males leave.")],
+     related=[("Tiger facts", "tiger.html"), ("Big cat behavior", "behavior.html"), ("Big cat habitats", "habitats.html"), ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Blog home", "blog/index.html")],
+     sources=[GOODRICH2010, SIMCHAROEN2014, BARLOW2011, CSG["tiger"]])
+
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",
-    "The BigCatWise blog answers specific big cat questions in depth: roaring, lion prides, cheetah speed, tiger stripes, telling spotted cats apart and how many big cats are left.",
+    "The BigCatWise blog answers specific big cat questions in depth: roaring, lion prides, cheetah speed, tiger stripes, tiger territory size, telling spotted cats apart and how many big cats are left.",
     "BigCatWise blog", kind="page", headline="Blog",
     lead="In depth, sourced answers to specific questions about big cats. New posts are added when there is something genuinely useful to say.",
     body='<div class="grid">' + "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % (p.path.split("/")[1], p.headline, p.description) for p in POSTS) + '</div>',

@@ -1,6 +1,6 @@
 """Teachers hub, printables, lesson pages, research roundup and photo credits (8 Oct 2026)."""
 from build import add, BASE_URL, PUBLISHER
-from sources import CSG, WILSON, DURANT, KLEMUK, WEISS, FENNELL, PACKER1990, PACKER1991, HEINSOHN1995
+from sources import CSG, WILSON, DURANT, KLEMUK, WEISS, FENNELL, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011
 from photos import PHOTOS_LIST, credit_line, have
 
 TC = [("Teachers", "teachers/index.html")]
@@ -319,6 +319,10 @@ PAPERS = [
   ("Packer, C., Scheel, D., and Pusey, A. E. (1990). Why lions form groups: food is not enough. <i>The American Naturalist</i>, 136(1), 1-19.", "10.1086/285079", "blog/why-do-lions-live-in-prides.html", "Why do lions live in prides?"),
   ("Packer, C., Gilbert, D. A., Pusey, A. E., and O'Brien, S. J. (1991). A molecular genetic analysis of kinship and cooperation in African lions. <i>Nature</i>, 351, 562-565.", "10.1038/351562a0", "blog/why-do-lions-live-in-prides.html", "Why do lions live in prides?"),
   ("Heinsohn, R., and Packer, C. (1995). Complex cooperative strategies in group-territorial African lions. <i>Science</i>, 269(5228), 1260-1262.", "10.1126/science.7652573", "blog/why-do-lions-live-in-prides.html", "Why do lions live in prides?")]),
+ ("Tiger territory and home range", [
+  ("Goodrich, J. M., Miquelle, D. G., Smirnov, E. N., Kerley, L. L., Quigley, H. B., and Hornocker, M. G. (2010). Spatial structure of Amur (Siberian) tigers (<i>Panthera tigris altaica</i>) on Sikhote-Alin Biosphere Zapovednik, Russia. <i>Journal of Mammalogy</i>, 91(3), 737-748.", "10.1644/09-MAMM-A-293.1", "blog/how-big-is-a-tigers-territory.html", "How big is a tiger's territory?"),
+  ("Simcharoen, A., Savini, T., Gale, G. A., Simcharoen, S., Duangchantrasiri, S., Pakpien, S., and Smith, J. L. D. (2014). Female tiger <i>Panthera tigris</i> home range size and prey abundance: important metrics for management. <i>Oryx</i>, 48(3), 370-377.", "10.1017/S0030605312001408", "blog/how-big-is-a-tigers-territory.html", "How big is a tiger's territory?"),
+  ("Barlow, A. C. D., Smith, J. L. D., Ahmad, I. U., Hossain, A. N. M., Rahman, M., and Howlader, A. (2011). Female tiger <i>Panthera tigris</i> home range size in the Bangladesh Sundarbans: the value of this mangrove ecosystem for the species' conservation. <i>Oryx</i>, 45(1), 125-128.", "10.1017/S0030605310001456", "blog/how-big-is-a-tigers-territory.html", "How big is a tiger's territory?")]),
  ("Population status and conservation", [
   ("Durant, S. M., Mitchell, N., Groom, R., et al. (2017). The global decline of cheetah <i>Acinonyx jubatus</i> and what it means for conservation. <i>Proceedings of the National Academy of Sciences</i>, 114(3), 528-533.", "10.1073/pnas.1611122114", "blog/how-many-big-cats-are-left.html", "How many big cats are left?")]),
 ]
@@ -331,7 +335,7 @@ for topic, items in PAPERS:
         rb.append('<li>%s <a href="https://doi.org/%s" rel="noopener">doi:%s</a><br><span class="note">Used in: <a href="../%s">%s</a></span></li>' % (ref, doi, doi, page, label))
     rb.append('</ul></section>')
 add("research/index.html", "Big Cat Research Papers: Sources for Students & Researchers | BigCatWise",
-    "The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, lion prides and cheetah decline, each with a verified DOI.",
+    "The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, tiger territory, lion prides and cheetah decline, each with a verified DOI.",
     "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research",
     lead="Every BigCatWise fact article cites its sources. This page gathers the peer reviewed papers we rely on in one place, grouped by topic, with full references and DOIs that we have checked against Crossref. It is a good starting point for a school report or a literature search.",
     body='''<section class="card"><h2>How to use this list</h2><ul>
@@ -341,7 +345,7 @@ add("research/index.html", "Big Cat Research Papers: Sources for Students & Rese
 <section class="card"><h2>Reference organisations</h2><ul>
 <li><a href="https://www.catsg.org/" rel="noopener">IUCN SSC Cat Specialist Group</a>: species accounts and status summaries for all wild cats.</li>
 <li><a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List of Threatened Species</a>: official conservation assessments.</li></ul>
-<p class="note">References are formatted in APA style. DOIs verified on Crossref on 8 October 2026. If you find a broken link or an error, email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>''',
+<p class="note">References are formatted in APA style. DOIs verified on Crossref on 8 and 11 October 2026. If you find a broken link or an error, email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>''',
     related=[("Teachers hub", "teachers/index.html"), ("Blog", "blog/index.html"), ("Glossary", "glossary.html")],
     extra_ld=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Peer reviewed papers cited on BigCatWise", "numberOfItems": n,
                "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "ScholarlyArticle", "sameAs": "https://doi.org/" + d,

@@ -265,7 +265,7 @@ post("how-big-is-a-tigers-territory", "How Big Is a Tiger's Territory? Home Rang
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",
-    "The BigCatWise blog answers specific big cat questions in depth: roaring, lion prides, cheetah speed, tiger stripes, tiger territory size, telling spotted cats apart and how many big cats are left.",
+    "Sourced answers to big cat questions: which cats roar, why lions live in prides, cheetah speed, tiger stripes and territory, and how many are left.",
     "BigCatWise blog", kind="page", headline="Blog",
     lead="In depth, sourced answers to specific questions about big cats. New posts are added when there is something genuinely useful to say.",
     body='<div class="grid">' + "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % (p.path.split("/")[1], p.headline, p.description) for p in POSTS) + '</div>',

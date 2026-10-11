@@ -71,12 +71,13 @@ add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territor
 <ul><li><b>Tiger:</b> females 10 to 39 km&sup2; in prey rich Chitwan, Nepal, but 100 to 400 km&sup2; in the Russian Far East, where one male used 1,379 km&sup2;.</li>
 <li><b>Lion:</b> pride territories of 50 to 200 km&sup2; where prey is dense, up to 500 to 5,000 km&sup2; where it is scarce.</li>
 <li><b>Leopard:</b> roughly 30 to 78 km&sup2; for males and 15 to 38 km&sup2; for females in African protected areas, but over 2,000 km&sup2; in the Kalahari.</li>
-<li><b>Cheetah:</b> territorial males hold small territories averaging about 30 km&sup2;, while non territorial cheetahs can roam over thousands of square kilometres.</li></ul></section>
+<li><b>Cheetah:</b> territorial males hold small territories averaging about 30 km&sup2;, while non territorial cheetahs can roam over thousands of square kilometres.</li></ul>
+<p>Deep dives: <a href="blog/how-big-is-a-tigers-territory.html">how big is a tiger's territory?</a> compares radio collar studies from Russia, Thailand and Bangladesh, and <a href="blog/why-do-lions-live-in-prides.html">why do lions live in prides?</a> explains how pride size helps lions win territorial contests.</p></section>
 <section class="card" id="cubs"><h2>How do big cats raise their cubs?</h2>
 <p>Cubs are born blind and helpless after a pregnancy of roughly three to three and a half months (about 103 days in tigers, 90 to 105 days in leopards). Litters are usually one to four or five cubs, and cheetahs can have up to six. Mothers hide young cubs and move them between dens. Cubs learn to hunt by watching and practising for many months; young tigers become independent at about 18 to 28 months. Cub mortality is high: in Chitwan about a third of tiger cubs die in their first year, with infanticide by males a leading cause.</p></section>
 <section class="card" id="activity"><h2>Are big cats nocturnal?</h2>
 <p>Most big cats are most active from dusk to dawn, and they rest for much of the day. Activity shifts with heat, prey and people: leopards in undisturbed Gabonese rainforest were found to be largely active by day, while cats near people tend to become more nocturnal. The cheetah is the clear exception, hunting mainly in daylight, which helps it avoid lions and hyenas.</p></section>''',
-    related=SP + [("Where big cats live", "habitats.html"), ("Big cat glossary", "glossary.html")],
+    related=SP + [("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Where big cats live", "habitats.html"), ("Big cat glossary", "glossary.html")],
     sources=ALLCSG + [WILSON, SDZ["lion"]], priority="0.8")
 
 # ------------------------------------------------------------------ HABITATS

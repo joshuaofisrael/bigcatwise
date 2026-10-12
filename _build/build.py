@@ -206,7 +206,7 @@ def main():
     # robots
     bots = ["Googlebot", "Bingbot", "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "Perplexity-User",
             "ClaudeBot", "Claude-SearchBot", "Claude-User", "Google-Extended", "Applebot", "Applebot-Extended",
-            "DuckAssistBot", "Amazonbot"]
+            "DuckAssistBot", "Amazonbot", "CCBot", "anthropic-ai", "Bytespider", "Meta-ExternalAgent", "cohere-ai"]
     rb = ["User-agent: *", "Allow: /", ""]
     for b in bots:
         rb += ["User-agent: %s" % b, "Allow: /", ""]

@@ -89,7 +89,7 @@ add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | 
     "Leopard facts: the most widespread big cat, how leopards hunt and cache prey in trees, what a black panther is, and why the leopard is Vulnerable.",
     "Leopard facts: range, rosettes, hunting and black panthers",
     lead="The leopard (<i>Panthera pardus</i>) is the most widespread and adaptable big cat, found across much of sub-Saharan Africa and parts of Asia from the Middle East to the Russian Far East. It is a solitary stalker that often hauls kills into trees, and a melanistic (black) leopard is what many people call a black panther. The leopard is listed as Vulnerable on the IUCN Red List.",
-    crumbs=[("Species", "compare.html")], headline="Leopard facts",
+    crumbs=[("Species", "compare.html")], headline="Leopard facts", modified="2026-10-12",
     body=jump([("facts", "Quick facts"), ("look", "Appearance"), ("black", "Black panthers"), ("hunting", "Hunting"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera pardus</i>"), ("Weight", "17 to 90 kg"),
@@ -101,7 +101,7 @@ add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | 
 <section class="card" id="black"><h2>What is a black panther?</h2>
 <p>"Black panther" is not a species. It is a common name for a leopard or jaguar with melanism, a genetic variation that produces very dark fur. Look closely in good light and the rosettes are still visible. In Asia and Africa a black panther is a leopard; in the Americas it is a jaguar.</p></section>
 <section class="card" id="hunting"><h2>How do leopards hunt?</h2>
-<p>Leopards stalk to very close range, then attack with a short burst of speed and a powerful swipe of the front paw. They eat an exceptionally wide range of prey, from rock hyraxes of about 4 kg up to eland, and in some areas domestic animals. Leopards are famous for carrying kills up into trees, which keeps the meat away from lions and hyenas.</p>
+<p>Leopards stalk to very close range, then attack with a short burst of speed and a powerful swipe of the front paw. They eat an exceptionally wide range of prey, from rock hyraxes of about 4 kg up to eland, and in some areas domestic animals. Leopards are famous for carrying kills up into trees, which keeps the meat away from lions and hyenas. Our post <a href="blog/why-do-leopards-drag-their-kills-into-trees.html">why do leopards drag their kills into trees?</a> covers the research.</p>
 <p>In savannas and woodlands leopards are mainly active between sunset and sunrise, but studies in undisturbed rainforest in Gabon found them largely active by day. Adults are solitary; in African protected areas male home ranges are roughly 30 to 78 km&sup2; and female ranges 15 to 38 km&sup2;, but ranges in the Kalahari have exceeded 2,000 km&sup2;.</p></section>
 <section class="card" id="range"><h2>Where do leopards live?</h2>
 <p>The leopard has the largest range of any big cat. It occurs across most of sub-Saharan Africa and, in fragmented pockets, in the Arabian Peninsula, Turkey, southwest Asia and the Caucasus, the Himalayas, South Asia, Indochina, Peninsular Malaysia, Java, China and the Russian Far East. It lives in rainforest, savanna, mountains and semi desert, and has been recorded up to 5,200 m in the Himalayas. Given cover and prey, and freedom from persecution, leopards can persist surprisingly close to people.</p></section>

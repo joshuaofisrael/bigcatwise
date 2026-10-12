@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -263,9 +263,51 @@ post("how-big-is-a-tigers-territory", "How Big Is a Tiger's Territory? Home Rang
      related=[("Tiger facts", "tiger.html"), ("Big cat behavior", "behavior.html"), ("Big cat habitats", "habitats.html"), ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Blog home", "blog/index.html")],
      sources=[GOODRICH2010, SIMCHAROEN2014, BARLOW2011, CSG["tiger"]])
 
+# ---------------------------------------------------------------- 8 LEOPARDS IN TREES (12 Oct 2026)
+post("why-do-leopards-drag-their-kills-into-trees", "Why Do Leopards Drag Their Kills Into Trees? The Research | BigCatWise",
+     "Leopards hoist about half their kills into trees, mainly to stop hyenas stealing them. What a study of 2,032 kills in South Africa found.",
+     "Why do leopards drag their kills into trees? To beat the hyenas", headline="Why do leopards drag their kills into trees?",
+     published="2026-10-12", modified="2026-10-12",
+     lead="Leopards drag their kills into trees mainly to stop other predators stealing them, especially spotted hyenas. A study of 2,032 kills made by 104 leopards in South Africa's Sabi Sand Game Reserve found that leopards hoisted 51% of their kills, that at least 21% of kills were stolen, mostly by hyenas, and that kills left on the ground were more likely to be lost. Females that lost more kills raised fewer cubs.",
+     body='''<section class="card"><h2>The short answer</h2>
+<p>Hoisting a carcass into a tree is a form of food caching: the leopard stores its meal somewhere other animals cannot easily reach and comes back to feed over time. Researchers have proposed four possible reasons for it, which can overlap. The evidence from the largest study so far points clearly to one of them.</p>
+<div class="tablewrap"><table><thead><tr><th>Possible reason</th><th>The idea</th><th>What the 2017 study found</th></tr></thead><tbody>
+<tr><td>Avoiding theft (kleptoparasitism)</td><td>Keep the kill away from hyenas and lions</td><td>Strongly supported</td></tr>
+<tr><td>Feeding time</td><td>Store a large meal to eat over a longer period</td><td>Hoisted kills were fed on for longer, but this looked like a side benefit</td></tr>
+<tr><td>Food spoiling</td><td>Keep meat away from heat and scavenging insects</td><td>Possible added benefit, not the main driver</td></tr>
+<tr><td>Food glut</td><td>Store surplus when prey is easy to catch</td><td>Leopards hoisted less often during resource pulses, not more</td></tr>
+</tbody></table></div></section>
+<section class="card"><h2>The study: 2,032 kills by 104 leopards</h2>
+<p>Guy Balme, Jennifer Miller, Ross Pitman and Luke Hunter studied leopards in the Sabi Sand Game Reserve, next to Kruger National Park in South Africa, and published the results in the <i>Journal of Animal Ecology</i> in 2017. They used records of 2,032 prey items killed by 104 known leopards between 2013 and 2015. For each kill they looked at whether it was hoisted, how long the leopard fed on it and whether another animal took it, then tested how this varied with the leopard's sex and age, the size of the prey, vegetation, elevation, weather, and the risk posed by dominant competitors such as hyenas and lions.</p>
+<p>Leopards hoisted 51% of their kills. At least 21% of all kills were kleptoparasitized, the scientific term for having food stolen by another animal, and most of the thieves were spotted hyenas (<i>Crocuta crocuta</i>).</p></section>
+<section class="card"><h2>Which kills get hoisted?</h2>
+<p>Leopards did not hoist everything. They were most likely to haul up kills of an intermediate size. A very small prey animal can be eaten quickly on the spot, so there is little to protect, while a very large one may be too heavy to drag up a trunk. Leopards were also more likely to hoist when certain competitors were around, and less likely to hoist during a resource pulse, a period when prey was abundant and easy to catch. That last result counts against the idea that tree caching is mainly about storing surplus food.</p>
+<p>Once a kill was in a tree, the leopard fed on it for longer than on kills left on the ground. In other words, the tree acts as a safe larder that lets the cat return to the same carcass.</p></section>
+<section class="card"><h2>Which kills get stolen?</h2>
+<p>Kills were more likely to be stolen when the prey was larger, when it was not hoisted, and in parts of the reserve where the chance of meeting hyenas was highest. Thefts were also more likely at lower temperatures. Spotted hyenas are poor climbers, so a carcass wedged in the fork of a tree is much harder for them to reach than one lying in the grass. For more on how leopards hunt and where they live, see our <a href="../leopard.html#hunting">leopard facts</a>.</p></section>
+<section class="card"><h2>Why it matters: lost kills mean fewer cubs</h2>
+<p>The most striking result is about breeding. Female leopards that lost a higher share of their kills to thieves had lower annual reproductive success than females that lost fewer kills. Stolen meat is not just a missed meal; for a mother raising cubs alone it can mean fewer surviving young. The authors concluded that their results strongly support the kleptoparasitism avoidance explanation, and that hoisting is a key adaptation that lets leopards live alongside high densities of larger competitors.</p></section>
+<section class="card"><h2>Does this shape what leopards hunt?</h2>
+<p>Possibly. A separate review by Matt Hayward and colleagues, published in the <i>Journal of Zoology</i> in 2006, analysed 33 studies of leopard diet from 13 countries. It found that leopards preferentially prey on species weighing roughly 10 to 40 kg, with a most preferred prey mass of about 25 kg. Impala, bushbuck and common duiker were significantly preferred. The authors noted that leopards favour prey that lives in small herds and dense habitat and poses little risk of injury during capture.</p>
+<p>The 2017 study adds a twist. Its authors argued that leopards may pick smaller prey than simple optimal foraging theory would predict, trading the extra meat from a big kill against the higher chance of losing it to hyenas. A 25 kg impala that fits in a tree may be worth more to a leopard than a bigger animal it cannot protect.</p></section>
+<section class="card"><h2>Do other big cats do this?</h2>
+<p>Tree caching is a leopard speciality. Lions and tigers are much heavier, live in different settings and handle competitors differently: lions defend kills as a group, which is one of the themes in <a href="why-do-lions-live-in-prides.html">why do lions live in prides?</a> Cheetahs, by contrast, often lose kills to lions and hyenas and eat quickly instead. You can compare how the spotted cats differ in <a href="leopard-vs-jaguar-vs-cheetah.html">leopard vs jaguar vs cheetah</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>In Sabi Sand, leopards hoisted 51% of 2,032 recorded kills.</li>
+<li>At least 21% of kills were stolen, mostly by spotted hyenas, and kills left on the ground were more likely to be taken.</li>
+<li>Leopards hoisted mid sized kills most often and fed longer on hoisted kills.</li>
+<li>Females that lost more kills had lower annual reproductive success.</li>
+<li>Leopards prefer prey of about 10 to 40 kg, a size they can kill safely and often carry.</li></ul></section>''',
+     faq=[("Why do leopards drag their kills into trees?", "Mainly to stop other predators stealing them. A study of 2,032 kills in South Africa found that kills left on the ground were more likely to be stolen, mostly by spotted hyenas, and the authors concluded that hoisting is chiefly a way to avoid theft."),
+          ("How often do leopards put kills in trees?", "In the Sabi Sand Game Reserve, leopards hoisted 51% of their kills between 2013 and 2015. They were most likely to hoist kills of an intermediate size."),
+          ("What steals food from leopards?", "Mostly spotted hyenas. At least 21% of leopard kills in the Sabi Sand study were stolen, and hyenas took most of them."),
+          ("What size prey do leopards prefer?", "A review of 33 diet studies found leopards prefer prey of about 10 to 40 kg, with a most preferred mass of about 25 kg. Impala, bushbuck and common duiker were significantly preferred.")],
+     related=[("Leopard facts", "leopard.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[BALME2017, HAYWARD2006, CSG["leopard"]])
+
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",
-    "Sourced answers to big cat questions: which cats roar, why lions live in prides, cheetah speed, tiger stripes and territory, and how many are left.",
+    "Sourced answers to big cat questions: which cats roar, why lions live in prides, cheetah speed, tiger territory, leopards in trees and more.",
     "BigCatWise blog", kind="page", headline="Blog",
     lead="In depth, sourced answers to specific questions about big cats. New posts are added when there is something genuinely useful to say.",
     body='<div class="grid">' + "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % (p.path.split("/")[1], p.headline, p.description) for p in POSTS) + '</div>',

@@ -323,6 +323,9 @@ PAPERS = [
   ("Goodrich, J. M., Miquelle, D. G., Smirnov, E. N., Kerley, L. L., Quigley, H. B., and Hornocker, M. G. (2010). Spatial structure of Amur (Siberian) tigers (<i>Panthera tigris altaica</i>) on Sikhote-Alin Biosphere Zapovednik, Russia. <i>Journal of Mammalogy</i>, 91(3), 737-748.", "10.1644/09-MAMM-A-293.1", "blog/how-big-is-a-tigers-territory.html", "How big is a tiger's territory?"),
   ("Simcharoen, A., Savini, T., Gale, G. A., Simcharoen, S., Duangchantrasiri, S., Pakpien, S., and Smith, J. L. D. (2014). Female tiger <i>Panthera tigris</i> home range size and prey abundance: important metrics for management. <i>Oryx</i>, 48(3), 370-377.", "10.1017/S0030605312001408", "blog/how-big-is-a-tigers-territory.html", "How big is a tiger's territory?"),
   ("Barlow, A. C. D., Smith, J. L. D., Ahmad, I. U., Hossain, A. N. M., Rahman, M., and Howlader, A. (2011). Female tiger <i>Panthera tigris</i> home range size in the Bangladesh Sundarbans: the value of this mangrove ecosystem for the species' conservation. <i>Oryx</i>, 45(1), 125-128.", "10.1017/S0030605310001456", "blog/how-big-is-a-tigers-territory.html", "How big is a tiger's territory?")]),
+ ("Leopard feeding and kill caching", [
+  ("Balme, G. A., Miller, J. R. B., Pitman, R. T., and Hunter, L. T. B. (2017). Caching reduces kleptoparasitism in a solitary, large felid. <i>Journal of Animal Ecology</i>, 86(3), 634-644.", "10.1111/1365-2656.12654", "blog/why-do-leopards-drag-their-kills-into-trees.html", "Why do leopards drag their kills into trees?"),
+  ("Hayward, M. W., Henschel, P., O'Brien, J., Hofmeyr, M., Balme, G., and Kerley, G. I. H. (2006). Prey preferences of the leopard (<i>Panthera pardus</i>). <i>Journal of Zoology</i>, 270(2), 298-313.", "10.1111/j.1469-7998.2006.00139.x", "blog/why-do-leopards-drag-their-kills-into-trees.html", "Why do leopards drag their kills into trees?")]),
  ("Population status and conservation", [
   ("Durant, S. M., Mitchell, N., Groom, R., et al. (2017). The global decline of cheetah <i>Acinonyx jubatus</i> and what it means for conservation. <i>Proceedings of the National Academy of Sciences</i>, 114(3), 528-533.", "10.1073/pnas.1611122114", "blog/how-many-big-cats-are-left.html", "How many big cats are left?")]),
 ]
@@ -335,7 +338,7 @@ for topic, items in PAPERS:
         rb.append('<li>%s <a href="https://doi.org/%s" rel="noopener">doi:%s</a><br><span class="note">Used in: <a href="../%s">%s</a></span></li>' % (ref, doi, doi, page, label))
     rb.append('</ul></section>')
 add("research/index.html", "Big Cat Research Papers: Sources for Students & Researchers | BigCatWise",
-    "The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, tiger territory, lion prides and cheetah decline, each with a verified DOI.",
+    "The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, tiger territory, leopard kill caching, lion prides and cheetah decline, each with a verified DOI.",
     "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research",
     lead="Every BigCatWise fact article cites its sources. This page gathers the peer reviewed papers we rely on in one place, grouped by topic, with full references and DOIs that we have checked against Crossref. It is a good starting point for a school report or a literature search.",
     body='''<section class="card"><h2>How to use this list</h2><ul>

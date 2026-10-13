@@ -326,6 +326,9 @@ PAPERS = [
  ("Leopard feeding and kill caching", [
   ("Balme, G. A., Miller, J. R. B., Pitman, R. T., and Hunter, L. T. B. (2017). Caching reduces kleptoparasitism in a solitary, large felid. <i>Journal of Animal Ecology</i>, 86(3), 634-644.", "10.1111/1365-2656.12654", "blog/why-do-leopards-drag-their-kills-into-trees.html", "Why do leopards drag their kills into trees?"),
   ("Hayward, M. W., Henschel, P., O'Brien, J., Hofmeyr, M., Balme, G., and Kerley, G. I. H. (2006). Prey preferences of the leopard (<i>Panthera pardus</i>). <i>Journal of Zoology</i>, 270(2), 298-313.", "10.1111/j.1469-7998.2006.00139.x", "blog/why-do-leopards-drag-their-kills-into-trees.html", "Why do leopards drag their kills into trees?")]),
+ ("Snow leopard diet and prey", [
+  ("Lyngdoh, S., Shrotriya, S., Goyal, S. P., Clements, H., Hayward, M. W., and Habib, B. (2014). Prey preferences of the snow leopard (<i>Panthera uncia</i>): regional diet specificity holds global significance for conservation. <i>PLoS ONE</i>, 9(2), e88349.", "10.1371/journal.pone.0088349", "blog/what-do-snow-leopards-eat.html", "What do snow leopards eat?"),
+  ("Shehzad, W., McCarthy, T. M., Pompanon, F., Purevjav, L., Coissac, E., Riaz, T., and Taberlet, P. (2012). Prey preference of snow leopard (<i>Panthera uncia</i>) in South Gobi, Mongolia. <i>PLoS ONE</i>, 7(2), e32104.", "10.1371/journal.pone.0032104", "blog/what-do-snow-leopards-eat.html", "What do snow leopards eat?")]),
  ("Population status and conservation", [
   ("Durant, S. M., Mitchell, N., Groom, R., et al. (2017). The global decline of cheetah <i>Acinonyx jubatus</i> and what it means for conservation. <i>Proceedings of the National Academy of Sciences</i>, 114(3), 528-533.", "10.1073/pnas.1611122114", "blog/how-many-big-cats-are-left.html", "How many big cats are left?")]),
 ]
@@ -338,7 +341,7 @@ for topic, items in PAPERS:
         rb.append('<li>%s <a href="https://doi.org/%s" rel="noopener">doi:%s</a><br><span class="note">Used in: <a href="../%s">%s</a></span></li>' % (ref, doi, doi, page, label))
     rb.append('</ul></section>')
 add("research/index.html", "Big Cat Research Papers: Sources for Students & Researchers | BigCatWise",
-    "The peer reviewed big cat research behind BigCatWise: papers on roaring, cheetah speed, tiger camouflage, tiger territory, leopard kill caching, lion prides and cheetah decline, each with a verified DOI.",
+    "Peer reviewed big cat papers behind BigCatWise, grouped by topic with full references and DOIs checked on Crossref. A starting point for school reports.",
     "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research",
     lead="Every BigCatWise fact article cites its sources. This page gathers the peer reviewed papers we rely on in one place, grouped by topic, with full references and DOIs that we have checked against Crossref. It is a good starting point for a school report or a literature search.",
     body='''<section class="card"><h2>How to use this list</h2><ul>

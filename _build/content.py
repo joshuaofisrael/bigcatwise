@@ -183,7 +183,7 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
     "Snow leopard facts: how this mountain cat survives at 3,000 to 5,000 m, why it cannot roar, what it eats, where it lives and how many remain.",
     "Snow leopard facts: adaptations, range, diet and status",
     lead="The snow leopard (<i>Panthera uncia</i>) is a big cat of the high mountains of Central and South Asia, usually living between 3,000 and 5,000 m. It has thick smoky grey fur, huge paws and an exceptionally long tail, and unlike its relatives it cannot roar. It is listed as Vulnerable, with the latest estimate at about 7,400 to 8,000 individuals.",
-    crumbs=[("Species", "compare.html")], headline="Snow leopard facts",
+    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-10-13",
     body=jump([("facts", "Quick facts"), ("adapt", "Adaptations"), ("voice", "Voice"), ("diet", "Diet"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera uncia</i>"), ("Weight", "30 to 50 kg"),
@@ -199,7 +199,7 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
 <section class="card" id="voice"><h2>Can snow leopards roar?</h2>
 <p>No. Although the snow leopard belongs to the genus <i>Panthera</i> with the roaring cats, its vocal folds lack the fibro elastic tissue needed for a deep roar. It yowls, especially in the breeding season, and makes other calls. See <a href="blog/which-big-cats-can-roar.html">which big cats can roar</a>.</p></section>
 <section class="card" id="diet"><h2>What do snow leopards eat?</h2>
-<p>Snow leopards mainly hunt wild mountain sheep and goats, such as bharal (blue sheep), ibex and argali, and their distribution closely follows these prey. Genetic diet studies suggest small prey such as marmots matter less than once thought. Domestic livestock is taken too, commonly 15 to 30 percent of the diet and sometimes far more where wild prey is scarce, which leads to conflict with herders.</p></section>
+<p>Snow leopards mainly hunt wild mountain sheep and goats, such as bharal (blue sheep), ibex and argali, and their distribution closely follows these prey. Genetic diet studies suggest small prey such as marmots matter less than once thought. Domestic livestock is taken too, commonly 15 to 30 percent of the diet and sometimes far more where wild prey is scarce, which leads to conflict with herders. Our post <a href="blog/what-do-snow-leopards-eat.html">what do snow leopards eat?</a> covers the diet research, including a review of 1,696 scats.</p></section>
 <section class="card" id="range"><h2>Where do snow leopards live?</h2>
 <p>Snow leopards live across the mountains of 12 countries: Afghanistan, Bhutan, China, India, Kazakhstan, Kyrgyzstan, Mongolia, Nepal, Pakistan, Russia, Tajikistan and Uzbekistan, including the Himalayas, the Tibetan Plateau, the Pamirs, Tian Shan and Altai. They are typically found at 3,000 to 5,000 m and occasionally above 5,500 m in the Himalayas, but at the northern edge of the range they live much lower, at 600 to 2,500 m. Densities are low, from about 0.3 to 6 per 100 km&sup2;, because these cold, dry landscapes support little prey.</p></section>
 <section class="card" id="status"><h2>How many snow leopards are left?</h2>

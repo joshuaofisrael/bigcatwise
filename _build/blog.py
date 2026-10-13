@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -304,6 +304,54 @@ post("why-do-leopards-drag-their-kills-into-trees", "Why Do Leopards Drag Their 
           ("What size prey do leopards prefer?", "A review of 33 diet studies found leopards prefer prey of about 10 to 40 kg, with a most preferred mass of about 25 kg. Impala, bushbuck and common duiker were significantly preferred.")],
      related=[("Leopard facts", "leopard.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[BALME2017, HAYWARD2006, CSG["leopard"]])
+
+# ---------------------------------------------------------------- 9 SNOW LEOPARD DIET (13 Oct 2026)
+post("what-do-snow-leopards-eat", "What Do Snow Leopards Eat? Diet and Favourite Prey | BigCatWise",
+     "Snow leopards mainly eat wild mountain goats and sheep, especially ibex and blue sheep of about 55 kg. What a review of 1,696 scats and a DNA study found.",
+     "What do snow leopards eat? Mostly wild goats and sheep heavier than themselves", headline="What do snow leopards eat?",
+     published="2026-10-13", modified="2026-10-13",
+     lead="Snow leopards mainly eat wild mountain goats and sheep. A review of 25 diet studies covering 1,696 scats from across the species' range found that their main prey are Siberian ibex, blue sheep (bharal), Himalayan tahr, argali and marmots, and that they significantly prefer Siberian ibex and blue sheep weighing about 55 kg, which is heavier than the cat itself. Domestic livestock is also eaten: in one DNA study in Mongolia it turned up in about one in five droppings.",
+     body='''<section class="card"><h2>The short answer</h2>
+<p>A snow leopard weighs roughly 30 to 50 kg, according to the IUCN SSC Cat Specialist Group, yet its preferred prey weighs more than that. It is a specialist hunter of the large hoofed animals that live on steep mountain slopes, and it tops up its diet with smaller animals and, where herders graze their animals, with livestock.</p>
+<div class="tablewrap"><table><thead><tr><th>Prey</th><th>What it is</th><th>How important</th></tr></thead><tbody>
+<tr><td>Siberian ibex</td><td>A wild mountain goat of Central Asia</td><td>Main prey and significantly preferred</td></tr>
+<tr><td>Blue sheep (bharal)</td><td>A wild sheep of the Himalayas and Tibetan Plateau</td><td>Main prey and significantly preferred</td></tr>
+<tr><td>Himalayan tahr</td><td>A wild goat of the southern Himalayas</td><td>Main prey where it occurs</td></tr>
+<tr><td>Argali</td><td>The largest wild sheep</td><td>Main prey in parts of the range</td></tr>
+<tr><td>Marmots</td><td>Large ground squirrels</td><td>Main small prey</td></tr>
+<tr><td>Domestic goats, sheep and other livestock</td><td>Herders' animals grazing in snow leopard habitat</td><td>Regular, and a source of conflict</td></tr>
+</tbody></table></div>
+<p class="note">Main prey and preferences are from Lyngdoh et al. (2014). See the sources list below.</p></section>
+<section class="card"><h2>The range wide review: 1,696 scats</h2>
+<p>Salvador Lyngdoh and colleagues, including the prey preference specialist Matt Hayward, pulled together 14 published and 11 unpublished snow leopard diet studies and published the analysis in <i>PLoS ONE</i> in 2014. Between them the studies had analysed 1,696 snow leopard scats (droppings) from across the cat's range. For each prey species the team worked out both how often it appeared and how much meat it supplied, using a standard correction factor that converts the remains found in scats into the weight of prey actually eaten.</p>
+<p>Three findings stand out. First, the snow leopard has a narrow, specialised diet: a measure of dietary breadth called Levin's index showed it relies on a small number of prey species. Second, the significantly preferred prey weighed 55 &plusmn; 5 kg, and the preferred weight range was 36 to 76 kg. Third, the diet differs from region to region. The team identified four distinct zones across the range, each with its own mix of mountain landscape and prey, which is why the authors stress that conservation plans need to protect the right prey in the right place.</p></section>
+<section class="card"><h2>A DNA study in Mongolia</h2>
+<p>Identifying prey from hair and bone in droppings is tricky, and so is being sure a dropping came from a snow leopard and not a fox or a wolf. To get around this, Wasim Shehzad and colleagues used DNA. Working in the Tost Mountains in the South Gobi of Mongolia, they extracted DNA from 81 snow leopard droppings, sequenced a short stretch of a mitochondrial gene, and matched it to prey species. Their results were published in <i>PLoS ONE</i> in 2012.</p>
+<p>They found five different prey items in total:</p>
+<ul>
+<li>Siberian ibex in 70.4% of droppings</li>
+<li>Domestic goat in 17.3%</li>
+<li>Argali in 8.6%</li>
+<li>Large hoofed animals in 98.8% of droppings overall: wild ones in 79% and domestic livestock in 19.7%</li>
+</ul>
+<p>These figures are frequency of occurrence, the share of droppings that contained each prey, not the share of meat eaten. Even so, they show how heavily this population depends on ibex, and that livestock is a real but smaller part of the diet.</p></section>
+<section class="card"><h2>Why such big prey?</h2>
+<p>Large wild goats and sheep are the most abundant big animals in the cold, rocky places where snow leopards live, so it makes sense for the cat to specialise on them. Snow leopards usually stalk from above and use the steep terrain to close the distance before a short charge, a style suited to animals that live on cliffs. You can read more about the cat's build in our <a href="../snow-leopard.html#adapt">snow leopard facts</a>.</p>
+<p>It is interesting to compare this with the leopard, a different species despite the shared name. A separate review by Hayward and colleagues of 33 leopard diet studies found that leopards prefer prey of about 10 to 40 kg, with a most preferred mass of about 25 kg. The snow leopard, although it is often lighter than a big male leopard, targets prey roughly twice that size. We cover leopard feeding in <a href="why-do-leopards-drag-their-kills-into-trees.html">why do leopards drag their kills into trees?</a></p></section>
+<section class="card"><h2>Do snow leopards eat livestock?</h2>
+<p>Yes, and it matters for their survival. The IUCN SSC Cat Specialist Group notes that livestock commonly makes up about 15 to 30 percent of the snow leopard's diet, and sometimes far more where wild prey is scarce. The Mongolian DNA study fits that picture, with livestock in 19.7% of droppings. Losses to snow leopards can lead herders to kill the cats in retaliation, which is one of the main threats to the species. That is why many conservation projects focus on predator proof corrals and on keeping wild ibex and blue sheep populations healthy, so the cats have less reason to turn to goats and sheep. Our <a href="../conservation.html">big cat conservation</a> page explains the wider picture.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Snow leopards are diet specialists that mainly hunt wild mountain goats and sheep.</li>
+<li>Their main prey are Siberian ibex, blue sheep, Himalayan tahr, argali and marmots.</li>
+<li>Preferred prey weighs about 55 kg, within a preferred range of 36 to 76 kg, which is heavier than the cat.</li>
+<li>In a DNA study in Mongolia, ibex appeared in 70.4% of droppings and livestock in 19.7%.</li>
+<li>Protecting wild prey helps reduce livestock losses and retaliatory killing.</li></ul></section>''',
+     faq=[("What do snow leopards eat?", "Mainly wild mountain goats and sheep. A review of 25 diet studies found their main prey are Siberian ibex, blue sheep, Himalayan tahr, argali and marmots, with a significant preference for Siberian ibex and blue sheep."),
+          ("What is a snow leopard's favourite prey?", "Siberian ibex and blue sheep (bharal). The 2014 range wide review found snow leopards significantly prefer these two species, and prefer prey weighing about 55 kg."),
+          ("Can a snow leopard kill prey bigger than itself?", "Yes. Snow leopards weigh roughly 30 to 50 kg, but their preferred prey weighs 36 to 76 kg, so they regularly take animals heavier than themselves."),
+          ("Do snow leopards eat livestock?", "Yes. In a DNA study of 81 snow leopard droppings in Mongolia, domestic livestock appeared in 19.7% of them, and the IUCN Cat Specialist Group says livestock commonly makes up 15 to 30 percent of the diet.")],
+     related=[("Snow leopard facts", "snow-leopard.html"), ("Big cat behavior", "behavior.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[LYNGDOH2014, SHEHZAD2012, HAYWARD2006, CSG["snow"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

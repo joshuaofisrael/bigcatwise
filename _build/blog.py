@@ -353,6 +353,54 @@ post("what-do-snow-leopards-eat", "What Do Snow Leopards Eat? Diet and Favourite
      related=[("Snow leopard facts", "snow-leopard.html"), ("Big cat behavior", "behavior.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[LYNGDOH2014, SHEHZAD2012, HAYWARD2006, CSG["snow"]])
 
+# ---------------------------------------------------------------- 10 TIGER ENCLOSURE WARNING (13 Oct 2026)
+BBC1 = ("BBC News (10 October 2026) Man dies after tiger attack at Yorkshire Wildlife Park", "https://www.bbc.co.uk/news/articles/c6n9r3n7858zo")
+BBC2 = ("BBC News (October 2026) Yorkshire Wildlife Park remains closed after fatal tiger attack", "https://www.bbc.co.uk/news/articles/cmgr8221v4x1o")
+BBC3 = ("BBC News (October 2026) Yorkshire Wildlife Park fatal tiger attack: what we know so far", "https://www.bbc.com/news/articles/c9146j15gnggo")
+IND1 = ("The Independent (October 2026) Man killed was visiting park alone, say police, as investigation launched", "https://www.independent.co.uk/news/uk/home-news/tiger-attack-yorkshire-wildfire-park-zoo-latest-updates-b3065608.html")
+CNN1 = ("CNN, Sophie Tanno (10 October 2026) 'Serious incident' at tiger enclosure forces closure of UK wildlife park", "https://www.cnn.com/2026/10/10/uk/serious-incident-tiger-enclosure-uk-park")
+NZPT = ("Smithsonian's National Zoo and Conservation Biology Institute: Tiger", "https://www.nationalzoo.si.edu/animals/tiger")
+SDZDIET = ("San Diego Zoo Wildlife Alliance Library: Tiger fact sheet, diet and feeding", "https://ielc.libguides.com/sdzg/factsheets/tiger/diet")
+WTHP = ("Wild Tiger Health Project: Prey of tigers", "https://wildtigerhealthproject.org/resources-category/prey-of-tigers/")
+WWFUK = ("WWF UK: Top 10 facts about tigers", "https://www.wwf.org.uk/learn/fascinating-facts/tigers")
+post("never-enter-a-tiger-enclosure", "Never Enter a Tiger Enclosure: Lessons From Yorkshire Wildlife Park | BigCatWise",
+     "On 10 October 2026 a man died after entering the tiger enclosure at Yorkshire Wildlife Park. What is known, why zoo barriers matter, and how tigers hunt.",
+     "Never cross a zoo barrier: the Yorkshire Wildlife Park tiger death and tiger safety", headline="Never enter a tiger enclosure: lessons from Yorkshire Wildlife Park",
+     published="2026-10-13", modified="2026-10-13",
+     lead="On Saturday 10 October 2026, a man died after entering the Amur tiger enclosure at Yorkshire Wildlife Park near Doncaster, England, according to South Yorkshire Police as reported by the BBC. Our thoughts are with his family and friends, and with the visitors and staff who saw what happened. This post sets out only what reputable news outlets have reported, and explains, with sources, why the barriers at a tiger enclosure exist and why nobody should ever cross one.",
+     body='''<section class="card"><h2>What happened</h2>
+<p>South Yorkshire Police said it was called at 13:35 BST to reports of a man entering the tiger enclosure at the park. The tiger attacked him and he died at the scene. Police said the tiger was uninjured, stayed in the enclosure, and there was no wider risk to the public (BBC News, 10 October 2026).</p>
+<p>The BBC reported that the man climbed down into the enclosure from the raised visitor walkway. An eyewitness told the BBC she saw him climb onto the barriers and that a woman nearby spoke to him before he went in. The Independent reported witnesses saying he overpowered a woman who tried to stop him, and police said they did not believe he was accompanied by anyone. The man has not been named.</p>
+<p>The park said its emergency response procedures were "immediately activated", and the park was evacuated and closed (CNN; BBC News). The park confirmed that the tiger, a five year old Amur tiger called Altai, is safe and will not be euthanised. City of Doncaster Council, the park's licensing authority, has launched a health and safety investigation (BBC News; The Independent). We will not speculate about why the man entered the enclosure; that is for the investigation.</p></section>
+<section class="card"><h2>The warning: barriers are there for a reason</h2>
+<p>According to the BBC, the park's Land of the Tigers area is a purpose built two acre reserve with a raised walkway and fencing above the section where the tigers roam. That design lets people watch tigers closely while keeping a full physical separation between people and animals. Climbing a barrier, leaning over one, or dropping anything into an enclosure removes that separation. Please:</p>
+<ul>
+<li>Never climb, sit on or lean over a barrier, fence or railing at an animal enclosure.</li>
+<li>Never let children sit on railings or be held over them.</li>
+<li>Never enter an enclosure for any reason, including to retrieve a dropped phone, hat or toy. Tell a member of staff instead.</li>
+<li>If you see someone trying to get past a barrier, do not follow them. Alert staff or call emergency services straight away.</li>
+<li>Follow staff instructions during any evacuation.</li></ul>
+<p>If you are struggling and have thoughts of harming yourself, please talk to someone now. In the UK you can call Samaritans free on 116 123; in the US you can call or text 988.</p></section>
+<section class="card"><h2>Why tigers are so dangerous at close range</h2>
+<p>A tiger in a zoo is still a tiger. It keeps the instincts and body of a wild apex predator.</p>
+<p><b>Tigers are ambush hunters.</b> The Smithsonian's National Zoo describes tigers as ambush predators that rely on stealth and strength: they lie in wait, pounce, bring prey to the ground and finish the kill by breaking or biting the neck. The San Diego Zoo Wildlife Alliance's tiger fact sheet lists the three typical elements of a tiger's hunt as concealment, a stalk and a sudden rush.</p>
+<p><b>The rush is short and fast.</b> The Wild Tiger Health Project notes that tigers usually stalk to within less than 25 metres of prey before the final rush, relying on overtaking it quickly rather than a long chase. A person inside an enclosure is almost always much closer than that.</p>
+<p><b>The bite is built to kill large animals.</b> According to the San Diego fact sheet, tigers kill smaller prey with a bite to the back of the neck and larger prey with a throat bite that cuts off the air supply. The Smithsonian notes that tigers mainly hunt large hoofed animals such as wild boar and deer, and also take buffalo, sloth bears, leopards and even crocodiles.</p>
+<p><b>Lying still or crawling does not make you safe.</b> Low, slow or unusual movement in front of a predator is not a reliable signal of "no threat", and once a person is inside the enclosure, nobody outside can safely reach them quickly. Keepers rely on trained procedures, locked doors and separation, never on going in with the animal. You can read more about tiger behaviour on our <a href="../tiger.html">tiger facts</a> page and our <a href="../behavior.html">big cat behaviour</a> guide.</p></section>
+<section class="card"><h2>What about wild tigers?</h2>
+<p>Wild tigers usually avoid people, and most visitors to tiger reserves will be on guided tours with rules set by the park authority. Follow those rules exactly, stay in vehicles or on marked routes, and never approach, feed or follow a tiger. WWF notes that tigers walk silently on soft toe pads and that their stripes act as camouflage, so a tiger can be close without being seen. Our <a href="how-big-is-a-tigers-territory.html">how big is a tiger's territory?</a> post explains how widely tigers range, and our <a href="../disclaimer.html">disclaimer</a> applies: this is general education, not professional safety advice.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>On 10 October 2026, a man died after entering the tiger enclosure at Yorkshire Wildlife Park; a council health and safety investigation is under way.</li>
+<li>The tiger, Altai, was unhurt and will not be euthanised, the park said.</li>
+<li>Tigers are stalk and ambush predators that kill large prey with a neck or throat bite.</li>
+<li>Never climb, lean over or cross a zoo barrier, for any reason. Call staff instead.</li></ul></section>''',
+     faq=[("What happened at Yorkshire Wildlife Park on 10 October 2026?", "A man entered the Amur tiger enclosure from the visitor walkway at about 13:30 BST, was attacked by the tiger and died at the scene, according to South Yorkshire Police as reported by the BBC."),
+          ("Will the tiger be put down?", "No. The park said the tiger, Altai, is safe and well and will not be euthanised as a result of the incident (BBC News)."),
+          ("What should I do if I drop something into an animal enclosure?", "Leave it and tell a member of staff. Never climb a barrier or enter an enclosure to retrieve anything."),
+          ("How do tigers kill their prey?", "Tigers stalk and ambush prey, then kill with a bite to the back of the neck for smaller prey or a suffocating throat bite for larger prey (San Diego Zoo Wildlife Alliance tiger fact sheet).")],
+     related=[("Tiger facts", "tiger.html"), ("Big cat behavior", "behavior.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Disclaimer", "disclaimer.html"), ("Blog home", "blog/index.html")],
+     sources=[BBC1, BBC2, BBC3, IND1, CNN1, NZPT, SDZDIET, WTHP, WWFUK])
+
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",
     "Sourced answers to big cat questions: which cats roar, why lions live in prides, cheetah speed, tiger territory, leopards in trees and more.",

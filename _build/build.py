@@ -20,7 +20,7 @@ SITE = "BigCatWise"
 LEGAL = "Joshua Israel Ventures LLC"
 INDEXNOW_KEY = "ae0cfa5bdd787ac71a16b2a7f4e0107d"
 CF_BEACON_TOKEN = ""      # Cloudflare Web Analytics site token; leave empty until issued
-GSC_TOKEN = ""            # Google Search Console HTML tag content value; leave empty until issued
+GSC_TOKEN = "2F1VFGs8_miZpH24IQ4s5HMDbRBVf1ToSahl87wllWQ"            # Google Search Console HTML tag content value; leave empty until issued
 TODAY = "2026-10-08"
 OG_IMAGE = BASE_URL + "og.png"
 

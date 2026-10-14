@@ -72,4 +72,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Why: jaguar had no daily deep dive yet; water hunting is a distinctive long-tail query and pairs with the species page #water section. Hub and glossary entry points give search and AI answer engines several routes to the article.
 - News: no relevant big-cat news today (skipped).
 - Outreach: skipped (no approved edu/Pinterest path yet; default skip).
-- IndexNow: see follow-up line after ping.
+- IndexNow (8 URLs: new article, blog index, research, jaguar, behavior, faq, glossary, home): HTTP 200. Live checks: article 200 with Pantanal figures live; FAQ entry "Do jaguars hunt in water?" live.

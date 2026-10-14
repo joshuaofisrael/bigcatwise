@@ -120,7 +120,7 @@ add("jaguar.html", "Jaguar Facts: Bite, Swimming, Range & Status | BigCatWise",
     "Jaguar facts: the largest cat in the Americas, its skull piercing bite, love of water, rosettes with central spots, range and Near Threatened status.",
     "Jaguar facts: bite, swimming, range and conservation status",
     lead="The jaguar (<i>Panthera onca</i>) is the largest cat in the Americas and the only big cat that regularly kills prey by biting through the skull. It ranges from Mexico to northern Argentina, is a strong swimmer that hunts caiman and fish, and is listed as Near Threatened on the IUCN Red List, with most jaguars living in the Amazon.",
-    crumbs=[("Species", "compare.html")], headline="Jaguar facts",
+    crumbs=[("Species", "compare.html")], headline="Jaguar facts", modified="2026-10-14",
     body=jump([("facts", "Quick facts"), ("look", "Appearance"), ("bite", "Bite and hunting"), ("water", "Water"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera onca</i>"), ("Weight", "36 to 148 kg"),
@@ -133,7 +133,7 @@ add("jaguar.html", "Jaguar Facts: Bite, Swimming, Range & Status | BigCatWise",
 <p>The IUCN Cat Specialist Group describes the jaguar as the only big cat that regularly kills prey by piercing the skull with its canines. Its big head and robust teeth may be an adaptation for cracking armoured reptiles such as tortoises and river turtles. Jaguars also break the necks of large prey and kill small prey with a blow to the head.</p>
 <p>Jaguars are opportunistic generalists: more than 85 prey species have been recorded in their diet, including peccaries, armadillos, capybaras, caiman, deer, turtles and fish. Where cattle ranching overlaps jaguar habitat, cattle can form a large part of the diet, which drives conflict with ranchers.</p></section>
 <section class="card" id="water"><h2>Do jaguars like water?</h2>
-<p>Yes. Jaguars are excellent swimmers, cross wide rivers and readily catch fish, capybaras and caiman in water. They are most often found in wet lowland habitats such as rainforest, swamps and seasonally flooded wetlands like the Pantanal, generally below 1,000 m, though they have been reported as high as 3,800 m.</p></section>
+<p>Yes. Jaguars are excellent swimmers, cross wide rivers and readily catch fish, capybaras and caiman in water. They are most often found in wet lowland habitats such as rainforest, swamps and seasonally flooded wetlands like the Pantanal, generally below 1,000 m, though they have been reported as high as 3,800 m. Our post <a href="blog/do-jaguars-hunt-in-water.html">do jaguars hunt in water?</a> covers Pantanal research that found fish in 46% of scats and aquatic reptiles in 55%.</p></section>
 <section class="card" id="range"><h2>Where do jaguars live?</h2>
 <p>Jaguars range from Mexico through Central America to northern Argentina, with occasional individuals recorded in the southwestern United States. The Amazon is the stronghold: the IUCN Cat Specialist Group estimates 57,000 to 64,000 jaguars there, about 89 percent of the total.</p></section>
 <section class="card" id="status"><h2>Are jaguars endangered?</h2>

@@ -329,6 +329,9 @@ PAPERS = [
  ("Snow leopard diet and prey", [
   ("Lyngdoh, S., Shrotriya, S., Goyal, S. P., Clements, H., Hayward, M. W., and Habib, B. (2014). Prey preferences of the snow leopard (<i>Panthera uncia</i>): regional diet specificity holds global significance for conservation. <i>PLoS ONE</i>, 9(2), e88349.", "10.1371/journal.pone.0088349", "blog/what-do-snow-leopards-eat.html", "What do snow leopards eat?"),
   ("Shehzad, W., McCarthy, T. M., Pompanon, F., Purevjav, L., Coissac, E., Riaz, T., and Taberlet, P. (2012). Prey preference of snow leopard (<i>Panthera uncia</i>) in South Gobi, Mongolia. <i>PLoS ONE</i>, 7(2), e32104.", "10.1371/journal.pone.0032104", "blog/what-do-snow-leopards-eat.html", "What do snow leopards eat?")]),
+ ("Jaguar aquatic hunting and prey", [
+  ("Eriksson, C. E., Kantek, D. L. Z., Miyazaki, S. S., Morato, R. G., dos Santos-Filho, M., Ruprecht, J. S., Peres, C. A., and Levi, T. (2022). Extensive aquatic subsidies lead to territorial breakdown and high density of an apex predator. <i>Ecology</i>, 103(1), e03543.", "10.1002/ecy.3543", "blog/do-jaguars-hunt-in-water.html", "Do jaguars hunt in water?"),
+  ("Hayward, M. W., Kamler, J. F., Montgomery, R. A., Newlove, A., Rostro-Garc&iacute;a, S., Sales, L. P., and Van Valkenburgh, B. (2016). Prey preferences of the jaguar <i>Panthera onca</i> reflect the post-Pleistocene demise of large prey. <i>Frontiers in Ecology and Evolution</i>, 3, 148.", "10.3389/fevo.2015.00148", "blog/do-jaguars-hunt-in-water.html", "Do jaguars hunt in water?")]),
  ("Population status and conservation", [
   ("Durant, S. M., Mitchell, N., Groom, R., et al. (2017). The global decline of cheetah <i>Acinonyx jubatus</i> and what it means for conservation. <i>Proceedings of the National Academy of Sciences</i>, 114(3), 528-533.", "10.1073/pnas.1611122114", "blog/how-many-big-cats-are-left.html", "How many big cats are left?")]),
 ]
@@ -351,7 +354,7 @@ add("research/index.html", "Big Cat Research Papers: Sources for Students & Rese
 <section class="card"><h2>Reference organisations</h2><ul>
 <li><a href="https://www.catsg.org/" rel="noopener">IUCN SSC Cat Specialist Group</a>: species accounts and status summaries for all wild cats.</li>
 <li><a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List of Threatened Species</a>: official conservation assessments.</li></ul>
-<p class="note">References are formatted in APA style. DOIs verified on Crossref on 8 and 11 October 2026. If you find a broken link or an error, email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>''',
+<p class="note">References are formatted in APA style. DOIs verified on Crossref on 8, 11 and 14 October 2026. If you find a broken link or an error, email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>''',
     related=[("Teachers hub", "teachers/index.html"), ("Blog", "blog/index.html"), ("Glossary", "glossary.html")],
     extra_ld=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Peer reviewed papers cited on BigCatWise", "numberOfItems": n,
                "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "ScholarlyArticle", "sameAs": "https://doi.org/" + d,

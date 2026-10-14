@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -353,7 +353,50 @@ post("what-do-snow-leopards-eat", "What Do Snow Leopards Eat? Diet and Favourite
      related=[("Snow leopard facts", "snow-leopard.html"), ("Big cat behavior", "behavior.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[LYNGDOH2014, SHEHZAD2012, HAYWARD2006, CSG["snow"]])
 
-# ---------------------------------------------------------------- 10 TIGER ENCLOSURE WARNING (13 Oct 2026)
+# ---------------------------------------------------------------- 10 JAGUAR WATER HUNTING (14 Oct 2026)
+post("do-jaguars-hunt-in-water", "Do Jaguars Hunt in Water? Aquatic Prey Research | BigCatWise",
+     "Yes. Jaguars swim and hunt fish, caiman and other aquatic prey. A Pantanal study found fish in 46% of scats and aquatic reptiles in 55%, with mammals only 11%.",
+     "Do jaguars hunt in water? Yes, and in some wetlands it reshapes their whole ecology", headline="Do jaguars hunt in water?",
+     published="2026-10-14", modified="2026-10-14",
+     lead="Yes. Jaguars are strong swimmers and regularly take prey in and beside water, including fish, caiman, turtles and capybaras. In one seasonally flooded reserve in Brazil's Pantanal, a 2022 study found fish in 46% of jaguar scats and aquatic reptiles in 55%, while mammals appeared in only 11%. That aquatic food supply supported the highest jaguar density yet estimated and unusual social behaviour such as cooperative fishing.",
+     body='''<section class="card"><h2>The short answer</h2>
+<p>Among the six big cats on this site, the jaguar is the one most at home in water. It swims well, crosses rivers and lakes, and often hunts along riverbanks and in flooded wetlands. That is not a side habit. In some places aquatic animals dominate its diet, and that changes how densely jaguars can live and even how social they are. For the species basics, see our <a href="../jaguar.html#water">jaguar facts</a>.</p>
+<div class="tablewrap"><table><thead><tr><th>Finding</th><th>Detail</th></tr></thead><tbody>
+<tr><td>Fish in jaguar scats (Pantanal study)</td><td>46% of 138 scats</td></tr>
+<tr><td>Aquatic reptiles in those scats</td><td>55%</td></tr>
+<tr><td>Mammals in those scats</td><td>11%</td></tr>
+<tr><td>Jaguar density in that reserve</td><td>12.4 jaguars per 100 km&sup2;</td></tr>
+<tr><td>Preferred prey across the jaguar's range</td><td>Capybara and giant anteater</td></tr>
+</tbody></table></div>
+<p class="note">Scat percentages are frequency of occurrence: the share of droppings that contained each prey type. One dropping can contain more than one type, so the figures can add up to more than 100%. Pantanal figures are from Eriksson et al. (2022); preferred prey from Hayward et al. (2016).</p></section>
+<section class="card"><h2>A Pantanal population that lives on aquatic food</h2>
+<p>Charlotte Eriksson and colleagues studied jaguars in a seasonally flooded protected area in the Brazilian Pantanal and published the results in <i>Ecology</i> in 2022. They analysed 138 jaguar scats, ran camera traps for 8,065 trap nights, and fitted GPS collars to 13 jaguars.</p>
+<p>The diet was unlike the usual picture of a jaguar living mainly on peccaries, deer and other mammals. Fish turned up in 46% of scats and aquatic reptiles in 55%. Mammals appeared in only 11%. The authors describe this as the first jaguar population known to feed extensively on fish and to consume mammals so little. Those aquatic subsidies, energy moving from water into the jaguar's food web, supported an estimated density of 12.4 jaguars per 100 km&sup2;, which they report as the highest jaguar density estimate to date.</p>
+<p>They also saw behaviour that is rare for this mostly solitary cat: cooperative fishing, adults of the same sex travelling together, and play between same sex adults. The paper's wider point is that aquatic subsidies, often discussed for omnivores, can reshape the ecology of an obligate carnivore too.</p></section>
+<section class="card"><h2>What jaguars prefer across their whole range</h2>
+<p>Not every jaguar lives in a flooded wetland. Matt Hayward and colleagues reviewed 25 studies covering 3,214 jaguar kills across the species' range and published the analysis in <i>Frontiers in Ecology and Evolution</i> in 2016.</p>
+<p>They found that jaguars significantly preferred capybara and giant anteater, and avoided agoutis, carnivorans, primates, the black eared opossum and tapirs. Prey selection tracked abundance and herd size more than body size alone. Accessible prey weighed about 6 to 60 kg; preferred prey weighed about 45 to 85 kg; and the mean mass of significantly preferred prey was 32 &plusmn; 13 kg, giving a predator to prey body mass ratio of about 1 to 0.53, which is smaller than for many other solitary big cats.</p>
+<p>Capybaras are semi aquatic rodents that live near rivers and lakes, so even this range wide preference list has a strong water link. The review also notes that jaguar diets are unusually diverse and include turtles, fish, crocodilians and other aquatic prey, which fits the jaguar's habit of using wet habitats.</p></section>
+<section class="card"><h2>How a jaguar kills aquatic and armoured prey</h2>
+<p>The IUCN SSC Cat Specialist Group describes the jaguar as the only big cat that regularly kills prey by piercing the skull with its canines. That skull bite, plus a powerful head and robust teeth, suits tough or dangerous prey such as turtles and caiman as well as mammals. Jaguars also break the necks of large prey and kill small prey with a blow to the head. You can read more under <a href="../jaguar.html#bite">jaguar bite and hunting</a>.</p>
+<p>This is different from the leopard's tree caching strategy in Africa and Asia. Leopards often hoist kills into trees to stop hyenas stealing them; see <a href="why-do-leopards-drag-their-kills-into-trees.html">why do leopards drag their kills into trees?</a> Jaguars, living where the competitor mix and habitats differ, lean more on water edge ambush and a killing bite built for hard prey.</p></section>
+<section class="card"><h2>Where this happens</h2>
+<p>Jaguars range from Mexico to northern Argentina and are most often found in wet lowland habitats: rainforest, swamps and seasonally flooded wetlands such as the Pantanal, usually below 1,000 m. The Amazon holds most of the world's jaguars. Wetlands with abundant fish, caiman and capybaras are exactly the places where aquatic hunting pays off. Our <a href="../habitats.html">habitats guide</a> puts the jaguar's wetlands in context with the other big cats.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Jaguars swim well and regularly hunt fish, caiman, turtles, capybaras and other water linked prey.</li>
+<li>In one Pantanal study, fish appeared in 46% of scats and aquatic reptiles in 55%, with mammals in only 11%.</li>
+<li>That aquatic food supply supported 12.4 jaguars per 100 km&sup2; and unusual social behaviour including cooperative fishing.</li>
+<li>Across the range, preferred prey include capybara and giant anteater; preferred prey mass is about 45 to 85 kg.</li>
+<li>The jaguar's skull piercing bite suits tough aquatic and armoured prey.</li></ul></section>''',
+     faq=[("Do jaguars hunt in water?", "Yes. Jaguars are strong swimmers and regularly take fish, caiman, turtles and other aquatic or semi aquatic prey. In a Pantanal study, fish appeared in 46% of jaguar scats and aquatic reptiles in 55%."),
+          ("Do jaguars eat fish?", "Yes. In a seasonally flooded Pantanal reserve, fish turned up in 46% of 138 jaguar scats, the first population described as feeding extensively on fish."),
+          ("What is a jaguar's favourite prey?", "Across the range, a review of 3,214 kills found jaguars significantly prefer capybara and giant anteater. Preferred prey weigh about 45 to 85 kg."),
+          ("Are jaguars social when they fish?", "Usually jaguars are solitary, but the Pantanal study documented cooperative fishing and other same sex adult interactions where aquatic food was abundant.")],
+     related=[("Jaguar facts", "jaguar.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[ERIKSSON2022, HAYWARD2016JAG, CSG["jaguar"], SDZ["jaguar"]])
+
+
+# ---------------------------------------------------------------- 11 TIGER ENCLOSURE WARNING (13 Oct 2026)
 BBC1 = ("BBC News (10 October 2026) Man dies after tiger attack at Yorkshire Wildlife Park", "https://www.bbc.co.uk/news/articles/c6n9r3n7858zo")
 BBC2 = ("BBC News (October 2026) Yorkshire Wildlife Park remains closed after fatal tiger attack", "https://www.bbc.co.uk/news/articles/cmgr8221v4x1o")
 BBC3 = ("BBC News (October 2026) Yorkshire Wildlife Park fatal tiger attack: what we know so far", "https://www.bbc.com/news/articles/c9146j15gnggo")

@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -394,6 +394,47 @@ post("do-jaguars-hunt-in-water", "Do Jaguars Hunt in Water? Aquatic Prey Researc
           ("Are jaguars social when they fish?", "Usually jaguars are solitary, but the Pantanal study documented cooperative fishing and other same sex adult interactions where aquatic food was abundant.")],
      related=[("Jaguar facts", "jaguar.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[ERIKSSON2022, HAYWARD2016JAG, CSG["jaguar"], SDZ["jaguar"]])
+
+
+# ---------------------------------------------------------------- 12 LION MANE (15 Oct 2026)
+post("why-do-male-lions-have-manes", "Why Do Male Lions Have Manes? What the Research Shows | BigCatWise",
+     "A lion's mane is a signal: darker manes mark healthier, higher testosterone males that females prefer. Research on mane colour, heat costs and maneless lions.",
+     "Why do male lions have manes? The mane is a signal, and it has a cost", headline="Why do male lions have manes?",
+     published="2026-10-15", modified="2026-10-15",
+     lead="Male lions have manes mainly as a signal. Long term research in Tanzania's Serengeti found that a darker mane reflects better nutrition and higher testosterone, that lionesses prefer darker maned males, and that rival males pay attention to mane length, which tracks fighting success. The signal is honest because it is costly: big dark manes make males hotter, and in hot places manes are lighter, shorter or almost absent.",
+     body='''<section class="card"><h2>The short answer</h2>
+<ul><li><b>Attracting females:</b> lionesses preferred males with darker manes in Serengeti research.</li>
+<li><b>Warning rivals:</b> mane length signals fighting success, and other males take notice.</li>
+<li><b>Advertising condition:</b> mane darkness reflects nutrition and testosterone, so it is hard to fake.</li>
+<li><b>Paying a price:</b> dark, heavy manes raise body surface temperature, which is why manes shrink in hot habitats.</li></ul>
+<p>The lion is the only big cat in which adult males and females look so different, and the mane is the reason. For the basics, see our <a href="../lion.html#appearance">lion appearance guide</a>.</p></section>
+<section class="card"><h2>What the Serengeti study found</h2>
+<p>Peyton West and Craig Packer used data from the long running Serengeti Lion Project in Tanzania and published their results in <i>Science</i> in 2002. They looked at what mane length and mane colour tell other lions, and what a mane costs its owner.</p>
+<p>The two features turned out to carry different messages. Mane darkness reflected a male's nutrition and testosterone, and it influenced both female choice and competition between males. Mane length signalled fighting success, but it appeared to matter mainly to other males sizing up a rival, not to females.</p>
+<p>Darker maned males did better over a lifetime. The study reported that they had longer reproductive lifespans and higher survival of their offspring. That is a strong reason for a female to choose one, and a strong reason for a rival to think twice before picking a fight.</p></section>
+<section class="card"><h2>The cost: a mane is a hot coat</h2>
+<p>A thick, dark mane around the head and neck traps heat. West and Packer found that maned males were hotter than females, and that dark maned males had higher surface temperatures, more abnormal sperm and lower food intake during the hottest months of the year.</p>
+<p>That cost is what keeps the signal honest. Only a male in good condition can carry a big dark mane without suffering too much from it, so the mane works as a reliable advertisement. The study also found that males had lighter or shorter manes in hotter seasons, hotter years and hotter habitats. Because manes respond to temperature in this way, the authors suggested manes may change as the climate warms.</p></section>
+<section class="card"><h2>Maneless lions: the Tsavo puzzle</h2>
+<p>Not every adult male lion has a big mane. Roland Kays and Bruce Patterson described a population in Tsavo National Park, Kenya, that is largely maneless, in the <i>Canadian Journal of Zoology</i> in 2002. Adult males there typically had only sparse blond hair forming a crest along the back, a beard, chest tufts or sideburns. The researchers saw no fully maned lions.</p>
+<p>These males were normal members of pride life: they were seen mating, hunting, playing with cubs, scent marking and roaring to advertise territory. The researchers had expected Tsavo's dry, prey poor landscape to produce small groups and weaker sexual selection for manes. Female groups were in fact large, averaging 7.4, so that "small groups, small manes" idea did not hold. One difference stood out: each of the five prides they studied had only one adult male, rather than the coalitions of two to four seen elsewhere. Tsavo is also hot and arid, which fits the Serengeti finding that heat pushes manes to be smaller.</p></section>
+<section class="card"><h2>When did lions get manes?</h2>
+<p>Manes are not as old as lions themselves. In a 2004 review in the <i>Journal of Zoology</i>, Nobuyuki Yamaguchi, Alan Cooper, Lars Werdelin and David Macdonald traced the lion's history from Pliocene east Africa to its spread across Eurasia and the Americas. The first lions were presumed to have been maneless, and maneless forms seem to have persisted in Europe until around 10,000 years ago.</p>
+<p>The review suggests the maned form may have appeared about 320,000 to 190,000 years ago and then spread, replacing earlier maneless forms across Africa and western Eurasia. The authors also argue that lions probably became group living before they spread out of Africa. That fits the idea that the mane is tied to social life, where males compete for prides and females choose among them. Read more in <a href="why-do-lions-live-in-prides.html">why do lions live in prides?</a></p></section>
+<section class="card"><h2>Do female lions ever have manes?</h2>
+<p>Normally no. A mane develops in males as they mature, and the Serengeti work links mane darkness to testosterone. In the wild, adult lionesses have the plain tawny coat without a mane, and young males start with little or none. Manes are one of several visual signals big cats use; see <a href="../behavior.html#communication">how big cats communicate</a> for roars, scent marks and other signals.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>The mane is a signal: darker manes reflect nutrition and testosterone; longer manes reflect fighting success.</li>
+<li>Lionesses preferred darker maned males, which had longer breeding lives and better cub survival.</li>
+<li>Manes are costly: they make males hotter, and manes are lighter or shorter in hot seasons and habitats.</li>
+<li>Some lions, such as many males in Tsavo, Kenya, are almost maneless but still hold prides.</li>
+<li>The maned form probably appeared only a few hundred thousand years ago.</li></ul></section>''',
+     faq=[("Why do male lions have manes?", "Mainly as a signal. Serengeti research found that mane darkness reflects a male's nutrition and testosterone and attracts females, while mane length signals fighting success to rival males."),
+          ("Does a darker mane mean a stronger lion?", "In the Serengeti, darker maned males had longer reproductive lifespans and higher offspring survival, and lionesses preferred them. Darker manes also carried a heat cost."),
+          ("Why do some male lions have no mane?", "Many males in Tsavo National Park, Kenya, are largely maneless, with only sparse hair on the back, chin or chest. Hot conditions are linked to smaller manes, and these males still mate, hunt and hold territory."),
+          ("Do manes keep lions hot?", "Yes. Maned males were hotter than females, and dark maned males had higher surface temperatures and lower food intake in the hottest months.")],
+     related=[("Lion facts", "lion.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Big cat behavior", "behavior.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[WEST2002, KAYS2002, YAMAGUCHI2004, CSG["lion"]])
 
 
 # ---------------------------------------------------------------- 11 TIGER ENCLOSURE WARNING (13 Oct 2026)

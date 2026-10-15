@@ -17,7 +17,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     "Lion facts in plain English: how prides work, who does the hunting, where wild lions live today, how many are left and why the species is Vulnerable.",
     "Lion facts: prides, hunting, habitat and conservation status",
     lead="The lion (<i>Panthera leo</i>) is the only truly social big cat. Wild lions live in prides built around related females, mainly in sub-Saharan Africa, with one small population in and around Gir forest in western India. The species is listed as Vulnerable on the IUCN Red List, and the IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025.",
-    crumbs=[("Species", "compare.html")], headline="Lion facts",
+    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-10-15",
     body=jump([("facts", "Quick facts"), ("appearance", "Appearance"), ("pride", "Pride life"), ("hunting", "Hunting"),
                ("roar", "Roaring"), ("range", "Where lions live"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera leo</i>"), ("Weight", "110 to 272 kg (males are much heavier than females)"),
@@ -25,7 +25,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
                 ("Litter size", "1 to 4 cubs"), ("Range", "Sub-Saharan Africa; Gir landscape, Gujarat, India"),
                 ("IUCN Red List", "Vulnerable (northern subspecies <i>P. l. leo</i>: Endangered)")]) + '</div>' +
     '''<section class="card" id="appearance"><h2>What does a lion look like?</h2>
-<p>Lions have a plain tawny coat, a long tail ending in a dark tuft and, in adult males, a mane around the head and neck. The mane makes males look larger and is the most obvious difference between the sexes; no other wild cat shows such a striking visual difference between males and females. Cubs are born with faint spots that usually fade as they grow.</p>
+<p>Lions have a plain tawny coat, a long tail ending in a dark tuft and, in adult males, a mane around the head and neck. The mane makes males look larger and is the most obvious difference between the sexes; no other wild cat shows such a striking visual difference between males and females. Cubs are born with faint spots that usually fade as they grow. Why the mane? Research suggests it is a signal of condition to lionesses and rivals; see <a href="blog/why-do-male-lions-have-manes.html">why do male lions have manes?</a></p>
 <p>Size varies by region and sex. Adult males are clearly bigger and heavier than lionesses, and large male lions can match or exceed smaller tigers, although the tiger is the largest cat species overall. See the <a href="compare.html">big cat comparison table</a> for side by side sizes.</p></section>
 <section class="card" id="pride"><h2>How does a lion pride work?</h2>
 <p>A pride is a group of related adult females, their cubs and one or more adult males. The IUCN Cat Specialist Group gives an average of four to six adult lionesses per pride in Africa, with prides ranging from 1 to 21 females. Lionesses usually stay in the pride where they were born, while young males leave and try to win a pride of their own later.</p>

@@ -73,3 +73,11 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - News: no relevant big-cat news today (skipped).
 - Outreach: skipped (no approved edu/Pinterest path yet; default skip).
 - IndexNow (8 URLs: new article, blog index, research, jaguar, behavior, faq, glossary, home): HTTP 200. Live checks: article 200 with Pantanal figures live; FAQ entry "Do jaguars hunt in water?" live.
+
+## 2026-10-15 daily slot (about 01:28 London)
+- Fact article: blog/why-do-male-lions-have-manes.html ("Why do male lions have manes?"), aimed at the question queries "why do male lions have manes" / "lion mane purpose" / "maneless lions". Cites West and Packer 2002 Science 10.1126/science.1073257, Kays and Patterson 2002 Can J Zool 10.1139/z02-024 and Yamaguchi, Cooper, Werdelin and Macdonald 2004 J Zool 10.1017/S0952836904005242 (all Crossref 200; claims taken from the abstracts via OpenAlex), plus the IUCN Cat Specialist Group lion profile. Added to blog index, research page (new "Lion manes" group), sitemap, llms.txt; linked from lion.html#appearance (lion page modified bumped). Commit 666d1c1.
+- SEO action (priority 5 and 7, topic cluster and internal linking): still no GSC or analytics data, so no winners to compound. Built a lion mane cluster around the new article: contextual link from behavior.html#communication (visual signals) plus a related link, a visible FAQ entry "Why do male lions have manes?" on faq.html (in its FAQPage JSON-LD), and glossary terms "Honest signal" and "Sexual selection". Bumped modified dates on behavior, faq and glossary. check.py 0 problems. Commit df181cc.
+- Why: lion had only one deep dive (prides) and the mane is one of the most searched lion questions; the communication hub is the natural parent topic, and the glossary terms cover the jargon people search alongside it.
+- News: no relevant big-cat news dated today (recent items 1 to 12 Oct, e.g. China tiger and leopard park counts, Project Cheetah expansion, jaguar connectivity study, noted for possible later use); skipped.
+- Outreach: skipped (no approved edu/Pinterest path yet; default skip).
+- IndexNow (8 URLs: new article, blog index, research, lion, behavior, faq, glossary, home): HTTP 200. Live checks: article 200; lion, research, behavior, faq, glossary 200 with the new links and FAQ entry live (Pages build df181cc built).

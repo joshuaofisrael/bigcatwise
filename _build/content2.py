@@ -48,7 +48,7 @@ add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territor
     "How big cats behave: who lives in groups and who lives alone, how each species hunts, how they communicate by roaring and scent marking, and how cubs grow up.",
     "Big cat behavior: hunting, social life and communication",
     lead="Most big cats are solitary, territorial hunters that rely on stealth and ambush. The lion is the exception, living in prides, and the cheetah is the odd one out as a daytime sprinter. All of them communicate over long distances with scent marks and calls, and mothers raise cubs alone for a year or two.",
-    modified="2026-10-14", headline="Big cat behavior",
+    modified="2026-10-15", headline="Big cat behavior",
     body=jump([("social", "Social life"), ("hunting", "Hunting styles"), ("communication", "Communication"), ("territory", "Territories"), ("cubs", "Cubs"), ("activity", "Activity")]) +
     '''<section class="card" id="social"><h2>Do big cats live in groups?</h2>
 <p>Only lions live in stable social groups. A pride is built around related females, with an average of four to six adult lionesses in Africa, plus their cubs and one or more resident males. Male lions and male cheetahs often form coalitions, frequently of brothers, which helps them win and hold territory. Tigers, leopards, jaguars and snow leopards are solitary as adults; males and females meet mainly to mate, and mothers raise cubs on their own.</p></section>
@@ -68,7 +68,7 @@ add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territor
 <section class="card" id="communication"><h2>How do big cats communicate?</h2>
 <p><b>Roars and calls.</b> Lions, tigers, leopards and jaguars can roar; a lion's roar carries over several kilometres and helps pride members find each other and warn rivals off. Leopards make a repeated rasping call often likened to sawing wood. Snow leopards and cheetahs cannot roar. Cheetahs purr and chirp. See <a href="blog/which-big-cats-can-roar.html">which big cats can roar</a>.</p>
 <p><b>Scent.</b> Big cats spray urine on trees and rocks, leave droppings in prominent places and scrape the ground with their hind feet. These marks tell neighbours who lives there, and whether a female is ready to breed. You may see a cat curl its lip while sniffing a mark; this is the flehmen response, which draws scent towards an organ in the roof of the mouth.</p>
-<p><b>Visual signals.</b> Lions' manes, ear markings on tigers (white spots on the backs of the ears) and tail postures all carry information at close range.</p></section>
+<p><b>Visual signals.</b> Lions' manes, ear markings on tigers (white spots on the backs of the ears) and tail postures all carry information at close range. A darker lion mane signals better nutrition and higher testosterone, and lionesses in the Serengeti preferred darker maned males; see <a href="blog/why-do-male-lions-have-manes.html">why do male lions have manes?</a></p></section>
 <section class="card" id="territory"><h2>How big are big cat territories?</h2>
 <p>Territory size tracks prey. Figures from the IUCN Cat Specialist Group show the range:</p>
 <ul><li><b>Tiger:</b> females 10 to 39 km&sup2; in prey rich Chitwan, Nepal, but 100 to 400 km&sup2; in the Russian Far East, where one male used 1,379 km&sup2;.</li>
@@ -80,7 +80,7 @@ add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territor
 <p>Cubs are born blind and helpless after a pregnancy of roughly three to three and a half months (about 103 days in tigers, 90 to 105 days in leopards). Litters are usually one to four or five cubs, and cheetahs can have up to six. Mothers hide young cubs and move them between dens. Cubs learn to hunt by watching and practising for many months; young tigers become independent at about 18 to 28 months. Cub mortality is high: in Chitwan about a third of tiger cubs die in their first year, with infanticide by males a leading cause.</p></section>
 <section class="card" id="activity"><h2>Are big cats nocturnal?</h2>
 <p>Most big cats are most active from dusk to dawn, and they rest for much of the day. Activity shifts with heat, prey and people: leopards in undisturbed Gabonese rainforest were found to be largely active by day, while cats near people tend to become more nocturnal. The cheetah is the clear exception, hunting mainly in daylight, which helps it avoid lions and hyenas.</p></section>''',
-    related=SP + [("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Where big cats live", "habitats.html"), ("Big cat glossary", "glossary.html")],
+    related=SP + [("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Where big cats live", "habitats.html"), ("Big cat glossary", "glossary.html")],
     sources=ALLCSG + [WILSON, SDZ["lion"]], priority="0.8")
 
 # ------------------------------------------------------------------ HABITATS
@@ -178,6 +178,7 @@ FAQ = [
  ("Why do leopards put their kills in trees?", "Mainly to stop spotted hyenas and other predators stealing them. In a South African study of 2,032 kills, leopards hoisted 51% of kills, and kills left on the ground were more likely to be stolen."),
  ("What do snow leopards eat?", "Mainly wild mountain goats and sheep. A review of 25 diet studies found their main prey are Siberian ibex, blue sheep, Himalayan tahr, argali and marmots, with a preference for ibex and blue sheep of about 55 kg."),
  ("Do jaguars hunt in water?", "Yes. Jaguars swim well and regularly take fish, caiman, turtles and other aquatic prey. In a Pantanal study, fish appeared in 46% of jaguar scats and aquatic reptiles in 55%."),
+ ("Why do male lions have manes?", "Mainly as a signal. Serengeti research found that a darker mane reflects better nutrition and higher testosterone and attracts lionesses, while mane length signals fighting success to rivals. Manes also make males hotter, so they are lighter or shorter in hot places."),
  ("Is the snow leopard a leopard?", "No. It is a separate species, Panthera uncia. Genetic studies suggest its closest living relative is the tiger."),
  ("Can big cats purr?", "Cheetahs purr. Whether the roaring cats truly purr is debated, and they generally do not purr continuously the way domestic cats do."),
  ("How long do big cats live?", "In the wild most live about 10 to 15 years, with ranges for each species listed on its profile page. Lifespans in zoos are often longer."),
@@ -187,7 +188,7 @@ add("faq.html", "Big Cat FAQ: Myths, Records & Quick Answers | BigCatWise",
     "Quick, sourced answers to common big cat questions: which cats count as big cats, the biggest and fastest, black panthers, white tigers, roaring and more.",
     "Big cat FAQ: quick answers and common myths",
     lead="Short answers to the questions people ask most about lions, tigers, leopards, jaguars, cheetahs and snow leopards, including the common myths. Each answer links to a fuller explanation elsewhere on the site.",
-    kind="article", modified="2026-10-14", headline="Big cat FAQ",
+    kind="article", modified="2026-10-15", headline="Big cat FAQ",
     body='<section class="card"><h2>Myths vs facts</h2><ul><li class="myth">Myth: lions are the king of the jungle.</li><li class="fact">Fact: lions live in savanna and open woodland, not rainforest. <a href="lion.html#range">Lion range</a></li><li class="myth">Myth: black panthers are their own species.</li><li class="fact">Fact: they are melanistic leopards or jaguars. <a href="leopard.html#black">Black panthers</a></li><li class="myth">Myth: tigers live in Africa.</li><li class="fact">Fact: wild tigers live only in Asia. <a href="tiger.html#range">Tiger range</a></li><li class="myth">Myth: every big cat roars.</li><li class="fact">Fact: snow leopards and cheetahs cannot roar. <a href="blog/which-big-cats-can-roar.html">Which cats roar</a></li></ul></section>',
     faq=FAQ, related=SP + [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Compare big cats", "compare.html"), ("Big cat glossary", "glossary.html")],
     sources=ALLCSG + [WILSON, KLEMUK], priority="0.8")
@@ -207,6 +208,7 @@ GL = [("Apex predator", "A predator at the top of its food chain with no natural
  ("Frequency of occurrence", "In diet studies, the share of scats (droppings) that contain a given prey type. One scat can contain more than one type, so percentages can add up to more than 100%."),
  ("Green Status of Species", "An IUCN assessment that measures how far a species is from full recovery and how much conservation has helped. The tiger was rated Critically Depleted in 2025."),
  ("Home range", "The whole area an animal uses in its normal activities. Compare territory."),
+ ("Honest signal", "A signal that reliably shows an animal's quality because it is costly to produce or carry. A lion's dark mane is an example: it reflects condition but makes the male hotter."),
  ("Human wildlife conflict", "Situations where wildlife and people come into conflict, for example big cats killing livestock and people killing cats in retaliation."),
  ("IUCN Red List", "The global list of species' extinction risk. Categories include Least Concern, Near Threatened, Vulnerable, Endangered, Critically Endangered, Extinct in the Wild and Extinct."),
  ("Kleptoparasitism", "Stealing food that another animal has caught. Spotted hyenas often steal kills from leopards and cheetahs."),
@@ -219,6 +221,7 @@ GL = [("Apex predator", "A predator at the top of its food chain with no natural
  ("Scat analysis", "Working out what an animal eats from the hair, bone and DNA in its droppings (scats). Most snow leopard diet studies use it."),
  ("Scrape", "A mark made by scraping the ground with the hind feet, often with urine or scent, to signal presence."),
  ("Semi retractable claws", "Claws that cannot be fully pulled in, as in the cheetah, giving extra grip when running."),
+ ("Sexual selection", "Selection for traits that help an animal win mates, either by attracting the other sex or by beating rivals. The lion's mane is shaped by both."),
  ("Stalk and ambush", "Hunting by creeping close under cover and then attacking with a short rush."),
  ("Subspecies", "A distinct population within a species, often geographically separate. Tiger and leopard subspecies are under active scientific review."),
  ("Territory", "The part of a home range that an animal actively defends against others of its kind."),
@@ -228,7 +231,7 @@ add("glossary.html", "Big Cat Glossary: Terms Explained Simply | BigCatWise",
     "Plain English definitions of big cat terms: pride, coalition, rosette, melanism, flehmen response, IUCN Red List categories, CITES appendices and more.",
     "Big cat glossary",
     lead="Definitions of the terms you will meet when reading about big cats, from pride and rosette to IUCN Red List categories and CITES appendices.",
-    kind="page", modified="2026-10-14", headline="Big cat glossary",
+    kind="page", modified="2026-10-15", headline="Big cat glossary",
     body='<section class="card"><dl>' + "".join('<dt id="%s">%s</dt><dd>%s</dd>' % (t.lower().replace(" ", "-"), t, d) for t, d in GL) + '</dl></section>',
     related=SP + [("Big cat FAQ", "faq.html")], sources=[IUCN] + ALLCSG[:2], priority="0.6")
 

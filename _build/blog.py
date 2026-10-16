@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -108,7 +108,7 @@ post("how-fast-is-a-cheetah", "How Fast Is a Cheetah? Top Speed, Acceleration & 
 <li><b>A long tail</b>, about half the head and body length, used for balance and steering in turns.</li>
 <li><b>Large lungs, heart and nasal passages</b>, which help it take in air quickly, including while it holds a suffocating bite on its prey after the chase.</li></ul></section>
 <section class="card"><h2>How long can a cheetah keep it up?</h2>
-<p>Not long. Cheetahs are sprinters, and the IUCN Cat Specialist Group notes that chases seldom cover more than about 300 m. A common explanation was that cheetahs give up because they overheat. A 2013 study by Hetem and colleagues, which measured body temperature in free living cheetahs, found that body temperature did not rise enough during hunts to explain stopping, and that it rose more after a successful hunt than during the chase. Their conclusion was that cheetahs do not abandon hunts because they overheat. The more likely limit is the extreme energy and muscle effort of each sprint.</p>
+<p>Not long. Cheetahs are sprinters, and the IUCN Cat Specialist Group notes that chases seldom cover more than about 300 m. A common explanation was that cheetahs give up because they overheat. A 2013 study by Hetem and colleagues, which measured body temperature in free living cheetahs, found that body temperature did not rise enough during hunts to explain stopping, and that it rose more after a successful hunt than during the chase. Their conclusion was that cheetahs do not abandon hunts because they overheat. The more likely limit is the extreme energy and muscle effort of each sprint. Our deeper dive is <a href="do-cheetahs-abandon-hunts-because-they-overheat.html">do cheetahs abandon hunts because they overheat?</a></p>
 <p>After a chase a cheetah usually needs to rest and recover its breath before eating, and this is when lions and spotted hyenas may steal its kill.</p></section>
 <section class="card"><h2>Is the cheetah really the fastest land animal?</h2>
 <p>Yes. No other land animal has been reliably measured running faster over a short sprint. For comparison, the Nature paper's editorial summary notes that racing greyhounds reach about 18 m/s, well below the cheetah's measured best of 25.9 m/s.</p></section>
@@ -484,6 +484,54 @@ post("never-enter-a-tiger-enclosure", "Never Enter a Tiger Enclosure: Lessons Fr
           ("How do tigers kill their prey?", "Tigers stalk and ambush prey, then kill with a bite to the back of the neck for smaller prey or a suffocating throat bite for larger prey (San Diego Zoo Wildlife Alliance tiger fact sheet).")],
      related=[("Tiger facts", "tiger.html"), ("Big cat behavior", "behavior.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Disclaimer", "disclaimer.html"), ("Blog home", "blog/index.html")],
      sources=[BBC1, BBC2, BBC3, IND1, CNN1, NZPT, SDZDIET, WTHP, WWFUK])
+
+
+# ---------------------------------------------------------------- 13 CHEETAH OVERHEAT MYTH (16 Oct 2026)
+post("do-cheetahs-abandon-hunts-because-they-overheat", "Do Cheetahs Abandon Hunts Because They Overheat? | BigCatWise",
+     "No: free-living cheetahs stop chases without overheating. Body temperature averaged 38.4 C at chase end; heat rises more after a kill than during the sprint.",
+     "Do cheetahs abandon hunts because they overheat? Direct measurements say no", headline="Do cheetahs abandon hunts because they overheat?",
+     published="2026-10-16", modified="2026-10-16",
+     lead="No. When researchers measured body temperature in free living cheetahs hunting spontaneously in Namibia, body temperature averaged about 38.4&deg;C at the moment a chase ended, typical of the cats' daily rhythm, and did not reach the 40.5&deg;C ceiling from an old treadmill study. Cheetahs do abandon most hunts, but overheating is not the reason. After a successful kill, temperature rose about twice as much as after a failed chase, which the authors interpret as stress hyperthermia, not exercise heat.",
+     body='''<section class="card"><h2>The short answer</h2>
+<ul>
+<li><b>The myth:</b> cheetahs store so much heat when they sprint that they must quit or risk overheating.</li>
+<li><b>Where it came from:</b> a 1973 treadmill study on two hand reared cheetahs that stopped at about 40.5&deg;C rectal temperature.</li>
+<li><b>What free living cheetahs showed:</b> body temperature did not rise enough during real hunts to explain quitting; it averaged about 38.4&deg;C when chases ended.</li>
+<li><b>After a kill:</b> temperature rose about 1.3&deg;C, roughly twice the rise after an unsuccessful hunt, even when activity was similar.</li>
+</ul>
+<p>For measured top speeds and how short most sprints are, see <a href="how-fast-is-a-cheetah.html">how fast is a cheetah?</a> and our <a href="../cheetah.html">cheetah facts</a> page.</p></section>
+<section class="card"><h2>Where the overheating story started</h2>
+<p>In 1973, C. Richard Taylor and V. J. Rowntree published a study in the <i>American Journal of Physiology</i> on heat balance in running cheetahs. They exercised two hand reared cheetahs on a treadmill, measured how heat was produced and lost, and concluded that running cheetahs store metabolic heat. Further exercise soon became thermally impossible, they argued, at a ceiling rectal temperature of about 40.5&deg;C.</p>
+<p>That paper was groundbreaking for its time, and textbooks and popular accounts often used it to explain why cheetahs abandon chases and rest so long after a sprint. The problem is that a treadmill does not look like a real hunt. In that study the cats ran at up to about 30 km/h and stopped within about 2 km. Wild cheetahs can sprint much faster over much shorter distances: typically under about 300 m, and rarely more than about 500 m.</p></section>
+<section class="card"><h2>What free living cheetahs actually do</h2>
+<p>In 2013, Robyn Hetem and colleagues at the University of the Witwatersrand tested the idea directly. They implanted temperature loggers (recording every minute) and activity loggers in free living cheetahs at the AfriCat Foundation rehabilitation camp in central Namibia, then let the cats hunt naturally for months. Four cheetahs yielded usable hunt data (two of six study animals were later killed by a resident leopard).</p>
+<p>Key results from Biology Letters:</p>
+<ul>
+<li>Mean body temperature across the day was about 38.3&deg;C, with a daily range of about 2.3&deg;C.</li>
+<li>At the moment intense chase activity ended, body temperature averaged about 38.4&deg;C for successful hunts and about 38.3&deg;C for unsuccessful ones, no different from the cats usual 24 hour mean.</li>
+<li>Body temperature seldom reached the 40.5&deg;C treadmill ceiling, and far less often than the cheetahs abandoned hunts.</li>
+<li>Even on a chase that came close to the commonly reported maximum distance of about 300 m, temperature did not rise measurably during the sprint itself.</li>
+</ul>
+<p>After unsuccessful hunts, body temperature rose only about 0.5&deg;C. That is a small fraction of the heat rise you would expect if cheetahs stored most of the metabolic heat from a full speed sprint the way the treadmill model assumed.</p></section>
+<section class="card"><h2>Why temperature rises more after a kill</h2>
+<p>Hunting still had thermal consequences, but not during the chase. After successful hunts, body temperature rose for about 40 minutes on average and by about 1.3&deg;C, to a peak near 39.2&deg;C. After unsuccessful hunts the rise was only about 0.5&deg;C, to about 38.7&deg;C. Activity during the hunts was similar, so the extra heat was not simply harder running.</p>
+<p>The authors ruled out several simple explanations. The rise was not from eating (cheetahs often rest before they start to feed). It was not explained by air temperature or prey mass. And if the 1.3&deg;C rise came only from chase metabolism, the implied oxygen use would be unrealistically high. Their proposal: the post kill rise is <b>stress hyperthermia</b>, linked to high sympathetic nervous system activity. Cheetahs are often described as nervous or highly alert at kills, watching for lions, leopards and hyenas that steal food and kill cubs. Supporting that idea, a lame cheetah that could not run still showed a similar temperature rise after joining a sibling at a kill it had not chased.</p></section>
+<section class="card"><h2>So why do cheetahs stop?</h2>
+<p>They still abandon most hunts. Reviews and field studies often put overall hunting success under about 40%. Hetem and colleagues conclude the reason is not overheating; the true limits are still being pinned down. A separate 2013 study by Alan Wilson and colleagues, using GPS and motion sensor collars on wild cheetahs in Botswana, showed that hunts demand extreme acceleration, braking and turning, not only top speed, and that most runs never reach flat out speed. The extreme muscle power of a short sprint is a more plausible limit than a thermal ceiling that free living cats rarely approach.</p>
+<p>After a chase, cheetahs often pant hard and rest. That recovery window is when lions and spotted hyenas are most dangerous to them. Daytime hunting and short recovery at the carcass are part of how cheetahs try to stay clear of those competitors; see <a href="../behavior.html">big cat behavior</a> and <a href="../cheetah.html#hunting">how cheetahs hunt</a>.</p></section>
+<section class="card"><h2>What this does not prove</h2>
+<p>The Namibia study measured cheetahs hunting by ambush in fairly dense vegetation. The authors note that open pursuit on hot grassland, or hotter climates, might still produce higher chase temperatures. The result overturns the simple textbook claim that overheating explains abandoned hunts; it does not say cheetahs never get hot.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>The overheating explanation traces mainly to a 1973 treadmill study with a 40.5&deg;C ceiling.</li>
+<li>Free living cheetahs ended chases at about 38.4&deg;C, within their normal daily range.</li>
+<li>Temperature rose more after a successful kill than after a failed chase, consistent with stress hyperthermia at the carcass.</li>
+<li>Cheetahs still fail most hunts; the limit is more likely sprint effort and hunt dynamics than stored heat.</li></ul></section>''',
+     faq=[("Do cheetahs abandon hunts because they overheat?", "No. In free living cheetahs in Namibia, body temperature averaged about 38.4&deg;C when chases ended and did not reach the 40.5&deg;C ceiling from a 1973 treadmill study. They abandon hunts for other reasons."),
+          ("Where did the cheetah overheating idea come from?", "Mainly from Taylor and Rowntree (1973), who ran two hand reared cheetahs on a treadmill and concluded they stored metabolic heat and hit a thermal limit near 40.5&deg;C."),
+          ("Why does cheetah body temperature rise after a kill?", "Hetem et al. (2013) found a rise of about 1.3&deg;C after successful hunts versus about 0.5&deg;C after unsuccessful ones. They propose stress hyperthermia linked to alertness at the kill, not leftover sprint heat."),
+          ("How successful are cheetah hunts?", "Field studies cited by Hetem and colleagues put overall success under about 40%. Most chases are abandoned even when prey seems within reach.")],
+     related=[("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Cheetah facts", "cheetah.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[HETEM2013, TAYLOR1973, WILSON, CSG["cheetah"], NZP["cheetah"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

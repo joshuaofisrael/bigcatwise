@@ -46,7 +46,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     faq=[("Where do lions live besides Africa?", "The only wild lions outside Africa live in and around Gir forest in Gujarat, western India. They belong to the northern subspecies <i>Panthera leo leo</i>."),
          ("How many lions are left in the wild?", "The IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025, plus about 670 adult and subadult Asiatic lions counted in India in 2020."),
          ("Do lions really live in the jungle?", "No. Lions prefer savanna, grassland and open woodland. The nickname king of the jungle is a figure of speech, not a description of their habitat.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html")] + SPECIES_REL,
+    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html")] + SPECIES_REL,
     sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], IUCN], priority="0.9")
 
 # ------------------------------------------------------------------ TIGER
@@ -177,7 +177,7 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
          ("What is the top speed of a cheetah?", "The fastest run measured in a study of wild cheetahs was 25.9 m/s, about 93 km/h or 58 mph. The IUCN Cat Specialist Group gives up to about 103 km/h."),
          ("Do cheetahs abandon hunts because they overheat?", 'No. Free living cheetahs in Namibia ended chases at about 38.4&deg;C, within their normal daily range. Heat rises more after a kill than during the sprint; see <a href="blog/do-cheetahs-abandon-hunts-because-they-overheat.html">the research summary</a>.'),
          ],
-    related=[("Leopard facts", "leopard.html"), ("Lion facts", "lion.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html")] + SPECIES_REL,
+    related=[("Leopard facts", "leopard.html"), ("Lion facts", "lion.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Cheetah worksheet for 3rd grade", "teachers/cheetah-worksheet-3rd-grade.html")] + SPECIES_REL,
     sources=[CSG["cheetah"], DURANT, WILSON, NZP["cheetah"], WWF["cheetah"], SDZ["cheetah"], PAN["cheetah"]], priority="0.9")
 
 # ------------------------------------------------------------------ SNOW LEOPARD

@@ -118,7 +118,7 @@ post("how-fast-is-a-cheetah", "How Fast Is a Cheetah? Top Speed, Acceleration & 
 <li>Sprints are short, rarely over about 300 m.</li>
 <li>Overheating is not why cheetahs stop, according to direct temperature measurements.</li></ul>
 <p>More on the species in our <a href="../cheetah.html">cheetah facts</a> page.</p></section>''',
-     related=[("Cheetah facts", "cheetah.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Blog home", "blog/index.html")],
+     related=[("Cheetah facts", "cheetah.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Cheetah worksheet for 3rd grade", "teachers/cheetah-worksheet-3rd-grade.html"), ("Blog home", "blog/index.html")],
      sources=[WILSON, HETEM, ("Scientific American (2013) Speed test devised for wild cheetahs", "https://www.scientificamerican.com/article/speed-test-devised-for-wild-cheetahs/"), CSG["cheetah"], NZP["cheetah"]])
 
 # ---------------------------------------------------------------- 4 TIGER STRIPES
@@ -219,7 +219,7 @@ post("why-do-lions-live-in-prides", "Why Do Lions Live in Prides? What the Resea
      faq=[("Why do lions live in groups when other big cats live alone?", "Research in the Serengeti found that lionesses group mainly to defend their cubs against infanticidal males and to hold territory against neighbouring prides. Food gains from group hunting are not enough on their own to explain it."),
           ("How many lions are in a pride?", "According to the IUCN Cat Specialist Group, African prides average four to six adult lionesses, ranging from 1 to 21, usually with a coalition of about two adult males plus cubs and subadults. In India's Gir forest most prides have only two females."),
           ("Are the lionesses in a pride related?", "Yes. A 1991 DNA fingerprinting study published in Nature found that female pride companions are always closely related, while male coalition partners may be related or unrelated.")],
-     related=[("Lion facts", "lion.html"), ("Big cat behavior", "behavior.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Blog home", "blog/index.html")],
+     related=[("Lion facts", "lion.html"), ("Big cat behavior", "behavior.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html"), ("Blog home", "blog/index.html")],
      sources=[PACKER1990, HEINSOHN1995, PACKER1991, CSG["lion"], CSG["cheetah"]])
 
 # ---------------------------------------------------------------- 7 TIGER TERRITORY (11 Oct 2026)

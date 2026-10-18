@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
+from sources import CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -532,6 +532,55 @@ post("do-cheetahs-abandon-hunts-because-they-overheat", "Do Cheetahs Abandon Hun
           ("How successful are cheetah hunts?", "Field studies cited by Hetem and colleagues put overall success under about 40%. Most chases are abandoned even when prey seems within reach.")],
      related=[("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Cheetah facts", "cheetah.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[HETEM2013, TAYLOR1973, WILSON, CSG["cheetah"], NZP["cheetah"]])
+
+# ---------------------------------------------------------------- 14 ARE TIGERS NOCTURNAL (18 Oct 2026)
+post("are-tigers-nocturnal", "Are Tigers Nocturnal? When Tigers Are Most Active | BigCatWise",
+     "Mostly, but not strictly. Wild tigers are most active at night, dawn and dusk, track their prey's schedule, and turn more nocturnal where people are busy by day.",
+     "Are tigers nocturnal? When tigers are most active, according to camera trap studies", headline="Are tigers nocturnal?",
+     published="2026-10-18", modified="2026-10-18",
+     lead="Mostly, but not strictly. Wild tigers do most of their moving and hunting at night and around dawn and dusk, and they are best described as nocturnal to crepuscular rather than strictly nocturnal. Camera trap and radio tracking studies show that a tiger's schedule bends to two things: when its prey is active, and when people are around. In Nepal, tigers shared the very same trails as people and vehicles but became much less active during the day, when human traffic peaked.",
+     body='''<section class="card"><h2>The short answer</h2>
+<ul>
+<li><b>Usual pattern:</b> most activity at night and in the twilight hours of dawn and dusk; much of the hot daytime is spent resting in cover.</li>
+<li><b>Not a fixed rule:</b> tigers can and do move and hunt by day, especially where they are undisturbed.</li>
+<li><b>Prey sets the clock:</b> in Sumatra, tiger activity overlapped strongly with muntjac and sambar deer, two of its prey species.</li>
+<li><b>People push tigers into the night:</b> around Chitwan National Park, Nepal, tigers cut back daytime activity where human activity peaked by day.</li>
+</ul>
+<p>For the basics on size, range and diet, see our <a href="../tiger.html">tiger facts</a> page and <a href="../tiger.html#hunting">what tigers eat</a>.</p></section>
+<section class="card"><h2>How scientists know when tigers are active</h2>
+<p>Tigers are rare, wary and live in dense forest, so researchers rarely watch them directly. Two tools do most of the work. <b>Camera traps</b>, automatic cameras triggered by movement, stamp every photo with a time, so thousands of photos add up to a 24 hour activity profile. <b>Radio collars</b> let researchers track how far and when an individual moves. Comparing the activity curves of tigers, their prey and people shows who is active at the same time, a measure called <b>temporal overlap</b>.</p>
+<p>The Smithsonian's National Zoo describes Sumatran tigers as hunting primarily at night, using sight and sound to find prey. The field studies below show why that is a tendency rather than a law.</p></section>
+<section class="card"><h2>Tigers follow their prey's schedule</h2>
+<p>In 2011, Matthew Linkie and Martin Ridout published a study in the <i>Journal of Zoology</i> on the critically endangered Sumatran tiger. They used 126 camera traps, running for a combined 8,984 camera days across four study areas from disturbed lowland forest to primary submontane forest, to compare the daily activity of tigers with five presumed prey species.</p>
+<ul>
+<li>They described the tiger as <b>crepuscular</b>, most active around dawn and dusk.</li>
+<li>Tiger activity overlapped strongly with red muntjac (overlap coefficient about 0.80 on a scale from 0, no overlap, to 1, complete overlap) and with sambar deer (about 0.81).</li>
+<li>Overlap with the largest prey available, the mostly nocturnal Malayan tapir, was much lower (about 0.52). The authors suggest tapir is not a principal prey species there, even though foraging theory might predict a big cat would favour the biggest prey.</li>
+</ul>
+<p>An earlier radio tracking and scat study in Nagarahole, southern India, by K. Ullas Karanth and Melvin Sunquist (2000) reached a similar conclusion from a different angle. Tracking tigers, leopards and dholes between 1986 and 1992, they found that the activity patterns of the predators appeared to be related mainly to the activity of their principal prey, rather than to avoiding one another. They found no temporal separation of predatory activity between tigers and leopards in that forest. For how tigers space themselves across the land, see <a href="how-big-is-a-tigers-territory.html">how big is a tiger's territory?</a></p></section>
+<section class="card"><h2>Tigers shift to the night around people</h2>
+<p>The clearest evidence of flexibility comes from Nepal. In a 2012 study in the <i>Proceedings of the National Academy of Sciences</i>, Neil Carter and colleagues ran field cameras inside and outside Chitwan National Park in 2010 and 2011. People on foot and vehicles were everywhere in the study area, yet tiger density was also high.</p>
+<ul>
+<li>Even at the level of individual camera locations, tigers used the same places as people on foot and vehicles in both years.</li>
+<li>Tigers offset their activity, becoming much less active during the day, when human activity peaked.</li>
+<li>The authors suggest that abundant prey and low levels of poaching also helped tigers and people coexist.</li>
+</ul>
+<p>This matters for conservation. A common belief is that large carnivores cannot share space with people at fine scales. The Chitwan results suggest tigers can share space if they can share it in time, using the night for the trails people use by day. That flexibility has limits: it depends on enough prey and little poaching.</p></section>
+<section class="card"><h2>What this means for tiger watching and safety</h2>
+<p>Because activity peaks around dawn and dusk, wildlife safaris in tiger reserves often schedule drives for early morning and late afternoon. The same pattern is a reason people living near tiger forests are advised to be most careful at those hours. Tigers in zoos keep a different routine shaped by feeding times and keepers, so a sleepy zoo tiger at midday says little about wild behaviour. Our <a href="never-enter-a-tiger-enclosure.html">tiger enclosure safety guide</a> covers zoo safety.</p></section>
+<section class="card"><h2>What these studies do not prove</h2>
+<p>Each study covered particular places and years. Activity can differ with season, habitat, prey community and human pressure, so no single curve describes every tiger. Camera traps also record when tigers pass cameras on trails, which is a good but imperfect stand in for overall activity. For how tigers compare with other big cats in behaviour, see <a href="../behavior.html">big cat behavior</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Wild tigers are mainly nocturnal and crepuscular, not strictly nocturnal.</li>
+<li>In Sumatra, tiger activity closely matched muntjac and sambar deer.</li>
+<li>In southern India, predator activity tracked principal prey more than avoidance of other predators.</li>
+<li>Near Chitwan, Nepal, tigers used the same trails as people but avoided the daytime human peak.</li></ul></section>''',
+     faq=[("Are tigers nocturnal?", "Mostly. Wild tigers are most active at night and around dawn and dusk, but they are not strictly nocturnal and can be active by day, especially where people are scarce."),
+          ("What time of day are tigers most active?", "Usually around dawn, dusk and at night. A camera trap study of Sumatran tigers described them as crepuscular, with activity closely matching muntjac and sambar deer."),
+          ("Do tigers hunt during the day?", "Sometimes. Activity tends to follow the prey's schedule, so tigers may hunt in daylight where prey is active and disturbance is low."),
+          ("Why are tigers more nocturnal near people?", "In Nepal's Chitwan region, tigers used the same trails as people and vehicles but were much less active during the day, when human activity peaked (Carter et al. 2012).")],
+     related=[("Tiger facts", "tiger.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Big cat behavior", "behavior.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[LINKIE2011, CARTER2012, KARANTH2000, NZP["tiger"], CSG["tiger"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

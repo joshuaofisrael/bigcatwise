@@ -105,8 +105,9 @@ def render(p):
         head.append('<meta name="robots" content="noindex">')
     else:
         head.append('<link rel="canonical" href="%s">' % canon)
-    head.append('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-                '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@400;700&amp;display=swap">')
+    # Fonts are self-hosted (fonts/, @font-face in style.css): no third-party font requests, preloaded so text renders in the final font early.
+    head.append('<link rel="preload" href="%sfonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>'
+                '<link rel="preload" href="%sfonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>' % (rel, rel))
     head.append('<link rel="stylesheet" href="%sstyle.css"><link rel="icon" href="%sfavicon.svg" type="image/svg+xml">' % (rel, rel))
     og_type = "website" if p.kind in ("home", "page") else "article"
     head.append('<meta property="og:type" content="%s"><meta property="og:site_name" content="%s">'

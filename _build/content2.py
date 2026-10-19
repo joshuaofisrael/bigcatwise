@@ -304,7 +304,7 @@ analytics = ("We use Cloudflare Web Analytics to count page views. It is cookiel
              "We do not currently run any analytics script. We plan to add Cloudflare Web Analytics, which is cookieless and does not collect personal data or track you across sites, and will update this page when we do.")
 add("privacy.html", "Privacy Policy | BigCatWise",
     "BigCatWise privacy policy: Joshua Israel Ventures LLC is the data controller. What we collect, how contact messages are handled, analytics and your choices.",
-    "Privacy policy", kind="page", headline="Privacy",
+    "Privacy policy", kind="page", headline="Privacy", modified="2026-10-19",
     lead="BigCatWise is a brand of Joshua Israel Ventures LLC. Joshua Israel Ventures LLC is the data controller for personal information collected through this website. We collect as little information as possible, and this page explains what we collect and why.",
     body='''<section class="card"><h2>Who we are</h2><p>This website, bigcatwise.com, is owned and operated by Joshua Israel Ventures LLC ("we", "us"). You can contact us about privacy at <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>
 <section class="card"><h2>What we collect</h2><ul>
@@ -313,13 +313,13 @@ add("privacy.html", "Privacy Policy | BigCatWise",
 <li><b>Games.</b> Our <a href="games/">games</a> save your best score only in your own browser (local storage) so you can try to beat it. It is never sent to us or anyone else, and you can clear it by clearing your browser's site data. The games need no sign up and collect no personal data.</li>
 <li><b>Analytics.</b> ''' + analytics + '''</li></ul>
 <p>We use contact details only to reply to you and to handle your request. We do not sell, rent or share them for marketing.</p></section>
-<section class="card"><h2>Hosting and fonts</h2><p>The site is hosted on GitHub Pages. Like any web host, GitHub may log technical data such as IP addresses for security and operations; see GitHub's privacy statement. Headings use the free Fredoka font served by Google Fonts, so your browser requests the font from Google's servers, which receive your IP address as part of that request. We use no other Google services on this site.</p></section>
+<section class="card"><h2>Hosting and fonts</h2><p>The site is hosted on GitHub Pages. Like any web host, GitHub may log technical data such as IP addresses for security and operations; see GitHub's privacy statement. The Fredoka and Nunito fonts are served from this site itself, not from Google Fonts or any other third party, so loading a page sends no font requests elsewhere.</p></section>
 <section class="card"><h2>Analytics</h2><p>We use Cloudflare Web Analytics, a privacy-first, cookieless service, to count page visits. It does not set cookies, use local storage or fingerprint visitors, and it does not track you across other sites. See <a href="https://www.cloudflare.com/web-analytics/">Cloudflare Web Analytics</a> for details.</p></section>
 <section class="card"><h2>Cookies, ads and affiliates</h2><p>We do not set cookies. There is no Google AdSense or other advertising code and there are no affiliate links or affiliate cookies on this site. If that changes, we will update this policy and our <a href="disclaimer.html">disclaimer</a> before it goes live.</p></section>
 <section class="card"><h2>Retention and your choices</h2><p>We keep contact messages only as long as needed to respond and keep a reasonable record of the conversation. You can ask us to access, correct or delete the personal information you sent us by emailing <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>
 <section class="card"><h2>Children</h2><p>The site is general educational content and is not directed at collecting information from children. Please do not send us personal information about a child.</p></section>
 <section class="card"><h2>Governing law</h2><p>This policy is governed by the laws of the State of Florida, United States, without regard to its conflict of law rules. Any dispute about it will be heard in the state or federal courts located in Florida.</p></section>
-<section class="card"><h2>Changes</h2><p>We will post any changes to this policy on this page. Last updated 12 October 2026.</p></section>''',
+<section class="card"><h2>Changes</h2><p>We will post any changes to this policy on this page. Last updated 19 October 2026.</p></section>''',
     related=[("Terms of use", "terms.html"), ("Disclaimer", "disclaimer.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
 
 add("terms.html", "Terms of Use | BigCatWise",
@@ -344,7 +344,7 @@ add("disclaimer.html", "Disclaimer & Affiliate Disclosure | BigCatWise",
 <section class="card"><h2>No professional relationship</h2><p>Using this site, or contacting us, does not create any professional, advisory or client relationship. Our content is general information, not veterinary, wildlife handling, travel safety or legal advice. Always follow official guidance and qualified professionals, and never approach wild or captive big cats.</p></section>
 <section class="card" id="affiliate"><h2>Advertising and affiliate disclosure</h2><p>There are currently no paid placements, sponsored posts, advertisements or affiliate links on BigCatWise, and we receive no compensation for mentioning any organisation, product or service. Links to zoos, conservation groups and research are provided purely as sources.</p><p>If we add advertising or affiliate links in future, we will disclose them clearly and conspicuously on the pages where they appear, in line with the US Federal Trade Commission's guidance on endorsements, and we will update this page and our <a href="privacy.html">privacy policy</a>.</p></section>
 <section class="card"><h2>Governing law</h2><p>This disclaimer is governed by the laws of the State of Florida, United States, without regard to its conflict of law rules. Any dispute about it will be heard in the state or federal courts located in Florida.</p></section>
-<section class="card"><h2>Contact</h2><p>Questions about this disclaimer: <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. Last updated 12 October 2026.</p></section>''',
+<section class="card"><h2>Contact</h2><p>Questions about this disclaimer: <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. Last updated 19 October 2026.</p></section>''',
     related=[("Terms of use", "terms.html"), ("Privacy", "privacy.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.2")
 
 add("404.html", "Page Not Found | BigCatWise", "This page could not be found.", "This page has wandered off",

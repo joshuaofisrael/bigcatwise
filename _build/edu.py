@@ -387,11 +387,11 @@ rows = "".join((('<tr><td><a href="../img/%s-960.webp">%s</a></td>' if have(p["s
                for p in PHOTOS_LIST)
 add("credits/index.html", "Photo Credits and Licences | BigCatWise",
     "Credits and licences for every photo on BigCatWise: source file, photographer, licence and where each image is used. All photos are CC0 or Creative Commons licensed.",
-    "Photo credits and licences", kind="page", headline="Photo credits",
+    "Photo credits and licences", kind="page", headline="Photo credits", modified="2026-10-19",
     lead="BigCatWise uses only photos that are free to reuse: public domain (CC0) or Creative Commons Attribution ShareAlike, all from Wikimedia Commons. We checked the licence on each file's own page before use and credit the photographer under every photo and here.",
     body='''<section class="card"><h2>Photos</h2><div class="tablewrap"><table><thead><tr><th>File on BigCatWise</th><th>Source file page</th><th>Author</th><th>Licence</th><th>Used on</th></tr></thead><tbody>''' + rows + '''</tbody></table></div>
 <p class="note">Our copies are resized, cropped to a 3:2 frame and converted to WebP; no other changes were made. Photos licensed CC BY-SA remain under that licence, so you may reuse our resized copies under the same licence with credit to the photographer. Licences checked 8 October 2026.</p></section>
-<section class="card"><h2>Illustrations, games and fonts</h2><p>The logo, icons, paw doodles, game art and diagrams are original works drawn in code by BigCatWise. Games are original works &copy; 2026 Joshua Israel Ventures LLC; see the <a href="../games/CREDITS.md">games credits file</a>. Fonts: Fredoka and Nunito from Google Fonts, under the SIL Open Font License 1.1.</p>
+<section class="card"><h2>Illustrations, games and fonts</h2><p>The logo, icons, paw doodles, game art and diagrams are original works drawn in code by BigCatWise. Games are original works &copy; 2026 Joshua Israel Ventures LLC; see the <a href="../games/CREDITS.md">games credits file</a>. Fonts: Fredoka and Nunito, originally from Google Fonts and self-hosted here, under the SIL Open Font License 1.1 (<a href="../fonts/OFL-Fredoka.txt">Fredoka licence</a>, <a href="../fonts/OFL-Nunito.txt">Nunito licence</a>).</p>
 <p>Think a photo is credited wrongly? Email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a> and we will fix or remove it promptly.</p></section>''',
     related=[("About", "about.html"), ("Terms of use", "terms.html"), ("Games", "games/index.html")], priority="0.3")
 

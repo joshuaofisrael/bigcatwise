@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
+from sources import ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -581,6 +581,58 @@ post("are-tigers-nocturnal", "Are Tigers Nocturnal? When Tigers Are Most Active 
           ("Why are tigers more nocturnal near people?", "In Nepal's Chitwan region, tigers used the same trails as people and vehicles but were much less active during the day, when human activity peaked (Carter et al. 2012).")],
      related=[("Tiger facts", "tiger.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Big cat behavior", "behavior.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[LINKIE2011, CARTER2012, KARANTH2000, NZP["tiger"], CSG["tiger"]])
+
+# ---------------------------------------------------------------- 15 CAN LEOPARDS LIVE NEAR PEOPLE (19 Oct 2026)
+post("can-leopards-live-near-people", "Can Leopards Live Near People? What Studies in India Show | BigCatWise",
+     "Yes, to a striking degree. In India leopards live in dense farmland with no wild prey, eat mostly domestic animals, visit homes at night and rarely attack people.",
+     "Can leopards live near people? What field studies of leopards in India's farmland and cities show", headline="Can leopards live near people?",
+     published="2026-10-19", modified="2026-10-19",
+     lead="Yes. In western India, leopards live at high density in farmland with more than 300 people per km&sup2; and almost no wild hoofed prey. They feed mostly on domestic animals, especially dogs, pass within a few metres of houses at night and stay out of sight by day. In that study area, attacks on people were rare. Coexistence is fragile, though: when leopards were trapped and moved away to reduce conflict, attacks on people went up, not down.",
+     body='''<section class="card"><h2>The short answer</h2>
+<ul>
+<li><b>Leopards persist in farmland:</b> a camera trap study in western Maharashtra found about 4.8 adult leopards per 100 km&sup2; in cropland with no wilderness.</li>
+<li><b>They live off domestic animals:</b> 87% of prey biomass in leopard scats from the same region came from domestic animals, and 39% from dogs alone.</li>
+<li><b>They move by night:</b> GPS collared leopards in villages came close to houses at night but almost never by day.</li>
+<li><b>Moving them made things worse:</b> a large translocation programme in Junnar was followed by a rise in attacks on people from about 4 to about 17 a year.</li>
+</ul>
+<p>For the basics on size, range and status, see our <a href="../leopard.html">leopard facts</a> page.</p></section>
+<section class="card"><h2>Leopards in a landscape with no wilderness</h2>
+<p>Protected areas cover only about 5% of India's land, so wide ranging carnivores must also use farmland. In a 2013 study in <i>PLoS ONE</i>, Vidya Athreya and colleagues used camera traps and capture recapture analysis to estimate carnivore density in an agricultural landscape of western Maharashtra with more than 300 people per km&sup2;. The area was cropland, devoid of wilderness and of wild herbivore prey.</p>
+<p>Leopards occurred at about 4.8 adults per 100 km&sup2; and striped hyaenas at about 5.0 per 100 km&sup2;. The authors write that roughly 10 large carnivores per 100 km&sup2; sharing space with dense human populations in a completely modified landscape had never been reported before. Human attacks by leopards were rare in the study area, even though leopards had been involved in serious conflict, including human deaths, in adjoining areas.</p></section>
+<section class="card"><h2>What leopards eat in farmland</h2>
+<p>Without deer or antelope, what keeps these leopards alive? A follow up study in <i>Oryx</i> (Athreya et al. 2016) analysed 85 confirmed leopard scats from the croplands of Ahmednagar district. Domestic animals made up 87% of the prey biomass, and domestic dogs alone made up 39%. The only wild prey found were rodents, small Indian civet, bonnet macaque and other primates, mongooses and birds.</p>
+<p>Interviews in 77 randomly chosen households showed how much domestic prey was available: about 169 adult cattle, 54 calves, 174 goats, 24 dogs and 61 cats per km&sup2;. Relative to those numbers, dogs and cats were over represented in the diet compared with the more numerous goats and cattle. The researchers calculated that the standing biomass of dogs and cats alone was enough to sustain the high density of carnivores in the area. For leopard diet in wilder places, see <a href="why-do-leopards-drag-their-kills-into-trees.html">why leopards drag kills into trees</a>.</p></section>
+<section class="card"><h2>How leopards move among villages</h2>
+<p>In 2014, Morten Odden and colleagues fitted GPS collars to five leopards in Maharashtra (four) and Himachal Pradesh (one). Three were released close to where they were caught. These used small home ranges of about 8 km&sup2; (a young male), 11 km&sup2; and 15 km&sup2; (two females). The authors suggest such small ranges mean food from human sources was plentiful, even with wild prey absent.</p>
+<ul>
+<li>Movement was markedly nocturnal: hourly steps averaged about 339 m at night against about 60 m by day.</li>
+<li>Night locations were significantly closer to settlements than day locations.</li>
+<li>Leopards in areas with many people visited houses regularly at night, with 20% of locations within 25 m of a house, but this happened in under 1% of daytime locations.</li>
+<li>One leopard in a sparsely populated area avoided settlements both day and night.</li>
+</ul>
+<p>The other two leopards had been moved 52 km before release. They travelled far and in a set direction (the male covered 89 km in a straight line in 37 days) before settling in much larger ranges of about 42 and 65 km&sup2;. Tigers in Nepal show a similar shift towards the night where people are busy by day; see <a href="are-tigers-nocturnal.html">are tigers nocturnal?</a></p></section>
+<section class="card"><h2>Why moving "problem" leopards backfired</h2>
+<p>A common response to leopards near villages is to trap them and release them in a forest. Athreya and colleagues tested that idea in <i>Conservation Biology</i> (2011). In the year from February 2001, 29 leopards were captured in the rural Junnar region of Maharashtra (4,275 km&sup2;, about 185 people per km&sup2;), where attacks on livestock were common and attacks on people rare. They were released an average of 39.5 km away in nearby forests, and 11 more leopards were brought into the same forests from other districts.</p>
+<p>From 1993 to 2001, Junnar averaged about four leopard attacks on people a year. After the translocations began, the average rose to 17. Attacks increased after nearby releases, became more lethal as more leopards came in from other districts, and were most likely where the most outside leopards had been released. The authors conclude the leopards did not stay put and that translocation induced attacks. Suggested reasons include capture stress, travel through unfamiliar land and loss of fear of people in captivity.</p></section>
+<section class="card"><h2>Leopards in a megacity</h2>
+<p>Leopards also live on the edges of Mumbai, one of the world's largest cities. In a 2018 paper in <i>Frontiers in Ecology and the Environment</i>, Alexander Braczkowski and colleagues argued that by preying on stray dogs, these leopards may reduce dog bites, the risk of rabies and the cost of dog sterilisation. Under one set of assumptions they estimated that leopard presence could save up to 90 human lives a year. That is a modelled estimate, not a count, and the authors stress that living with carnivores involves real trade offs between safety and conservation.</p></section>
+<section class="card"><h2>Adaptable does not mean safe from extinction</h2>
+<p>It is tempting to conclude that a cat this adaptable is not at risk. A 2016 range wide review in <i>PeerJ</i> by Andrew Jacobson and colleagues, calls that a misconception. Leopards now occupy only 25 to 37% of their historic range since 1750, and only about 17% of the remaining range is protected. Three subspecies, the Amur, Arabian and North Chinese leopards, have each lost as much as 98% of their historic range. For the full threat picture, see <a href="how-many-big-cats-are-left.html">how many big cats are left?</a> and <a href="../conservation.html">big cat conservation</a>.</p></section>
+<section class="card"><h2>What these studies do not show</h2>
+<p>Most of this evidence comes from a few landscapes in India, where cultural tolerance of wildlife is often high. It does not mean leopards are harmless: they kill livestock and pets, and attacks on people do happen. The GPS study tracked only five animals. The lesson is narrower and more useful: leopards can share land with people, and how people respond to them strongly shapes how safe that sharing is.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Leopards can live at high density in Indian farmland with no wild hoofed prey.</li>
+<li>There they eat mainly domestic animals, especially dogs.</li>
+<li>They approach homes at night and avoid people by day.</li>
+<li>Trapping and moving leopards was followed by more attacks on people, not fewer.</li>
+</ul></section>''',
+     faq=[("Can leopards live near people?", "Yes. In western Maharashtra, India, leopards lived at about 4.8 adults per 100 km&sup2; in farmland with more than 300 people per km&sup2;, and attacks on people there were rare (Athreya et al. 2013)."),
+          ("What do leopards eat near villages?", "Mostly domestic animals. In Ahmednagar district, 87% of prey biomass in leopard scats was domestic animals and 39% was dogs alone (Athreya et al. 2016)."),
+          ("Does moving leopards away stop attacks?", "In Junnar, Maharashtra, it did the opposite. After 29 leopards were captured and released elsewhere, attacks on people rose from about four to 17 a year (Athreya et al. 2011)."),
+          ("Are there leopards in Mumbai?", "Yes. Leopards live on the edges of Mumbai, and one study estimated that by eating stray dogs they may reduce dog bites and rabies risk (Braczkowski et al. 2018)."),
+          ("If leopards are so adaptable, why are they Vulnerable?", "Because they have still lost most of their range. Leopards occupy only 25 to 37% of their historic range, and some subspecies have lost as much as 98% (Jacobson et al. 2016).")],
+     related=[("Leopard facts", "leopard.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("Big cat conservation", "conservation.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[ATHREYA2013, ATHREYA2016, ODDEN2014, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CSG["leopard"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

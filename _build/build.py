@@ -136,6 +136,13 @@ def render(p):
         blocks.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", a)}}
             for q, a in p.faq]})
+    # machine-readable sources (20 Oct 2026): every visible source becomes a schema.org citation on the page's Article/WebPage block
+    if p.sources and not p.noindex:
+        main_block = next((b for b in blocks if b.get("@type") in ("Article", "WebPage")), None)
+        if main_block is not None:
+            main_block["citation"] = [
+                {"@type": "ScholarlyArticle" if "doi.org/" in u else "CreativeWork", "name": html.unescape(re.sub("<[^>]+>", "", n)), "url": u}
+                for n, u in p.sources if u.startswith("http")]
     for b in (p.extra_ld or []):
         blocks.append(b)
     head += [ld(b) for b in blocks]

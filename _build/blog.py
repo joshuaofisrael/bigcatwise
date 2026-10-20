@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
+from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -633,6 +633,64 @@ post("can-leopards-live-near-people", "Can Leopards Live Near People? What Studi
           ("If leopards are so adaptable, why are they Vulnerable?", "Because they have still lost most of their range. Leopards occupy only 25 to 37% of their historic range, and some subspecies have lost as much as 98% (Jacobson et al. 2016).")],
      related=[("Leopard facts", "leopard.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("Big cat conservation", "conservation.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[ATHREYA2013, ATHREYA2016, ODDEN2014, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CSG["leopard"]])
+
+# ---------------------------------------------------------------- 16 CHEETAH CUB SURVIVAL (20 Oct 2026)
+post("why-do-so-few-cheetah-cubs-survive", "Why Do So Few Cheetah Cubs Survive? What the Research Shows | BigCatWise",
+     "On the Serengeti Plains only about 1 in 20 cheetah cubs reached independence, mostly because lions and hyenas killed them. Elsewhere, survival can be far higher.",
+     "Why do so few cheetah cubs survive? Cub mortality, predators and what field studies show", headline="Why do so few cheetah cubs survive?",
+     published="2026-10-20", modified="2026-10-20",
+     lead="In the best known study, on the Serengeti Plains of Tanzania, a newborn cheetah cub had only about a 4.8% chance of reaching independence. Predators caused nearly three quarters of cub deaths, and lions made most of those kills, with spotted hyenas also taking many cubs once they left the den. But the Serengeti is not the whole story: in the Kgalagadi Transfrontier Park in southern Africa, cub survival was about seven times higher, and lions were not found to be involved in cub deaths.",
+     body='''<section class="card"><h2>The short answer in numbers</h2>
+<p>Karen Laurenson followed cheetah mothers and their litters on the Serengeti Plains and published the results in the <i>Journal of Zoology</i> in 1994. Her figures are still the ones most often quoted:</p>
+<div class="tablewrap"><table><thead><tr><th>Stage</th><th>What happened on the Serengeti Plains</th></tr></thead><tbody>
+<tr><td>Birth to about 8 weeks (in the lair)</td><td>About 72% of litters died before the cubs first left the lair</td></tr>
+<tr><td>8 weeks to 14 months</td><td>About 83% of the cubs that did emerge died before adolescence</td></tr>
+<tr><td>Overall</td><td>A cub's estimated chance of reaching independence at birth: 4.8%</td></tr>
+<tr><td>Main cause</td><td>Predation, 73% of all cub deaths; about 78% of those kills were by lions</td></tr>
+</tbody></table></div>
+<p>Laurenson described this as extremely high compared with other large mammals. For context on how many cubs a mother has to begin with, see the <a href="../cheetah.html#facts">cheetah quick facts</a>.</p></section>
+<section class="card"><h2>Inside the lair: the first eight weeks</h2>
+<p>Cheetah mothers raise their cubs alone, keeping very young cubs hidden in a lair while they go off to hunt. In Laurenson's study, lions were the main cause of death at this stage. Not every loss was a kill, though. Some cubs starved after their mothers abandoned them, and others died in grass fires or bad weather.</p>
+<p>The risk did not end when the cubs came out. The study found that the instantaneous death rate was highest straight after the cubs emerged from the lair, when they began following their mother across open plains.</p></section>
+<section class="card"><h2>After the lair: lions and hyenas</h2>
+<p>Once cubs were moving with their mother, predation accounted for virtually all of the deaths that followed. At this stage lions and spotted hyenas took roughly the same share of cubs.</p>
+<p>Mothers are not passive. Laurenson found that how vigilant a mother was, and how much antipredator behavior she showed, mirrored how vulnerable her cubs were at each age. Whether a mother responded aggressively to a predator also depended on which predator it was. A cheetah weighs far less than a lion, so a mother's options are limited, which helps explain why vigilance matters so much.</p></section>
+<section class="card"><h2>Cheetahs work hard to avoid lions and hyenas</h2>
+<p>Sarah Durant tested how cheetahs react to the threat of larger carnivores using audio playbacks, published in <i>Behavioral Ecology</i> in 2000. When she played lion or hyena calls near Serengeti cheetahs, they actively moved away, compared with control trials where no sound was played.</p>
+<ul>
+<li>After hearing competitors, cheetahs were much less likely to hunt, so they made fewer kills.</li>
+<li>They moved just as far after lion calls as after hyena calls, but spent more time looking at the loudspeaker and were less likely to make a kill after lion calls. Durant read this as cheetahs seeing lions as the bigger threat.</li>
+<li>Males, females and mothers responded alike, which suggested they were reacting mainly to competition rather than to a direct threat to cubs.</li>
+</ul>
+<p>Avoiding lions therefore has a cost: time spent moving away or watching for danger is time not spent hunting, and a mother with cubs has to feed herself and them. Lions and hyenas also steal cheetah kills, as the <a href="../cheetah.html#hunting">cheetah hunting section</a> explains.</p></section>
+<section class="card"><h2>Twenty years of Serengeti cheetahs</h2>
+<p>A longer view came from Durant, Marcella Kelly and Tim Caro in 2004, using a 20 year record of individually known cheetahs on the Serengeti Plains. They found that:</p>
+<ul>
+<li>Recruitment of young was negatively associated with the number of lions, linking the high predation seen in earlier studies to population dynamics.</li>
+<li>Recruitment rose with the number of Thomson's gazelles, the cheetah's main prey there, and fell with rainfall.</li>
+<li>Recruitment peaked when mothers were around 6 to 7 years old.</li>
+<li>Adolescents that stayed in temporary sibling groups survived better than those on their own, particularly males with sisters.</li>
+<li>Males had markedly lower survival than females.</li>
+</ul></section>
+<section class="card"><h2>Is the Serengeti typical?</h2>
+<p>Not necessarily. In 2014 Gus and Margie Mills reported on cheetahs in the Kgalagadi Transfrontier Park, which spans South Africa and Botswana. Cub survival there was about seven times higher than on the Serengeti Plains. Predation was still the most common cause of cub death, but lions were not found to be involved.</p>
+<p>They also argued that a close look at the Serengeti data does not unequivocally prove that lions dominate as predators of cheetah cubs there, and that very high cub mortality may not be as widespread as is commonly believed. That matters because the Serengeti figures had fed a belief that areas with many large carnivores are poor places to conserve cheetahs.</p>
+<p>The fair summary is that cheetah cubs can face extreme losses, especially on open plains with many lions and hyenas, but survival varies a lot between ecosystems.</p></section>
+<section class="card"><h2>Why this matters for conservation</h2>
+<p>Cheetahs are listed as Vulnerable, and most remaining populations are small. When few cubs survive, a population depends heavily on adult females living long enough to raise several litters. Knowing where and why cubs die helps decide which areas can sustain cheetahs, and the Kgalagadi results suggest that places with lions should not be written off. See <a href="../cheetah.html#status">how many cheetahs are left</a> and <a href="../conservation.html">big cat conservation</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>On the Serengeti Plains, only about 4.8% of cheetah cubs were estimated to reach independence.</li>
+<li>Predation caused about 73% of cub deaths there, mostly by lions; hyenas took many cubs after they left the lair.</li>
+<li>Cheetahs move away from lion and hyena calls and hunt less afterwards.</li>
+<li>In the Kgalagadi, cub survival was about seven times higher and lions were not found to kill cubs.</li>
+</ul></section>''',
+     faq=[("What percentage of cheetah cubs survive?", "It depends on the place. On the Serengeti Plains, Laurenson (1994) estimated a newborn cub had a 4.8% chance of reaching independence. In the Kgalagadi Transfrontier Park, Mills and Mills (2014) found survival about seven times higher."),
+          ("What kills cheetah cubs?", "Mostly predators. On the Serengeti Plains predation caused 73.2% of cub deaths, and 78.2% of those kills were by lions. Spotted hyenas also took many cubs after they left the lair. Some cubs died of starvation after being abandoned, or in grass fires and bad weather (Laurenson 1994)."),
+          ("When are cheetah cubs most at risk?", "Very early. About 72% of litters died before leaving the lair at around eight weeks, and the death rate was highest right after cubs emerged (Laurenson 1994)."),
+          ("Do lions kill cheetah cubs everywhere?", "No. In the Kgalagadi Transfrontier Park, lions were not found to be involved in cub deaths, and the authors questioned whether lions clearly dominate cub predation even on the Serengeti (Mills and Mills 2014)."),
+          ("How do cheetah mothers protect their cubs?", "By hiding young cubs in a lair, staying vigilant, and sometimes confronting predators. Mothers' vigilance matched how vulnerable their cubs were, and whether they responded aggressively depended on the predator species (Laurenson 1994).")],
+     related=[("Cheetah facts", "cheetah.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[LAURENSON1994, DURANT2000, DURANT2004, MILLS2014, CSG["cheetah"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

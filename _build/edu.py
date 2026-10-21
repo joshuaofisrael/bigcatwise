@@ -383,7 +383,7 @@ add("research/index.html", "Big Cat Research Papers: Sources for Students & Rese
 <section class="card"><h2>Reference organisations</h2><ul>
 <li><a href="https://www.catsg.org/" rel="noopener">IUCN SSC Cat Specialist Group</a>: species accounts and status summaries for all wild cats.</li>
 <li><a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List of Threatened Species</a>: official conservation assessments.</li></ul>
-<p class="note">References are formatted in APA style. DOIs verified on Crossref on 8, 11 and 14 October 2026. If you find a broken link or an error, email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>''',
+<p class="note">References are formatted in APA style. Each DOI is verified on Crossref when the article that cites it is published (most recently 21 October 2026). If you find a broken link or an error, email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>''',
     related=[("Teachers hub", "teachers/index.html"), ("Blog", "blog/index.html"), ("Glossary", "glossary.html")],
     extra_ld=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Peer reviewed papers cited on BigCatWise", "numberOfItems": n,
                "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "ScholarlyArticle", "sameAs": "https://doi.org/" + d,

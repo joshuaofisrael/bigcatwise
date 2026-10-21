@@ -185,7 +185,7 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
     "Snow leopard facts: how this mountain cat survives at 3,000 to 5,000 m, why it cannot roar, what it eats, where it lives and how many remain.",
     "Snow leopard facts: adaptations, range, diet and status",
     lead="The snow leopard (<i>Panthera uncia</i>) is a big cat of the high mountains of Central and South Asia, usually living between 3,000 and 5,000 m. It has thick smoky grey fur, huge paws and an exceptionally long tail, and unlike its relatives it cannot roar. It is listed as Vulnerable, with the latest estimate at about 7,400 to 8,000 individuals.",
-    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-10-13",
+    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-10-21",
     body=jump([("facts", "Quick facts"), ("adapt", "Adaptations"), ("voice", "Voice"), ("diet", "Diet"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera uncia</i>"), ("Weight", "30 to 50 kg"),
@@ -205,12 +205,12 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
 <section class="card" id="range"><h2>Where do snow leopards live?</h2>
 <p>Snow leopards live across the mountains of 12 countries: Afghanistan, Bhutan, China, India, Kazakhstan, Kyrgyzstan, Mongolia, Nepal, Pakistan, Russia, Tajikistan and Uzbekistan, including the Himalayas, the Tibetan Plateau, the Pamirs, Tian Shan and Altai. They are typically found at 3,000 to 5,000 m and occasionally above 5,500 m in the Himalayas, but at the northern edge of the range they live much lower, at 600 to 2,500 m. Densities are low, from about 0.3 to 6 per 100 km&sup2;, because these cold, dry landscapes support little prey.</p></section>
 <section class="card" id="status"><h2>How many snow leopards are left?</h2>
-<p>Snow leopards are very hard to count and older figures are rough. The most recent estimate cited by the IUCN Cat Specialist Group is 7,446 to 7,996 individuals, including 2,710 to 3,386 mature adults. The species was moved from Endangered to Vulnerable on the IUCN Red List in 2017, but a further decline of about 10 percent is projected over three generations.</p>
+<p>Snow leopards are very hard to count and older figures are rough. The most recent estimate cited by the IUCN Cat Specialist Group is 7,446 to 7,996 individuals, including 2,710 to 3,386 mature adults. The species was moved from Endangered to Vulnerable on the IUCN Red List in 2017, but a further decline of about 10 percent is projected over three generations. Genome studies also show that snow leopards have the lowest genetic diversity of any big cat, which leaves them less buffered against new threats; see <a href="blog/why-do-snow-leopards-have-low-genetic-diversity.html">why snow leopards have such low genetic diversity</a>.</p>
 <p>The main threats are retaliatory killing by herders after livestock losses, decline of wild prey through hunting and competition with livestock, and poaching: an estimated 221 to 450 snow leopards have been poached each year since 2008. Conflict reduction methods include predator proof livestock corrals, livestock insurance and vaccination schemes, and community based conservation.</p></section>''',
     faq=[("Is the snow leopard a type of leopard?", "No. Despite the name it is a separate species, Panthera uncia. Genetic studies suggest its closest living relative is the tiger."),
          ("Can snow leopards roar?", "No. Their vocal folds lack the tissue needed for a deep roar, so they yowl and make other calls instead."),
          ("How many snow leopards are there?", "The most recent estimate cited by the IUCN Cat Specialist Group is 7,446 to 7,996 individuals, of which 2,710 to 3,386 are mature adults.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html")] + SPECIES_REL,
+    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Why do snow leopards have such low genetic diversity?", "blog/why-do-snow-leopards-have-low-genetic-diversity.html")] + SPECIES_REL,
     sources=[CSG["snow"], WWF["snow"], SLT, SDZ["snow"], PAN["snow"], IUCN], priority="0.9")
 
 import content2  # noqa  other pages and blog

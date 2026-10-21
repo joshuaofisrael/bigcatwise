@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013
+from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -691,6 +691,54 @@ post("why-do-so-few-cheetah-cubs-survive", "Why Do So Few Cheetah Cubs Survive? 
           ("How do cheetah mothers protect their cubs?", "By hiding young cubs in a lair, staying vigilant, and sometimes confronting predators. Mothers' vigilance matched how vulnerable their cubs were, and whether they responded aggressively depended on the predator species (Laurenson 1994).")],
      related=[("Cheetah facts", "cheetah.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[LAURENSON1994, DURANT2000, DURANT2004, MILLS2014, CSG["cheetah"]])
+
+# ---------------------------------------------------------------- 17 SNOW LEOPARD GENETIC DIVERSITY (21 Oct 2026)
+post("why-do-snow-leopards-have-low-genetic-diversity", "Why Do Snow Leopards Have Such Low Genetic Diversity? | BigCatWise",
+     "Genome studies find snow leopards have the lowest genetic diversity of any big cat, mostly because their population has always been small. Here is what that means.",
+     "Why do snow leopards have such low genetic diversity? What genome studies show", headline="Why do snow leopards have such low genetic diversity?",
+     published="2026-10-21", modified="2026-10-21",
+     lead="Snow leopards have the lowest genetic diversity of any big cat species, according to a 2025 study that sequenced the whole genomes of 41 snow leopards. The main reason appears to be that their population has stayed small for most of their evolutionary history, not simply recent inbreeding. A second 2025 genome study, of 52 wild snow leopards, reached a similar conclusion and also found a silver lining: many of the most harmful mutations seem to have been purged over time.",
+     body='''<section class="card"><h2>What "genetic diversity" means</h2>
+<p>Genetic diversity is the amount of variation in DNA between individuals of a species. A species with plenty of variation has more raw material to adapt when conditions change, for example a new disease or a warming climate. Species whose populations stay small for a long time tend to lose variation, because chance plays a larger role in which gene versions are passed on.</p>
+<p>Until recently snow leopards were the least studied big cat genetically. Katherine Solari and colleagues, writing in <i>PNAS</i> in 2025, noted that a dearth of genetic data was unique to snow leopards among all big cat species. Two large genome studies published in 2025 have now started to fill that gap.</p></section>
+<section class="card"><h2>The lowest diversity of any big cat</h2>
+<p>Solari's team used whole genome sequencing data for 41 snow leopards, 37 of them newly sequenced. Their headline finding was that snow leopards have the lowest genetic diversity of any big cat species.</p>
+<p>The authors also looked at why. Their results pointed to a persistently small population size throughout the snow leopard's evolutionary history, rather than recent inbreeding, as the likely cause. In other words, the low diversity is mostly an old pattern, not just a symptom of recent poaching or habitat loss.</p>
+<p>Lin Yang and colleagues, writing in <i>Genome Biology</i> in 2025, sequenced a high quality chromosome level reference genome plus the genomes of 52 wild snow leopards. They likewise found that snow leopards have extremely low genomic diversity, and also higher inbreeding than other species in the order Carnivora.</p></section>
+<section class="card"><h2>The silver lining: purged harmful mutations</h2>
+<p>Low diversity is not the whole story. Both genome studies found evidence that snow leopards carry relatively few of the most damaging mutations:</p>
+<ul>
+<li>Solari and colleagues found that snow leopards have significantly less highly deleterious homozygous load (two copies of a seriously harmful variant) than numerous other <i>Panthera</i> species, which suggests effective purging while their population was small.</li>
+<li>Yang and colleagues concluded that strong deleterious mutations were effectively purged by historical population bottlenecks and inbreeding, and suggested this may be a vital genetic mechanism behind the species' survival and viability.</li>
+</ul>
+<p>Purging happens because, in a small population, harmful recessive variants are more often inherited in two copies, exposed and removed by natural selection. That may help explain how snow leopards have persisted for so long with so little variation.</p></section>
+<section class="card"><h2>Two populations, north and south</h2>
+<p>The genome studies also mapped how snow leopards are split across their huge mountain range:</p>
+<ul>
+<li>Solari and colleagues found a primary genetic divide between the northern and southern parts of the range around the Dzungarian Basin, and a secondary divide south of Kyrgyzstan around the Taklamakan Desert.</li>
+<li>Yang and colleagues found two large lineages, northern and southern, and linked their divergence to the Last Glacial Maximum. They suggested that microclimate differences and large rivers between the western and central Himalayas help keep the two lineages distinct.</li>
+<li>In Yang's data the northern lineage had lower diversity and higher inbreeding and genetic load than the southern lineage, consistent with a recent population decline in the north.</li>
+</ul>
+<p>Earlier work with other markers agrees on the broad picture. Imogene Cancellare and colleagues genotyped 182 snow leopards from across the range (<i>Biodiversity and Conservation</i>, 2024). Their microsatellite data indicated two global genetic populations, while mitochondrial DNA showed little phylogeographic structure and suggested a single refugial origin for all sampled populations, with tentative evidence of a glacial refugium in the Tian Shan, Pamir, Hindu Kush and Karakoram mountains.</p></section>
+<section class="card"><h2>A clue to life at high altitude</h2>
+<p>Yang's study also found that a gene called <i>EPAS1</i> shows signs of positive selection in the southern lineage, with almost fixed amino acid changes, and that the frequency of this variant increases with elevation. <i>EPAS1</i> is involved in how the body responds to low oxygen, so this is a promising lead on how some snow leopards cope with very high mountains. For the physical adaptations, see <a href="../snow-leopard.html#adapt">how snow leopards are adapted to the cold</a>.</p></section>
+<section class="card"><h2>Evidence from the Tibetan Plateau</h2>
+<p>Snow leopards on the Tibetan Plateau tell a similar story. Shiqing Wang and colleagues assembled mitochondrial genomes for 136 snow leopards from the plateau (<i>Conservation Genetics</i>, 2025). They found 84 variable sites and 32 distinct haplotypes, 24 of them reported for the first time, and concluded that genetic diversity in this population is low. They also found signs of two distinct subpopulations within the plateau group.</p></section>
+<section class="card"><h2>Why this matters for conservation</h2>
+<p>Snow leopards are listed as Vulnerable, and threats such as retaliatory killing and poaching continue (see <a href="../snow-leopard.html#status">how many snow leopards are left</a>). Solari and colleagues warned that, without a large population or much standing genetic variation to buffer them, snow leopard persistence may be more tenuous than currently appreciated. Cancellare's team recommended using genetic data to define and protect meaningful conservation units. Keeping populations connected across the northern and southern ranges is part of that, alongside protecting their wild prey (see <a href="what-do-snow-leopards-eat.html">what snow leopards eat</a>) and the wider work described in <a href="../conservation.html">big cat conservation</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Snow leopards have the lowest genetic diversity of any big cat species (Solari et al. 2025).</li>
+<li>The likely cause is a persistently small population over their evolutionary history, rather than only recent inbreeding.</li>
+<li>Highly harmful mutations appear to have been purged, which may have helped the species persist.</li>
+<li>Snow leopards form two main genetic groups, northern and southern, and the northern lineage shows signs of recent decline.</li>
+</ul></section>''',
+     faq=[("Do snow leopards have low genetic diversity?", "Yes. A 2025 whole genome study of 41 snow leopards found they have the lowest genetic diversity of any big cat species (Solari et al. 2025), and a second study of 52 wild snow leopards also found extremely low genomic diversity (Yang et al. 2025)."),
+          ("Why is snow leopard genetic diversity so low?", "Mainly because their population appears to have been small throughout their evolutionary history, rather than only because of recent inbreeding (Solari et al. 2025)."),
+          ("Are snow leopards inbred?", "Yang et al. (2025) found higher inbreeding in snow leopards than in other Carnivora species, and higher in the northern lineage than the southern one. Solari et al. (2025) concluded that the low diversity is driven mainly by long-term small population size rather than recent inbreeding."),
+          ("How many genetic populations of snow leopards are there?", "Studies point to two main groups, northern and southern. Whole genome data place the main divide around the Dzungarian Basin, with a secondary divide around the Taklamakan Desert (Solari et al. 2025); microsatellite data also indicate two global populations (Cancellare et al. 2024)."),
+          ("Is low genetic diversity dangerous for snow leopards?", "It can make them less able to adapt to new threats. Researchers warn their persistence may be more tenuous than appreciated, although highly harmful mutations appear to have been purged over time (Solari et al. 2025; Yang et al. 2025).")],
+     related=[("Snow leopard facts", "snow-leopard.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Big cat conservation", "conservation.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, CSG["snow"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

@@ -24,6 +24,7 @@ AI = {
  "blog/why-do-so-few-cheetah-cubs-survive.html": dict(slug="cheetah-cubs", alt="A cheetah mother resting in dry grass with three small cubs that still have grey mantle fur"),
  "blog/why-do-male-lions-have-manes.html": dict(slug="lion-mane-portrait", alt="A male lion with a full dark mane resting in the shade of a tree"),
  "blog/can-leopards-live-near-people.html": dict(slug="leopard-scrub", alt="A leopard walking through dry scrub and tall grass at dusk with a rocky hill behind"),
+ "blog/how-often-do-lion-hunts-succeed.html": dict(slug="home-lioness-savanna", alt="A lioness walking through golden grass on the African savanna at sunrise, with acacia trees behind her"),
  "blog/why-do-leopards-drag-their-kills-into-trees.html": dict(slug="leopard-larder-tree", alt="A leopard lying on a tree branch above a carcass wedged in the fork of the tree"),
 }
 # image cards on the home page tiles: href -> thumbnail slug

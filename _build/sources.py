@@ -75,3 +75,9 @@ SOLARI2025 = ("Solari et al. (2025) Exceedingly low genetic diversity in snow le
 YANG2025 = ("Yang et al. (2025) Genomic evidence for low genetic diversity but purging of strong deleterious variants in snow leopards, Genome Biology 26: 94. DOI 10.1186/s13059-025-03555-0", "https://doi.org/10.1186/s13059-025-03555-0")
 CANCELLARE2024 = ("Cancellare et al. (2024) Snow leopard phylogeography and population structure supports two global populations with single refugial origin, Biodiversity and Conservation 33(14): 3961-3979. DOI 10.1007/s10531-024-02928-4", "https://doi.org/10.1007/s10531-024-02928-4")
 WANG2024 = ("Wang et al. (2025) Mitochondrial genomes reveal low genetic diversity in snow leopards, Conservation Genetics 26(1): 139-151. DOI 10.1007/s10592-024-01658-y", "https://doi.org/10.1007/s10592-024-01658-y")
+
+STANDER1992B = ("Stander (1992) Cooperative hunting in lions: the role of the individual, Behavioral Ecology and Sociobiology 29(6): 445-454. DOI 10.1007/BF00170175", "https://doi.org/10.1007/BF00170175")
+STANDER1992F = ("Stander (1992) Foraging dynamics of lions in a semi-arid environment, Canadian Journal of Zoology 70(1): 8-21. DOI 10.1139/z92-002", "https://doi.org/10.1139/z92-002")
+FUNSTON2001 = ("Funston, Mills and Biggs (2001) Factors affecting the hunting success of male and female lions in the Kruger National Park, Journal of Zoology 253(4): 419-431. DOI 10.1017/S0952836901000395", "https://doi.org/10.1017/S0952836901000395")
+HOPCRAFT2005 = ("Hopcraft, Sinclair and Packer (2005) Planning for success: Serengeti lions seek prey accessibility rather than abundance, Journal of Animal Ecology 74(3): 559-566. DOI 10.1111/j.1365-2656.2005.00955.x", "https://doi.org/10.1111/j.1365-2656.2005.00955.x")
+SCHEEL1993 = ("Scheel (1993) Profitability, encounter rates, and prey choice of African lions, Behavioral Ecology 4(1): 90-97. DOI 10.1093/beheco/4.1.90", "https://doi.org/10.1093/beheco/4.1.90")

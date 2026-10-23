@@ -17,7 +17,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     "Lion facts in plain English: how prides work, who does the hunting, where wild lions live today, how many are left and why the species is Vulnerable.",
     "Lion facts: prides, hunting, habitat and conservation status",
     lead="The lion (<i>Panthera leo</i>) is the only truly social big cat. Wild lions live in prides built around related females, mainly in sub-Saharan Africa, with one small population in and around Gir forest in western India. The species is listed as Vulnerable on the IUCN Red List, and the IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025.",
-    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-10-15",
+    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-10-23",
     body=jump([("facts", "Quick facts"), ("appearance", "Appearance"), ("pride", "Pride life"), ("hunting", "Hunting"),
                ("roar", "Roaring"), ("range", "Where lions live"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera leo</i>"), ("Weight", "110 to 272 kg (males are much heavier than females)"),
@@ -32,7 +32,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
 <p>Males often team up in coalitions, frequently brothers or other males that grew up together. A coalition that takes over a pride may kill young cubs fathered by the previous males, which brings the females back into breeding condition sooner. Competition is intense, and a single male rarely holds a pride for long except where lions are scarce.</p>
 <p>Pride territories vary hugely with prey. Where prey is plentiful, lions can live at 10 to 40 per 100 km&sup2; with territories of 50 to 200 km&sup2;; in dry, prey poor areas, home ranges can grow to thousands of square kilometres.</p></section>
 <section class="card" id="hunting"><h2>Do male lions hunt?</h2>
-<p>Yes. Lionesses do much of the cooperative hunting, often stalking and surrounding prey as a group, but males hunt too, especially larger and more dangerous animals such as buffalo, and they hunt alone when they are not with a pride. Lions are also frequent scavengers and will take carcasses from other predators, which makes them especially vulnerable to poisoned carcasses.</p>
+<p>Yes. Lionesses do much of the cooperative hunting, often stalking and surrounding prey as a group, but males hunt too, especially larger and more dangerous animals such as buffalo, and they hunt alone when they are not with a pride. Lions are also frequent scavengers and will take carcasses from other predators, which makes them especially vulnerable to poisoned carcasses. Most hunts still fail: in one Namibian study lions made 156 kills from 920 attempts. See <a href="blog/how-often-do-lion-hunts-succeed.html">how often do lion hunts succeed?</a></p>
 <p>Typical prey includes wildebeest, zebra, buffalo, antelope and warthog, depending on what is common locally. Lions spend a large part of each day resting and are most active from dusk to dawn.</p></section>
 <section class="card" id="roar"><h2>Why do lions roar?</h2>
 <p>A lion's roar advertises territory and helps pride members locate each other. It can carry over several kilometres. Lions, tigers, leopards and jaguars can roar thanks to the structure of their larynx and vocal folds; the snow leopard and cheetah cannot. Our post <a href="blog/which-big-cats-can-roar.html">which big cats can roar</a> explains the anatomy.</p></section>
@@ -46,7 +46,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     faq=[("Where do lions live besides Africa?", "The only wild lions outside Africa live in and around Gir forest in Gujarat, western India. They belong to the northern subspecies <i>Panthera leo leo</i>."),
          ("How many lions are left in the wild?", "The IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025, plus about 670 adult and subadult Asiatic lions counted in India in 2020."),
          ("Do lions really live in the jungle?", "No. Lions prefer savanna, grassland and open woodland. The nickname king of the jungle is a figure of speech, not a description of their habitat.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html")] + SPECIES_REL,
+    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html")] + SPECIES_REL,
     sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], IUCN], priority="0.9")
 
 # ------------------------------------------------------------------ TIGER

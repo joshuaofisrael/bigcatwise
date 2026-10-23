@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024
+from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -739,6 +739,52 @@ post("why-do-snow-leopards-have-low-genetic-diversity", "Why Do Snow Leopards Ha
           ("Is low genetic diversity dangerous for snow leopards?", "It can make them less able to adapt to new threats. Researchers warn their persistence may be more tenuous than appreciated, although highly harmful mutations appear to have been purged over time (Solari et al. 2025; Yang et al. 2025).")],
      related=[("Snow leopard facts", "snow-leopard.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Big cat conservation", "conservation.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, CSG["snow"]])
+
+post("how-often-do-lion-hunts-succeed", "How Often Do Lion Hunts Succeed? What Field Studies Show | BigCatWise",
+     "Most lion hunts fail. In one Namibian study lions made 156 kills from 920 attempts. Here is what raises their odds: teamwork, cover, prey choice and more.",
+     "How often do lion hunts succeed? What field studies show", headline="How often do lion hunts succeed?",
+     published="2026-10-23", modified="2026-10-23",
+     lead="Most lion hunts fail. In a long field study on the plains of Etosha National Park, Namibia, lions made 156 kills from 920 observed attempts to catch prey, which works out at roughly one success in every six tries. Success is not fixed, though. Studies in Namibia, South Africa and Tanzania show that the odds rise with coordinated teamwork, the right prey, good cover and smart choices about where to wait.",
+     body='''<section class="card"><h2>The numbers from Etosha</h2>
+<p>Philip Stander studied lions on the open, semi arid plains of Etosha and published two papers in 1992. In the first, in the <i>Canadian Journal of Zoology</i>, he described direct observations of 920 attempts to capture prey and 156 kills. Lions there hunted in a regular nocturnal pattern, mostly as coordinated groups, and they rarely scavenged.</p>
+<p>Two findings stand out. First, capture success increased with lion group size, and it was also higher during coordinated group hunts. Second, most kills were of fairly small animals: prey under 50 kg made up 73% of observed kills, but only about half of the estimated biomass the lions ate, because the occasional large kill provides so much meat.</p>
+<p>Lionesses there took in on average 8.7 kg of food per day in the dry season and 14 kg per day in the wet season. In the lean dry season, coordinated hunting was essential, and lionesses most often formed groups of two, which gave them a higher daily food intake than groups of other sizes.</p></section>
+<section class="card"><h2>Wings and centres: lions play positions</h2>
+<p>Stander's second 1992 paper, in <i>Behavioral Ecology and Sociobiology</i>, analysed 486 coordinated group hunts by individually identified lionesses. The hunts generally used a formation that a football fan would recognise:</p>
+<ul>
+<li><b>Wings</b> circled around the prey and frequently started the attack.</li>
+<li><b>Centres</b> moved relatively short distances and waited, and they most often made the capture as prey fled from the other lionesses.</li>
+</ul>
+<p>Each lioness in a pride repeatedly took the same position. Hunts in which most of the lionesses present were in their preferred positions had a high probability of success. The roles were not rigid, however: individuals adjusted depending on who else was hunting and what they did. For how teamwork fits the wider question of why lions live in groups at all, see <a href="why-do-lions-live-in-prides.html">why do lions live in prides?</a></p></section>
+<section class="card"><h2>What changes the odds in Kruger</h2>
+<p>In South Africa's Kruger National Park, Paul Funston, Gus Mills and Harry Biggs (<i>Journal of Zoology</i>, 2001) used long term continuous observations of hunting lions to test which factors really mattered. Seven variables had significant independent effects on whether a hunt succeeded, and the single most important was the species of prey being hunted. The variables fell into three groups:</p>
+<ul>
+<li><b>Lion factors:</b> the type of hunt, the wind direction relative to the prey, and how many adults joined in.</li>
+<li><b>Prey factors:</b> the prey species and the size of the herd.</li>
+<li><b>Environment factors:</b> how bright the moon was, and how tall the grass was.</li>
+</ul>
+<p>The study also tackled a popular myth. The sex of the lion had no effect on the overall probability of a successful hunt. Group size shaped which prey each sex went after: females mainly selected medium sized animals such as zebra and wildebeest, while males mainly caught buffalo. The authors concluded that the hunting ability of male lions has perhaps been understated in other studies. Our <a href="../lion.html#hunting">lion facts page</a> covers who does the hunting in a pride.</p></section>
+<section class="card"><h2>Location beats abundance</h2>
+<p>Where a lion waits may matter as much as how it attacks. Grant Hopcraft, Anthony Sinclair and Craig Packer (<i>Journal of Animal Ecology</i>, 2005) used long term radio tracking data from Serengeti lions and mapped where kills and carcasses were found.</p>
+<p>Over large areas, lions shifted their ranges to follow the seasonal movements of prey. At a fine scale, within about 100 metres, they fed in places where prey were easy to catch, not where prey were most numerous. Plains lions favoured erosion embankments, the views from large rocky outcrops, and access to water. Woodland lions tended to use erosion embankments and woody vegetation. Resting lions spent more time in areas with good cover, as expected for a predator that waits and ambushes. Habitats like these are described on our <a href="../habitats.html">big cat habitats</a> page.</p></section>
+<section class="card"><h2>Picking the right target</h2>
+<p>Lions do not chase whatever they see. In the Serengeti, Dennis Scheel (<i>Behavioral Ecology</i>, 1993) found that lions preferred to hunt small groups of prey, groups that were closer than 200 metres, and groups that contained warthogs, wildebeest or zebra. A nearby target means a shorter stalk and a shorter chase, which suits a heavy cat built for a brief burst rather than a long pursuit. Compare the cheetah's very different approach in <a href="how-fast-is-a-cheetah.html">how fast is a cheetah?</a></p></section>
+<section class="card"><h2>So what is a typical success rate?</h2>
+<p>There is no single number. The roughly one in six figure from Etosha comes from one population, on open plains, where most kills were small prey. Kruger's results show that success swings with prey species, herd size, grass height, moonlight and wind, so a rate measured in one park, season or pride will not transfer neatly to another. Be cautious with any article that quotes one universal percentage for lions.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Most lion hunts fail; in Etosha lions made 156 kills from 920 attempts (Stander 1992).</li>
+<li>Larger, coordinated groups caught prey more often, and lionesses often hunt in repeat roles called wings and centres.</li>
+<li>In Kruger the prey species was the biggest single factor, alongside hunt type, wind, number of hunters, herd size, moonlight and grass height (Funston et al. 2001).</li>
+<li>Male and female lions had similar overall success in Kruger; males mainly took buffalo.</li>
+<li>Lions feed where prey is easy to catch, not just where it is abundant (Hopcraft et al. 2005).</li>
+</ul></section>''',
+     faq=[("How often do lions successfully catch prey?", "It varies a lot. In Etosha National Park, Namibia, lions made 156 kills from 920 observed attempts, roughly one in six (Stander 1992). Success depends on prey species, group size, cover and other conditions."),
+          ("Are lions more successful when they hunt in groups?", "In Etosha, capture success increased with lion group size and was higher during coordinated group hunts (Stander 1992)."),
+          ("Do lionesses have set roles when hunting?", "Often, yes. In 486 coordinated hunts, lionesses acted as wings that circled prey or centres that waited, and each tended to take the same position. Hunts with most lionesses in their preferred positions had a high probability of success (Stander 1992)."),
+          ("Are male lions worse hunters than females?", "Not according to a Kruger National Park study, which found the sex of the lion had no effect on the overall probability of hunting success. Males mainly caught buffalo, while females mainly took zebra and wildebeest (Funston et al. 2001)."),
+          ("Where do lions prefer to hunt?", "Serengeti lions fed in places where prey were easy to catch rather than where prey were most abundant, such as erosion embankments, views from rocky outcrops and near water (Hopcraft et al. 2005).")],
+     related=[("Lion facts", "lion.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Big cat behavior", "behavior.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[STANDER1992F, STANDER1992B, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, CSG["lion"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

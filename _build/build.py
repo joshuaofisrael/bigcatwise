@@ -28,7 +28,7 @@ NAV = [("index.html", "Home"), ("lion.html", "Lion"), ("tiger.html", "Tiger"), (
        ("jaguar.html", "Jaguar"), ("cheetah.html", "Cheetah"), ("snow-leopard.html", "Snow Leopard"),
        ("which-big-cat-is-it.html", "ID Guide"), ("compare.html", "Compare"), ("behavior.html", "Behavior"), ("habitats.html", "Habitats"),
        ("conservation.html", "Conservation"), ("faq.html", "FAQ"), ("glossary.html", "Glossary"),
-       ("blog/index.html", "Blog"), ("games/index.html", "Games"), ("teachers/index.html", "Teachers")]
+       ("blog/index.html", "Blog"), ("games/index.html", "Games"), ("teachers/index.html", "Teachers"), ("contact.html", "Contact")]
 
 LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><title>BigCatWise logo</title>'
         '<path d="M12 26 L14 6 L28 18 Q32 17 36 18 L50 6 L52 26 Q56 34 52 44 Q46 58 32 58 Q18 58 12 44 Q8 34 12 26Z" fill="#f0a830"/>'
@@ -56,7 +56,7 @@ def footer(rel):
     return ('<footer><section class="contact-us" aria-labelledby="contact-us"><h2 id="contact-us">Contact us</h2>'
             '<p>Questions, corrections or suggestions? Email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a> '
             'or use our <a href="%scontact.html">contact form</a>.</p></section>' % rel +
-            '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. All text and illustrations are original.</p>'
+            '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. Text and drawings are original; photos are credited on our photo credits page, and some are AI generated.</p>'
             '<p class="legal">&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. %s is owned and operated by Joshua Israel Ventures LLC.</p>'
             '<p class="legal">Operated by %s</p>'
             '<p class="flinks"><a href="%sterms.html">Terms</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
@@ -85,6 +85,7 @@ class Page:
         self.__dict__.update(locals()); del self.__dict__["self"]
 
 from photos import PHOTOS, photo_html  # noqa: E402
+from aiphotos import insert_ai  # noqa: E402
 
 PAGES = []
 def add(*a, **k):
@@ -165,7 +166,8 @@ def render(p):
         out.append('<p class="lead">%s</p>' % p.lead)
     if p.path in PHOTOS and p.kind != "home":
         out.append(photo_html(p.path, rel, lazy=True))
-    out.append(p.body.replace("{rel}", rel).replace("{photo}", photo_html(p.path, rel, lazy=False) if p.path in PHOTOS else ""))
+    body = p.body.replace("{rel}", rel).replace("{photo}", photo_html(p.path, rel, lazy=False) if p.path in PHOTOS else "")
+    out.append(insert_ai(body, p.path, rel))
     if p.faq:
         out.append('<section class="card" id="faq"><h2>Frequently asked questions</h2>')
         for q, a in p.faq:

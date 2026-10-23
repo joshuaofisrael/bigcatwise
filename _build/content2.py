@@ -251,7 +251,8 @@ import content3  # noqa  ID guide
 from blog import POSTS
 
 # ------------------------------------------------------------------ HOME
-tiles = "".join('<a class="tile" href="%s"><h3>%s</h3><p>%s</p></a>' % t for t in [
+from aiphotos import tile_thumb  # noqa: E402
+tiles = "".join('<a class="tile" href="%s">%s<h3>%s</h3><p>%s</p></a>' % (t[0], tile_thumb(t[0]), t[1], t[2]) for t in [
  ("lion.html", "Lion", "The only social big cat"), ("tiger.html", "Tiger", "The largest cat on Earth"),
  ("leopard.html", "Leopard", "The most widespread big cat"), ("jaguar.html", "Jaguar", "Big cat of the Americas"),
  ("cheetah.html", "Cheetah", "The fastest land animal"), ("snow-leopard.html", "Snow leopard", "Ghost of the mountains"),
@@ -282,7 +283,7 @@ add("about.html", "About BigCatWise: Who We Are & How We Write | BigCatWise",
     "About BigCatWise", kind="page", headline="About",
     lead="BigCatWise is a brand of Joshua Israel Ventures LLC: an independent educational website about the world's big cats.",
     body='''<section class="card"><h2>What we cover</h2><p>We explain the biology, behavior, habitats and conservation of six species: the lion, tiger, leopard, jaguar, cheetah and snow leopard. Our aim is clear, accurate, answer first pages that are useful to students, teachers, travellers and anyone curious about big cats.</p></section>
-<section class="card"><h2>How we write and source</h2><p>All text and illustrations on this site are original. Facts and figures are drawn from reputable sources, principally the IUCN SSC Cat Specialist Group and IUCN Red List, Smithsonian's National Zoo and Conservation Biology Institute, San Diego Zoo Wildlife Alliance, WWF, Panthera, the Snow Leopard Trust and peer reviewed research. Each page lists its sources and shows when it was last updated. We do not claim field expertise we do not have, and we do not invent statistics.</p>
+<section class="card"><h2>How we write and source</h2><p>All text on this site is original. Photos are credited on our <a href="credits/">photo credits</a> page, and some images are AI generated photo style pictures of typical big cats and habitats (see <a href="credits/#ai-images">AI generated images</a>). Facts and figures are drawn from reputable sources, principally the IUCN SSC Cat Specialist Group and IUCN Red List, Smithsonian's National Zoo and Conservation Biology Institute, San Diego Zoo Wildlife Alliance, WWF, Panthera, the Snow Leopard Trust and peer reviewed research. Each page lists its sources and shows when it was last updated. We do not claim field expertise we do not have, and we do not invent statistics.</p>
 <p>Wild population estimates change as new surveys are published. If you spot something out of date or wrong, please <a href="contact.html">tell us</a> and we will check and correct it.</p></section>
 <section class="card"><h2>Who runs BigCatWise</h2><p>BigCatWise is a brand of Joshua Israel Ventures LLC. The site is owned and operated by Joshua Israel Ventures LLC. The site carries no advertising or affiliate links at present; if that changes, we will say so clearly on the affected pages and in our <a href="privacy.html">privacy policy</a>.</p></section>''',
     related=[("Contact", "contact.html"), ("Terms of use", "terms.html"), ("Privacy", "privacy.html"), ("Disclaimer", "disclaimer.html"), ("Compare big cats", "compare.html")], priority="0.4")
@@ -292,15 +293,27 @@ add("contact.html", "Contact BigCatWise | BigCatWise",
     "Contact BigCatWise", kind="page", headline="Contact",
     lead='Questions, corrections or ideas for a new guide? Email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a> or use the form below.',
     body='''<section class="card"><h2>Send us a message</h2>
-<form class="contact" action="https://formsubmit.co/joshuaofisrael@gmail.com" method="POST">
+<form class="contact" id="contact-form" action="https://formsubmit.co/4497ee41a1200e746e967998473d21da" method="POST">
 <input type="hidden" name="_subject" value="BigCatWise contact"><input type="hidden" name="_template" value="table">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input type="hidden" name="_next" value="https://bigcatwise.com/contact.html?sent=1">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 <input type="hidden" name="_captcha" value="false">
-<label for="name">Name</label><input id="name" type="text" name="name" required>
-<label for="email">Email</label><input id="email" type="email" name="email" required>
+<label for="name">Name</label><input id="name" type="text" name="name" required autocomplete="name">
+<label for="email">Email</label><input id="email" type="email" name="email" required autocomplete="email">
 <label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea>
 <button class="btn" type="submit">Send message</button></form>
-<p class="note">Messages are delivered by FormSubmit, a free form service, to our inbox. We use your details only to reply. See our <a href="privacy.html">privacy policy</a>.</p></section>''',
+<p id="contact-status" class="form-status" role="status" aria-live="polite" hidden></p>
+<p class="note">We use your name, email and message only to reply to you. We do not share or sell them. The form is delivered by FormSubmit, a free form service. See our <a href="privacy.html">privacy policy</a>.</p></section>
+<script>
+(function(){var f=document.getElementById('contact-form'),s=document.getElementById('contact-status');if(!f||!s)return;
+function show(t,ok){s.textContent=t;s.hidden=false;s.className='form-status '+(ok?'ok':'err');}
+if(/[?&]sent=1/.test(location.search)){f.hidden=true;show('Thank you. Your message has been sent and we will reply to the email address you gave.',true);}
+f.addEventListener('submit',function(e){if(!window.fetch||!window.FormData)return;e.preventDefault();var b=f.querySelector('button');b.disabled=true;
+var d=new FormData(f);d.delete('_next');
+fetch(f.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',body:d,headers:{'Accept':'application/json'}})
+.then(function(r){return r.json()}).then(function(j){if(j&&(j.success===true||j.success==='true')){f.reset();f.hidden=true;show('Thank you. Your message has been sent and we will reply to the email address you gave.',true);}else{throw 0}})
+.catch(function(){b.disabled=false;show('Sorry, the message could not be sent. Please email joshuaofisrael@gmail.com instead.',false);});});})();
+</script>''',
     related=[("About", "about.html"), ("Big cat FAQ", "faq.html")], priority="0.3")
 
 analytics = ("We use Cloudflare Web Analytics to count page views. It is cookieless and does not collect personal data or track you across sites."

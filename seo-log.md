@@ -108,3 +108,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Why: snow leopard had only one deep dive (diet); genetics is a fresh, well-sourced angle (2025 genome papers) with question queries, and FAQ/glossary entries feed featured snippets and AI answers.
 - IndexNow (7 URLs: article, blog index, research, snow-leopard, faq, glossary, home): HTTP 200.
 - News/outreach: none in this slot.
+- 2026-10-23: AI images and contact page deployed (1d2766f); IndexNow HTTP 200 (52 URLs).

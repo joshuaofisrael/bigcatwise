@@ -117,3 +117,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - IndexNow: article set (5 URLs: article, blog index, research, lion, home) HTTP 200; share image set (18 URLs with new og images) HTTP 200. Live check: article 200, img/og/lion-cubs-play.jpg 200, lion.html serves new og:image (Pages build 6f6f109 built).
 - News/outreach: none in this slot.
 - 23 Oct 2026: AdSense (ca-pub-5681559774142917) added, commit 3881d5d, ads.txt live, IndexNow submitted.
+- 23 Oct 2026: legal pass (commit a56ee68): new copyright.html, corrections.html; terms/disclaimer/privacy expanded; footer links sitewide; IndexNow submitted.

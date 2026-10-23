@@ -60,8 +60,9 @@ def footer(rel):
             '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. Text and drawings are original; photos are credited on our photo credits page, and some are AI generated.</p>'
             '<p class="legal">&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. %s is owned and operated by Joshua Israel Ventures LLC.</p>'
             '<p class="legal">Operated by %s</p>'
-            '<p class="flinks"><a href="%sterms.html">Terms</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
-            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a></p></footer>') % (SITE, SITE, LEGAL, rel, rel, rel, rel, rel, rel)
+            '<p class="flinks"><a href="%sterms.html">Terms of use</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
+            '<a href="%sdisclaimer.html#affiliate">Advertising disclosure</a> | <a href="%scopyright.html">Copyright and takedown</a> | <a href="%scorrections.html">Corrections</a> | '
+            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a></p></footer>') % (SITE, SITE, LEGAL, rel, rel, rel, rel, rel, rel, rel, rel, rel)
 
 def header(rel, current):
     links = []

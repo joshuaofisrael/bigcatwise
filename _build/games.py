@@ -15,7 +15,7 @@ def bar(prefix):
     return ('<div class="gamebar"><span>Best score on this device: <b id="%s-best">none yet</b></span>'
             '<button type="button" id="%s-sound" aria-pressed="false">Sound: off</button></div>') % (prefix, prefix)
 
-PRIV = ('<p class="note">No sign up, no ads, no trackers and no personal data. Your best score is saved only in this browser '
+PRIV = ('<p class="note">No sign up and no personal data collected by us. Your best score is saved only in this browser '
         '(local storage) and never sent anywhere. See our <a href="{rel}privacy.html">privacy policy</a>.</p>')
 
 CHEETAH_SVG = ('<svg viewBox="0 0 120 60" width="100%" aria-hidden="true"><path d="M8 30q-8-10 2-16" stroke="#e0a83c" stroke-width="5" fill="none" stroke-linecap="round"/>'
@@ -30,9 +30,9 @@ PREY_SVG = ('<svg viewBox="0 0 80 60" width="100%" aria-hidden="true"><ellipse c
 
 # ---------------------------------------------------------------- HUB
 add("games/index.html", "Big Cat Games for Kids: Free, Fun and Fact Based | BigCatWise",
-    "Free big cat games that teach real facts: identify big cats by their coats, sprint like a cheetah and round up big cats by habitat. No sign up, no ads.",
+    "Free big cat games that teach real facts: identify big cats by their coats, sprint like a cheetah and round up big cats by habitat. No sign up.",
     "Big cat games", kind="page", headline="Games",
-    lead="Three free, original browser games that turn real big cat facts into play. They work with touch and keyboard, need no sign up, show no ads and collect no data. Every game ends with a fact card drawn from our sourced articles.",
+    lead="Three free, original browser games that turn real big cat facts into play. They work with touch and keyboard, need no sign up and collect no personal data. Every game ends with a fact card drawn from our sourced articles.",
     body='''<div class="grid">
 <a class="tile hot" href="rosette-detective/"><h3>Rosette Detective</h3><p>Spots, stripes or rosettes? Name the big cat from a close up of its coat. Ten coats per game.</p></a>
 <a class="tile hot" href="cheetah-burst/"><h3>Cheetah Burst</h3><p>Tap to sprint, turn when the prey swerves, and catch it before your energy runs out and before 300 m.</p></a>

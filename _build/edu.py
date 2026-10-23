@@ -30,7 +30,7 @@ def lr(name, path, desc, levels, rtype, codes=(), teaches=None):
     if teaches:
         d["teaches"] = teaches
     return [d]
-KIDSAFE = ('<p class="note">Free for classroom use. No sign up, no ads and no data collected from students. '
+KIDSAFE = ('<p class="note">Free for classroom use. No sign up and no personal data collected from students by us. '
            'Print with your browser (Ctrl+P or Cmd+P); the site menu and buttons are hidden automatically when printing.</p>')
 PRINT = '<p><button type="button" class="btn printbtn" onclick="window.print()">Print this page</button></p>'
 
@@ -38,7 +38,7 @@ PRINT = '<p><button type="button" class="btn printbtn" onclick="window.print()">
 add("teachers/index.html", "Big Cat Lesson Plans, Worksheets & Printables for Teachers | BigCatWise",
     "Free big cat teaching resources: printable fact sheets, worksheets with answer keys, vocabulary, NGSS aligned lesson ideas for K-12 and fact based classroom games.",
     "Big cats in the classroom: free resources for teachers", kind="page", headline="Teachers",
-    lead="Free, printable and sourced big cat resources for K to 12 classrooms: one page fact sheets for all six species, worksheets with answer keys, a vocabulary list, short lesson ideas by grade band and three classroom games. Everything is original, ad free and needs no sign up.",
+    lead="Free, printable and sourced big cat resources for K to 12 classrooms: one page fact sheets for all six species, worksheets with answer keys, a vocabulary list, short lesson ideas by grade band and three classroom games. Everything is original and needs no sign up.",
     body='''<div class="grid">
 <a class="tile hot" href="big-cat-fact-sheets.html"><h3>Fact sheets</h3><p>Six one page printable fact sheets: lion, tiger, leopard, jaguar, cheetah and snow leopard.</p></a>
 <a class="tile hot" href="big-cat-worksheets.html"><h3>Worksheets</h3><p>Four printable worksheets for grades 2 to 12, from riddles to reading real research.</p></a>

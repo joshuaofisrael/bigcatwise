@@ -20,6 +20,7 @@ SITE = "BigCatWise"
 LEGAL = "Joshua Israel Ventures LLC"
 INDEXNOW_KEY = "ae0cfa5bdd787ac71a16b2a7f4e0107d"
 CF_BEACON_TOKEN = "6b018b7e4d3e4a4cb75ba8fb4a680c46"      # Cloudflare Web Analytics site token; leave empty until issued
+ADSENSE_ID = "ca-pub-5681559774142917"
 GSC_TOKEN = "2F1VFGs8_miZpH24IQ4s5HMDbRBVf1ToSahl87wllWQ"            # Google Search Console HTML tag content value; leave empty until issued
 TODAY = "2026-10-08"
 OG_IMAGE = BASE_URL + "og.png"
@@ -99,6 +100,8 @@ def render(p):
     canon = url_for(p.path)
     head = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width,initial-scale=1">']
+    head.append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>'
+                '<meta name="google-adsense-account" content="%s">' % (ADSENSE_ID, ADSENSE_ID))
     if GSC_TOKEN and p.path == "index.html":
         head.append('<meta name="google-site-verification" content="%s">' % esc(GSC_TOKEN))
     head.append('<title>%s</title><meta name="description" content="%s">' % (esc(p.title), esc(p.description)))
@@ -233,6 +236,8 @@ def main():
     open(os.path.join(ROOT, "robots.txt"), "w").write("\n".join(rb) + "\n")
     # llms.txt
     open(os.path.join(ROOT, "llms.txt"), "w").write(content.llms(BASE_URL))
+    # ads.txt (Google AdSense authorised sellers, exactly one line)
+    open(os.path.join(ROOT, "ads.txt"), "w").write("google.com, pub-5681559774142917, DIRECT, f08c47fec0942fa0\n")
     # IndexNow key
     open(os.path.join(ROOT, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY)
     print("built %d pages, %d sitemap urls" % (len(PAGES), len(urls) + 1))

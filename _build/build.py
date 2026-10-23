@@ -85,7 +85,7 @@ class Page:
         self.__dict__.update(locals()); del self.__dict__["self"]
 
 from photos import PHOTOS, photo_html  # noqa: E402
-from aiphotos import insert_ai  # noqa: E402
+from aiphotos import insert_ai, AI as AI_PHOTOS  # noqa: E402
 
 PAGES = []
 def add(*a, **k):
@@ -111,10 +111,19 @@ def render(p):
                 '<link rel="preload" href="%sfonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>' % (rel, rel))
     head.append('<link rel="stylesheet" href="%sstyle.css"><link rel="icon" href="%sfavicon.svg" type="image/svg+xml">' % (rel, rel))
     og_type = "website" if p.kind in ("home", "page") else "article"
+    # Per page share image: the page's own photo style AI image (img/og/<slug>.jpg, 1200x675) when it has one, else the generic og.png.
+    _ai = AI_PHOTOS.get(p.path)
+    if _ai and os.path.exists(os.path.join(ROOT, "img", "og", _ai["slug"] + ".jpg")):
+        og_img, og_w, og_h, og_alt = BASE_URL + "img/og/" + _ai["slug"] + ".jpg", 1200, 675, _ai["alt"]
+    else:
+        og_img, og_w, og_h, og_alt = OG_IMAGE, 1200, 630, SITE + ": sourced big cat facts"
+    if not p.noindex:
+        head.append('<meta name="robots" content="max-image-preview:large">')
     head.append('<meta property="og:type" content="%s"><meta property="og:site_name" content="%s">'
                 '<meta property="og:title" content="%s"><meta property="og:description" content="%s">'
                 '<meta property="og:url" content="%s"><meta property="og:image" content="%s">'
-                '<meta name="twitter:card" content="summary_large_image">' % (og_type, SITE, esc(p.title), esc(p.description), canon, OG_IMAGE))
+                '<meta property="og:image:width" content="%d"><meta property="og:image:height" content="%d"><meta property="og:image:alt" content="%s">'
+                '<meta name="twitter:card" content="summary_large_image">' % (og_type, SITE, esc(p.title), esc(p.description), canon, og_img, og_w, og_h, esc(og_alt)))
     blocks = []
     if p.kind == "home":
         blocks.append({"@context": "https://schema.org", "@type": "WebSite", "name": SITE, "url": BASE_URL, "inLanguage": "en",
@@ -123,7 +132,7 @@ def render(p):
     elif not p.noindex:
         if p.kind == "article":
             blocks.append({"@context": "https://schema.org", "@type": "Article", "headline": p.headline or p.h1,
-                           "description": p.description, "image": OG_IMAGE,
+                           "description": p.description, "image": {"@type": "ImageObject", "url": og_img, "width": og_w, "height": og_h},
                            "author": {"@type": "Organization", "@id": BASE_URL + "#organization", "name": LEGAL, "url": BASE_URL},
                            "publisher": PUBLISHER, "datePublished": p.published, "dateModified": p.modified,
                            "mainEntityOfPage": canon, "inLanguage": "en"})

@@ -1,5 +1,5 @@
 from build import add, BASE_URL
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, RL
 
 SPECIES_REL = [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Big cat comparison table", "compare.html"), ("Big cat behavior", "behavior.html"),
                ("Where big cats live", "habitats.html"), ("Big cat conservation", "conservation.html")]
@@ -17,13 +17,13 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     "Lion facts in plain English: how prides work, who does the hunting, where wild lions live today, how many are left and why the species is Vulnerable.",
     "Lion facts: prides, hunting, habitat and conservation status",
     lead="The lion (<i>Panthera leo</i>) is the only truly social big cat. Wild lions live in prides built around related females, mainly in sub-Saharan Africa, with one small population in and around Gir forest in western India. The species is listed as Vulnerable on the IUCN Red List, and the IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025.",
-    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-10-23",
+    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-10-24",
     body=jump([("facts", "Quick facts"), ("appearance", "Appearance"), ("pride", "Pride life"), ("hunting", "Hunting"),
                ("roar", "Roaring"), ("range", "Where lions live"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera leo</i>"), ("Weight", "110 to 272 kg (males are much heavier than females)"),
                 ("Head and body length", "137 to 250 cm, plus a 60 to 100 cm tail"), ("Lifespan", "About 12 to 18 years"),
                 ("Litter size", "1 to 4 cubs"), ("Range", "Sub-Saharan Africa; Gir landscape, Gujarat, India"),
-                ("IUCN Red List", "Vulnerable (northern subspecies <i>P. l. leo</i>: Endangered)")]) + '</div>' +
+                ("IUCN Red List", "Vulnerable, assessed 2025 (northern subspecies <i>P. l. leo</i>: Endangered)")]) + '</div>' +
     '''<section class="card" id="appearance"><h2>What does a lion look like?</h2>
 <p>Lions have a plain tawny coat, a long tail ending in a dark tuft and, in adult males, a mane around the head and neck. The mane makes males look larger and is the most obvious difference between the sexes; no other wild cat shows such a striking visual difference between males and females. Cubs are born with faint spots that usually fade as they grow. Why the mane? Research suggests it is a signal of condition to lionesses and rivals; see <a href="blog/why-do-male-lions-have-manes.html">why do male lions have manes?</a></p>
 <p>Size varies by region and sex. Adult males are clearly bigger and heavier than lionesses, and large male lions can match or exceed smaller tigers, although the tiger is the largest cat species overall. See the <a href="compare.html">big cat comparison table</a> for side by side sizes.</p></section>
@@ -47,20 +47,20 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
          ("How many lions are left in the wild?", "The IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025, plus about 670 adult and subadult Asiatic lions counted in India in 2020."),
          ("Do lions really live in the jungle?", "No. Lions prefer savanna, grassland and open woodland. The nickname king of the jungle is a figure of speech, not a description of their habitat.")],
     related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html")] + SPECIES_REL,
-    sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], IUCN], priority="0.9")
+    sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], RL["lion"]], priority="0.9")
 
 # ------------------------------------------------------------------ TIGER
 add("tiger.html", "Tiger Facts: Size, Stripes, Range & How Many Are Left | BigCatWise",
     "Tiger facts: the largest cat, why stripes are unique, where wild tigers survive, what they hunt and the latest IUCN population estimate.",
     "Tiger facts: size, stripes, range and conservation status",
     lead="The tiger (<i>Panthera tigris</i>) is the largest living cat, weighing 75 to 325 kg depending on population and sex. It is a solitary, mostly forest dwelling ambush hunter found only in Asia, in ten countries from India to the Russian Far East. Listed as Endangered, it numbered an estimated 3,726 to 5,578 wild individuals (excluding cubs) in the latest IUCN assessment.",
-    crumbs=[("Species", "compare.html")], headline="Tiger facts",
+    crumbs=[("Species", "compare.html")], modified="2026-10-24", headline="Tiger facts",
     body=jump([("facts", "Quick facts"), ("stripes", "Stripes"), ("subspecies", "Subspecies"), ("life", "Daily life"),
                ("hunting", "Hunting"), ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera tigris</i>"), ("Weight", "75 to 325 kg"),
                 ("Head and body length", "150 to 230 cm, plus a 90 to 110 cm tail"), ("Lifespan", "About 12 to 15 years"),
                 ("Litter size", "1 to 5 cubs, after a gestation of about 103 days"), ("Range", "10 countries in South, Southeast and East Asia and the Russian Far East"),
-                ("IUCN Red List", "Endangered")]) + '</div>' +
+                ("IUCN Red List", "Endangered, assessed 2021")]) + '</div>' +
     '''<section class="card" id="stripes"><h2>Are every tiger's stripes different?</h2>
 <p>Yes. Tigers are the only cats with stripes, and each tiger's pattern is unique, varying in the number, width and shape of stripes. Researchers use this to identify individual tigers in camera trap photos, which is the basis of many population surveys. Stripes break up the tiger's outline among grass, reeds and forest shadows. Our post <a href="blog/why-do-tigers-have-stripes.html">why do tigers have stripes</a> covers the science, including why an orange coat still works as camouflage.</p>
 <p>White tigers are not a separate species or subspecies. They are a rare colour variant; according to the IUCN Cat Specialist Group, the last documented white tiger in the wild was shot in Bihar, India, in 1958.</p></section>
@@ -82,20 +82,20 @@ add("tiger.html", "Tiger Facts: Size, Stripes, Range & How Many Are Left | BigCa
          ("How many wild tigers are there?", "The latest IUCN assessment estimated 3,726 to 5,578 wild tigers excluding cubs, with about 3,140 mature individuals.")],
     related=[("Lion facts", "lion.html"), ("Leopard facts", "leopard.html"), ("Snow leopard facts", "snow-leopard.html"),
              ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html")] + SPECIES_REL,
-    sources=[CSG["tiger"], WWF["tiger"], NZP["tiger"], SDZ["tiger"], PAN["tiger"], IUCN], priority="0.9")
+    sources=[CSG["tiger"], WWF["tiger"], NZP["tiger"], SDZ["tiger"], PAN["tiger"], RL["tiger"]], priority="0.9")
 
 # ------------------------------------------------------------------ LEOPARD
 add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | BigCatWise",
     "Leopard facts: the most widespread big cat, how leopards hunt and cache prey in trees, what a black panther is, and why the leopard is Vulnerable.",
     "Leopard facts: range, rosettes, hunting and black panthers",
     lead="The leopard (<i>Panthera pardus</i>) is the most widespread and adaptable big cat, found across much of sub-Saharan Africa and parts of Asia from the Middle East to the Russian Far East. It is a solitary stalker that often hauls kills into trees, and a melanistic (black) leopard is what many people call a black panther. The leopard is listed as Vulnerable on the IUCN Red List.",
-    crumbs=[("Species", "compare.html")], headline="Leopard facts", modified="2026-10-19",
+    crumbs=[("Species", "compare.html")], headline="Leopard facts", modified="2026-10-24",
     body=jump([("facts", "Quick facts"), ("look", "Appearance"), ("black", "Black panthers"), ("hunting", "Hunting"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera pardus</i>"), ("Weight", "17 to 90 kg"),
                 ("Head and body length", "91 to 191 cm, plus a 51 to 101 cm tail"), ("Lifespan", "About 13 to 21 years"),
                 ("Litter size", "1 to 4 cubs, after a gestation of 90 to 105 days"), ("Range", "Sub-Saharan Africa and scattered parts of Asia"),
-                ("IUCN Red List", "Vulnerable")]) + '</div>' +
+                ("IUCN Red List", "Vulnerable, assessed 2023")]) + '</div>' +
     '''<section class="card" id="look"><h2>How do you recognise a leopard?</h2>
 <p>Leopards have a pale yellow to golden coat covered in rosettes: rings or broken circles of dark spots. Unlike a jaguar's rosettes, a leopard's usually have no spot in the middle. Leopards are also lighter and longer bodied than jaguars, and they are bigger and stockier than cheetahs, which have solid round spots. Size and colour vary a lot across the leopard's huge range. Our <a href="blog/leopard-vs-jaguar-vs-cheetah.html">leopard vs jaguar vs cheetah guide</a> shows how to tell them apart.</p></section>
 <section class="card" id="black"><h2>What is a black panther?</h2>
@@ -113,20 +113,20 @@ add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | 
          ("Where do leopards live?", "Leopards live across most of sub-Saharan Africa and in scattered parts of Asia, from the Middle East and Caucasus to India, Southeast Asia, China and the Russian Far East.")],
     related=[("Jaguar facts", "jaguar.html"), ("Cheetah facts", "cheetah.html"), ("Snow leopard facts", "snow-leopard.html"),
              ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html")] + SPECIES_REL,
-    sources=[CSG["leopard"], SDZ["leopard"], PAN["leopard"], WWF["amur"], IUCN], priority="0.9")
+    sources=[CSG["leopard"], SDZ["leopard"], PAN["leopard"], WWF["amur"], RL["leopard"]], priority="0.9")
 
 # ------------------------------------------------------------------ JAGUAR
 add("jaguar.html", "Jaguar Facts: Bite, Swimming, Range & Status | BigCatWise",
     "Jaguar facts: the largest cat in the Americas, its skull piercing bite, love of water, rosettes with central spots, range and Near Threatened status.",
     "Jaguar facts: bite, swimming, range and conservation status",
     lead="The jaguar (<i>Panthera onca</i>) is the largest cat in the Americas and the only big cat that regularly kills prey by biting through the skull. It ranges from Mexico to northern Argentina, is a strong swimmer that hunts caiman and fish, and is listed as Near Threatened on the IUCN Red List, with most jaguars living in the Amazon.",
-    crumbs=[("Species", "compare.html")], headline="Jaguar facts", modified="2026-10-14",
+    crumbs=[("Species", "compare.html")], headline="Jaguar facts", modified="2026-10-24",
     body=jump([("facts", "Quick facts"), ("look", "Appearance"), ("bite", "Bite and hunting"), ("water", "Water"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera onca</i>"), ("Weight", "36 to 148 kg"),
                 ("Head and body length", "110 to 170 cm, plus a relatively short 44 to 80 cm tail"), ("Lifespan", "Up to about 26 years recorded"),
                 ("Litter size", "1 to 4 cubs"), ("Range", "Mexico to northern Argentina"),
-                ("IUCN Red List", "Near Threatened (new assessment expected around 2027)")]) + '</div>' +
+                ("IUCN Red List", "Near Threatened, assessed 2016 (new assessment expected around 2027)")]) + '</div>' +
     '''<section class="card" id="look"><h2>How is a jaguar different from a leopard?</h2>
 <p>Jaguars are stockier and more muscular than leopards, with a massive head, broad chest and a relatively short tail. Their rosettes are larger and usually have one or more dark spots inside, while leopard rosettes are usually empty. Geography is the easiest clue: wild jaguars live only in the Americas and wild leopards only in Africa and Asia. Melanistic jaguars are one of the two animals called "black panthers". Size varies by region, and jaguars in more open habitats tend to be larger.</p></section>
 <section class="card" id="bite"><h2>How does a jaguar kill its prey?</h2>
@@ -142,20 +142,20 @@ add("jaguar.html", "Jaguar Facts: Bite, Swimming, Range & Status | BigCatWise",
          ("Do jaguars live in Africa?", "No. Wild jaguars live only in the Americas, from Mexico to northern Argentina. The spotted big cat of Africa is the leopard."),
          ("Can jaguars swim?", "Yes. Jaguars are excellent swimmers and hunt fish, capybaras and caiman in rivers and wetlands.")],
     related=[("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html")] + SPECIES_REL,
-    sources=[CSG["jaguar"], WWF["jaguar"], SDZ["jaguar"], PAN["jaguar"], IUCN], priority="0.9")
+    sources=[CSG["jaguar"], WWF["jaguar"], SDZ["jaguar"], PAN["jaguar"], RL["jaguar"]], priority="0.9")
 
 # ------------------------------------------------------------------ CHEETAH
 add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise",
     "Cheetah facts: how fast cheetahs really run, why they cannot roar, how they hunt by day, where they live and why only about 6,500 mature adults remain.",
     "Cheetah facts: speed, hunting, range and conservation status",
     lead="The cheetah (<i>Acinonyx jubatus</i>) is the fastest land animal, a slender daytime hunter of open country that sprints in short bursts after gazelles and impala. It is not a roaring cat and sits outside the genus <i>Panthera</i>. Listed as Vulnerable, it numbers roughly 6,500 mature individuals, mostly in southern and eastern Africa, plus a critically endangered remnant in Iran.",
-    crumbs=[("Species", "compare.html")], headline="Cheetah facts", modified="2026-10-20",
+    crumbs=[("Species", "compare.html")], headline="Cheetah facts", modified="2026-10-24",
     body=jump([("facts", "Quick facts"), ("speed", "Speed"), ("body", "Built for speed"), ("hunting", "Hunting"),
                ("social", "Social life"), ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Acinonyx jubatus</i>"), ("Weight", "23 to 65 kg"),
                 ("Head and body length", "113 to 140 cm, plus a 60 to 84 cm tail"), ("Lifespan", "Up to about 14 years in the wild"),
                 ("Litter size", "1 to 6 cubs"), ("Range", "Mainly southern and eastern Africa; Sahara; Iran"),
-                ("IUCN Red List", "Vulnerable (Asiatic cheetah: Critically Endangered)")]) + '</div>' +
+                ("IUCN Red List", "Vulnerable, assessed 2021 (Asiatic cheetah: Critically Endangered)")]) + '</div>' +
     '''<section class="card" id="speed"><h2>How fast is a cheetah?</h2>
 <p>The IUCN Cat Specialist Group gives speeds of up to about 103 km/h during a chase. The best measured wild data come from a 2013 study in Botswana that fitted five cheetahs with GPS and motion sensor collars: the fastest of 367 runs reached 25.9 m/s (93 km/h, 58 mph), but most hunts used only moderate speeds, and acceleration, braking and sharp turns mattered as much as top speed. Chases seldom cover more than about 300 m. Our post <a href="blog/how-fast-is-a-cheetah.html">how fast is a cheetah</a> goes into the details.</p></section>
 <section class="card" id="body"><h2>What makes a cheetah so fast?</h2>
@@ -178,20 +178,20 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
          ("Do cheetahs abandon hunts because they overheat?", 'No. Free living cheetahs in Namibia ended chases at about 38.4&deg;C, within their normal daily range. Heat rises more after a kill than during the sprint; see <a href="blog/do-cheetahs-abandon-hunts-because-they-overheat.html">the research summary</a>.'),
          ],
     related=[("Leopard facts", "leopard.html"), ("Lion facts", "lion.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("Cheetah worksheet for 3rd grade", "teachers/cheetah-worksheet-3rd-grade.html")] + SPECIES_REL,
-    sources=[CSG["cheetah"], DURANT, WILSON, NZP["cheetah"], WWF["cheetah"], SDZ["cheetah"], PAN["cheetah"]], priority="0.9")
+    sources=[CSG["cheetah"], DURANT, WILSON, NZP["cheetah"], WWF["cheetah"], SDZ["cheetah"], PAN["cheetah"], RL["cheetah"]], priority="0.9")
 
 # ------------------------------------------------------------------ SNOW LEOPARD
 add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status | BigCatWise",
     "Snow leopard facts: how this mountain cat survives at 3,000 to 5,000 m, why it cannot roar, what it eats, where it lives and how many remain.",
     "Snow leopard facts: adaptations, range, diet and status",
     lead="The snow leopard (<i>Panthera uncia</i>) is a big cat of the high mountains of Central and South Asia, usually living between 3,000 and 5,000 m. It has thick smoky grey fur, huge paws and an exceptionally long tail, and unlike its relatives it cannot roar. It is listed as Vulnerable, with the latest estimate at about 7,400 to 8,000 individuals.",
-    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-10-21",
+    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-10-24",
     body=jump([("facts", "Quick facts"), ("adapt", "Adaptations"), ("voice", "Voice"), ("diet", "Diet"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera uncia</i>"), ("Weight", "30 to 50 kg"),
                 ("Head and body length", "90 to 120 cm, plus an 80 to 100 cm tail"), ("Lifespan", "About 10 to 20 years"),
                 ("Litter size", "1 to 5 cubs"), ("Range", "Mountains of 12 countries in Central and South Asia"),
-                ("IUCN Red List", "Vulnerable")]) + '</div>' +
+                ("IUCN Red List", "Vulnerable, assessed 2016")]) + '</div>' +
     '''<section class="card" id="adapt"><h2>How are snow leopards adapted to the cold?</h2>
 <ul><li><b>Long, thick tail:</b> up to about 1 m, or 75 to 90 percent of head and body length. It helps with balance on steep rock and is wrapped around the body for warmth when resting.</li>
 <li><b>Enlarged nasal cavity:</b> helps warm cold, thin air.</li>
@@ -212,7 +212,7 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
          ("Do snow leopards have low genetic diversity?", "Yes. Genome studies published in 2025 found snow leopards have the lowest genetic diversity of any big cat, mainly because their population has stayed small over their evolutionary history rather than only because of recent inbreeding."),
          ("How many snow leopards are there?", "The most recent estimate cited by the IUCN Cat Specialist Group is 7,446 to 7,996 individuals, of which 2,710 to 3,386 are mature adults.")],
     related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Why do snow leopards have such low genetic diversity?", "blog/why-do-snow-leopards-have-low-genetic-diversity.html")] + SPECIES_REL,
-    sources=[CSG["snow"], WWF["snow"], SLT, SDZ["snow"], PAN["snow"], IUCN], priority="0.9")
+    sources=[CSG["snow"], WWF["snow"], SLT, SDZ["snow"], PAN["snow"], RL["snow"]], priority="0.9")
 
 import content2  # noqa  other pages and blog
 import games  # noqa  games hub and games

@@ -118,3 +118,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - News/outreach: none in this slot.
 - 23 Oct 2026: AdSense (ca-pub-5681559774142917) added, commit 3881d5d, ads.txt live, IndexNow submitted.
 - 23 Oct 2026: legal pass (commit a56ee68): new copyright.html, corrections.html; terms/disclaimer/privacy expanded; footer links sitewide; IndexNow submitted.
+- 24 Oct 2026: LLC/name + copyright rule applied (footer cleaned sitewide, trade-name line on 4 legal pages, publisher JSON-LD = BigCatWise with parentOrganization) plus audit fixes: dated IUCN statuses with DOI sources on 6 species pages, compare and conservation; internal links to directory URLs instead of index.html; shorter terms/disclaimer descriptions. Sitemap 55 URLs all 200, JSON-LD 142 blocks parse, 0 broken links/images.

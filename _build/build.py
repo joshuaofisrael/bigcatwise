@@ -37,8 +37,12 @@ LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden=
         '<path d="M28 44 L36 44 L32 48Z" fill="#1a140c"/><path d="M32 48 v4 M32 52 q-5 3 -9 0 M32 52 q5 3 9 0" stroke="#1a140c" stroke-width="2.2" fill="none" stroke-linecap="round"/>'
         '<path d="M18 22 l5 6 M46 22 l-5 6 M32 20 v8" stroke="#1a140c" stroke-width="3" stroke-linecap="round"/></svg>')
 
-PUBLISHER = {"@type": "Organization", "@id": BASE_URL + "#organization", "name": LEGAL, "legalName": LEGAL, "url": BASE_URL,
-             "email": "joshuaofisrael@gmail.com", "brand": {"@type": "Brand", "name": SITE, "logo": OG_IMAGE},
+# Brand is the publisher everywhere (LLC/name rule, 23-24 Oct 2026); the LLC appears only as structured-data parentOrganization and on legal pages.
+LEGAL_LINE = ("&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. BigCatWise is a trade name of Joshua Israel Ventures LLC, "
+              "a Florida limited liability company.")
+LEGAL_PAGES = {"terms.html", "privacy.html", "disclaimer.html", "copyright.html"}
+PUBLISHER = {"@type": "Organization", "@id": BASE_URL + "#organization", "name": SITE, "url": BASE_URL,
+             "parentOrganization": {"@type": "Organization", "name": LEGAL}, "brand": {"@type": "Brand", "name": SITE, "logo": OG_IMAGE},
              "logo": {"@type": "ImageObject", "url": OG_IMAGE}}
 
 def esc(s):
@@ -55,14 +59,11 @@ def beacon():
 
 def footer(rel):
     return ('<footer><section class="contact-us" aria-labelledby="contact-us"><h2 id="contact-us">Contact us</h2>'
-            '<p>Questions, corrections or suggestions? Email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a> '
-            'or use our <a href="%scontact.html">contact form</a>.</p></section>' % rel +
+            '<p>Questions, corrections or suggestions? Use our <a href="%scontact.html">contact form</a>.</p></section>' % rel +
             '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. Text and drawings are original; photos are credited on our photo credits page, and some are AI generated.</p>'
-            '<p class="legal">&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. %s is owned and operated by Joshua Israel Ventures LLC.</p>'
-            '<p class="legal">Operated by %s</p>'
             '<p class="flinks"><a href="%sterms.html">Terms of use</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
             '<a href="%sdisclaimer.html#affiliate">Advertising disclosure</a> | <a href="%scopyright.html">Copyright and takedown</a> | <a href="%scorrections.html">Corrections</a> | '
-            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a></p></footer>') % (SITE, SITE, LEGAL, rel, rel, rel, rel, rel, rel, rel, rel, rel)
+            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a></p></footer>') % (SITE, rel, rel, rel, rel, rel, rel, rel, rel, rel)
 
 def header(rel, current):
     links = []
@@ -137,7 +138,7 @@ def render(p):
         if p.kind == "article":
             blocks.append({"@context": "https://schema.org", "@type": "Article", "headline": p.headline or p.h1,
                            "description": p.description, "image": {"@type": "ImageObject", "url": og_img, "width": og_w, "height": og_h},
-                           "author": {"@type": "Organization", "@id": BASE_URL + "#organization", "name": LEGAL, "url": BASE_URL},
+                           "author": {"@type": "Organization", "@id": BASE_URL + "#organization", "name": SITE, "url": BASE_URL},
                            "publisher": PUBLISHER, "datePublished": p.published, "dateModified": p.modified,
                            "mainEntityOfPage": canon, "inLanguage": "en"})
         elif p.kind == "page":
@@ -181,6 +182,8 @@ def render(p):
         out.append(photo_html(p.path, rel, lazy=True))
     body = p.body.replace("{rel}", rel).replace("{photo}", photo_html(p.path, rel, lazy=False) if p.path in PHOTOS else "")
     out.append(insert_ai(body, p.path, rel))
+    if p.path in LEGAL_PAGES:
+        out.append('<p class="legal-owner">%s</p>' % LEGAL_LINE)
     if p.faq:
         out.append('<section class="card" id="faq"><h2>Frequently asked questions</h2>')
         for q, a in p.faq:
@@ -195,15 +198,16 @@ def render(p):
         out.append('<section class="card sources"><h2>Sources</h2><ul>%s</ul><p class="note">Figures are rounded summaries of the sources above. Wild populations are hard to count, so estimates change as new surveys are published.</p></section>' %
                    "".join('<li><a href="%s" rel="noopener">%s</a></li>' % (esc(u), esc(n)) for n, u in p.sources))
     out.append('</main>' + footer(rel) + beacon() + '</body></html>\n')
-    return "\n".join(out)
+    # Link to directory URLs (/, blog/, games/...) rather than .../index.html so internal links match the canonicals (24 Oct 2026).
+    return re.sub(r'href="([^"#:]*?)index\.html', lambda m: 'href="%s' % (m.group(1) or "./"), "\n".join(out))
 
 def cite_box(p, canon):
     title = esc(p.headline or p.h1)
     d = datetime.date.fromisoformat(p.modified)
-    apa = '%s. (%d, %s %d). <i>%s</i>. %s. %s' % (SITE, d.year, d.strftime("%B"), d.day, title, LEGAL, canon)
+    apa = '%s. (%d, %s %d). <i>%s</i>. %s' % (SITE, d.year, d.strftime("%B"), d.day, title, canon)
     mon = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."][d.month - 1]
-    mla = '"%s." <i>%s</i>, %s, %d %s %d, %s.' % (title, SITE, LEGAL, d.day, mon, d.year, canon.replace("https://", ""))
-    chi = '%s. "%s." %s. Last modified %s %d, %d. %s.' % (SITE, title, LEGAL, d.strftime("%B"), d.day, d.year, canon)
+    mla = '"%s." <i>%s</i>, %d %s %d, %s.' % (title, SITE, d.day, mon, d.year, canon.replace("https://", ""))
+    chi = '%s. "%s." Last modified %s %d, %d. %s.' % (SITE, title, d.strftime("%B"), d.day, d.year, canon)
     return ('<section class="cite" aria-labelledby="cite-h"><h2 id="cite-h">Cite this page</h2>'
             '<p><b>APA:</b> %s</p><p><b>MLA:</b> %s</p><p><b>Chicago:</b> %s</p>'
             '<p class="note">Please check the date you accessed the page and adjust to your teacher\'s or journal\'s style guide.</p></section>') % (apa, mla, chi)

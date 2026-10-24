@@ -1,6 +1,6 @@
 # BigCatWise ops notes (Big Cat Site Bot)
 
-Last updated 9 Oct 2026. Operated by Joshua Israel Ventures LLC.
+Last updated 24 Oct 2026.
 
 ## Where things are
 - Repo: https://github.com/joshuaofisrael/bigcatwise (public). Local clone: /workspace/bigcatwise
@@ -13,13 +13,13 @@ Last updated 9 Oct 2026. Operated by Joshua Israel Ventures LLC.
 - `_build/build.py` holds all config: BASE_URL, BASE_PATH, INDEXNOW_KEY, CF_BEACON_TOKEN, GSC_TOKEN, TODAY, nav.
 - Signature asset: which-big-cat-is-it.html (`_build/content3.py`), ID guide plus big cats by region with anchors.
 - Content: `_build/content.py` (6 species pages), `_build/content2.py` (compare, behavior, habitats, conservation, FAQ, glossary, home, about, contact, privacy, 404, llms.txt), `_build/blog.py` (posts + blog index), `_build/sources.py` (verified source URLs).
-- `python3 _build/check.py` checks JSON-LD parses, footer text, Contact us mailto, canonicals, no em/en dashes, no broken internal links, unique titles/descriptions.
+- `python3 _build/check.py` checks JSON-LD parses, footer contact-form link, no LLC/Joshua/copyright text outside the 4 legal pages, trade-name line on legal pages, canonicals, no em/en dashes, no broken internal links, unique titles/descriptions.
 - Jekyll (Pages default) ignores the `_build` folder, so build scripts are not published.
 - All internal links are relative, so the site works under /bigcatwise/ and at a domain root. Only 404.html uses absolute paths (BASE_PATH).
 - When updating a page, bump its `modified=` date so sitemap lastmod and Article dateModified change.
 
 ## Owner rules baked in
-- Footer on every page: "Contact us" box with mailto:joshuaofisrael@gmail.com plus link to contact form, then "Operated by Joshua Israel Ventures LLC".
+- Footer on every page: "Contact us" box linking to the contact form (no mailto, no LLC, no copyright line since 24 Oct 2026).
 - Contact form (contact.html) posts to https://formsubmit.co/joshuaofisrael@gmail.com with honeypot. FormSubmit needs a one time activation: the FIRST submission triggers an activation email to joshuaofisrael@gmail.com that must be clicked. Not yet triggered as of v1 (needs approval to send the one test submission).
 - No ads, affiliates, shop, social accounts or spending. Images: own artwork (inline SVG logo, og.png drawn with PIL, game art) plus licence checked Wikimedia Commons photos (CC0 or CC BY-SA only; see Photos below and /credits/).
 - Facts sourced mainly from IUCN SSC Cat Specialist Group species pages (catsg.org), plus zoos, WWF, Panthera and peer reviewed papers (DOIs checked on Crossref). Never invent numbers.
@@ -83,3 +83,9 @@ Contrast ratios (WCAG, all AA 4.5:1 or better):
 - TODO images (next runs): blog which-big-cats-can-roar, leopard-vs-jaguar-vs-cheetah, how-fast-is-a-cheetah, why-do-tigers-have-stripes, how-many-big-cats-are-left, why-do-lions-live-in-prides, do-cheetahs-abandon-hunts-because-they-overheat, why-do-snow-leopards-have-low-genetic-diversity; pages faq, glossary, which-big-cat-is-it, about, games, teachers, research, blog index. Add an entry to AI in aiphotos.py after generating a 960x640 and 480x320 WebP (under about 150 KB).
 - Contact: /contact.html, FormSubmit via hashed alias (no naked address in the form), AJAX fetch with inline thank you, `_next` redirect to contact.html?sent=1 as no JS fallback, `_honey` honeypot, privacy line. Contact is in NAV, footer and sitemap. Form was activated on 18 Oct 2026; tests on 23 Oct 2026 delivered, so no activation click is needed. The alias comes from the 18 Oct activation email; if FormSubmit ever stops delivering, check Joshua's inbox for a new activation email (do not click without his say).
 - Share images (23 Oct 2026): img/og/<slug>.jpg (1200x675) are made from the AI masters by _build/make_og.py (run from repo root under the heavy lock) (crop 16:9, LANCZOS, JPEG q82). build.py uses them for og:image and Article ImageObject when the page is in aiphotos.AI and the file exists; else og.png. When adding an AI image, also create its img/og/<slug>.jpg. Indexable pages carry robots max-image-preview:large.
+
+### LLC/name + copyright rule (24 Oct 2026)
+- Joshua's rules (/workspace/llc-rule.txt, /workspace/copyright-rule.txt): LLC name and Joshua's name only on legal pages. build.py LEGAL_PAGES = terms, privacy, disclaimer (includes advertising/affiliate disclosure), copyright; each gets LEGAL_LINE ("(c) 2026 Joshua Israel Ventures LLC. All rights reserved. BigCatWise is a trade name of Joshua Israel Ventures LLC, a Florida limited liability company."). Terms/privacy/disclaimer keep Florida governing law.
+- JSON-LD publisher/author = BigCatWise, with parentOrganization Joshua Israel Ventures LLC (structured data only). No email in JSON-LD. The email address appears only on privacy and disclaimer; other pages point to the contact form. Cite boxes no longer name the LLC.
+- Internal links now point at directory URLs (./, blog/, games/...) instead of .../index.html, matching canonicals (render() post-process).
+- IUCN statuses now carry the year assessed (species fact tables, compare, conservation) with DOI links to the current assessments (sources.RL, RL_YEAR). Checked on iucnredlist.org "Date assessed" 24 Oct 2026: lion VU 2025, tiger EN 2021 (pub 2022), leopard VU 2023 (pub 2025), jaguar NT 2016 (pub 2017), cheetah VU 2021 (pub 2024), snow leopard VU 2016 (pub 2017). Re-check when a new assessment is published (jaguar expected ~2027).

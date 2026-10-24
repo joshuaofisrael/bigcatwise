@@ -81,3 +81,14 @@ STANDER1992F = ("Stander (1992) Foraging dynamics of lions in a semi-arid enviro
 FUNSTON2001 = ("Funston, Mills and Biggs (2001) Factors affecting the hunting success of male and female lions in the Kruger National Park, Journal of Zoology 253(4): 419-431. DOI 10.1017/S0952836901000395", "https://doi.org/10.1017/S0952836901000395")
 HOPCRAFT2005 = ("Hopcraft, Sinclair and Packer (2005) Planning for success: Serengeti lions seek prey accessibility rather than abundance, Journal of Animal Ecology 74(3): 559-566. DOI 10.1111/j.1365-2656.2005.00955.x", "https://doi.org/10.1111/j.1365-2656.2005.00955.x")
 SCHEEL1993 = ("Scheel (1993) Profitability, encounter rates, and prey choice of African lions, Behavioral Ecology 4(1): 90-97. DOI 10.1093/beheco/4.1.90", "https://doi.org/10.1093/beheco/4.1.90")
+
+# Current global IUCN Red List assessments, each checked on iucnredlist.org ("Date assessed") and Crossref on 24 Oct 2026.
+RL_YEAR = {"lion": 2025, "tiger": 2021, "leopard": 2023, "jaguar": 2016, "cheetah": 2021, "snow": 2016}
+RL = {
+ "lion": ("IUCN Red List: Panthera leo, Nicholson et al. (assessed 2025, published 2025)", "https://doi.org/10.2305/IUCN.UK.2025-2.RLTS.T15951A280792135.en"),
+ "tiger": ("IUCN Red List: Panthera tigris, Goodrich et al. (assessed 2021, published 2022)", "https://doi.org/10.2305/IUCN.UK.2022-1.RLTS.T15955A214862019.en"),
+ "leopard": ("IUCN Red List: Panthera pardus, Stein et al. (assessed 2023, published 2025)", "https://doi.org/10.2305/IUCN.UK.2025-2.RLTS.T15954A286153337.en"),
+ "jaguar": ("IUCN Red List: Panthera onca, Quigley et al. (assessed 2016, published 2017)", "https://doi.org/10.2305/IUCN.UK.2017-3.RLTS.T15953A50658693.en"),
+ "cheetah": ("IUCN Red List: Acinonyx jubatus, Durant et al. (assessed 2021, published 2024)", "https://doi.org/10.2305/IUCN.UK.2024-1.RLTS.T219A259025524.en"),
+ "snow": ("IUCN Red List: Panthera uncia, McCarthy et al. (assessed 2016, published 2017)", "https://doi.org/10.2305/IUCN.UK.2017-2.RLTS.T22732A50664030.en"),
+}

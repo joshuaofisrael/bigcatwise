@@ -1,5 +1,5 @@
 from build import add, BASE_URL, PAGES, TODAY, CF_BEACON_TOKEN
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, RL
 from content import jump
 
 ALLCSG = [CSG[k] for k in ("lion", "tiger", "leopard", "jaguar", "cheetah", "snow")]
@@ -8,22 +8,22 @@ SP = [("Lion", "lion.html"), ("Tiger", "tiger.html"), ("Leopard", "leopard.html"
 
 # ------------------------------------------------------------------ COMPARE (unique asset)
 ROWS = [
- ("lion", "Lion", "<i>Panthera leo</i>", "110 to 272 kg", "137 to 250 cm", "Sub-Saharan Africa; Gir, India", "Savanna, grassland, open woodland", "Prides; male coalitions", "Yes", "Vulnerable", "About 22,000 to 25,000 adults and subadults in Africa (2025) plus about 670 in India (2020)"),
- ("tiger", "Tiger", "<i>Panthera tigris</i>", "75 to 325 kg", "150 to 230 cm", "South, Southeast and East Asia; Russian Far East", "Forests, mangroves, grassland", "Solitary", "Yes", "Endangered", "3,726 to 5,578 excluding cubs"),
- ("leopard", "Leopard", "<i>Panthera pardus</i>", "17 to 90 kg", "91 to 191 cm", "Sub-Saharan Africa; scattered across Asia", "Almost any habitat with cover", "Solitary", "Yes", "Vulnerable", "No reliable global estimate"),
- ("jaguar", "Jaguar", "<i>Panthera onca</i>", "36 to 148 kg", "110 to 170 cm", "Mexico to northern Argentina", "Rainforest, wetlands, dry forest", "Solitary", "Yes", "Near Threatened", "57,000 to 64,000 in Amazonia (about 89% of the total)"),
- ("cheetah", "Cheetah", "<i>Acinonyx jubatus</i>", "23 to 65 kg", "113 to 140 cm", "Southern and eastern Africa; Sahara; Iran", "Savanna, grassland, dry woodland, desert", "Females solitary; male coalitions", "No", "Vulnerable", "About 6,500 mature individuals"),
- ("snow-leopard", "Snow leopard", "<i>Panthera uncia</i>", "30 to 50 kg", "90 to 120 cm", "Mountains of Central and South Asia", "Alpine and subalpine mountains", "Solitary", "No", "Vulnerable", "7,446 to 7,996 (2,710 to 3,386 mature)"),
+ ("lion", "Lion", "<i>Panthera leo</i>", "110 to 272 kg", "137 to 250 cm", "Sub-Saharan Africa; Gir, India", "Savanna, grassland, open woodland", "Prides; male coalitions", "Yes", "Vulnerable (2025)", "About 22,000 to 25,000 adults and subadults in Africa (2025) plus about 670 in India (2020)"),
+ ("tiger", "Tiger", "<i>Panthera tigris</i>", "75 to 325 kg", "150 to 230 cm", "South, Southeast and East Asia; Russian Far East", "Forests, mangroves, grassland", "Solitary", "Yes", "Endangered (2021)", "3,726 to 5,578 excluding cubs"),
+ ("leopard", "Leopard", "<i>Panthera pardus</i>", "17 to 90 kg", "91 to 191 cm", "Sub-Saharan Africa; scattered across Asia", "Almost any habitat with cover", "Solitary", "Yes", "Vulnerable (2023)", "No reliable global estimate"),
+ ("jaguar", "Jaguar", "<i>Panthera onca</i>", "36 to 148 kg", "110 to 170 cm", "Mexico to northern Argentina", "Rainforest, wetlands, dry forest", "Solitary", "Yes", "Near Threatened (2016)", "57,000 to 64,000 in Amazonia (about 89% of the total)"),
+ ("cheetah", "Cheetah", "<i>Acinonyx jubatus</i>", "23 to 65 kg", "113 to 140 cm", "Southern and eastern Africa; Sahara; Iran", "Savanna, grassland, dry woodland, desert", "Females solitary; male coalitions", "No", "Vulnerable (2021)", "About 6,500 mature individuals"),
+ ("snow-leopard", "Snow leopard", "<i>Panthera uncia</i>", "30 to 50 kg", "90 to 120 cm", "Mountains of Central and South Asia", "Alpine and subalpine mountains", "Solitary", "No", "Vulnerable (2016)", "7,446 to 7,996 (2,710 to 3,386 mature)"),
 ]
 table = ('<div class="tablewrap"><table><thead><tr><th>Species</th><th>Weight</th><th>Head and body</th><th>Range</th><th>Main habitats</th>'
-         '<th>Social life</th><th>Roars?</th><th>IUCN status</th><th>Population estimate</th></tr></thead><tbody>' +
+         '<th>Social life</th><th>Roars?</th><th>IUCN status (year assessed)</th><th>Population estimate</th></tr></thead><tbody>' +
          "".join('<tr id="row-%s"><td><a href="%s.html">%s</a><br><span class="sci">%s</span></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % ((r[0],) + tuple(r))
                  for r in ROWS) + '</tbody></table></div>')
 add("compare.html", "Big Cat Comparison Table: Size, Range, Status & Population | BigCatWise",
     "Compare lions, tigers, leopards, jaguars, cheetahs and snow leopards side by side: weight, length, range, habitat, social life, roaring, IUCN status and numbers.",
     "Big cat comparison: size, range, status and population",
     lead="The tiger is the largest big cat, the lion is the only social one, the leopard has the widest range, the jaguar is the only big cat in the Americas, the cheetah is the fastest, and the snow leopard lives highest. The table below compares all six on size, range, habitat, social life, voice, IUCN Red List status and the latest population estimates.",
-    headline="Big cat comparison table",
+    modified="2026-10-24", headline="Big cat comparison table",
     body=jump([("table", "Comparison table"), ("biggest", "Biggest"), ("which-roar", "Which roar"), ("tell-apart", "Spotted cats"), ("status", "Status ranking"), ("definition", "What is a big cat")]) +
     '<section class="card" id="table"><h2>Big cat comparison table</h2><p>Weights and lengths are the full ranges listed by the IUCN SSC Cat Specialist Group for each species, covering both sexes and all populations. Tap a species name for its full profile.</p>' + table +
     '<p class="note">Population figures come from the most recent IUCN Cat Specialist Group summaries cited on each species page. They are estimates with wide uncertainty, and the counting methods differ between species, so compare them with care.</p></section>' +
@@ -41,7 +41,7 @@ add("compare.html", "Big Cat Comparison Table: Size, Range, Status & Population 
 <p>On the IUCN Red List the tiger is the only one of the six listed as Endangered at species level. Lion, leopard, cheetah and snow leopard are Vulnerable, and the jaguar is Near Threatened. Species level labels hide serious local crises, though: the Asiatic cheetah in Iran and the Indochinese leopard are Critically Endangered, and the northern lion subspecies is Endangered. See <a href="conservation.html">big cat conservation</a> and <a href="blog/how-many-big-cats-are-left.html">how many big cats are left</a>.</p></section>
 <section class="card" id="definition"><h2>What counts as a big cat?</h2>
 <p>Strictly, "big cats" means the five members of the genus <i>Panthera</i>: lion, tiger, leopard, jaguar and snow leopard. In everyday use the cheetah is usually included, and sometimes the puma (cougar) and clouded leopards too. This site covers the five <i>Panthera</i> species plus the cheetah.</p></section>''',
-    related=SP + [("Big cat FAQ", "faq.html")], sources=ALLCSG + [DURANT, IUCN], priority="1.0")
+    related=SP + [("Big cat FAQ", "faq.html")], sources=ALLCSG + [DURANT] + [RL[k] for k in ("lion", "tiger", "leopard", "jaguar", "cheetah", "snow")], priority="1.0")
 
 # ------------------------------------------------------------------ BEHAVIOR
 add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territory | BigCatWise",
@@ -127,18 +127,18 @@ add("conservation.html", "Big Cat Conservation: Status, Threats & What Helps | B
     "Big cat conservation explained: IUCN Red List status for all six species, latest population estimates, the main threats, and the measures that actually help.",
     "Big cat conservation: status, threats and what helps",
     lead="All six big cats covered here are declining or depend on ongoing protection. On the IUCN Red List the tiger is Endangered; the lion, leopard, cheetah and snow leopard are Vulnerable; and the jaguar is Near Threatened. The main threats are loss of habitat and prey, killing in conflicts over livestock, and poaching for the illegal wildlife trade.",
-    headline="Big cat conservation",
+    modified="2026-10-24", headline="Big cat conservation",
     body=jump([("status", "Status table"), ("threats", "Threats"), ("helps", "What helps"), ("cites", "Trade protection"), ("you", "How you can help")]) +
     '''<section class="card" id="status"><h2>Conservation status of each big cat</h2>
-<div class="tablewrap"><table><thead><tr><th>Species</th><th>IUCN Red List</th><th>Population estimate</th><th>Trend notes</th></tr></thead><tbody>
-<tr><td><a href="tiger.html">Tiger</a></td><td>Endangered</td><td>3,726 to 5,578 excluding cubs</td><td>Range down by more than half over three generations; Green Status Critically Depleted (2025)</td></tr>
-<tr><td><a href="lion.html">Lion</a></td><td>Vulnerable</td><td>About 22,000 to 25,000 in Africa (2025); about 670 in India (2020)</td><td>Stable or rising in southern Africa; steep losses in West and Central Africa</td></tr>
-<tr><td><a href="leopard.html">Leopard</a></td><td>Vulnerable</td><td>No reliable global estimate</td><td>Range fell 11% from 2016 to 2023; collapse in Southeast Asia</td></tr>
-<tr><td><a href="cheetah.html">Cheetah</a></td><td>Vulnerable</td><td>About 6,500 mature individuals</td><td>Most assessed subpopulations declining; Asiatic cheetah under 50 mature adults</td></tr>
-<tr><td><a href="snow-leopard.html">Snow leopard</a></td><td>Vulnerable</td><td>7,446 to 7,996 (2,710 to 3,386 mature)</td><td>Further decline of about 10% projected</td></tr>
-<tr><td><a href="jaguar.html">Jaguar</a></td><td>Near Threatened</td><td>57,000 to 64,000 in Amazonia (about 89% of the total)</td><td>Most of 34 subpopulations Endangered or Critically Endangered</td></tr>
+<div class="tablewrap"><table><thead><tr><th>Species</th><th>IUCN Red List (year assessed)</th><th>Population estimate</th><th>Trend notes</th></tr></thead><tbody>
+<tr><td><a href="tiger.html">Tiger</a></td><td>Endangered (assessed 2021)</td><td>3,726 to 5,578 excluding cubs</td><td>Range down by more than half over three generations; Green Status Critically Depleted (2025)</td></tr>
+<tr><td><a href="lion.html">Lion</a></td><td>Vulnerable (assessed 2025)</td><td>About 22,000 to 25,000 in Africa (2025); about 670 in India (2020)</td><td>Stable or rising in southern Africa; steep losses in West and Central Africa</td></tr>
+<tr><td><a href="leopard.html">Leopard</a></td><td>Vulnerable (assessed 2023)</td><td>No reliable global estimate</td><td>Range fell 11% from 2016 to 2023; collapse in Southeast Asia</td></tr>
+<tr><td><a href="cheetah.html">Cheetah</a></td><td>Vulnerable (assessed 2021)</td><td>About 6,500 mature individuals</td><td>Most assessed subpopulations declining; Asiatic cheetah under 50 mature adults</td></tr>
+<tr><td><a href="snow-leopard.html">Snow leopard</a></td><td>Vulnerable (assessed 2016)</td><td>7,446 to 7,996 (2,710 to 3,386 mature)</td><td>Further decline of about 10% projected</td></tr>
+<tr><td><a href="jaguar.html">Jaguar</a></td><td>Near Threatened (assessed 2016)</td><td>57,000 to 64,000 in Amazonia (about 89% of the total)</td><td>Most of 34 subpopulations Endangered or Critically Endangered</td></tr>
 </tbody></table></div>
-<p class="note">Figures are taken from IUCN SSC Cat Specialist Group summaries; see each species page for detail. A new global jaguar assessment is expected around 2027.</p></section>
+<p class="note">Figures are taken from IUCN SSC Cat Specialist Group summaries; see each species page for detail. Red List categories and assessment years were checked on iucnredlist.org on 24 October 2026. A new global jaguar assessment is expected around 2027.</p></section>
 <section class="card" id="threats"><h2>What are the biggest threats to big cats?</h2>
 <ol><li><b>Habitat loss and fragmentation.</b> Farms, plantations, roads and settlements break habitat into islands too small for viable populations, and cut the corridors cats use to move between them.</li>
 <li><b>Prey depletion.</b> Snaring and hunting for bushmeat, and competition with livestock, empty landscapes of the animals big cats eat, even inside protected areas.</li>
@@ -162,7 +162,7 @@ add("conservation.html", "Big Cat Conservation: Status, Threats & What Helps | B
 <li>If you travel to see big cats, choose operators that keep their distance, follow park rules and support local communities.</li>
 <li>Share accurate information. Correcting myths, like the idea that tigers live in Africa, helps people care about the real animals.</li></ul></section>''',
     related=SP + [("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Compare big cats", "compare.html")],
-    sources=ALLCSG + [DURANT, WWF["tiger"], PAN["lion"], IUCN], priority="0.9")
+    sources=ALLCSG + [DURANT, WWF["tiger"], PAN["lion"]] + [RL[k] for k in ("lion", "tiger", "leopard", "jaguar", "cheetah", "snow")], priority="0.9")
 
 # ------------------------------------------------------------------ FAQ
 FAQ = [
@@ -279,19 +279,19 @@ add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
 
 # ------------------------------------------------------------------ TRUST PAGES
 add("about.html", "About BigCatWise: Who We Are & How We Write | BigCatWise",
-    "About BigCatWise: an independent big cat education site operated by Joshua Israel Ventures LLC. How we research, source and update our content.",
-    "About BigCatWise", kind="page", headline="About",
-    lead="BigCatWise is a brand of Joshua Israel Ventures LLC: an independent educational website about the world's big cats.",
+    "About BigCatWise: an independent big cat education site. How we research, source and update our content.",
+    "About BigCatWise", kind="page", headline="About", modified="2026-10-24",
+    lead="BigCatWise is an independent educational website about the world's big cats.",
     body='''<section class="card"><h2>What we cover</h2><p>We explain the biology, behavior, habitats and conservation of six species: the lion, tiger, leopard, jaguar, cheetah and snow leopard. Our aim is clear, accurate, answer first pages that are useful to students, teachers, travellers and anyone curious about big cats.</p></section>
 <section class="card"><h2>How we write and source</h2><p>All text on this site is original. Photos are credited on our <a href="credits/">photo credits</a> page, and some images are AI generated photo style pictures of typical big cats and habitats (see <a href="credits/#ai-images">AI generated images</a>). Facts and figures are drawn from reputable sources, principally the IUCN SSC Cat Specialist Group and IUCN Red List, Smithsonian's National Zoo and Conservation Biology Institute, San Diego Zoo Wildlife Alliance, WWF, Panthera, the Snow Leopard Trust and peer reviewed research. Each page lists its sources and shows when it was last updated. We do not claim field expertise we do not have, and we do not invent statistics.</p>
 <p>Wild population estimates change as new surveys are published. If you spot something out of date or wrong, please <a href="contact.html">tell us</a> and we will check and correct it.</p></section>
-<section class="card"><h2>Who runs BigCatWise</h2><p>BigCatWise is a brand of Joshua Israel Ventures LLC. The site is owned and operated by Joshua Israel Ventures LLC. The site uses Google AdSense advertising, and has no affiliate links at present. See our <a href="privacy.html#advertising">privacy policy</a> and <a href="disclaimer.html#affiliate">disclaimer</a> for details.</p></section>''',
+<section class="card"><h2>Who runs BigCatWise</h2><p>BigCatWise is an independent educational website. Legal details about the site owner are in our <a href="terms.html">terms of use</a>. The site uses Google AdSense advertising, and has no affiliate links at present. See our <a href="privacy.html#advertising">privacy policy</a> and <a href="disclaimer.html#affiliate">disclaimer</a> for details.</p></section>''',
     related=[("Contact", "contact.html"), ("Terms of use", "terms.html"), ("Privacy", "privacy.html"), ("Disclaimer", "disclaimer.html"), ("Compare big cats", "compare.html")], priority="0.4")
 
 add("contact.html", "Contact BigCatWise | BigCatWise",
-    "Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Email us or use the contact form.",
-    "Contact BigCatWise", kind="page", headline="Contact",
-    lead='Questions, corrections or ideas for a new guide? Email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a> or use the form below.',
+    "Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Use the contact form.",
+    "Contact BigCatWise", kind="page", headline="Contact", modified="2026-10-24",
+    lead='Questions, corrections or ideas for a new guide? Use the form below and we will reply by email.',
     body='''<section class="card"><h2>Send us a message</h2>
 <form class="contact" id="contact-form" action="https://formsubmit.co/4497ee41a1200e746e967998473d21da" method="POST">
 <input type="hidden" name="_subject" value="BigCatWise contact"><input type="hidden" name="_template" value="table">
@@ -312,7 +312,7 @@ f.addEventListener('submit',function(e){if(!window.fetch||!window.FormData)retur
 var d=new FormData(f);d.delete('_next');
 fetch(f.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',body:d,headers:{'Accept':'application/json'}})
 .then(function(r){return r.json()}).then(function(j){if(j&&(j.success===true||j.success==='true')){f.reset();f.hidden=true;show('Thank you. Your message has been sent and we will reply to the email address you gave.',true);}else{throw 0}})
-.catch(function(){b.disabled=false;show('Sorry, the message could not be sent. Please email joshuaofisrael@gmail.com instead.',false);});});})();
+.catch(function(){b.disabled=false;show('Sorry, the message could not be sent. Please try again in a moment, or use the email address in our privacy policy.',false);});});})();
 </script>''',
     related=[("About", "about.html"), ("Big cat FAQ", "faq.html")], priority="0.3")
 
@@ -321,7 +321,7 @@ analytics = ("We use Cloudflare Web Analytics to count page views. It is cookiel
              "We do not currently run any analytics script. We plan to add Cloudflare Web Analytics, which is cookieless and does not collect personal data or track you across sites, and will update this page when we do.")
 add("privacy.html", "Privacy Policy | BigCatWise",
     "BigCatWise privacy policy: Joshua Israel Ventures LLC is the data controller. What we collect, how contact messages are handled, analytics and your choices.",
-    "Privacy policy", kind="page", headline="Privacy", modified="2026-10-23",
+    "Privacy policy", kind="page", headline="Privacy", modified="2026-10-24",
     lead="BigCatWise is a brand of Joshua Israel Ventures LLC. Joshua Israel Ventures LLC is the data controller for personal information collected through this website. We collect as little information as possible, and this page explains what we collect and why, including how advertising works on the site.",
     body='''<section class="card"><h2>Who we are</h2><p>This website, bigcatwise.com, is owned and operated by Joshua Israel Ventures LLC ("we", "us"). You can contact us about privacy at <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>.</p></section>
 <section class="card"><h2>What we collect</h2><ul>
@@ -343,8 +343,8 @@ add("privacy.html", "Privacy Policy | BigCatWise",
     related=[("Terms of use", "terms.html"), ("Disclaimer", "disclaimer.html"), ("Copyright and takedown", "copyright.html"), ("Corrections policy", "corrections.html"), ("Contact", "contact.html")], priority="0.2")
 
 add("terms.html", "Terms of Use | BigCatWise",
-    "BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, educational information only, use at your own risk, no warranties, limitation of liability, indemnification, Florida law.",
-    "Terms of use", kind="page", headline="Terms of use", modified="2026-10-23",
+    "BigCatWise terms of use: educational information only, use at your own risk, no warranties, limitation of liability, indemnification and Florida law.",
+    "Terms of use", kind="page", headline="Terms of use", modified="2026-10-24",
     lead="These terms govern your use of bigcatwise.com. By using the site you agree to them. If you do not agree, please do not use the site.",
     body='''<section class="card"><h2>Who you are agreeing with</h2><p>BigCatWise is a brand owned by Joshua Israel Ventures LLC. BigCatWise is a brand name, not a separate company or a registered assumed name. When you use this website, your agreement is with Joshua Israel Ventures LLC ("we", "us").</p></section>
 <section class="card" id="educational"><h2>Educational information only, not advice</h2><p>All content on BigCatWise is general educational information about big cats. It is not professional advice of any kind, including wildlife, veterinary, medical, first aid, animal handling or animal management advice, travel or personal safety advice, or legal advice. Nothing on this site tells you how to approach, keep, handle, feed, photograph or interact with a big cat safely, and nothing on it should be read that way. Big cats are dangerous. Never enter an enclosure, climb or cross a barrier, or approach, feed or handle a wild or captive big cat. Keeping a big cat is regulated or illegal in many places. For safety, travel, health or animal welfare decisions, follow the instructions of park, zoo and wildlife authorities and consult qualified professionals. Facts and population figures are summaries of published sources and may change as new research appears.</p></section>
@@ -361,8 +361,8 @@ add("terms.html", "Terms of Use | BigCatWise",
     related=[("Privacy", "privacy.html"), ("Disclaimer", "disclaimer.html"), ("Copyright and takedown", "copyright.html"), ("Corrections policy", "corrections.html"), ("Contact", "contact.html")], priority="0.2")
 
 add("disclaimer.html", "Disclaimer & Affiliate Disclosure | BigCatWise",
-    "BigCatWise disclaimer: educational information only, not wildlife, veterinary, medical or safety advice, no warranty, use at your own risk, and our advertising and affiliate disclosure.",
-    "Disclaimer and affiliate disclosure", kind="page", headline="Disclaimer", modified="2026-10-23",
+    "BigCatWise disclaimer: educational information only, not veterinary, medical or safety advice, no warranty, plus our advertising and affiliate disclosure.",
+    "Disclaimer and affiliate disclosure", kind="page", headline="Disclaimer", modified="2026-10-24",
     lead="BigCatWise is a brand of Joshua Israel Ventures LLC. Please read this disclaimer together with our terms of use.",
     body='''<section class="card"><h2>Accuracy</h2><p>We research every page carefully and cite reputable sources such as the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed studies. Even so, wild animal populations, conservation status and scientific understanding change, and errors can happen. We make no guarantee that any information is complete, current or error free. If you spot a mistake, please <a href="contact.html">tell us</a>.</p></section>
 <section class="card" id="not-advice"><h2>Educational information only, not advice</h2><p>BigCatWise is an educational resource. Its content is general information and is not wildlife, veterinary, medical, animal handling, travel, personal safety or legal advice. It is not a guide to approaching, keeping or handling big cats. Big cats can kill and seriously injure people. Never enter an enclosure, cross or climb a barrier, or approach, feed or touch a wild or captive big cat, and always follow the rules and staff instructions of zoos, sanctuaries and parks. In an emergency contact local emergency services and the relevant wildlife authority.</p></section>
@@ -377,7 +377,7 @@ add("disclaimer.html", "Disclaimer & Affiliate Disclosure | BigCatWise",
 
 add("copyright.html", "Copyright, Image Credits and Takedown Notice | BigCatWise",
     "BigCatWise copyright notice, image credits, AI generated image labelling and how to send a DMCA or other takedown notice to Joshua Israel Ventures LLC.",
-    "Copyright, image credits and takedown notice", kind="page", headline="Copyright and takedown", modified="2026-10-23",
+    "Copyright, image credits and takedown notice", kind="page", headline="Copyright and takedown", modified="2026-10-24",
     lead="BigCatWise respects the rights of creators. This page explains who owns what on the site, how images are credited, and how to ask us to remove material.",
     body='''<section class="card"><h2>Copyright notice</h2><p>&copy; 2026 Joshua Israel Ventures LLC. All rights reserved, except for material credited to others. The original text, drawings, games, worksheets and layout of bigcatwise.com are owned by Joshua Israel Ventures LLC. See our <a href="terms.html">terms of use</a> for permitted sharing.</p></section>
 <section class="card" id="image-credits"><h2>Image credits</h2><p>Photographs are from Wikimedia Commons under public domain (CC0) or Creative Commons licences, and each is credited on our <a href="credits/">photo credits</a> page with its source file, author and licence. Some images on the site are <b>AI generated</b>. They are labelled as AI generated, they are illustrations of typical big cats and habitats, and they do not show real, named animals, real people or real events. Third party trademarks and names belong to their owners and are used only to identify them.</p></section>
@@ -389,9 +389,9 @@ add("copyright.html", "Copyright, Image Credits and Takedown Notice | BigCatWise
 
 add("corrections.html", "Corrections Policy | BigCatWise",
     "How BigCatWise handles errors: how to report a mistake, how we check it against sources, and how we correct pages and note the date.",
-    "Corrections policy", kind="page", headline="Corrections policy", modified="2026-10-23",
+    "Corrections policy", kind="page", headline="Corrections policy", modified="2026-10-24",
     lead="We aim to be accurate and to fix mistakes openly. This page explains how to report an error and what we do about it.",
-    body='''<section class="card"><h2>How to report an error</h2><p>Use the <a href="contact.html">contact form</a> or email <a href="mailto:joshuaofisrael@gmail.com">joshuaofisrael@gmail.com</a>. Please give the page address, what you think is wrong, and a source if you have one.</p></section>
+    body='''<section class="card"><h2>How to report an error</h2><p>Use the <a href="contact.html">contact form</a>. Please give the page address, what you think is wrong, and a source if you have one.</p></section>
 <section class="card"><h2>What we do</h2><ol><li>We check the report against the primary sources listed on the page, such as the IUCN SSC Cat Specialist Group, the IUCN Red List, zoos, conservation organisations and peer reviewed research.</li><li>If we find an error we correct the page, and the page's "last updated" date changes to the date of the correction.</li><li>For a significant factual correction we add a short note on the page saying what changed and when.</li><li>If the report is mistaken, we leave the page as it is and may reply with the source.</li></ol></section>
 <section class="card"><h2>Our standards</h2><p>Every factual claim is supported by the sources listed on its page, and we do not invent statistics or quotes. BigCatWise does not accuse or name private individuals; if news events are discussed, they are described in general terms from cited sources. If you are mentioned or pictured and want something changed, tell us through the <a href="contact.html">contact form</a> and we will review it promptly. Content is educational only and is not professional advice; see our <a href="disclaimer.html">disclaimer</a>.</p></section>''',
     related=[("Disclaimer", "disclaimer.html"), ("Copyright and takedown", "copyright.html"), ("About", "about.html"), ("Contact", "contact.html")], priority="0.3")
@@ -402,7 +402,7 @@ add("404.html", "Page Not Found | BigCatWise", "This page could not be found.", 
 
 def llms(base):
     L = ["# BigCatWise", "",
-         "> BigCatWise is a free, original educational website about big cats: the lion, tiger, leopard, jaguar, cheetah and snow leopard. It explains each species' appearance, behavior, habitat and range, and conservation status, with population estimates and facts sourced from the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed research. Operated by Joshua Israel Ventures LLC.",
+         "> BigCatWise is a free, original educational website about big cats: the lion, tiger, leopard, jaguar, cheetah and snow leopard. It explains each species' appearance, behavior, habitat and range, and conservation status, with population estimates and facts sourced from the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed research.",
          "", "Content is general education. Population figures are estimates that change as new surveys are published.", "", "## Species guides"]
     def item(path):
         for p in PAGES:

@@ -1,7 +1,7 @@
 """Games hub and three original browser games. Game code lives in games/*.js (hand written, not generated)."""
 from build import add, BASE_URL, PUBLISHER, SITE
 
-GL = "Games are original works &copy; 2026 Joshua Israel Ventures LLC."
+GL = "Games are original BigCatWise works."
 GC = [("Games", "games/index.html")]
 
 def game_ld(name, path, desc, genre, teaches):

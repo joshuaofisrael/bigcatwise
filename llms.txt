@@ -1,6 +1,6 @@
 # BigCatWise
 
-> BigCatWise is a free, original educational website about big cats: the lion, tiger, leopard, jaguar, cheetah and snow leopard. It explains each species' appearance, behavior, habitat and range, and conservation status, with population estimates and facts sourced from the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed research. Operated by Joshua Israel Ventures LLC.
+> BigCatWise is a free, original educational website about big cats: the lion, tiger, leopard, jaguar, cheetah and snow leopard. It explains each species' appearance, behavior, habitat and range, and conservation status, with population estimates and facts sourced from the IUCN SSC Cat Specialist Group, the IUCN Red List, leading zoos, conservation organisations and peer reviewed research.
 
 Content is general education. Population figures are estimates that change as new surveys are published.
 
@@ -63,11 +63,11 @@ Content is general education. Population figures are estimates that change as ne
 - [Research](https://bigcatwise.com/research/): Peer reviewed big cat papers behind BigCatWise, grouped by topic with full references and DOIs checked on Crossref. A starting point for school reports.
 
 ## Optional
-- [About](https://bigcatwise.com/about.html): About BigCatWise: an independent big cat education site operated by Joshua Israel Ventures LLC. How we research, source and update our content.
+- [About](https://bigcatwise.com/about.html): About BigCatWise: an independent big cat education site. How we research, source and update our content.
 - [Photo credits](https://bigcatwise.com/credits/): Credits and licences for every photo on BigCatWise: source file, photographer, licence and where each image is used. All photos are CC0 or Creative Commons licensed.
-- [Contact](https://bigcatwise.com/contact.html): Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Email us or use the contact form.
-- [Terms of use](https://bigcatwise.com/terms.html): BigCatWise terms of use: your agreement with Joshua Israel Ventures LLC, educational information only, use at your own risk, no warranties, limitation of liability, indemnification, Florida law.
+- [Contact](https://bigcatwise.com/contact.html): Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Use the contact form.
+- [Terms of use](https://bigcatwise.com/terms.html): BigCatWise terms of use: educational information only, use at your own risk, no warranties, limitation of liability, indemnification and Florida law.
 - [Privacy](https://bigcatwise.com/privacy.html): BigCatWise privacy policy: Joshua Israel Ventures LLC is the data controller. What we collect, how contact messages are handled, analytics and your choices.
-- [Disclaimer](https://bigcatwise.com/disclaimer.html): BigCatWise disclaimer: educational information only, not wildlife, veterinary, medical or safety advice, no warranty, use at your own risk, and our advertising and affiliate disclosure.
+- [Disclaimer](https://bigcatwise.com/disclaimer.html): BigCatWise disclaimer: educational information only, not veterinary, medical or safety advice, no warranty, plus our advertising and affiliate disclosure.
 - [Copyright and takedown](https://bigcatwise.com/copyright.html): BigCatWise copyright notice, image credits, AI generated image labelling and how to send a DMCA or other takedown notice to Joshua Israel Ventures LLC.
 - [Corrections policy](https://bigcatwise.com/corrections.html): How BigCatWise handles errors: how to report a mistake, how we check it against sources, and how we correct pages and note the date.

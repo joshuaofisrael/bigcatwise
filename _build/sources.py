@@ -92,3 +92,6 @@ RL = {
  "cheetah": ("IUCN Red List: Acinonyx jubatus, Durant et al. (assessed 2021, published 2024)", "https://doi.org/10.2305/IUCN.UK.2024-1.RLTS.T219A259025524.en"),
  "snow": ("IUCN Red List: Panthera uncia, McCarthy et al. (assessed 2016, published 2017)", "https://doi.org/10.2305/IUCN.UK.2017-2.RLTS.T22732A50664030.en"),
 }
+HAYWARD2005 = ("Hayward and Kerley (2005) Prey preferences of the lion (Panthera leo), Journal of Zoology 267: 309-322. DOI 10.1017/S0952836905007508", "https://doi.org/10.1017/S0952836905007508")
+JOUBERT2006 = ("Joubert (2006) Hunting behaviour of lions (Panthera leo) on elephants (Loxodonta africana) in the Chobe National Park, Botswana, African Journal of Ecology 44: 279-281. DOI 10.1111/j.1365-2028.2006.00626.x", "https://doi.org/10.1111/j.1365-2028.2006.00626.x")
+POWER2009 = ("Power and Shem Compion (2009) Lion predation on elephants in the Savuti, Chobe National Park, Botswana, African Zoology 44(1): 36-44. DOI 10.3377/004.044.0104", "https://doi.org/10.3377/004.044.0104")

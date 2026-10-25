@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993
+from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -785,6 +785,56 @@ post("how-often-do-lion-hunts-succeed", "How Often Do Lion Hunts Succeed? What F
           ("Where do lions prefer to hunt?", "Serengeti lions fed in places where prey were easy to catch rather than where prey were most abundant, such as erosion embankments, views from rocky outcrops and near water (Hopcraft et al. 2005).")],
      related=[("Lion facts", "lion.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Big cat behavior", "behavior.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[STANDER1992F, STANDER1992B, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, CSG["lion"]])
+
+post("what-do-lions-eat", "What Do Lions Eat? Prey Preferences From 32 Studies | BigCatWise",
+     "Lions prefer prey weighing 190 to 550 kg, such as buffalo, wildebeest, zebra, giraffe and gemsbok. Here is what diet research shows, and why size matters.",
+     "What do lions eat? Prey preferences from 32 studies", headline="What do lions eat?",
+     published="2026-10-25", modified="2026-10-25",
+     lead="Lions eat mainly large hoofed mammals. A review of 32 diet studies across the lion's range found that lions prefer prey weighing roughly 190 to 550 kg, with a peak preference around 350 kg, and that gemsbok, buffalo, wildebeest, giraffe and zebra are the species they significantly prefer. They also take smaller animals such as warthogs, and in a few places they even hunt elephants. What a lion actually eats depends on what lives nearby, how hard it is to catch, and how many lions are hunting together.",
+     body='''<section class="card"><h2>The big picture: a taste for large prey</h2>
+<p>Matt Hayward and Graham Kerley (<i>Journal of Zoology</i>, 2005) pulled together 32 studies of lion diet covering 48 different places or time periods across the species' range. Instead of simply listing what lions ate, they compared each prey species' share of kills with how common that species was in the area. That shows which animals lions seek out and which they pass over.</p>
+<p>The results were clear:</p>
+<ul>
+<li>Lions preferentially hunt species within a weight range of about <b>190 to 550 kg</b>.</li>
+<li>The single most preferred prey weight was about <b>350 kg</b>.</li>
+<li>The mean weight of the significantly preferred species was <b>290 kg</b>.</li>
+<li>Species outside the preferred weight range were generally avoided.</li>
+</ul>
+<p>For comparison, the same approach applied to leopards found a preferred range of only 10 to 40 kg, with a peak around 25 kg (Hayward and colleagues, 2006). Lions are aiming at prey several times heavier than the solitary leopard usually tackles. See how the two cats differ on our <a href="../compare.html">big cat comparison</a> page.</p></section>
+<section class="card"><h2>The lion's favourite prey species</h2>
+<div class="tablewrap"><table><thead><tr><th>Prey</th><th>Status in the 2005 review</th></tr></thead><tbody>
+<tr><td>Cape buffalo</td><td>Significantly preferred</td></tr>
+<tr><td>Blue wildebeest</td><td>Significantly preferred</td></tr>
+<tr><td>Plains zebra</td><td>Significantly preferred</td></tr>
+<tr><td>Giraffe</td><td>Significantly preferred</td></tr>
+<tr><td>Gemsbok (oryx)</td><td>Significantly preferred</td></tr>
+<tr><td>Warthog</td><td>Taken in line with availability, despite being small</td></tr>
+<tr><td>Roan, sable, eland</td><td>In the right size range, but not significantly preferred</td></tr>
+</tbody></table></div>
+<p>Why would lions skip roan, sable and eland, which fall in the ideal weight range? The authors pointed to defences: sable carry long, dangerous horns, roan and sable often live at low density, and eland form large herds with high vigilance. Warthogs, by contrast, are below the preferred weight but are still taken about as often as they are encountered, probably because they share lion habitat, are relatively slow to escape, and are less vigilant.</p></section>
+<section class="card"><h2>Why lions go for big animals</h2>
+<p>When Hayward and Kerley plotted preference against prey body mass, the curve was bell shaped but skewed towards heavier animals. They argued that the skew comes from collective hunting: lions working together can bring down animals that a single lion would struggle with. Field studies support the link between teamwork and prey size. In South Africa's Kruger National Park, Funston, Mills and Biggs (2001) found that female lions mainly selected medium sized prey such as zebra and wildebeest, while males mainly caught buffalo. Read more about cooperation in <a href="why-do-lions-live-in-prides.html">why do lions live in prides?</a></p></section>
+<section class="card"><h2>Small kills still matter</h2>
+<p>A preference for large prey does not mean lions ignore small animals. On the open plains of Etosha National Park, Namibia, Philip Stander (<i>Canadian Journal of Zoology</i>, 1992) found that prey under 50 kg made up 73% of observed kills, but only about half of the estimated biomass eaten, because one large kill provides so much meat. Lionesses there took in on average 8.7 kg of food per day in the dry season and 14 kg per day in the wet season, and the lions rarely scavenged.</p>
+<p>Choice also depends on the moment. In the Serengeti, Dennis Scheel (<i>Behavioral Ecology</i>, 1993) found that lions preferred to hunt small groups of prey, groups closer than 200 metres, and groups containing warthogs, wildebeest or zebra. Our article on <a href="how-often-do-lion-hunts-succeed.html">how often lion hunts succeed</a> explains how these choices affect the odds.</p></section>
+<section class="card"><h2>Do lions hunt elephants?</h2>
+<p>In a few places, yes. Researchers have documented lions hunting elephants in Botswana's Chobe National Park (Joubert, <i>African Journal of Ecology</i>, 2006), and Power and Shem Compion (<i>African Zoology</i>, 2009) studied lion predation on elephants in the Savuti area of the same park. These records come from specific areas. Elephants sit far above the preferred weight range found in the continent wide review, so they should not be thought of as typical lion prey.</p></section>
+<section class="card"><h2>Local menus differ</h2>
+<p>Because the 2005 review measured preference against what was locally available, it shows lions choosing among the animals around them rather than following one fixed menu, and each population works with the prey its area offers. Where they hunt also matters: Serengeti lions fed in spots where prey were easy to catch, not necessarily where prey were most abundant (Hopcraft, Sinclair and Packer, 2005). Learn about the landscapes lions use on our <a href="../habitats.html">habitats</a> page and the species overview on our <a href="../lion.html">lion facts</a> page.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Lions prefer prey weighing about 190 to 550 kg, with a peak around 350 kg (Hayward and Kerley 2005).</li>
+<li>Buffalo, wildebeest, zebra, giraffe and gemsbok are significantly preferred; warthogs are taken in line with availability.</li>
+<li>Well defended or scarce species, such as sable and roan, are avoided even when they are the right size.</li>
+<li>Small prey can make up most kills but supply only about half the food (Stander 1992).</li>
+<li>Lions in parts of Botswana's Chobe National Park have been documented hunting elephants.</li>
+</ul></section>''',
+     faq=[("What is a lion's favourite food?", "Across 32 diet studies, lions significantly preferred gemsbok, buffalo, wildebeest, giraffe and zebra, and favoured prey weighing about 190 to 550 kg, with a peak around 350 kg (Hayward and Kerley 2005)."),
+          ("Do lions eat small animals?", "Yes. In Etosha National Park, prey under 50 kg made up 73% of observed lion kills, though only about half of the estimated biomass eaten (Stander 1992). Warthogs are taken roughly in line with how common they are."),
+          ("How much does a lion eat per day?", "In Etosha, lionesses took in on average 8.7 kg of food per day in the dry season and 14 kg per day in the wet season (Stander 1992)."),
+          ("Do lions hunt elephants?", "Rarely, and only in a few places. Lions have been documented hunting elephants in Botswana's Chobe National Park, including the Savuti area (Joubert 2006; Power and Shem Compion 2009)."),
+          ("Why don't lions hunt sable or eland more often?", "These antelope fall in the lion's preferred weight range, but sable have dangerous horns, sable and roan often occur at low density, and eland live in large, vigilant herds, so they are not significantly preferred (Hayward and Kerley 2005).")],
+     related=[("Lion facts", "lion.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[HAYWARD2005, HAYWARD2006, STANDER1992F, FUNSTON2001, SCHEEL1993, JOUBERT2006, POWER2009, HOPCRAFT2005, CSG["lion"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

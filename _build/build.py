@@ -37,12 +37,12 @@ LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden=
         '<path d="M28 44 L36 44 L32 48Z" fill="#1a140c"/><path d="M32 48 v4 M32 52 q-5 3 -9 0 M32 52 q5 3 9 0" stroke="#1a140c" stroke-width="2.2" fill="none" stroke-linecap="round"/>'
         '<path d="M18 22 l5 6 M46 22 l-5 6 M32 20 v8" stroke="#1a140c" stroke-width="3" stroke-linecap="round"/></svg>')
 
-# Brand is the publisher everywhere (LLC/name rule, 23-24 Oct 2026); the LLC appears only as structured-data parentOrganization and on legal pages.
+# Brand is the publisher everywhere (LLC/name rule, 23-24 Oct 2026); the LLC appears only in the visible text of the 4 legal pages (no parentOrganization in JSON-LD, 25 Oct 2026).
 LEGAL_LINE = ("&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. BigCatWise is a trade name of Joshua Israel Ventures LLC, "
               "a Florida limited liability company.")
 LEGAL_PAGES = {"terms.html", "privacy.html", "disclaimer.html", "copyright.html"}
 PUBLISHER = {"@type": "Organization", "@id": BASE_URL + "#organization", "name": SITE, "url": BASE_URL,
-             "parentOrganization": {"@type": "Organization", "name": LEGAL}, "brand": {"@type": "Brand", "name": SITE, "logo": OG_IMAGE},
+             "brand": {"@type": "Brand", "name": SITE, "logo": OG_IMAGE},
              "logo": {"@type": "ImageObject", "url": OG_IMAGE}}
 
 def esc(s):

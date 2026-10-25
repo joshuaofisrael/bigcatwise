@@ -1,0 +1,7 @@
+# GitHub Pages (Jekyll) settings. Keep internal ops files in the repo but out of the published site.
+exclude:
+  - OPS-NOTES.md
+  - README.md
+  - seo-log.md
+  - indexnow.sh
+  - _build

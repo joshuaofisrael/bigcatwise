@@ -261,7 +261,7 @@ tiles = "".join('<a class="tile" href="%s">%s<h3>%s</h3><p>%s</p></a>' % (t[0], 
  ("games/index.html", "Big cat games", "Three free fact based games"), ("teachers/index.html", "For teachers", "Free printables and lesson plans"), ("research/index.html", "Research", "The papers behind our facts"), ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
 posts = "".join('<li><a href="blog/%s">%s</a></li>' % (p.path.split("/")[1], p.headline or p.h1) for p in POSTS)
 add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
-    "BigCatWise is a free, sourced guide to big cats: lions, tigers, leopards, jaguars, cheetahs and snow leopards. Species facts, behavior, habitats and conservation.",
+    "BigCatWise is a sourced guide to big cats: lions, tigers, leopards, jaguars, cheetahs and snow leopards. Species facts, behavior, habitats and conservation.",
     "Big cat facts: lions, tigers, leopards, jaguars, cheetahs and snow leopards", kind="home",
     body='''<section class="hero">{photo}<p class="lead">BigCatWise is a free, plain English guide to the world's big cats. It covers what each species looks like, how it hunts and lives, where it is found and how it is faring in the wild, with sources from the IUCN Cat Specialist Group, leading zoos, conservation groups and peer reviewed research.</p>
 <a class="btn" href="compare.html">Compare all six big cats</a> <a class="btn alt" href="which-big-cat-is-it.html">Which big cat is it?</a> <a class="btn" href="games/">Play big cat games</a></section>

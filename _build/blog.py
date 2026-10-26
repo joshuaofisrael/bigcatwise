@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009
+from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -835,6 +835,67 @@ post("what-do-lions-eat", "What Do Lions Eat? Prey Preferences From 32 Studies |
           ("Why don't lions hunt sable or eland more often?", "These antelope fall in the lion's preferred weight range, but sable have dangerous horns, sable and roan often occur at low density, and eland live in large, vigilant herds, so they are not significantly preferred (Hayward and Kerley 2005).")],
      related=[("Lion facts", "lion.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[HAYWARD2005, HAYWARD2006, STANDER1992F, FUNSTON2001, SCHEEL1993, JOUBERT2006, POWER2009, HOPCRAFT2005, CSG["lion"]])
+
+# ---------------------------------------------------------------- 20 CHEETAHS, LIONS AND HYENAS (26 Oct 2026)
+post("how-do-cheetahs-live-alongside-lions-and-hyenas", "Do Lions Kill Cheetahs? How Cheetahs Live With Lions | BigCatWise",
+     "Lions and hyenas steal cheetah kills and kill cubs, yet cheetahs persist beside them. Field studies show how they avoid, eat fast and keep watch.",
+     "How do cheetahs live alongside lions and hyenas? What Serengeti research shows", headline="How do cheetahs live alongside lions and hyenas?",
+     published="2026-10-26", modified="2026-10-26",
+     lead="Cheetahs survive alongside lions and spotted hyenas mainly by avoiding them, not by fighting them. Lions and hyenas often steal cheetah kills and kill cheetah cubs, and sometimes adults, so cheetahs move away from these larger carnivores, use places and moments where they are less likely to meet them, and change how they behave at a kill: cheetahs without cubs eat fast, while mothers keep watch. Long term studies in the Serengeti show that these tactics work well enough that cheetah numbers stayed roughly stable even while the lion population nearly tripled.",
+     body='''<section class="card"><h2>Why lions and hyenas are a problem for cheetahs</h2>
+<p>Cheetahs are built for speed, not for fighting. In most large carnivore communities the cheetah's main competitors for food, lions and spotted hyenas, are also its main predators. J. S. Hunter, Sarah Durant and Tim Caro (<i>Behavioral Ecology and Sociobiology</i>, 2007) put it plainly: cheetahs are frequent victims of kleptoparasitism, which means having a kill stolen, and their cubs, and sometimes adults, are killed by lions or spotted hyenas.</p>
+<p>In an earlier study of Serengeti carnivores, Durant (<i>Journal of Animal Ecology</i>, 1998) described cheetahs as having low competitive ability compared with hyenas and lions and argued that "cheetahs always lose in direct competition". The question is how they persist at all. For the basic biology behind the cheetah's build, see our <a href="../cheetah.html">cheetah facts</a> page.</p></section>
+<section class="card"><h2>Tactic 1: keep your distance</h2>
+<p>Durant's 1998 study used four years of distribution data from Serengeti National Park, Tanzania. It found that:</p>
+<ul>
+<li>Cheetahs were more strongly associated with each other than with lions or hyenas, and used areas with low density prey.</li>
+<li>They avoided lions and hyenas locally in both space and time.</li>
+<li>This avoidance was flexible: it was strongest when cheetahs were hunting or eating, the moments when they risked losing food or a close encounter.</li>
+<li>Mothers with young cubs, whose range is restricted, came into contact with lions more often than free ranging cheetahs.</li>
+</ul>
+<p>Durant called the places with few lions and hyenas "competition refuges" and argued that the cheetah's mobility is the key to its continued coexistence with these predators. A follow up experiment, in which recorded lion and hyena calls were played to wild cheetahs, found that cheetahs moved away and were much less likely to hunt afterwards (Durant, <i>Behavioral Ecology</i>, 2000). We cover that experiment in more detail in <a href="why-do-so-few-cheetah-cubs-survive.html">why do so few cheetah cubs survive?</a></p></section>
+<section class="card"><h2>Tactic 2: be careful at the kill</h2>
+<p>A kill is the riskiest place for a cheetah. Between 1980 and 2002, Hunter and colleagues observed 639 kills made by cheetahs in the Serengeti. Many were visited by scavengers, from relatively harmless vultures and jackals to dangerous spotted hyenas and lions. The team looked at whether cheetahs hid carcasses, how vigilant they were, and how long they stayed after finishing eating.</p>
+<div class="tablewrap"><table><thead><tr><th>Cheetah group</th><th>What their behavior at kills suggested</th></tr></thead><tbody>
+<tr><td>Single females</td><td>No clear sign that they were trying to avoid being killed themselves</td></tr>
+<tr><td>Males, often in groups</td><td>Behavior in line with avoiding being killed</td></tr>
+<tr><td>Mothers with cubs</td><td>Behavior strongly shaped by the risk of their cubs being killed</td></tr>
+</tbody></table></div>
+<p>The authors concluded that cheetahs use several behavioral counterstrategies to avoid being killed, or having their cubs killed, by other predators.</p></section>
+<section class="card"><h2>Tactic 3: eat fast, or keep watch</h2>
+<p>Anne Hilborn and colleagues (<i>Behavioral Ecology and Sociobiology</i>, 2018) went further, using 35 years of observations covering more than 400 hunts by 159 individual cheetahs in Serengeti National Park. They found two different strategies:</p>
+<ul>
+<li><b>Males and single females</b>, whose main threat is having their kill stolen, were less vigilant and ate quickly, which shortened the time they spent handling the carcass.</li>
+<li><b>Mothers with cubs</b> did the opposite. They prioritised vigilance over eating speed and spent longer at the kill. That watchfulness helps protect cubs from lions and spotted hyenas while giving the cubs time to feed.</li>
+</ul>
+<p>In other words, a cheetah adjusts its feeding behavior to the kind of danger it faces. How hunting itself works is covered in <a href="how-fast-is-a-cheetah.html">how fast is a cheetah?</a> and <a href="do-cheetahs-abandon-hunts-because-they-overheat.html">do cheetahs abandon hunts because they overheat?</a></p></section>
+<section class="card"><h2>Do lions keep cheetah numbers down?</h2>
+<p>It is often assumed that wherever lions are common, cheetahs cannot do well. Swanson and colleagues (<i>Journal of Animal Ecology</i>, 2014) tested that idea with 30 years of Serengeti population data and six years of radio tracking. Their findings:</p>
+<ul>
+<li>The Serengeti lion population nearly tripled between 1966 and 1998.</li>
+<li>Over the same period, African wild dogs declined and then disappeared from the study area, but cheetah numbers stayed largely unchanged.</li>
+<li>Cheetahs mostly used areas of <i>high</i> lion density, rather than being pushed out of them.</li>
+<li>Data from fenced reserves in southern Africa showed a similar contrast between wild dogs and cheetahs.</li>
+</ul>
+<p>The authors said their results challenge the widespread perception that lions undermine cheetah conservation, and pointed to fine scale avoidance as the likely way cheetahs reduce the impact of lions. A separate cub study in the Kgalagadi Transfrontier Park also questioned how much lions limit cheetahs (Mills and Mills, <i>Journal of Zoology</i>, 2014).</p></section>
+<section class="card"><h2>Avoidance still has a cost</h2>
+<p>Living beside lions is not free. Vanak and colleagues (<i>Ecology</i>, 2013) tracked the fine scale movements of almost every lion, leopard, cheetah and African wild dog in a closed (fenced) study system. Lions moved largely where they liked, anchoring themselves in prey rich areas. Leopards and cheetahs overlapped with lion home ranges but reduced their risk through fine scale avoidance and restricted foraging.</p>
+<p>The cost of this competition was most obvious for cheetahs, especially in the wet season, when they avoided areas with energetically rewarding large prey (wildebeest) if those areas overlapped heavily with where lions were active. So the cheetah's strategy works, but it means giving up some good hunting. See how all six big cats compare on our <a href="../compare.html">comparison page</a> and read more about big cat <a href="../behavior.html">behavior</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Lions and spotted hyenas steal cheetah kills and kill cheetah cubs, and sometimes adults (Hunter et al. 2007).</li>
+<li>Cheetahs avoid them in space and time, most strongly while hunting or eating (Durant 1998).</li>
+<li>At kills, cheetahs without cubs eat fast; mothers stay vigilant to protect cubs (Hilborn et al. 2018).</li>
+<li>Serengeti cheetah numbers stayed largely stable while lions nearly tripled (Swanson et al. 2014).</li>
+<li>Avoidance has a price: cheetahs may give up prey rich areas that lions use heavily (Vanak et al. 2013).</li>
+</ul></section>''',
+     faq=[("Do lions kill cheetahs?", "Yes. Lions and spotted hyenas kill cheetah cubs and sometimes adult cheetahs, and they often steal cheetah kills. In the Serengeti, cheetahs' behavior at kills reflects these risks (Hunter, Durant and Caro 2007)."),
+          ("How do cheetahs avoid lions?", "Mainly by keeping their distance. Serengeti cheetahs avoided lions and hyenas in both space and time, most strongly when hunting or eating, and moved away when lion or hyena calls were played to them (Durant 1998; Durant 2000)."),
+          ("Why do cheetahs eat so quickly?", "To reduce the chance of losing their kill. Male cheetahs and single females, whose main threat is kleptoparasitism, were less vigilant and ate quickly, shortening their time at the carcass (Hilborn et al. 2018)."),
+          ("Do lions reduce cheetah populations?", "Not necessarily. In the Serengeti the lion population nearly tripled between 1966 and 1998 while cheetah numbers stayed largely unchanged, and cheetahs mostly used areas of high lion density (Swanson et al. 2014)."),
+          ("Do cheetahs and lions share the same areas?", "Often, yes. In a closed (fenced) study system, cheetahs and leopards overlapped with lion home ranges but avoided lions at a fine scale, at the cost of sometimes avoiding prey rich areas (Vanak et al. 2013).")],
+     related=[("Cheetah facts", "cheetah.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Lion facts", "lion.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[DURANT1998, DURANT2000, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, MILLS2014, CSG["cheetah"]])
+
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

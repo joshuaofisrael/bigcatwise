@@ -1,5 +1,5 @@
 from build import add, TODAY
-from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013
+from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -895,6 +895,58 @@ post("how-do-cheetahs-live-alongside-lions-and-hyenas", "Do Lions Kill Cheetahs?
           ("Do cheetahs and lions share the same areas?", "Often, yes. In a closed (fenced) study system, cheetahs and leopards overlapped with lion home ranges but avoided lions at a fine scale, at the cost of sometimes avoiding prey rich areas (Vanak et al. 2013).")],
      related=[("Cheetah facts", "cheetah.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Lion facts", "lion.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[DURANT1998, DURANT2000, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, MILLS2014, CSG["cheetah"]])
+
+
+# ---------------------------------------------------------------- 21 INFANTICIDE (27 Oct 2026)
+post("why-do-male-lions-kill-cubs", "Why Do Male Lions Kill Cubs? Infanticide in Lions and Leopards | BigCatWise",
+     "New male lions and leopards often kill cubs fathered by rivals. Field studies explain why it pays them, and how mothers fight back.",
+     "Why do male lions kill cubs? What the research on lion and leopard infanticide shows", headline="Why do male lions kill cubs?",
+     published="2026-10-27", modified="2026-10-27",
+     lead="Male lions kill cubs because it speeds up their own chance to breed. When a new coalition of males takes over a pride, the cubs already there were fathered by the males they replaced. Killing those cubs ends the mothers' nursing, so the females come back into breeding condition sooner and the newcomers can sire cubs of their own before they too are pushed out. Scientists call this sexually selected infanticide. It is not unique to lions: in a long term study of solitary leopards in South Africa, killings by males accounted for almost half of cub deaths with a known cause.",
+     body='''<section class="card"><h2>What happens when new males take over a pride</h2>
+<p>A lion pride is built around related females and their cubs, while adult males hold the pride as a coalition for a limited time (see <a href="why-do-lions-live-in-prides.html">why do lions live in prides?</a>). Sooner or later a rival coalition arrives and drives the resident males out.</p>
+<p>Craig Packer and Anne Pusey studied what follows in Tanzania's Serengeti and Ngorongoro Crater lions (<i>The American Naturalist</i>, 1983). They reported that a male replacement in a pride results in considerable cub mortality, even though mothers try to defend their cubs or avoid the new males. Because the newcomers are unrelated to those cubs, removing them costs the males nothing genetically and clears the way for their own offspring.</p></section>
+<section class="card"><h2>Why killing cubs pays off for males</h2>
+<p>The logic of sexually selected infanticide is about time. A female lion with dependent cubs is not ready to breed again for a long period. A male coalition, by contrast, may hold a pride for only a few years. If the new males waited for the existing cubs to grow up, much of their tenure would pass before they fathered any young.</p>
+<p>Packer and Pusey argued that females need protection from male harassment of their cubs for more than two years to rear them successfully, and that only large male coalitions tend to stay in a pride that long. Their simulation of female reproduction after takeovers (<i>Animal Behaviour</i>, 1983) produced levels of breeding synchrony similar to those seen in wild prides, which fits the observation that females in a pride often have cubs at about the same time after new males arrive.</p></section>
+<section class="card"><h2>How lionesses fight back</h2>
+<p>Lionesses are not passive. Packer and Pusey (1983) described several responses to incoming males:</p>
+<ul>
+<li><b>Defending cubs</b> directly against the new males.</li>
+<li><b>Avoiding the new males</b>, for example by moving away with their cubs.</li>
+<li><b>Low fertility after a takeover.</b> Females that stay and mate with the new males show low fertility in the first few months.</li>
+<li><b>More sexual activity, not less.</b> In the same period, females initiate more matings and seek more partners.</li>
+</ul>
+<p>The authors suggested these last two traits work together. A burst of mating with little chance of conception encourages competition between male coalitions, and the result is that larger coalitions eventually become resident. Because large coalitions hold prides longer, a female may gain in lifetime reproductive success by accepting a short infertile phase in return for males who can protect her next litter. Lionesses also raise cubs together in a creche, one of the ideas covered in our <a href="../behavior.html">big cat behavior</a> guide.</p></section>
+<section class="card"><h2>Do leopards kill cubs too?</h2>
+<p>Yes, and at a striking rate. Leopards live alone, so infanticide was long thought to matter less in solitary cats. Guy Balme and Luke Hunter tested that idea with years of observations of individually known leopards in the Sabi Sand Game Reserve, South Africa (<i>Animal Behaviour</i>, 2013). They found that:</p>
+<ul>
+<li>Rates of infanticide were among the highest recorded for mammalian carnivores, accounting for almost half of juvenile mortality and nearly a third of all offspring.</li>
+<li>Infanticidal males were typically unrelated to their victims.</li>
+<li>The death of unweaned cubs shortened the time until the mother gave birth again, and the killers increased their chances of mating with her and siring her next litter.</li>
+<li>Killers usually ate their victims, but the authors judged this a minor added benefit rather than the main driver.</li>
+<li>Female leopards appear to have developed many strategies to counter the risk.</li>
+</ul>
+<p>The authors concluded that infanticide in leopards is mainly an adaptive behavior that brings reproductive benefits to the males that commit it, and a key factor shaping how leopards use space. For more on the species, see our <a href="../leopard.html">leopard facts</a> page.</p></section>
+<section class="card"><h2>Do female big cats kill cubs?</h2>
+<p>Rarely. A later note from the same leopard study (le Roex, Bartlet, Hunter and Balme, <i>Ecology</i>, 2023) recorded only three cases of a female leopard killing another female's cub in the reserve, compared with 63 observed incidents of male infanticide since 2002. All three cases were between unrelated animals, the killer was an older female who was pregnant or had a dependent cub, and the dead cubs were not eaten. The authors linked these rare events to defending breeding space rather than to gaining mates.</p></section>
+<section class="card"><h2>Why infanticide matters for conservation</h2>
+<p>Because takeovers trigger cub deaths, anything that removes resident males too often can ripple through a population. Karyl Whitman and colleagues (<i>Nature</i>, 2004) built a model using 40 years of lion data from northern Tanzania and confirmed that infanticide increases the risk of population extinction when trophy hunting causes frequent male replacements. They found that hunting could be sustained by taking only males above a minimum age threshold, which gives males time to raise their cubs first. Balme and Hunter (2013) made a similar point for leopards: managers should account for infanticide when activities artificially raise the turnover of adult males. Read more on our <a href="../conservation.html">conservation</a> page and in <a href="why-do-so-few-cheetah-cubs-survive.html">why do so few cheetah cubs survive?</a></p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Pride takeovers by new male lions cause considerable cub mortality (Packer and Pusey 1983).</li>
+<li>Killing a rival's cubs lets the new males breed sooner during their limited tenure.</li>
+<li>Lionesses defend or hide cubs, and a short infertile, highly sexual phase after takeovers appears to favour larger, longer staying coalitions.</li>
+<li>In Sabi Sand leopards, infanticide caused almost half of juvenile deaths and nearly a third of all cubs died this way (Balme and Hunter 2013).</li>
+<li>Female infanticide is rare: three cases against 63 male incidents in the same leopard population (le Roex et al. 2023).</li>
+<li>Hunting only older males reduces the population risk that infanticide creates (Whitman et al. 2004).</li>
+</ul></section>''',
+     faq=[("Why do male lions kill cubs?", "When new males take over a pride, the existing cubs were fathered by the males they replaced. Killing them ends nursing, so mothers can breed again sooner and the newcomers can sire their own cubs during a limited tenure (Packer and Pusey 1983)."),
+          ("Do lionesses try to protect their cubs from new males?", "Yes. Mothers defend their cubs or avoid the incoming males, although takeovers still cause considerable cub mortality (Packer and Pusey 1983)."),
+          ("Do leopards kill cubs?", "Yes. In the Sabi Sand Game Reserve, infanticide by males accounted for almost half of leopard cub deaths and nearly a third of all offspring, and the killers were usually unrelated to their victims (Balme and Hunter 2013)."),
+          ("Do female leopards kill cubs?", "Very rarely. Only three cases were recorded in the Sabi Sand study area, compared with 63 observed male infanticide incidents since 2002 (le Roex et al. 2023)."),
+          ("Does trophy hunting affect infanticide in lions?", "It can. Modelling based on 40 years of Tanzanian lion data found that frequent male replacements raise extinction risk through infanticide, but hunting only males above a minimum age could be sustainable (Whitman et al. 2004).")],
+     related=[("Lion facts", "lion.html"), ("Leopard facts", "leopard.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004, CSG["lion"], CSG["leopard"]])
 
 
 # ---------------------------------------------------------------- BLOG INDEX

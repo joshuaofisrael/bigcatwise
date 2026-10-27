@@ -46,7 +46,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     faq=[("Where do lions live besides Africa?", "The only wild lions outside Africa live in and around Gir forest in Gujarat, western India. They belong to the northern subspecies <i>Panthera leo leo</i>."),
          ("How many lions are left in the wild?", "The IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025, plus about 670 adult and subadult Asiatic lions counted in India in 2020."),
          ("Do lions really live in the jungle?", "No. Lions prefer savanna, grassland and open woodland. The nickname king of the jungle is a figure of speech, not a description of their habitat.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html")] + SPECIES_REL,
+    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html")] + SPECIES_REL,
     sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], RL["lion"]], priority="0.9")
 
 # ------------------------------------------------------------------ TIGER
@@ -112,7 +112,7 @@ add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | 
          ("Why do leopards drag prey into trees?", "Hoisting a kill into a tree keeps it away from lions, hyenas and other competitors so the leopard can feed over several days."),
          ("Where do leopards live?", "Leopards live across most of sub-Saharan Africa and in scattered parts of Asia, from the Middle East and Caucasus to India, Southeast Asia, China and the Russian Far East.")],
     related=[("Jaguar facts", "jaguar.html"), ("Cheetah facts", "cheetah.html"), ("Snow leopard facts", "snow-leopard.html"),
-             ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html")] + SPECIES_REL,
+             ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html")] + SPECIES_REL,
     sources=[CSG["leopard"], SDZ["leopard"], PAN["leopard"], WWF["amur"], RL["leopard"]], priority="0.9")
 
 # ------------------------------------------------------------------ JAGUAR

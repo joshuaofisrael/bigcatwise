@@ -65,7 +65,7 @@ def footer(rel):
             '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. Text and drawings are original; photos are credited on our photo credits page, and some are AI generated.</p>'
             '<p class="flinks"><a href="%sterms.html">Terms of use</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
             '<a href="%sdisclaimer.html#affiliate">Advertising disclosure</a> | <a href="%scopyright.html">Copyright and takedown</a> | <a href="%scorrections.html">Corrections</a> | '
-            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a></p></footer>') % (SITE, rel, rel, rel, rel, rel, rel, rel, rel, rel)
+            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a> | <a href="/privacy.html#google-analytics" data-consent-open>Cookie settings</a></p></footer>') % (SITE, rel, rel, rel, rel, rel, rel, rel, rel, rel)
 
 def header(rel, current):
     links = []
@@ -104,12 +104,12 @@ def render(p):
     canon = url_for(p.path)
     head = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width,initial-scale=1">']
-    # GA4 with Google Consent Mode v2: denied by default in EEA/UK/CH (the Google CMP banner updates it), granted elsewhere. Set before AdSense and gtag config.
+    # Google Consent Mode v2 defaults: denied in EEA/UK/CH, granted elsewhere; set before AdSense. GA4 (GA4_ID, also in /consent.js) is opt-in everywhere.
     head.append('<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
                 'gtag("consent","default",{ad_storage:"denied",analytics_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500,region:%s});'
                 'gtag("consent","default",{ad_storage:"granted",analytics_storage:"granted",ad_user_data:"granted",ad_personalization:"granted"});'
-                'gtag("js",new Date());gtag("config","%s");</script>'
-                '<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>' % (CONSENT_REGIONS, GA4_ID, GA4_ID))
+                '</script><script defer src="/consent.js"></script>' % CONSENT_REGIONS)
+    # gtag.js and gtag config load only from /consent.js after the visitor accepts the opt-in banner (SnakeWise protocol).
     head.append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>'
                 '<meta name="google-adsense-account" content="%s">' % (ADSENSE_ID, ADSENSE_ID))
     if GSC_TOKEN and p.path == "index.html":

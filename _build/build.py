@@ -40,6 +40,8 @@ LOGO = ('<svg role="img" width="34" height="34" viewBox="0 0 64 64" aria-hidden=
 # Brand is the publisher everywhere (LLC/name rule, 23-24 Oct 2026); the LLC appears only in the visible text of the 4 legal pages (no parentOrganization in JSON-LD, 25 Oct 2026).
 LEGAL_LINE = ("&copy; 2026 Joshua Israel Ventures LLC. All rights reserved. BigCatWise is a trade name of Joshua Israel Ventures LLC, "
               "a Florida limited liability company.")
+GA4_ID = "G-HH5ZTBVW42"
+CONSENT_REGIONS = '["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"]'
 LEGAL_PAGES = {"terms.html", "privacy.html", "disclaimer.html", "copyright.html"}
 PUBLISHER = {"@type": "Organization", "@id": BASE_URL + "#organization", "name": SITE, "url": BASE_URL,
              "brand": {"@type": "Brand", "name": SITE, "logo": OG_IMAGE},
@@ -102,6 +104,12 @@ def render(p):
     canon = url_for(p.path)
     head = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width,initial-scale=1">']
+    # GA4 with Google Consent Mode v2: denied by default in EEA/UK/CH (the Google CMP banner updates it), granted elsewhere. Set before AdSense and gtag config.
+    head.append('<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+                'gtag("consent","default",{ad_storage:"denied",analytics_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500,region:%s});'
+                'gtag("consent","default",{ad_storage:"granted",analytics_storage:"granted",ad_user_data:"granted",ad_personalization:"granted"});'
+                'gtag("js",new Date());gtag("config","%s");</script>'
+                '<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>' % (CONSENT_REGIONS, GA4_ID, GA4_ID))
     head.append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>'
                 '<meta name="google-adsense-account" content="%s">' % (ADSENSE_ID, ADSENSE_ID))
     if GSC_TOKEN and p.path == "index.html":

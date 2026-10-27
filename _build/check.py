@@ -23,4 +23,6 @@ for f in files:
     print(f'{rel:45s} {n:5d} words  title {len(t):3d}  desc {len(d):3d}')
 for k,v in list(titles.items())+list(descs.items()):
     if len(v)>1: print('DUP',k,v); bad+=1
+import subprocess, sys
+if subprocess.call([sys.executable, os.path.join(root,'_build','legal_gate.py'), '--no-queue']): print('LEGAL HOLD (HOLD_REVIEW)'); bad+=1
 print('problems:',bad)

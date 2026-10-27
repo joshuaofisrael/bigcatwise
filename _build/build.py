@@ -258,3 +258,8 @@ def main():
 if __name__ == "__main__":
     import build  # run inside the importable module so content modules share PAGES
     build.main()
+    # Legal hold gate (RULE.md, 27 Oct 2026): any HOLD_REVIEW makes the build fail, so nothing gets committed or pushed.
+    import subprocess, sys
+    rc = subprocess.call([sys.executable, os.path.join(ROOT, "_build", "legal_gate.py")])
+    if rc:
+        print("BUILD BLOCKED: HOLD_REVIEW items, see /workspace/content-review/queue.jsonl. Do not publish."); sys.exit(rc)

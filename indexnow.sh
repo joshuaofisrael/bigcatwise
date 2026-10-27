@@ -2,6 +2,7 @@
 # Ping IndexNow for BigCatWise. Usage: ./indexnow.sh URL [URL...]   (no args = every URL in the live sitemap)
 # Key file sits at the domain root: https://bigcatwise.com/<key>.txt
 # After moving to a custom domain: set BASE to https://<domain>/ and HOST to <domain>.
+python3 "$(dirname "$0")/_build/legal_gate.py" --no-queue >/dev/null || { echo "legal_gate HOLD_REVIEW: not pinging"; exit 1; }
 KEY=ae0cfa5bdd787ac71a16b2a7f4e0107d
 HOST=bigcatwise.com
 BASE=https://bigcatwise.com/

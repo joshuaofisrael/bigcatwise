@@ -136,3 +136,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Why: no ranking data to compound; "why do male lions kill cubs" is a high volume question the lion pillar touched on but never answered as a Q&A, so FAQ entries plus pillar links give crawl paths and snippet/AI answer eligibility at zero content risk.
 - News/outreach: none in this slot.
 - IndexNow (6 SEO URLs: lion, leopard, faq, glossary, behavior, article): HTTP 200. Commit 1f58e98.
+- 27 Oct 2026: GA4 G-HH5ZTBVW42 opt-in via consent.js (commits 42fa11d, d478cb4); ga-test pass; IndexNow ping.

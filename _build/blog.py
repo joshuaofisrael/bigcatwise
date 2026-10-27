@@ -898,7 +898,7 @@ post("how-do-cheetahs-live-alongside-lions-and-hyenas", "Do Lions Kill Cheetahs?
 
 
 # ---------------------------------------------------------------- 21 INFANTICIDE (27 Oct 2026)
-post("why-do-male-lions-kill-cubs", "Why Do Male Lions Kill Cubs? Infanticide in Lions and Leopards | BigCatWise",
+post("why-do-male-lions-kill-cubs", "Why Do Male Lions Kill Cubs? Lion & Leopard Infanticide | BigCatWise",
      "New male lions and leopards often kill cubs fathered by rivals. Field studies explain why it pays them, and how mothers fight back.",
      "Why do male lions kill cubs? What the research on lion and leopard infanticide shows", headline="Why do male lions kill cubs?",
      published="2026-10-27", modified="2026-10-27",

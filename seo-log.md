@@ -137,3 +137,9 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - News/outreach: none in this slot.
 - IndexNow (6 SEO URLs: lion, leopard, faq, glossary, behavior, article): HTTP 200. Commit 1f58e98.
 - 27 Oct 2026: GA4 G-HH5ZTBVW42 opt-in via consent.js (commits 42fa11d, d478cb4); ga-test pass; IndexNow ping.
+
+## 2026-10-28 daily slot (about 01:30 London)
+- Fact article: blog/what-do-tigers-eat.html ("What do tigers eat?"), aimed at "what do tigers eat" / "tiger favourite food" / "how often do tigers eat" / "tiger prey size". Cites Hayward, Jedrzejewski and Jedrzejewska 2012 J Zool 10.1111/j.1469-7998.2011.00871.x, Karanth and Sunquist 1995 J Anim Ecol 10.2307/5647, Stoen and Wegge 1996 Mammalia 10.1515/mamm-1996-0303, Miller et al. 2013 J Mammal 10.1644/12-MAMM-A-209.1, Karanth et al. 2004 PNAS 10.1073/pnas.0306210101 (all Crossref 200, doi.org 302; claims limited to abstracts). About 1,050 words body. Research page group "Tiger diet and prey", blog index, home latest, tiger.html hunting section link + related link, sitemap. Reused AI image tiger-water. Commit 297b0f7.
+- SEO action (directive items 5 and 7, topic cluster / internal linking + snippet eligibility): still no Search Console export. Built a big cat diet cluster: tiger.html had a "What do tigers eat?" H2 but no Q&A, so added visible FAQ "What do tigers eat?" on tiger.html and faq.html (FAQPage JSON-LD, faq.html answer links the article); cross-linked the diet articles (lion diet -> tiger diet, snow leopard diet -> tiger diet + lion diet). check.py problems 0.
+- Why: no ranking data to compound; "what do tigers eat" is one of the highest volume big cat questions, and the tiger pillar plus FAQ hub now give the new article crawl paths and snippet/AI answer eligibility at zero content risk.
+- News/outreach: none in this slot.

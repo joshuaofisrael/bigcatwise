@@ -175,6 +175,7 @@ FAQ = [
  ("Are white tigers a separate species?", "No. White tigers are a rare colour variant of the tiger. The IUCN Cat Specialist Group notes that the last documented white tiger in the wild was shot in India in 1958."),
  ("Do lions live in the jungle?", "No. Lions live mainly in savanna, grassland and open woodland. King of the jungle is just a nickname."),
  ("Are there tigers in Africa?", "No. Wild tigers live only in Asia. Africa's big cats are the lion, leopard and cheetah."),
+ ("What do tigers eat?", 'Mainly large hoofed mammals such as wild boar, sambar deer, chital and gaur. Across 32 prey species, tigers preferred animals of about 60 to 250 kg (Hayward et al. 2012), and GPS collared Amur tigers made a kill about once every 6.5 days (Miller et al. 2013). See <a href="blog/what-do-tigers-eat.html">what do tigers eat?</a>'),
  ("Which big cat lives in the Americas?", "The jaguar, from Mexico to northern Argentina. The puma also lives there but is not usually counted as a big cat."),
  ("Which big cat is the most endangered?", "At species level, the tiger, which is listed as Endangered. Some populations of other species are worse off, such as the Critically Endangered Asiatic cheetah in Iran."),
  ("Why do leopards put their kills in trees?", "Mainly to stop spotted hyenas and other predators stealing them. In a South African study of 2,032 kills, leopards hoisted 51% of kills, and kills left on the ground were more likely to be stolen."),

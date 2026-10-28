@@ -1,5 +1,6 @@
 from build import add, TODAY
 from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004
+from sources import HAYWARD2012T, KARANTH1995, STOEN1996, MILLER2013, KARANTH2004
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -947,6 +948,59 @@ post("why-do-male-lions-kill-cubs", "Why Do Male Lions Kill Cubs? Lion & Leopard
           ("Does trophy hunting affect infanticide in lions?", "It can. Modelling based on 40 years of Tanzanian lion data found that frequent male replacements raise extinction risk through infanticide, but hunting only males above a minimum age could be sustainable (Whitman et al. 2004).")],
      related=[("Lion facts", "lion.html"), ("Leopard facts", "leopard.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004, CSG["lion"], CSG["leopard"]])
+
+
+post("what-do-tigers-eat", "What Do Tigers Eat? Prey Preferences and How Often They Kill | BigCatWise",
+     "Tigers prefer large prey of 60 to 250 kg, especially wild boar and sambar deer. What diet studies from India, Nepal and Russia show about how often tigers kill.",
+     "What do tigers eat? What the research on tiger diet and prey shows", headline="What do tigers eat?",
+     published="2026-10-28", modified="2026-10-28",
+     lead="Tigers eat mainly large hoofed mammals, especially deer, wild pigs and wild cattle. A review of 3,187 kills and scats covering 32 prey species found that tigers most prefer wild boar and sambar deer, and favour prey weighing about 60 to 250 kg (Hayward and colleagues, 2012). Where very large prey is common, tigers take even bigger animals such as gaur. They do not eat every day: GPS collared Amur tigers in Russia made a kill about once every 6.5 days and ate an estimated 8.9 kg of meat a day on average.",
+     body='''<section class="card"><h2>Which animals do tigers prefer?</h2>
+<p>Matt Hayward, Wlodzimierz Jedrzejewski and Bogumila Jedrzejewska pulled together published studies of tiger diet and prey availability across the species' range (<i>Journal of Zoology</i>, 2012). Rather than simply counting what tigers ate, they compared each prey species' share of the diet with how common it was, using a measure called Jacobs' electivity index. That separates true preference from animals that are eaten simply because they are everywhere.</p>
+<p>Across 3,187 kills or scats of 32 prey species, two animals stood out as significantly preferred:</p>
+<ul>
+<li><b>Wild boar</b> (wild pig)</li>
+<li><b>Sambar deer</b>, a large forest deer of South and Southeast Asia</li>
+</ul>
+<p>Red deer and barasingha (swamp deer) also looked likely to be preferred, but the authors noted that a larger sample would be needed to confirm it. Other common prey in tiger studies includes chital (spotted deer), gaur, hog deer and muntjac, which appear throughout the regional studies below.</p></section>
+<section class="card"><h2>Why size matters most</h2>
+<p>The single factor that explained tiger preferences in the 2012 review was prey body mass. Species weighing roughly 60 to 250 kg were preferred. That works out to a predator to preferred prey weight ratio of about 1:1, meaning tigers prefer animals around their own size, which the authors found is similar to other solitary cats. Lions, which hunt in groups, prefer heavier prey still; see <a href="what-do-lions-eat.html">what do lions eat?</a></p>
+<p>Kota Ullas Karanth and Mel Sunquist found the same pull towards big prey in Nagarahole, southern India, where they studied tigers, leopards and dholes (wild dogs) between 1986 and 1990 (<i>Journal of Animal Ecology</i>, 1995). There, with a rich mix of large mammals at about 91 animals per square kilometre:</p>
+<ul>
+<li>Gaur, a massive wild ox, was preferred by tigers.</li>
+<li>Tigers selected prey weighing more than 176 kg, while leopards and dholes focused on prey of 30 to 175 kg.</li>
+<li>The average weight of the main prey killed was 91.5 kg for tigers, compared with 37.6 kg for leopards and 43.4 kg for dholes.</li>
+<li>Tigers were biased towards adult males of chital, sambar and wild pig, and towards young gaur rather than full grown adults.</li>
+</ul>
+<p>The authors suggested that when large carnivores have a choice, they kill larger prey, and that this size split may help tigers, leopards and dholes live side by side. For a closer look at the leopard side of the story, see our <a href="../leopard.html">leopard facts</a>.</p></section>
+<section class="card"><h2>What tigers eat when big prey is scarce</h2>
+<p>Preference is not the same as what ends up on the menu. In the Karnali floodplain of Bardia National Park, Nepal, Ole Gunnar Stoen and Per Wegge studied tiger diet in the dry season from 1990 to 1994 (<i>Mammalia</i>, 1996). Three medium sized species, chital, wild boar and hog deer, made up more than 90% of the biomass tigers killed. Larger animals that might seem ideal for a tiger, such as nilgai and barasingha, were not eaten preferentially, probably because they were scarce. Even among the medium sized prey, tigers were selective: wild boar was preferred and muntjac was under-represented in the diet.</p>
+<p>The same study estimated that tigers removed only about 3.1% of the available hoofed mammal biomass, a low figure compared with other studies, and found leopards pushed to the edges of the park.</p></section>
+<section class="card"><h2>How often do tigers kill, and how much do they eat?</h2>
+<p>Amur tigers in the Russian Far East live at the northern edge of the species' range and with the lowest prey densities of any tiger population. Clayton Miller and colleagues fitted GPS collars to tigers there between 2009 and 2012 and visited 380 clusters of locations where tigers had lingered, finding 111 kill sites (<i>Journal of Mammalogy</i>, 2013). Using a model built from those visits, they estimated that the tigers:</p>
+<ul>
+<li>Made a kill about <b>once every 6.5 days</b> (95% confidence interval 5.9 to 7.2 days).</li>
+<li>Ate an estimated average of <b>8.9 kg of prey a day</b>.</li>
+</ul>
+<p>That pattern of a big kill followed by days of feeding fits what is seen elsewhere: a tiger often drags a carcass into cover and returns to it, a behaviour described on our <a href="../tiger.html#hunting">tiger facts</a> page. The IUCN Cat Specialist Group estimates that a tiger needs around 50 to 60 large prey animals a year. Most hunting happens at night and around dawn and dusk; see <a href="are-tigers-nocturnal.html">are tigers nocturnal?</a></p></section>
+<section class="card"><h2>Why prey decides how many tigers there can be</h2>
+<p>Because tigers depend on large prey, the amount of prey sets how many tigers an area can hold. Karanth and colleagues tested this across 11 sites in India from 1995 to 2003 (<i>PNAS</i>, 2004). Prey densities ranged from 5.3 to 63.8 hoofed animals per square kilometre, and tiger densities from 3.2 to 16.8 tigers per 100 km&sup2;, reasonably consistent with what a simple model based on prey density predicted. Prey also shapes how far tigers roam: see <a href="how-big-is-a-tigers-territory.html">how big is a tiger's territory?</a></p>
+<p>This is why researchers stress that protecting deer, wild pigs and wild cattle is as important as stopping poaching of tigers themselves. Miller and colleagues concluded that reversing tiger declines depends partly on conserving large hoofed mammals at adequate densities. Read more on our <a href="../conservation.html">big cat conservation</a> page.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Tigers mainly eat large hoofed mammals: deer, wild pigs and wild cattle.</li>
+<li>Wild boar and sambar deer are significantly preferred across the range, with preferred prey weighing about 60 to 250 kg (Hayward et al. 2012).</li>
+<li>Where gaur are available, tigers take very large prey; in Nagarahole they selected animals over 176 kg (Karanth and Sunquist 1995).</li>
+<li>Where big prey is scarce, medium sized chital, wild boar and hog deer can make up over 90% of what tigers kill (Stoen and Wegge 1996).</li>
+<li>Amur tigers killed about once every 6.5 days and ate about 8.9 kg a day (Miller et al. 2013).</li>
+<li>Tiger numbers track prey numbers, so prey protection is tiger protection (Karanth et al. 2004).</li>
+</ul></section>''',
+     faq=[("What is a tiger's favourite food?", "Across 32 prey species in published studies, wild boar and sambar deer were the prey tigers significantly preferred, with red deer and barasingha also likely preferred (Hayward et al. 2012)."),
+          ("How big are the animals tigers hunt?", "Tigers prefer prey of about 60 to 250 kg, roughly their own size (Hayward et al. 2012). In Nagarahole, India, the average main prey killed by tigers weighed 91.5 kg, and tigers selected prey over 176 kg such as gaur (Karanth and Sunquist 1995)."),
+          ("How often do tigers eat?", "Not every day. GPS collared Amur tigers in the Russian Far East made a kill about once every 6.5 days and ate an estimated 8.9 kg of prey per day on average (Miller et al. 2013)."),
+          ("Do tigers and leopards eat the same prey?", "They overlap, but in Nagarahole, India, tigers selected prey over 176 kg while leopards and dholes focused on prey of 30 to 175 kg, which may help them coexist (Karanth and Sunquist 1995)."),
+          ("Why does prey matter for tiger conservation?", "Tiger densities across 11 Indian sites were reasonably consistent with predictions based on prey density (Karanth et al. 2004), so losing deer, wild pigs and wild cattle means fewer tigers.")],
+     related=[("Tiger facts", "tiger.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[HAYWARD2012T, KARANTH1995, STOEN1996, MILLER2013, KARANTH2004, CSG["tiger"]])
 
 
 # ---------------------------------------------------------------- BLOG INDEX

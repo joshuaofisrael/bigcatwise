@@ -143,3 +143,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - SEO action (directive items 5 and 7, topic cluster / internal linking + snippet eligibility): still no Search Console export. Built a big cat diet cluster: tiger.html had a "What do tigers eat?" H2 but no Q&A, so added visible FAQ "What do tigers eat?" on tiger.html and faq.html (FAQPage JSON-LD, faq.html answer links the article); cross-linked the diet articles (lion diet -> tiger diet, snow leopard diet -> tiger diet + lion diet). check.py problems 0.
 - Why: no ranking data to compound; "what do tigers eat" is one of the highest volume big cat questions, and the tiger pillar plus FAQ hub now give the new article crawl paths and snippet/AI answer eligibility at zero content risk.
 - News/outreach: none in this slot.
+- IndexNow (8 URLs: article, tiger, faq, blog index, research, lion diet, snow leopard diet, home): HTTP 200. Commit 3fa96f0.

@@ -1,6 +1,7 @@
 from build import add, TODAY
 from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004
 from sources import HAYWARD2012T, KARANTH1995, STOEN1996, MILLER2013, KARANTH2004
+from sources import CAVALCANTI2010, WECKEL2006JZ, WECKEL2006BT, NOVACK2005
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -358,7 +359,7 @@ post("what-do-snow-leopards-eat", "What Do Snow Leopards Eat? Diet and Favourite
 post("do-jaguars-hunt-in-water", "Do Jaguars Hunt in Water? Aquatic Prey Research | BigCatWise",
      "Yes. Jaguars swim and hunt fish, caiman and other aquatic prey. A Pantanal study found fish in 46% of scats and aquatic reptiles in 55%, with mammals only 11%.",
      "Do jaguars hunt in water? Yes, and in some wetlands it reshapes their whole ecology", headline="Do jaguars hunt in water?",
-     published="2026-10-14", modified="2026-10-14",
+     published="2026-10-14", modified="2026-10-30",
      lead="Yes. Jaguars are strong swimmers and regularly take prey in and beside water, including fish, caiman, turtles and capybaras. In one seasonally flooded reserve in Brazil's Pantanal, a 2022 study found fish in 46% of jaguar scats and aquatic reptiles in 55%, while mammals appeared in only 11%. That aquatic food supply supported the highest jaguar density yet estimated and unusual social behaviour such as cooperative fishing.",
      body='''<section class="card"><h2>The short answer</h2>
 <p>Among the six big cats on this site, the jaguar is the one most at home in water. It swims well, crosses rivers and lakes, and often hunts along riverbanks and in flooded wetlands. That is not a side habit. In some places aquatic animals dominate its diet, and that changes how densely jaguars can live and even how social they are. For the species basics, see our <a href="../jaguar.html#water">jaguar facts</a>.</p>
@@ -393,7 +394,7 @@ post("do-jaguars-hunt-in-water", "Do Jaguars Hunt in Water? Aquatic Prey Researc
           ("Do jaguars eat fish?", "Yes. In a seasonally flooded Pantanal reserve, fish turned up in 46% of 138 jaguar scats, the first population described as feeding extensively on fish."),
           ("What is a jaguar's favourite prey?", "Across the range, a review of 3,214 kills found jaguars significantly prefer capybara and giant anteater. Preferred prey weigh about 45 to 85 kg."),
           ("Are jaguars social when they fish?", "Usually jaguars are solitary, but the Pantanal study documented cooperative fishing and other same sex adult interactions where aquatic food was abundant.")],
-     related=[("Jaguar facts", "jaguar.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     related=[("What do jaguars eat?", "blog/what-do-jaguars-eat.html"), ("Jaguar facts", "jaguar.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[ERIKSSON2022, HAYWARD2016JAG, CSG["jaguar"], SDZ["jaguar"]])
 
 
@@ -1001,6 +1002,55 @@ post("what-do-tigers-eat", "What Do Tigers Eat? Prey Preferences and How Often T
           ("Why does prey matter for tiger conservation?", "Tiger densities across 11 Indian sites were reasonably consistent with predictions based on prey density (Karanth et al. 2004), so losing deer, wild pigs and wild cattle means fewer tigers.")],
      related=[("Tiger facts", "tiger.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[HAYWARD2012T, KARANTH1995, STOEN1996, MILLER2013, KARANTH2004, CSG["tiger"]])
+
+
+post("what-do-jaguars-eat", "What Do Jaguars Eat? Jaguar Diet, Prey and Kill Rates | BigCatWise",
+     "Jaguars eat peccaries, armadillos, caiman, capybaras and more. What GPS collar and scat studies from Brazil, Belize and Guatemala show about jaguar diet.",
+     "What do jaguars eat? What the research on jaguar diet and prey shows", headline="What do jaguars eat?",
+     published="2026-10-30", modified="2026-10-30",
+     lead="Jaguars eat a wide range of animals, and what they eat depends heavily on where they live. In rainforests of Belize and Guatemala, scat studies show that medium sized prey such as nine-banded armadillos, pacas and coatis dominate the diet. In Brazil's Pantanal wetland, GPS collared jaguars mostly killed cattle, caiman and peccaries, and made a kill about every 4.3 days on average (Cavalcanti and Gese, 2010). Across 25 studies, the prey jaguars most clearly preferred were capybaras and giant anteaters (Hayward and colleagues, 2016).",
+     body='''<section class="card"><h2>A flexible hunter, not a picky one</h2>
+<p>The jaguar is the largest cat in the Americas, but it does not specialise in one kind of prey. The IUCN Cat Specialist Group lists more than 85 prey species recorded in jaguar diets, from peccaries and deer to turtles and fish. Researchers measure diet in two main ways: by collecting droppings (scats) and identifying the hair, bones and scales inside, or by fitting GPS collars and visiting the places where a cat lingered to find the remains of kills. Both methods tell a similar story: jaguar diet tracks the local prey community, with some clear preferences on top.</p></section>
+<section class="card"><h2>What jaguars eat in the Pantanal</h2>
+<p>Sandra Cavalcanti and Eric Gese followed 10 GPS collared jaguars in the southern Pantanal of Brazil, a vast seasonal wetland with cattle ranches, between October 2001 and April 2004 (<i>Journal of Mammalogy</i>, 2010). From 11,787 GPS locations they visited clusters where the cats had stopped, found prey remains at 415 kill sites and identified 438 prey items. The kills were made up of:</p>
+<ul>
+<li><b>Cattle:</b> 31.7% (9.8% adults and 21.9% calves)</li>
+<li><b>Caiman</b> (yacare caiman): 24.4%</li>
+<li><b>Peccaries</b>, mostly white-lipped peccaries: 21.0%</li>
+<li><b>Feral hogs:</b> 4.1%</li>
+<li><b>Marsh deer:</b> 3.9%</li>
+<li><b>Giant anteaters:</b> 3.2%</li>
+<li><b>Capybaras:</b> 2.0%</li>
+<li><b>Brocket deer:</b> 1.6%, plus a range of other birds, mammals and reptiles</li>
+</ul>
+<p>Individual jaguars differed a lot. All 10 cats killed cattle at least sometimes, but five had cattle making up more than 35% of their kills while three killed few cattle (under 15%). Males and females killed cattle in similar proportions, but males took more peccaries and females took more caiman.</p>
+<p>Water levels drove the seasons. As the floods rose, caiman spread out across the landscape and jaguars killed more of them. As the water fell, caiman became less plentiful and ranchers moved cattle out into the pastures, making cattle available to more jaguars. Over the four years, kill rates on peccaries rose steadily while kill rates on cattle fell. For more on how jaguars use rivers and wetlands, including fish in their diet, see <a href="do-jaguars-hunt-in-water.html">do jaguars hunt in water?</a></p></section>
+<section class="card"><h2>What jaguars eat in the rainforest</h2>
+<p>In dense tropical forest the menu shifts towards smaller animals. Michael Weckel, William Giuliano and Scott Silver reconstructed jaguar diet from scats in the Cockscomb Basin Wildlife Sanctuary, Belize, and used camera traps to measure how common each prey species was (<i>Journal of Zoology</i>, 2006). Nine-banded armadillos and pacas, a large forest rodent, made up 56.6% of total consumption.</p>
+<p>Overall, jaguars there ate prey roughly in proportion to how common it was, which looks opportunistic. But among the larger animals they were selective: they ate collared peccaries more than their availability predicted, and ate the equally common white-lipped peccary and Baird's tapir less than expected. Armadillos and pacas tended to use trail-less forest and small mammal trails away from the man-made paths that jaguars travelled along, which led the authors to suggest that jaguars rely on more than chance encounters to find them.</p>
+<p>A companion study by the same team compared jaguar diet in Cockscomb in 2002 with a study from the 1980s (<i>Biotropica</i>, 2006). The diets overlapped strongly. Nine-banded armadillo was still the most frequently eaten prey, but collared peccary consumption had risen by nearly 20 percent while dietary breadth fell by 60 percent, which the authors linked to more prey being available after two decades of reduced human hunting.</p></section>
+<section class="card"><h2>Does hunting by people change what jaguars eat?</h2>
+<p>Rony Novack and colleagues tested this directly in the Maya Biosphere Reserve, Guatemala, by comparing areas with and without subsistence hunting (<i>Journal of Zoology</i>, 2005). They identified 76 jaguar scats and 145 puma scats using DNA and estimated prey densities along transects. White-lipped peccaries, collared peccaries and brocket deer were less abundant, and coatis more abundant, where people hunted.</p>
+<p>Even so, jaguar diets did not differ between the hunted and non-hunted areas when measured by prey biomass. In both, jaguar diets were dominated by medium sized prey, particularly armadillos and coatis. Pumas in the same forest ate more deer and large rodents such as pacas and agoutis, and dietary overlap between the two cats was low, one way two large predators can share the same forest.</p></section>
+<section class="card"><h2>Which prey do jaguars prefer?</h2>
+<p>Eating a lot of something is not the same as preferring it. Matt Hayward and colleagues reviewed 25 studies reporting 3,214 jaguar kills and compared what jaguars ate with what was available (<i>Frontiers in Ecology and Evolution</i>, 2016). Jaguars significantly preferred capybaras and giant anteaters, and avoided agoutis, carnivores, primates, black-eared opossums and tapirs. Prey selection was explained more by how abundant a species was and its herd size than by body size.</p>
+<p>The prey weight range jaguars could readily take was 6 to 60 kg, and the preferred range was 45 to 85 kg. The mean mass of significantly preferred prey was about 32 kg, giving a predator to prey body mass ratio that the authors note is much smaller than for other solitary big cats. By comparison, tigers prefer prey roughly their own size; see <a href="what-do-tigers-eat.html">what do tigers eat?</a> The authors suggest the loss of large prey at the end of the Pleistocene may still shape how jaguars hunt today.</p>
+<p>Jaguars are also known for a distinctive killing method: the IUCN Cat Specialist Group describes them as the only big cat that regularly kills by biting through the skull, which may help with armoured prey such as turtles. Read more on our <a href="../jaguar.html#bite">jaguar facts</a> page.</p></section>
+<section class="card"><h2>Why jaguar diet matters for conservation</h2>
+<p>Where wild prey is depleted and cattle are close by, livestock can make up a large share of what jaguars kill, as the Pantanal study shows. Cavalcanti and Gese introduce their work by noting that this predation brings jaguars into conflict with people, and that kill rates had not been well documented before. Their finding that cattle kills fell as peccary kills rose over four years, and the Belize result that diet shifted after hunting pressure fell, both point to the same idea: healthy wild prey populations matter for jaguars. See <a href="../conservation.html">big cat conservation</a> for the wider picture.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>In the Pantanal, kills were mostly cattle (31.7%), caiman (24.4%) and peccaries (21.0%), with a kill about every 4.3 days (Cavalcanti and Gese 2010).</li>
+<li>In Belize rainforest, armadillos and pacas made up 56.6% of consumption, and collared peccaries were eaten more than their availability predicted (Weckel et al. 2006).</li>
+<li>In Guatemala, armadillos and coatis dominated jaguar diet in both hunted and non-hunted forest (Novack et al. 2005).</li>
+<li>Across 25 studies, capybaras and giant anteaters were the significantly preferred prey (Hayward et al. 2016).</li>
+</ul></section>''',
+     faq=[("What is a jaguar's favourite food?", "Across 25 studies covering 3,214 kills, jaguars significantly preferred capybaras and giant anteaters (Hayward et al. 2016). Locally, peccaries, armadillos and caiman are often the most important prey."),
+          ("Do jaguars eat caiman?", "Yes. In the southern Pantanal, caiman made up 24.4% of 438 prey items found at jaguar kill sites, and females killed more caiman than males (Cavalcanti and Gese 2010)."),
+          ("How often do jaguars kill?", "GPS collared jaguars in the Pantanal made a kill on average every 4.3 days, with longer gaps after bigger prey (Cavalcanti and Gese 2010)."),
+          ("Do jaguars eat cattle?", "They can. In a Pantanal ranching area cattle were 31.7% of kills, though individual jaguars varied from under 15% to over 35% (Cavalcanti and Gese 2010)."),
+          ("What do jaguars eat in the rainforest?", "Mostly medium sized animals. In Belize, armadillos and pacas made up 56.6% of consumption (Weckel et al. 2006), and in Guatemala armadillos and coatis dominated (Novack et al. 2005).")],
+     related=[("Jaguar facts", "jaguar.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[CAVALCANTI2010, WECKEL2006JZ, WECKEL2006BT, NOVACK2005, HAYWARD2016JAG, CSG["jaguar"]])
 
 
 # ---------------------------------------------------------------- BLOG INDEX

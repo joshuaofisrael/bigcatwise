@@ -1,6 +1,6 @@
 """AI generated, photorealistic images of the page subject (added 23 Oct 2026). No people, no news events.
 Files: img/ai-<slug>-960.webp and -480.webp (3:2). Generated with the Grok Bot image tool, originals in /workspace/animal-sites/big-cats/ai/.
-Placed after the Nth </section> of the page body (after=2 by default). They carry no per image caption; the credits and about pages disclose AI imagery."""
+Placed after the Nth </section> of the page body (after=2 by default). Each carries a small visible "AI-generated image." caption (added 30 Oct 2026), and the credits and about pages disclose AI imagery."""
 import html, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -54,7 +54,11 @@ def ai_html(path, rel):
     if not p or not have(p["slug"]):
         return ""
     s = rel + "img/ai-" + p["slug"]
-    cap = '<figcaption>%s</figcaption>' % html.escape(p["cap"]) if p.get("cap") else ""
+    # every AI figure carries a small visible label (Joshua's rule, 28 Oct 2026); custom captions keep their own text
+    c = p.get("cap") or "AI-generated image."
+    if "ai-generated" not in c.lower() and "ai generated" not in c.lower():
+        c = "AI-generated image. " + c
+    cap = '<figcaption>%s</figcaption>' % html.escape(c)
     return ('<figure class="photo ai"><img src="%s-960.webp" srcset="%s-480.webp 480w, %s-960.webp 960w" sizes="(max-width: 1000px) 94vw, 940px" '
             'width="960" height="640" alt="%s" loading="lazy" decoding="async">%s</figure>') % (s, s, s, html.escape(p["alt"]), cap)
 

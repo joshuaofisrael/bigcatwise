@@ -158,3 +158,4 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - SEO action (ad-network readiness / trust): closed the 30 Oct follow-up. The 4 home page tiles that use AI thumbnails (compare, behavior, habitats, conservation) now show a small visible "AI-generated image." label under the thumbnail (tile_thumb() in _build/aiphotos.py adds it for ai- slugs only; .tile .ailabel style in style.css). Every AI image on the site now carries a per-image label. check.py problems 0.
 - Why: no ranking data to compound yet; the home page is the first page an AdSense/Mediavine reviewer sees, and it was the last place AI images appeared unlabelled, contrary to Joshua's 28 Oct labelling rule. Zero content risk.
 - News/outreach: none in this slot.
+- Commit e0b0580. IndexNow (home page): HTTP 200.

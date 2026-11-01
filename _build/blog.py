@@ -2,6 +2,7 @@ from build import add, TODAY
 from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004
 from sources import HAYWARD2012T, KARANTH1995, STOEN1996, MILLER2013, KARANTH2004
 from sources import CAVALCANTI2010, WECKEL2006JZ, WECKEL2006BT, NOVACK2005
+from sources import MARTINS2010, HART1996
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -1051,6 +1052,53 @@ post("what-do-jaguars-eat", "What Do Jaguars Eat? Jaguar Diet, Prey and Kill Rat
           ("What do jaguars eat in the rainforest?", "Mostly medium sized animals. In Belize, armadillos and pacas made up 56.6% of consumption (Weckel et al. 2006), and in Guatemala armadillos and coatis dominated (Novack et al. 2005).")],
      related=[("Jaguar facts", "jaguar.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[CAVALCANTI2010, WECKEL2006JZ, WECKEL2006BT, NOVACK2005, HAYWARD2016JAG, CSG["jaguar"]])
+
+
+post("what-do-leopards-eat", "What Do Leopards Eat? Leopard Diet and Prey Preferences | BigCatWise",
+     "Leopards eat impala, bushbuck, duikers, hyraxes, monkeys and even dogs. What scat, kill site and prey preference studies from Africa and Asia show about leopard diet.",
+     "What do leopards eat? What the research on leopard diet and prey shows", headline="What do leopards eat?",
+     published="2026-11-01", modified="2026-11-01",
+     lead="Leopards eat an unusually wide range of animals, but they prefer medium sized prey of about 10 to 40 kg, such as impala, bushbuck and common duiker. A review of 33 diet studies from 13 countries found the most preferred prey weight was about 25 kg (Hayward and colleagues, 2006). Where that prey is missing, leopards switch: klipspringers and rock hyraxes in South African mountains, forest antelope and monkeys in the Congo Basin, and domestic dogs in Indian farmland.",
+     body='''<section class="card"><h2>A generalist with clear preferences</h2>
+<p>The leopard has the largest range of any big cat, from the Kalahari to the Russian Far East, and its diet reflects that. Researchers describe it as catholic: leopards will take rodents, birds, primates, antelope, wild pigs and livestock. Diet is usually measured by collecting droppings (scats) and identifying the hair and bones inside, by finding carcasses, or by visiting places where a GPS collared leopard stopped for several hours. Comparing what leopards eat with what is available shows that, despite eating almost anything, they do pick some prey over others.</p></section>
+<section class="card"><h2>Which prey do leopards prefer?</h2>
+<p>Matt Hayward and colleagues pulled together 29 published and 4 unpublished leopard diet studies that also measured how common each prey species was (<i>Journal of Zoology</i>, 2006). The data covered 41 locations or time periods in 13 countries. For each prey species they calculated a preference index, then tested whether leopards ate it more or less often than its abundance predicted.</p>
+<ul>
+<li><b>Preferred weight range:</b> 10 to 40 kg.</li>
+<li><b>Most preferred prey mass:</b> about 25 kg; the mean mass of significantly preferred species was 23 kg.</li>
+<li><b>Significantly preferred species:</b> impala, bushbuck and common duiker. Chital, the spotted deer of South Asia, was likely to be preferred too, but there were too few Asian studies to be sure.</li>
+<li><b>Avoided:</b> species outside the preferred weight range, species restricted to open vegetation, and species with strong anti-predator defences.</li>
+</ul>
+<p>The authors' explanation is that leopards favour prey that lives in small herds, in dense habitat, and that carries little risk of injury during capture. They suggest the ratio of leopard body mass to preferred prey mass may reflect the leopard's solitary hunting strategy: with no pride to help, a dangerous struggle is costly. For a contrast with a much larger solitary cat, see <a href="what-do-tigers-eat.html">what do tigers eat?</a></p></section>
+<section class="card"><h2>Leopards alongside tigers in India</h2>
+<p>In Nagarahole National Park, southern India, Ullas Karanth and Mel Sunquist studied tigers, leopards and dholes (wild dogs) hunting the same prey between 1986 and 1990 (<i>Journal of Animal Ecology</i>, 1995). Using scats and kills, they found that leopards and dholes focused on prey in the 30 to 175 kg size class, while tigers selected prey heavier than 176 kg. The average weight of principal prey killed by leopards was 37.6 kg, against 91.5 kg for tigers.</p>
+<p>Leopards there were not simply eating whatever was common. Wild pigs were under-represented in leopard diet compared with their abundance. And unlike dholes, which selectively killed adult male chital, leopards did not single out adult males. The authors suggest that this kind of size-based prey selection may help large carnivores coexist where prey is plentiful.</p></section>
+<section class="card"><h2>Mountain leopards: klipspringers and hyraxes</h2>
+<p>In the Cederberg Mountains of South Africa there are no herds of impala. Quinton Martins and colleagues combined GPS collar data with scat analysis (<i>Journal of Zoology</i>, 2011). They located 53 kill or feeding sites from clusters of GPS locations and analysed 93 scats. Both methods agreed: klipspringers, a small rock-hopping antelope, and rock hyraxes were the most common prey.</p>
+<p>The longer a leopard stayed at a site, the more likely researchers were to find prey remains there, and the bigger the prey tended to be. Leopards made significantly more large kills in winter than in summer, and there was no significant difference between males and females in the number of large kills. The authors stress that combining methods matters in rugged terrain, and that GPS clusters can still measure diet accurately when leopards take small prey.</p></section>
+<section class="card"><h2>Rainforest leopards: antelope and monkeys</h2>
+<p>In the Ituri Forest of what was then Zaire, now the Democratic Republic of the Congo, John Hart and colleagues studied the diets of leopards and African golden cats from 336 scats and 91 prey carcasses (<i>African Journal of Ecology</i>, 1996). Mammals made up almost all prey. In leopard scats, ungulates were 53.5% of identified prey items and primates 25.4%, with an estimated mean prey weight of 24.6 kg. That figure sits remarkably close to the 25 kg preference found in the later continental review.</p>
+<p>Among prey of 5 kg or more, the forest cats selected five species of nocturnal ungulates and one ground-living primate. Arboreal monkeys made up 9% of prey items in the cats' scats, and the authors suggest that scavenging kills made by crowned eagles may be one way forest cats get them. They also proposed that leopards in many forested areas of Africa may be limited by competition with human hunters for the same hoofed prey.</p></section>
+<section class="card"><h2>Leopards in farmland: dogs and other domestic animals</h2>
+<p>Leopards can live surprisingly close to people, and their diet changes accordingly. In crop lands of Ahmednagar district, Maharashtra, India, Vidya Athreya and colleagues analysed 85 confirmed leopard scats (<i>Oryx</i>, 2016). Domestic animals made up 87% of the prey biomass eaten, and domestic dogs alone made up 39%. The only wild prey found were rodents, small Indian civets, bonnet macaques and other primates, mongooses and birds.</p>
+<p>Household interviews showed goats and cattle were far more numerous than dogs, yet dogs and cats were over-represented in the leopards' diet. The authors note that the dogs and cats alone provided enough biomass to sustain the high density of carnivores in the area, although this reliance on domestic animals can bring leopards into conflict with people. For more on this, see <a href="can-leopards-live-near-people.html">can leopards live near people?</a></p></section>
+<section class="card"><h2>Why diet matters for leopard conservation</h2>
+<p>Knowing which prey leopards prefer lets wildlife managers predict leopard diet where it has not been studied and estimate how many predators an area can carry, uses Hayward and colleagues highlight. It also shows where conflict is likely: where wild prey is scarce and domestic animals are plentiful, leopards can come to depend on livestock and pets. Protecting medium sized wild prey is part of protecting leopards. Leopards also guard kills from lions and hyenas by hoisting them into trees; read <a href="why-do-leopards-drag-their-kills-into-trees.html">why do leopards drag their kills into trees?</a> and our <a href="../leopard.html#hunting">leopard facts</a> page.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Across 33 studies, leopards preferred prey of 10 to 40 kg, with about 25 kg most preferred (Hayward et al. 2006).</li>
+<li>Impala, bushbuck and common duiker were significantly preferred; prey restricted to open habitat or with strong defences was generally avoided (Hayward et al. 2006).</li>
+<li>In Nagarahole, India, leopards' principal prey averaged 37.6 kg, much smaller than tigers' 91.5 kg (Karanth and Sunquist 1995).</li>
+<li>In South African mountains, klipspringers and rock hyraxes were the most common prey (Martins et al. 2011).</li>
+<li>In Congo rainforest, ungulates were 53.5% and primates 25.4% of prey items in leopard scats (Hart et al. 1996).</li>
+<li>In Indian farmland, 87% of prey biomass was domestic animals, with dogs alone 39% (Athreya et al. 2016).</li>
+</ul></section>''',
+     faq=[("What is a leopard's favourite food?", "Across 33 studies, impala, bushbuck and common duiker were the prey leopards significantly preferred, and chital deer were likely preferred in Asia (Hayward et al. 2006)."),
+          ("How big are the animals leopards hunt?", "Leopards prefer prey of 10 to 40 kg, with about 25 kg most preferred (Hayward et al. 2006). In Nagarahole, India, their principal prey averaged 37.6 kg (Karanth and Sunquist 1995)."),
+          ("Do leopards eat monkeys?", "Yes. In the Ituri Forest, primates made up 25.4% of identified prey items in leopard scats (Hart et al. 1996), and bonnet macaques were among the few wild prey of leopards in Maharashtra farmland (Athreya et al. 2016)."),
+          ("Do leopards eat dogs?", "Where they live near people, they can. In farmland in Maharashtra, India, domestic dogs made up 39% of the prey biomass in leopard scats (Athreya et al. 2016)."),
+          ("Do leopards and tigers eat the same prey?", "They overlap, but in Nagarahole, India, tigers selected prey over 176 kg while leopards focused on prey of 30 to 175 kg (Karanth and Sunquist 1995).")],
+     related=[("Leopard facts", "leopard.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("What do jaguars eat?", "blog/what-do-jaguars-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
+     sources=[HAYWARD2006, KARANTH1995, MARTINS2010, HART1996, ATHREYA2016, CSG["leopard"]])
 
 
 # ---------------------------------------------------------------- BLOG INDEX

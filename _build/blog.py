@@ -2,7 +2,7 @@ from build import add, TODAY
 from sources import LAURENSON1994, MILLS2014, DURANT2000, DURANT2004, ATHREYA2013, ODDEN2014, ATHREYA2016, ATHREYA2011, BRACZKOWSKI2018, JACOBSON2016, CARTER2012, LINKIE2011, KARANTH2000, CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011, BALME2017, HAYWARD2006, LYNGDOH2014, SHEHZAD2012, ERIKSSON2022, HAYWARD2016JAG, WEST2002, KAYS2002, YAMAGUCHI2004, TAYLOR1973, HETEM2013, SOLARI2025, YANG2025, CANCELLARE2024, WANG2024, STANDER1992B, STANDER1992F, FUNSTON2001, HOPCRAFT2005, SCHEEL1993, HAYWARD2005, JOUBERT2006, POWER2009, DURANT1998, HUNTER2007, HILBORN2018, SWANSON2014, VANAK2013, PACKER1983AN, PACKER1983AB, BALME2013, LEROEX2023, WHITMAN2004
 from sources import HAYWARD2012T, KARANTH1995, STOEN1996, MILLER2013, KARANTH2004
 from sources import CAVALCANTI2010, WECKEL2006JZ, WECKEL2006BT, NOVACK2005
-from sources import MARTINS2010, HART1996
+from sources import MARTINS2010, HART1996, HAYWARD2006C
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -1099,6 +1099,33 @@ post("what-do-leopards-eat", "What Do Leopards Eat? Leopard Diet and Prey Prefer
           ("Do leopards and tigers eat the same prey?", "They overlap, but in Nagarahole, India, tigers selected prey over 176 kg while leopards focused on prey of 30 to 175 kg (Karanth and Sunquist 1995).")],
      related=[("Leopard facts", "leopard.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("What do jaguars eat?", "blog/what-do-jaguars-eat.html"), ("Research papers", "research/index.html"), ("Blog home", "blog/index.html")],
      sources=[HAYWARD2006, KARANTH1995, MARTINS2010, HART1996, ATHREYA2016, CSG["leopard"]])
+
+
+post("what-do-cheetahs-eat", "What Do Cheetahs Eat? Cheetah Diet and Prey Preferences | BigCatWise",
+     "Cheetahs mostly eat medium sized antelope such as impala, springbok and gazelles. What a review of 23 diet studies shows about cheetah prey and why.",
+     "What do cheetahs eat? What the research on cheetah diet and prey shows", headline="What do cheetahs eat?",
+     published="2026-11-07", modified="2026-11-07",
+     lead="Cheetahs mostly eat medium sized antelope. A review of 23 diet studies from six countries found that cheetahs prefer prey of about 23 to 56 kg, with a peak at about 36 kg, and that blesbok, impala, Thomson's and Grant's gazelles and springbok were significantly preferred (Hayward and colleagues, 2006).",
+     body='''<section class="card"><h2>Medium sized antelope come first</h2>
+<p>To find out which animals cheetahs actually prefer, rather than simply which ones they eat most, Matt Hayward and colleagues pooled data from 21 published and two unpublished studies across the cheetah's range. They compared how often each prey species was killed with how common it was locally, using a measure called Jacobs' index. A species killed more often than its abundance would predict counts as preferred; one killed less often counts as avoided (Hayward et al. 2006).</p>
+<p>The result was a clear size window. Cheetahs preferred the most available prey at a site within a body mass of roughly 23 to 56 kg, with the most preferred weight around 36 kg. Prey outside that range was generally avoided (Hayward et al. 2006).</p></section>
+<section class="card"><h2>Which species do cheetahs prefer?</h2>
+<p>Five species were significantly preferred across the studies: blesbok, impala, Thomson's gazelle, Grant's gazelle and springbok (Hayward et al. 2006). Which one dominates depends on where a cheetah lives. On the plains of East Africa that means gazelles, while in southern Africa impala and springbok are more important. Cheetahs also take hares, young of larger antelope and other small animals when the chance arises.</p></section>
+<section class="card"><h2>Why such a narrow size range?</h2>
+<p>A cheetah is built for speed, not strength. It is light, with a small head and relatively small teeth, so large, dangerous prey carries a real risk of injury. Hayward and colleagues concluded that the cheetah's body appears to have evolved for medium sized prey that can be subdued with little risk (Hayward et al. 2006). Read more in our post on <a href="how-fast-is-a-cheetah.html">how fast a cheetah is</a>.</p>
+<p>There is a second advantage. Medium sized prey can be eaten quickly, before lions or hyenas arrive to steal it. Losing kills to these larger rivals is a constant problem for cheetahs, which is covered in our post on <a href="how-do-cheetahs-live-alongside-lions-and-hyenas.html">how cheetahs live alongside lions and hyenas</a>.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Cheetahs prefer prey of about 23 to 56 kg, with a peak at about 36 kg (Hayward et al. 2006).</li>
+<li>Blesbok, impala, Thomson's and Grant's gazelles and springbok were significantly preferred (Hayward et al. 2006).</li>
+<li>Larger prey is generally avoided because the risk of injury is high for a light, fast cat.</li>
+<li>Medium sized kills can be eaten before lions and hyenas take them.</li>
+</ul></section>''',
+     faq=[("What is a cheetah's favourite food?", "Across 23 studies, blesbok, impala, Thomson's and Grant's gazelles and springbok were the prey cheetahs significantly preferred (Hayward et al. 2006)."),
+          ("How big are the animals cheetahs hunt?", "Cheetahs prefer prey of about 23 to 56 kg, with the most preferred weight around 36 kg (Hayward et al. 2006)."),
+          ("Do cheetahs hunt large animals like zebra?", "Rarely. Prey well above the preferred size range is generally avoided, because a light cheetah risks injury tackling it (Hayward et al. 2006)."),
+          ("Why do cheetahs eat so fast?", "Lions and hyenas often steal cheetah kills, so medium sized prey that can be eaten quickly is an advantage (Hayward et al. 2006).")],
+     related=[("Cheetah facts", "cheetah.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("What do leopards eat?", "blog/what-do-leopards-eat.html")],
+     sources=[HAYWARD2006C, CSG["cheetah"]])
 
 
 # ---------------------------------------------------------------- BLOG INDEX

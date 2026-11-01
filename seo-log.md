@@ -152,3 +152,9 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Follow-up: home page tile thumbnails using ai- images (compare, behavior, habitats, conservation) still have no per-image label; consider a tiny badge.
 - News/outreach: none in this slot.
 - IndexNow (25 changed URLs): HTTP 200. Live check: lion.html shows the label.
+
+## 2026-11-01 (daily slot)
+- Daily fact: "What do leopards eat?" (blog/what-do-leopards-eat.html, 5 Crossref-checked DOIs, reused AI image leopard-branch with "AI-generated image." caption), linked from leopard.html, blog index, research page, sitemap. Commit 2f44795, IndexNow 200 (4 URLs).
+- SEO action (ad-network readiness / trust): closed the 30 Oct follow-up. The 4 home page tiles that use AI thumbnails (compare, behavior, habitats, conservation) now show a small visible "AI-generated image." label under the thumbnail (tile_thumb() in _build/aiphotos.py adds it for ai- slugs only; .tile .ailabel style in style.css). Every AI image on the site now carries a per-image label. check.py problems 0.
+- Why: no ranking data to compound yet; the home page is the first page an AdSense/Mediavine reviewer sees, and it was the last place AI images appeared unlabelled, contrary to Joshua's 28 Oct labelling rule. Zero content risk.
+- News/outreach: none in this slot.

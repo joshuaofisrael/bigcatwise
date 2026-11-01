@@ -80,4 +80,5 @@ def tile_thumb(href, rel=""):
     base = "img/%s" % slug
     if not all(os.path.exists(os.path.join(ROOT, "%s-%d.webp" % (base, w))) for w in (480,)):
         return ""
-    return '<img src="%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">' % (base, html.escape(TILE_ALT[href]))
+    lab = '<span class="ailabel">AI-generated image.</span>' if slug.startswith("ai-") else ""
+    return '<img src="%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">%s' % (base, html.escape(TILE_ALT[href]), lab)

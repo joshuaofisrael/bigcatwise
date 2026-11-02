@@ -76,6 +76,23 @@ def header(rel, current):
             '<button class="menu" aria-label="Menu" onclick="document.body.classList.toggle(\'open\')">&#9776;</button>'
             '<nav>%s</nav></header>') % (rel, LOGO, SITE, "".join(links))
 
+def auto_faq(body):
+    """Pull FAQPage Q&A pairs straight out of existing '<section class="card"><h2>...?</h2><p>...' content,
+    so question headings that already read like an FAQ get structured data without any new visible text."""
+    pairs = []
+    for m in re.finditer(r'<section class="card"[^>]*>\s*<h[23][^>]*>(.*?)</h[23]>(.*?)</section>', body, re.S):
+        q = html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
+        if not q.endswith('?') or q.lower().startswith('step '):
+            continue
+        pm = re.match(r'<p[^>]*>(.*?)</p>', m.group(2).strip(), re.S)
+        if not pm:
+            continue
+        a = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', pm.group(1)))).strip()
+        if not a or a.endswith(':'):
+            continue
+        pairs.append((q, a))
+    return pairs
+
 def url_for(path):
     if path == "index.html":
         return BASE_URL
@@ -159,6 +176,12 @@ def render(p):
         blocks.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", a)}}
             for q, a in p.faq]})
+    elif not p.noindex and p.kind != "home":
+        auto_qa = auto_faq(p.body)
+        if auto_qa:
+            blocks.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+                {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in auto_qa]})
     # machine-readable sources (20 Oct 2026): every visible source becomes a schema.org citation on the page's Article/WebPage block
     if p.sources and not p.noindex:
         main_block = next((b for b in blocks if b.get("@type") in ("Article", "WebPage")), None)

@@ -159,3 +159,8 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Why: no ranking data to compound yet; the home page is the first page an AdSense/Mediavine reviewer sees, and it was the last place AI images appeared unlabelled, contrary to Joshua's 28 Oct labelling rule. Zero content risk.
 - News/outreach: none in this slot.
 - Commit e0b0580. IndexNow (home page): HTTP 200.
+
+## 2026-11-02 FAQPage structured data fix
+- SEO action: behavior.html, compare.html, habitats.html, conservation.html and 5 blog posts (how-fast-is-a-cheetah, how-many-big-cats-are-left, which-big-cats-can-roar, why-do-tigers-have-stripes, leopard-vs-jaguar-vs-cheetah) had question style H2 headings with answer paragraphs but no FAQPage JSON-LD. Added `auto_faq()` to `_build/build.py`, which pulls Q&A pairs straight from each page's own existing `<section class="card"><h2>...?</h2><p>...</p></section>` content (skipping step headings and intro sentences ending in a colon) and emits the same FAQPage block the explicit `faq=` pages already use. No visible text changed, build.py +23/-0 lines, check.py problems 0.
+- Why: these pages already read like FAQs but were missing snippet/AI answer eligibility; generating the JSON-LD from the page's own content keeps it accurate with zero new copy to source or maintain.
+- News/outreach: none in this slot.

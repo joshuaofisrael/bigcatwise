@@ -28,6 +28,7 @@ def licensed_images():
             ok.add(p["slug"])
     ai = mod("aiphotos")                              # our own generated images, originals kept
     for p in ai.AI.values(): ok.add("ai-" + p["slug"])
+    for p in getattr(ai, "AI2", {}).values(): ok.add("ai-" + p["slug"])
     return ok
 
 R1 = re.compile(r"(?i)\b(fraud\w*|corrupt\w*|convicted|indicted|arrested|charged with|lawsuit|sued|scam\w*|embezzl\w*|misconduct|dishonest\w*|cover[ -]?up|abused? by|accused of|allegedly)\b")

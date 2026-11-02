@@ -1,6 +1,9 @@
 """AI generated, photorealistic images of the page subject (added 23 Oct 2026). No people, no news events.
 Files: img/ai-<slug>-960.webp and -480.webp (3:2). Generated with the Grok Bot image tool, originals in /workspace/animal-sites/big-cats/ai/.
-Placed after the Nth </section> of the page body (after=2 by default). Each carries a small visible "AI-generated image." caption (added 30 Oct 2026), and the credits and about pages disclose AI imagery."""
+Placed after the Nth </section> of the page body (after=2 by default). Each carries a small visible "AI-generated image." caption (added 30 Oct 2026), and the credits and about pages disclose AI imagery.
+Joshua's rule, 2 Nov 2026 (overrides older image rules): every new article gets this hero image plus, ideally, a
+second AI image further down the body (AI2 dict). The hero image also serves as the article's card thumbnail on
+the blog index and the home page's "Latest from the blog" list (post_thumb())."""
 import html, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,6 +35,12 @@ AI = {
  "blog/what-do-lions-eat.html": dict(slug="lions-shade", alt="A pride of lionesses and cubs resting together in the shade of an acacia tree"),
  "blog/how-often-do-lion-hunts-succeed.html": dict(slug="home-lioness-savanna", alt="A lioness walking through golden grass on the African savanna at sunrise, with acacia trees behind her"),
  "blog/why-do-leopards-drag-their-kills-into-trees.html": dict(slug="leopard-larder-tree", alt="A leopard lying on a tree branch above a carcass wedged in the fork of the tree"),
+ "blog/how-long-do-big-cats-live.html": dict(slug="lion-elderly-rest", alt="An elderly wild lioness with a grizzled, scarred face resting in golden grassland, with acacia trees in the distance"),
+}
+# Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second
+# image where it makes sense). Same file and caption convention as AI; placed at its own `after` position.
+AI2 = {
+ "blog/how-long-do-big-cats-live.html": dict(slug="tiger-captive-habitat", alt="A healthy adult tiger resting on a grassy bank in a spacious, naturalistic zoo habitat with a shallow pool and no visible fencing", after=6),
 }
 # image cards on the home page tiles: href -> thumbnail slug
 TILE_THUMBS = {
@@ -50,8 +59,7 @@ TILE_ALT = {
 def have(slug):
     return all(os.path.exists(os.path.join(ROOT, "img", "ai-%s-%d.webp" % (slug, w))) for w in (480, 960))
 
-def ai_html(path, rel):
-    p = AI.get(path)
+def _fig_html(p, rel):
     if not p or not have(p["slug"]):
         return ""
     s = rel + "img/ai-" + p["slug"]
@@ -63,15 +71,34 @@ def ai_html(path, rel):
     return ('<figure class="photo ai"><img src="%s-960.webp" srcset="%s-480.webp 480w, %s-960.webp 960w" sizes="(max-width: 1000px) 94vw, 940px" '
             'width="960" height="640" alt="%s" loading="lazy" decoding="async">%s</figure>') % (s, s, s, html.escape(p["alt"]), cap)
 
-def insert_ai(body, path, rel):
-    fig = ai_html(path, rel)
+def ai_html(path, rel):
+    return _fig_html(AI.get(path), rel)
+
+def _insert_after(body, n, fig):
     if not fig:
         return body
-    n = AI[path].get("after", 2)
     parts = body.split("</section>")
     if len(parts) <= n:
         return body + fig
     return "</section>".join(parts[:n]) + "</section>" + fig + "</section>".join(parts[n:])
+
+def insert_ai(body, path, rel):
+    p = AI.get(path)
+    body = _insert_after(body, p.get("after", 2), _fig_html(p, rel)) if p else body
+    # second, optional AI image further down the article (Joshua's rule, 2 Nov 2026)
+    p2 = AI2.get(path)
+    if p2:
+        body = _insert_after(body, p2.get("after", 6), _fig_html(p2, rel))
+    return body
+
+def post_thumb(path, rel=""):
+    """Small card thumbnail for a blog post's AI image, used on the blog index and the home 'Latest from the blog' list."""
+    p = AI.get(path)
+    if not p or not have(p["slug"]):
+        return ""
+    base = rel + "img/ai-" + p["slug"]
+    return ('<img src="%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">'
+            '<span class="ailabel">AI-generated image.</span>') % (base, html.escape(p["alt"]))
 
 def tile_thumb(href, rel=""):
     slug = TILE_THUMBS.get(href)

@@ -23,10 +23,10 @@ add("compare.html", "Big Cat Comparison Table: Size, Range, Status & Population 
     "Compare lions, tigers, leopards, jaguars, cheetahs and snow leopards side by side: weight, length, range, habitat, social life, roaring, IUCN status and numbers.",
     "Big cat comparison: size, range, status and population",
     lead="The tiger is the largest big cat, the lion is the only social one, the leopard has the widest range, the jaguar is the only big cat in the Americas, the cheetah is the fastest, and the snow leopard lives highest. The table below compares all six on size, range, habitat, social life, voice, IUCN Red List status and the latest population estimates.",
-    modified="2026-10-24", headline="Big cat comparison table",
+    modified="2026-11-02", headline="Big cat comparison table",
     body=jump([("table", "Comparison table"), ("biggest", "Biggest"), ("which-roar", "Which roar"), ("tell-apart", "Spotted cats"), ("status", "Status ranking"), ("definition", "What is a big cat")]) +
     '<section class="card" id="table"><h2>Big cat comparison table</h2><p>Weights and lengths are the full ranges listed by the IUCN SSC Cat Specialist Group for each species, covering both sexes and all populations. Tap a species name for its full profile.</p>' + table +
-    '<p class="note">Population figures come from the most recent IUCN Cat Specialist Group summaries cited on each species page. They are estimates with wide uncertainty, and the counting methods differ between species, so compare them with care.</p></section>' +
+    '<p class="note">Population figures come from the most recent IUCN Cat Specialist Group summaries cited on each species page. They are estimates with wide uncertainty, and the counting methods differ between species, so compare them with care. For how long each species lives in the wild and in zoos, see <a href="blog/how-long-do-big-cats-live.html">how long do big cats live?</a></p></section>' +
     '''<section class="card" id="biggest"><h2>Which big cat is the biggest?</h2>
 <p>The tiger is the largest, at up to about 325 kg. The lion is second, and the largest male lions overlap with smaller tigers. The jaguar is third and the largest cat in the Americas. Leopards, snow leopards and cheetahs are much lighter, though a big male leopard can outweigh a cheetah. The cheetah is built light for speed rather than power.</p></section>
 <section class="card" id="which-roar"><h2>Which big cats roar?</h2>
@@ -41,14 +41,14 @@ add("compare.html", "Big Cat Comparison Table: Size, Range, Status & Population 
 <p>On the IUCN Red List the tiger is the only one of the six listed as Endangered at species level. Lion, leopard, cheetah and snow leopard are Vulnerable, and the jaguar is Near Threatened. Species level labels hide serious local crises, though: the Asiatic cheetah in Iran and the Indochinese leopard are Critically Endangered, and the northern lion subspecies is Endangered. See <a href="conservation.html">big cat conservation</a> and <a href="blog/how-many-big-cats-are-left.html">how many big cats are left</a>.</p></section>
 <section class="card" id="definition"><h2>What counts as a big cat?</h2>
 <p>Strictly, "big cats" means the five members of the genus <i>Panthera</i>: lion, tiger, leopard, jaguar and snow leopard. In everyday use the cheetah is usually included, and sometimes the puma (cougar) and clouded leopards too. This site covers the five <i>Panthera</i> species plus the cheetah.</p></section>''',
-    related=SP + [("Big cat FAQ", "faq.html")], sources=ALLCSG + [DURANT] + [RL[k] for k in ("lion", "tiger", "leopard", "jaguar", "cheetah", "snow")], priority="1.0")
+    related=SP + [("Big cat FAQ", "faq.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")], sources=ALLCSG + [DURANT] + [RL[k] for k in ("lion", "tiger", "leopard", "jaguar", "cheetah", "snow")], priority="1.0")
 
 # ------------------------------------------------------------------ BEHAVIOR
 add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territory | BigCatWise",
     "How big cats behave: who lives in groups and who lives alone, how each species hunts, how they communicate by roaring and scent marking, and how cubs grow up.",
     "Big cat behavior: hunting, social life and communication",
     lead="Most big cats are solitary, territorial hunters that rely on stealth and ambush. The lion is the exception, living in prides, and the cheetah is the odd one out as a daytime sprinter. All of them communicate over long distances with scent marks and calls, and mothers raise cubs alone for a year or two.",
-    modified="2026-10-18", headline="Big cat behavior",
+    modified="2026-11-02", headline="Big cat behavior",
     body=jump([("social", "Social life"), ("hunting", "Hunting styles"), ("communication", "Communication"), ("territory", "Territories"), ("cubs", "Cubs"), ("activity", "Activity")]) +
     '''<section class="card" id="social"><h2>Do big cats live in groups?</h2>
 <p>Only lions live in stable social groups. A pride is built around related females, with an average of four to six adult lionesses in Africa, plus their cubs and one or more resident males. Male lions and male cheetahs often form coalitions, frequently of brothers, which helps them win and hold territory. Tigers, leopards, jaguars and snow leopards are solitary as adults; males and females meet mainly to mate, and mothers raise cubs on their own.</p></section>
@@ -79,10 +79,10 @@ add("behavior.html", "Big Cat Behavior: Hunting, Social Life, Roaring & Territor
 <li><b>Cheetah:</b> territorial males hold small territories averaging about 30 km&sup2;, while non territorial cheetahs can roam over thousands of square kilometres.</li></ul>
 <p>Deep dives: <a href="blog/how-big-is-a-tigers-territory.html">how big is a tiger's territory?</a> compares radio collar studies from Russia, Thailand and Bangladesh, and <a href="blog/why-do-lions-live-in-prides.html">why do lions live in prides?</a> explains how pride size helps lions win territorial contests.</p></section>
 <section class="card" id="cubs"><h2>How do big cats raise their cubs?</h2>
-<p>Cubs are born blind and helpless after a pregnancy of roughly three to three and a half months (about 103 days in tigers, 90 to 105 days in leopards). Litters are usually one to four or five cubs, and cheetahs can have up to six. Mothers hide young cubs and move them between dens. Cubs learn to hunt by watching and practising for many months; young tigers become independent at about 18 to 28 months. Cub mortality is high: in Chitwan about a third of tiger cubs die in their first year, with infanticide by males a leading cause.</p></section>
+<p>Cubs are born blind and helpless after a pregnancy of roughly three to three and a half months (about 103 days in tigers, 90 to 105 days in leopards). Litters are usually one to four or five cubs, and cheetahs can have up to six. Mothers hide young cubs and move them between dens. Cubs learn to hunt by watching and practising for many months; young tigers become independent at about 18 to 28 months. Cub mortality is high: in Chitwan about a third of tiger cubs die in their first year, with infanticide by males a leading cause. For cats that survive to adulthood, lifespan then varies a lot by species and by whether they live wild or in a zoo; see <a href="blog/how-long-do-big-cats-live.html">how long do big cats live?</a></p></section>
 <section class="card" id="activity"><h2>Are big cats nocturnal?</h2>
 <p>Most big cats are most active from dusk to dawn, and they rest for much of the day. Activity shifts with heat, prey and people: leopards in undisturbed Gabonese rainforest were found to be largely active by day, while cats near people tend to become more nocturnal. The cheetah is the clear exception, hunting mainly in daylight, which helps it avoid lions and hyenas.</p></section>''',
-    related=SP + [("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("Big cat adaptations lesson plan", "teachers/big-cat-adaptations-lesson-plan.html"), ("Where big cats live", "habitats.html"), ("Big cat glossary", "glossary.html")],
+    related=SP + [("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Why do leopards drag their kills into trees?", "blog/why-do-leopards-drag-their-kills-into-trees.html"), ("What do snow leopards eat?", "blog/what-do-snow-leopards-eat.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html"), ("Big cat adaptations lesson plan", "teachers/big-cat-adaptations-lesson-plan.html"), ("Where big cats live", "habitats.html"), ("Big cat glossary", "glossary.html")],
     sources=ALLCSG + [WILSON, SDZ["lion"]], priority="0.8")
 
 # ------------------------------------------------------------------ HABITATS
@@ -189,14 +189,14 @@ FAQ = [
  ("Is the snow leopard a leopard?", "No. It is a separate species, Panthera uncia. Genetic studies suggest its closest living relative is the tiger."),
  ("Do snow leopards have low genetic diversity?", 'Yes. Whole genome studies published in 2025 found that snow leopards have the lowest genetic diversity of any big cat species, mainly because their population has been small throughout their evolutionary history. The most harmful mutations appear to have been purged. See <a href="blog/why-do-snow-leopards-have-low-genetic-diversity.html">why snow leopards have such low genetic diversity</a>.'),
  ("Can big cats purr?", "Cheetahs purr. Whether the roaring cats truly purr is debated, and they generally do not purr continuously the way domestic cats do."),
- ("How long do big cats live?", "In the wild most live about 10 to 15 years, with ranges for each species listed on its profile page. Lifespans in zoos are often longer."),
+ ("How long do big cats live?", 'In the wild most live about 10 to 15 years, with ranges for each species listed on its profile page. Lifespans in zoos are often longer, sometimes by a decade or more. See <a href="blog/how-long-do-big-cats-live.html">how long do big cats live? Wild vs captivity, by species</a> for the full species by species breakdown.'),
  ("Are big cats dangerous to people?", "They can be. Attacks on people do happen but are uncommon, and most big cats avoid people. Conflicts are more often about livestock. Follow local guidance in big cat areas and never approach a wild cat."),
 ]
 add("faq.html", "Big Cat FAQ: Myths, Records & Quick Answers | BigCatWise",
     "Quick, sourced answers to common big cat questions: which cats count as big cats, the biggest and fastest, black panthers, white tigers, roaring and more.",
     "Big cat FAQ: quick answers and common myths",
     lead="Short answers to the questions people ask most about lions, tigers, leopards, jaguars, cheetahs and snow leopards, including the common myths. Each answer links to a fuller explanation elsewhere on the site.",
-    kind="article", modified="2026-10-21", headline="Big cat FAQ",
+    kind="article", modified="2026-11-02", headline="Big cat FAQ",
     body='<section class="card"><h2>Myths vs facts</h2><ul><li class="myth">Myth: lions are the king of the jungle.</li><li class="fact">Fact: lions live in savanna and open woodland, not rainforest. <a href="lion.html#range">Lion range</a></li><li class="myth">Myth: black panthers are their own species.</li><li class="fact">Fact: they are melanistic leopards or jaguars. <a href="leopard.html#black">Black panthers</a></li><li class="myth">Myth: tigers live in Africa.</li><li class="fact">Fact: wild tigers live only in Asia. <a href="tiger.html#range">Tiger range</a></li><li class="myth">Myth: every big cat roars.</li><li class="fact">Fact: snow leopards and cheetahs cannot roar. <a href="blog/which-big-cats-can-roar.html">Which cats roar</a></li></ul></section>',
     faq=FAQ, related=SP + [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Compare big cats", "compare.html"), ("Big cat glossary", "glossary.html")],
     sources=ALLCSG + [WILSON, KLEMUK], priority="0.8")
@@ -224,6 +224,7 @@ GL = [("Apex predator", "A predator at the top of its food chain with no natural
  ("Infanticide", 'The killing of dependent young by an animal that is not their parent. In lions and leopards it is mostly done by males taking over, to bring mothers back into breeding condition sooner; see <a href="blog/why-do-male-lions-kill-cubs.html">why do male lions kill cubs?</a>'),
  ("IUCN Red List", "The global list of species' extinction risk. Categories include Least Concern, Near Threatened, Vulnerable, Endangered, Critically Endangered, Extinct in the Wild and Extinct."),
  ("Kleptoparasitism", "Stealing food that another animal has caught. Spotted hyenas often steal kills from leopards and cheetahs, and lions also steal cheetah kills."),
+ ("Longevity", 'How long an animal typically lives. Big cats usually live longer in zoos than in the wild, where predation, fighting and hunting by people shorten lifespans; see <a href="blog/how-long-do-big-cats-live.html">how long do big cats live?</a>'),
  ("Mature individuals", "Adults capable of breeding. Red List population figures often count only these, so they are lower than total counts."),
  ("Melanism", "A genetic variation causing very dark fur. Melanistic leopards and jaguars are called black panthers."),
  ("Panthera", "The genus of roaring cats: lion, tiger, leopard, jaguar and snow leopard."),
@@ -232,6 +233,7 @@ GL = [("Apex predator", "A predator at the top of its food chain with no natural
  ("Rosette", "A rose shaped cluster of dark spots, typical of leopards, jaguars and snow leopards."),
  ("Scat analysis", "Working out what an animal eats from the hair, bone and DNA in its droppings (scats). Most snow leopard diet studies use it."),
  ("Scrape", "A mark made by scraping the ground with the hind feet, often with urine or scent, to signal presence."),
+ ("Senescence", "The gradual decline in physical condition with age. Comparative studies find zoo living mammals, including big cats, often show slower senescence and longer lifespans than their wild counterparts."),
  ("Semi retractable claws", "Claws that cannot be fully pulled in, as in the cheetah, giving extra grip when running."),
  ("Stress hyperthermia", "A rise in body temperature driven by stress or high sympathetic nervous system activity, not by exercise. Free living cheetahs showed a larger temperature rise after a kill than after a failed chase."),
  ("Biologging", "Recording an animal's physiology or movement with attached or implanted loggers, such as body temperature and activity sensors on free living cheetahs."),
@@ -246,7 +248,7 @@ add("glossary.html", "Big Cat Glossary: Terms Explained Simply | BigCatWise",
     "Plain English definitions of big cat terms: pride, coalition, rosette, melanism, flehmen response, IUCN Red List categories, CITES appendices and more.",
     "Big cat glossary",
     lead="Definitions of the terms you will meet when reading about big cats, from pride and rosette to IUCN Red List categories and CITES appendices.",
-    kind="page", modified="2026-10-21", headline="Big cat glossary",
+    kind="page", modified="2026-11-02", headline="Big cat glossary",
     body='<section class="card"><dl>' + "".join('<dt id="%s">%s</dt><dd>%s</dd>' % (t.lower().replace(" ", "-"), t, d) for t, d in GL) + '</dl></section>',
     related=SP + [("Big cat FAQ", "faq.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("Big cat vocabulary list for kids", "teachers/big-cat-vocabulary.html")], sources=[IUCN] + ALLCSG[:2], priority="0.6")
 
@@ -255,7 +257,7 @@ import content3  # noqa  ID guide
 from blog import POSTS
 
 # ------------------------------------------------------------------ HOME
-from aiphotos import tile_thumb  # noqa: E402
+from aiphotos import tile_thumb, post_thumb  # noqa: E402
 tiles = "".join('<a class="tile" href="%s">%s<h3>%s</h3><p>%s</p></a>' % (t[0], tile_thumb(t[0]), t[1], t[2]) for t in [
  ("lion.html", "Lion", "The only social big cat"), ("tiger.html", "Tiger", "The largest cat on Earth"),
  ("leopard.html", "Leopard", "The most widespread big cat"), ("jaguar.html", "Jaguar", "Big cat of the Americas"),
@@ -263,7 +265,7 @@ tiles = "".join('<a class="tile" href="%s">%s<h3>%s</h3><p>%s</p></a>' % (t[0], 
  ("which-big-cat-is-it.html", "Which big cat is it?", "ID guide and big cats by region"), ("compare.html", "Compare all six", "Size, range, status, numbers"), ("behavior.html", "Behavior", "Hunting, prides, roaring"),
  ("habitats.html", "Habitats", "Where each species lives"), ("conservation.html", "Conservation", "Threats and what helps"),
  ("games/index.html", "Big cat games", "Three free fact based games"), ("teachers/index.html", "For teachers", "Free printables and lesson plans"), ("research/index.html", "Research", "The papers behind our facts"), ("faq.html", "FAQ and myths", "Quick answers"), ("glossary.html", "Glossary", "Terms explained"), ("blog/index.html", "Blog", "Answers to big cat questions")])
-posts = "".join('<li><a href="blog/%s">%s</a></li>' % (p.path.split("/")[1], p.headline or p.h1) for p in POSTS)
+posts = "".join('<a class="tile" href="blog/%s">%s<h3>%s</h3></a>' % (p.path.split("/")[1], post_thumb(p.path), p.headline or p.h1) for p in reversed(POSTS))
 add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
     "BigCatWise is a sourced guide to big cats: lions, tigers, leopards, jaguars, cheetahs and snow leopards. Species facts, behavior, habitats and conservation.",
     "Big cat facts: lions, tigers, leopards, jaguars, cheetahs and snow leopards", kind="home",
@@ -278,7 +280,7 @@ add("index.html", "BigCatWise: Big Cat Facts on Lions, Tigers, Leopards & More",
 <li>The <a href="cheetah.html">cheetah</a> is the fastest land animal; wild cheetahs have been measured at 93 km/h.</li>
 <li>The <a href="snow-leopard.html">snow leopard</a> lives at 3,000 to 5,000 m and cannot roar.</li>
 <li>All six are listed on the IUCN Red List as Near Threatened or worse. See <a href="conservation.html">conservation</a>.</li></ul></section>
-<section class="card"><h2>Latest from the blog</h2><ul>''' + posts + '''</ul></section>''',
+<section class="card"><h2>Latest from the blog</h2><div class="grid">''' + posts + '''</div></section>''',
     priority="1.0")
 
 # ------------------------------------------------------------------ TRUST PAGES

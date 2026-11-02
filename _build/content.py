@@ -17,7 +17,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
     "Lion facts in plain English: how prides work, who does the hunting, where wild lions live today, how many are left and why the species is Vulnerable.",
     "Lion facts: prides, hunting, habitat and conservation status",
     lead="The lion (<i>Panthera leo</i>) is the only truly social big cat. Wild lions live in prides built around related females, mainly in sub-Saharan Africa, with one small population in and around Gir forest in western India. The species is listed as Vulnerable on the IUCN Red List, and the IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025.",
-    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-10-24",
+    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-11-02",
     body=jump([("facts", "Quick facts"), ("appearance", "Appearance"), ("pride", "Pride life"), ("hunting", "Hunting"),
                ("roar", "Roaring"), ("range", "Where lions live"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera leo</i>"), ("Weight", "110 to 272 kg (males are much heavier than females)"),
@@ -47,7 +47,7 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
          ("Where do lions live besides Africa?", "The only wild lions outside Africa live in and around Gir forest in Gujarat, western India. They belong to the northern subspecies <i>Panthera leo leo</i>."),
          ("How many lions are left in the wild?", "The IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025, plus about 670 adult and subadult Asiatic lions counted in India in 2020."),
          ("Do lions really live in the jungle?", "No. Lions prefer savanna, grassland and open woodland. The nickname king of the jungle is a figure of speech, not a description of their habitat.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html")] + SPECIES_REL,
+    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
     sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], RL["lion"]], priority="0.9")
 
 # ------------------------------------------------------------------ TIGER
@@ -55,7 +55,7 @@ add("tiger.html", "Tiger Facts: Size, Stripes, Range & How Many Are Left | BigCa
     "Tiger facts: the largest cat, why stripes are unique, where wild tigers survive, what they hunt and the latest IUCN population estimate.",
     "Tiger facts: size, stripes, range and conservation status",
     lead="The tiger (<i>Panthera tigris</i>) is the largest living cat, weighing 75 to 325 kg depending on population and sex. It is a solitary, mostly forest dwelling ambush hunter found only in Asia, in ten countries from India to the Russian Far East. Listed as Endangered, it numbered an estimated 3,726 to 5,578 wild individuals (excluding cubs) in the latest IUCN assessment.",
-    crumbs=[("Species", "compare.html")], modified="2026-10-24", headline="Tiger facts",
+    crumbs=[("Species", "compare.html")], modified="2026-11-02", headline="Tiger facts",
     body=jump([("facts", "Quick facts"), ("stripes", "Stripes"), ("subspecies", "Subspecies"), ("life", "Daily life"),
                ("hunting", "Hunting"), ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera tigris</i>"), ("Weight", "75 to 325 kg"),
@@ -83,7 +83,7 @@ add("tiger.html", "Tiger Facts: Size, Stripes, Range & How Many Are Left | BigCa
          ("What do tigers eat?", "Mainly large hoofed mammals. A review of 32 prey species found wild boar and sambar deer are significantly preferred, with preferred prey weighing about 60 to 250 kg (Hayward et al. 2012). Chital, gaur and hog deer are also common prey."),
          ("How many wild tigers are there?", "The latest IUCN assessment estimated 3,726 to 5,578 wild tigers excluding cubs, with about 3,140 mature individuals.")],
     related=[("Lion facts", "lion.html"), ("Leopard facts", "leopard.html"), ("Snow leopard facts", "snow-leopard.html"),
-             ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html")] + SPECIES_REL,
+             ("Why do tigers have stripes?", "blog/why-do-tigers-have-stripes.html"), ("Are tigers nocturnal?", "blog/are-tigers-nocturnal.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
     sources=[CSG["tiger"], WWF["tiger"], NZP["tiger"], SDZ["tiger"], PAN["tiger"], RL["tiger"]], priority="0.9")
 
 # ------------------------------------------------------------------ LEOPARD
@@ -91,7 +91,7 @@ add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | 
     "Leopard facts: the most widespread big cat, how leopards hunt and cache prey in trees, what a black panther is, and why the leopard is Vulnerable.",
     "Leopard facts: range, rosettes, hunting and black panthers",
     lead="The leopard (<i>Panthera pardus</i>) is the most widespread and adaptable big cat, found across much of sub-Saharan Africa and parts of Asia from the Middle East to the Russian Far East. It is a solitary stalker that often hauls kills into trees, and a melanistic (black) leopard is what many people call a black panther. The leopard is listed as Vulnerable on the IUCN Red List.",
-    crumbs=[("Species", "compare.html")], headline="Leopard facts", modified="2026-11-01",
+    crumbs=[("Species", "compare.html")], headline="Leopard facts", modified="2026-11-02",
     body=jump([("facts", "Quick facts"), ("look", "Appearance"), ("black", "Black panthers"), ("hunting", "Hunting"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera pardus</i>"), ("Weight", "17 to 90 kg"),
@@ -115,7 +115,7 @@ add("leopard.html", "Leopard Facts: Range, Rosettes, Hunting & Black Panthers | 
          ("Why do leopards drag prey into trees?", "Hoisting a kill into a tree keeps it away from lions, hyenas and other competitors so the leopard can feed over several days."),
          ("Where do leopards live?", "Leopards live across most of sub-Saharan Africa and in scattered parts of Asia, from the Middle East and Caucasus to India, Southeast Asia, China and the Russian Far East.")],
     related=[("Jaguar facts", "jaguar.html"), ("Cheetah facts", "cheetah.html"), ("Snow leopard facts", "snow-leopard.html"),
-             ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html")] + SPECIES_REL,
+             ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Can leopards live near people?", "blog/can-leopards-live-near-people.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
     sources=[CSG["leopard"], SDZ["leopard"], PAN["leopard"], WWF["amur"], RL["leopard"]], priority="0.9")
 
 # ------------------------------------------------------------------ JAGUAR
@@ -123,7 +123,7 @@ add("jaguar.html", "Jaguar Facts: Bite, Swimming, Range & Status | BigCatWise",
     "Jaguar facts: the largest cat in the Americas, its skull piercing bite, love of water, rosettes with central spots, range and Near Threatened status.",
     "Jaguar facts: bite, swimming, range and conservation status",
     lead="The jaguar (<i>Panthera onca</i>) is the largest cat in the Americas and the only big cat that regularly kills prey by biting through the skull. It ranges from Mexico to northern Argentina, is a strong swimmer that hunts caiman and fish, and is listed as Near Threatened on the IUCN Red List, with most jaguars living in the Amazon.",
-    crumbs=[("Species", "compare.html")], headline="Jaguar facts", modified="2026-10-30",
+    crumbs=[("Species", "compare.html")], headline="Jaguar facts", modified="2026-11-02",
     body=jump([("facts", "Quick facts"), ("look", "Appearance"), ("bite", "Bite and hunting"), ("water", "Water"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera onca</i>"), ("Weight", "36 to 148 kg"),
@@ -144,7 +144,7 @@ add("jaguar.html", "Jaguar Facts: Bite, Swimming, Range & Status | BigCatWise",
     faq=[("Is a jaguar bigger than a leopard?", "Generally yes. Jaguars are stockier and heavier, at 36 to 148 kg against 17 to 90 kg for leopards, although sizes overlap and vary by region."),
          ("Do jaguars live in Africa?", "No. Wild jaguars live only in the Americas, from Mexico to northern Argentina. The spotted big cat of Africa is the leopard."),
          ("Can jaguars swim?", "Yes. Jaguars are excellent swimmers and hunt fish, capybaras and caiman in rivers and wetlands.")],
-    related=[("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("What do jaguars eat?", "blog/what-do-jaguars-eat.html")] + SPECIES_REL,
+    related=[("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("What do jaguars eat?", "blog/what-do-jaguars-eat.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
     sources=[CSG["jaguar"], WWF["jaguar"], SDZ["jaguar"], PAN["jaguar"], RL["jaguar"]], priority="0.9")
 
 # ------------------------------------------------------------------ CHEETAH
@@ -152,7 +152,7 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
     "Cheetah facts: how fast cheetahs really run, why they cannot roar, how they hunt by day, where they live and why only about 6,500 mature adults remain.",
     "Cheetah facts: speed, hunting, range and conservation status",
     lead="The cheetah (<i>Acinonyx jubatus</i>) is the fastest land animal, a slender daytime hunter of open country that sprints in short bursts after gazelles and impala. It is not a roaring cat and sits outside the genus <i>Panthera</i>. Listed as Vulnerable, it numbers roughly 6,500 mature individuals, mostly in southern and eastern Africa, plus a critically endangered remnant in Iran.",
-    crumbs=[("Species", "compare.html")], headline="Cheetah facts", modified="2026-10-26",
+    crumbs=[("Species", "compare.html")], headline="Cheetah facts", modified="2026-11-02",
     body=jump([("facts", "Quick facts"), ("speed", "Speed"), ("body", "Built for speed"), ("hunting", "Hunting"),
                ("social", "Social life"), ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Acinonyx jubatus</i>"), ("Weight", "23 to 65 kg"),
@@ -181,7 +181,7 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
          ("Do lions kill cheetahs?", 'Yes. Lions and spotted hyenas kill cheetah cubs and sometimes adults, and often steal cheetah kills. Cheetahs cope mainly by avoiding them; see <a href="blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html">how cheetahs live alongside lions and hyenas</a>.'),
          ("Do cheetahs abandon hunts because they overheat?", 'No. Free living cheetahs in Namibia ended chases at about 38.4&deg;C, within their normal daily range. Heat rises more after a kill than during the sprint; see <a href="blog/do-cheetahs-abandon-hunts-because-they-overheat.html">the research summary</a>.'),
          ],
-    related=[("Leopard facts", "leopard.html"), ("Lion facts", "lion.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Cheetah worksheet for 3rd grade", "teachers/cheetah-worksheet-3rd-grade.html")] + SPECIES_REL,
+    related=[("Leopard facts", "leopard.html"), ("Lion facts", "lion.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Cheetah worksheet for 3rd grade", "teachers/cheetah-worksheet-3rd-grade.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
     sources=[CSG["cheetah"], DURANT, WILSON, NZP["cheetah"], WWF["cheetah"], SDZ["cheetah"], PAN["cheetah"], RL["cheetah"]], priority="0.9")
 
 # ------------------------------------------------------------------ SNOW LEOPARD
@@ -189,7 +189,7 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
     "Snow leopard facts: how this mountain cat survives at 3,000 to 5,000 m, why it cannot roar, what it eats, where it lives and how many remain.",
     "Snow leopard facts: adaptations, range, diet and status",
     lead="The snow leopard (<i>Panthera uncia</i>) is a big cat of the high mountains of Central and South Asia, usually living between 3,000 and 5,000 m. It has thick smoky grey fur, huge paws and an exceptionally long tail, and unlike its relatives it cannot roar. It is listed as Vulnerable, with the latest estimate at about 7,400 to 8,000 individuals.",
-    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-10-24",
+    crumbs=[("Species", "compare.html")], headline="Snow leopard facts", modified="2026-11-02",
     body=jump([("facts", "Quick facts"), ("adapt", "Adaptations"), ("voice", "Voice"), ("diet", "Diet"),
                ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera uncia</i>"), ("Weight", "30 to 50 kg"),
@@ -215,7 +215,7 @@ add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status 
          ("Can snow leopards roar?", "No. Their vocal folds lack the tissue needed for a deep roar, so they yowl and make other calls instead."),
          ("Do snow leopards have low genetic diversity?", "Yes. Genome studies published in 2025 found snow leopards have the lowest genetic diversity of any big cat, mainly because their population has stayed small over their evolutionary history rather than only because of recent inbreeding."),
          ("How many snow leopards are there?", "The most recent estimate cited by the IUCN Cat Specialist Group is 7,446 to 7,996 individuals, of which 2,710 to 3,386 are mature adults.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Why do snow leopards have such low genetic diversity?", "blog/why-do-snow-leopards-have-low-genetic-diversity.html")] + SPECIES_REL,
+    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Why do snow leopards have such low genetic diversity?", "blog/why-do-snow-leopards-have-low-genetic-diversity.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
     sources=[CSG["snow"], WWF["snow"], SLT, SDZ["snow"], PAN["snow"], RL["snow"]], priority="0.9")
 
 import content2  # noqa  other pages and blog

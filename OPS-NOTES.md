@@ -1,6 +1,6 @@
 # BigCatWise ops notes (Big Cat Site Bot)
 
-Last updated 24 Oct 2026.
+Last updated 2 Nov 2026.
 
 ## Where things are
 - Repo: https://github.com/joshuaofisrael/bigcatwise (public). Local clone: /workspace/bigcatwise
@@ -89,3 +89,10 @@ Contrast ratios (WCAG, all AA 4.5:1 or better):
 - JSON-LD publisher/author = BigCatWise, with parentOrganization Joshua Israel Ventures LLC (structured data only). No email in JSON-LD. The email address appears only on privacy and disclaimer; other pages point to the contact form. Cite boxes no longer name the LLC.
 - Internal links now point at directory URLs (./, blog/, games/...) instead of .../index.html, matching canonicals (render() post-process).
 - IUCN statuses now carry the year assessed (species fact tables, compare, conservation) with DOI links to the current assessments (sources.RL, RL_YEAR). Checked on iucnredlist.org "Date assessed" 24 Oct 2026: lion VU 2025, tiger EN 2021 (pub 2022), leopard VU 2023 (pub 2025), jaguar NT 2016 (pub 2017), cheetah VU 2021 (pub 2024), snow leopard VU 2016 (pub 2017). Re-check when a new assessment is published (jaguar expected ~2027).
+
+## 2026-11-02 daily article, two-image rule, post thumbnails
+- Daily article: https://bigcatwise.com/blog/how-long-do-big-cats-live.html ("How long do big cats live? Wild vs captivity, by species"), one row per species (lion, tiger, leopard, jaguar, cheetah, snow leopard). Papers checked on Crossref 2 Nov 2026: Packer 2010 (10.1016/j.cub.2010.05.003), Goodrich et al. 2008 (10.1111/j.1469-7998.2008.00458.x), Swanepoel et al. 2014 (10.1017/S0030605313001282, corrects an earlier internal note that misattributed this leopard survival study to Balme et al. 2015), Fragoso et al. 2023 (10.1093/jmammal/gyac123), Monterrubio-Rico et al. 2024 (10.1515/mammalia-2024-0043), Kelly et al. 1998 (10.1111/j.1469-7998.1998.tb00053.x), Tidiere et al. 2016 (10.1038/srep36361). Linked from all six species pages, compare.html, behavior.html, faq.html (updated the existing FAQ entry), glossary.html (added Longevity, Senescence) and research/index.html (new "Lifespan, longevity and ageing" topic in edu.py PAPERS).
+- Joshua's rule (2 Nov 2026, overrides the older one-image-per-page convention): every new article gets a photoreal AI hero image at the top AND, where it makes sense, a second AI image further down the body. The hero image doubles as the article's card thumbnail on the blog index and the home "Latest from the blog" list.
+- `_build/aiphotos.py`: added `AI2` dict (second image per page, own `after=` position, same file/caption convention as `AI`), refactored `ai_html()`/`insert_ai()` to share a `_fig_html()`/`_insert_after()` helper so a page can take one or two figures, and added `post_thumb(path, rel="")` for a small card thumbnail (480w image + "AI-generated image." label). Registered `AI2.values()` in `_build/legal_gate.py`'s `licensed_images()` alongside `AI.values()`, since rule 3 (image rights record) checks that set.
+- Blog index (`_build/blog.py`) and the home page's "Latest from the blog" tiles (`_build/content2.py`) now call `post_thumb()`, which surfaced thumbnails for every existing post that already had an `AI` entry, not just today's: fixed a path bug where `post_thumb()` always wrote `img/ai-...` with no `rel` prefix, which was correct for the home page (root) but broken (missing `../`) for blog/index.html one level down.
+- Today's new AI images: lion-elderly-rest (hero, after section 2) and tiger-captive-habitat (second image, after section 6). Masters in /workspace/animal-sites/big-cats/ai/, og image img/og/lion-elderly-rest.jpg via make_og.py.

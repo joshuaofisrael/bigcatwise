@@ -1,6 +1,7 @@
 """Teachers hub, printables, lesson pages, research roundup and photo credits (8 Oct 2026)."""
 from build import add, BASE_URL, PUBLISHER
-from sources import CSG, WILSON, DURANT, KLEMUK, WEISS, FENNELL, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011
+from sources import (CSG, WILSON, DURANT, KLEMUK, WEISS, FENNELL, PACKER1990, PACKER1991, HEINSOHN1995, GOODRICH2010, SIMCHAROEN2014, BARLOW2011,
+                     PACKER2010LION, GOODRICH2008TIGER, SWANEPOEL2014LEOPARD, FRAGOSO2023JAGUAR, MONTERRUBIO2024JAGUAR, KELLY1998CHEETAH, TIDIERE2016)
 from photos import PHOTOS_LIST, credit_line, have
 
 TC = [("Teachers", "teachers/index.html")]
@@ -399,6 +400,14 @@ PAPERS = [
   ("Wilson, A. M., Lowe, J. C., Roskilly, K., Hudson, P. E., Golabek, K. A., and McNutt, J. W. (2013). Locomotion dynamics of hunting in wild cheetahs. <i>Nature</i>, 498(7453), 185-189.", "10.1038/nature12295", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html", "Do cheetahs abandon hunts because they overheat?")]),
  ("Population status and conservation", [
   ("Durant, S. M., Mitchell, N., Groom, R., et al. (2017). The global decline of cheetah <i>Acinonyx jubatus</i> and what it means for conservation. <i>Proceedings of the National Academy of Sciences</i>, 114(3), 528-533.", "10.1073/pnas.1611122114", "blog/how-many-big-cats-are-left.html", "How many big cats are left?")]),
+ ("Lifespan, longevity and ageing", [
+  ("Packer, C. (2010). Lions. <i>Current Biology</i>, 20(14), R590-R591.", "10.1016/j.cub.2010.05.003", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Goodrich, J. M., Kerley, L. L., Smirnov, E. N., Miquelle, D. G., McDonald, L., Quigley, H. B., Hornocker, M. G., and McDonald, T. (2008). Survival rates and causes of mortality of Amur tigers on and near the Sikhote-Alin Biosphere Zapovednik. <i>Journal of Zoology</i>, 276(4), 323-329.", "10.1111/j.1469-7998.2008.00458.x", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Swanepoel, L. H., Somers, M. J., van Hoven, W., Schiess-Meier, M., Owen, C., Snyman, A., Martins, Q., Senekal, C., Camacho, G., Boshoff, W., and Dalerum, F. (2014). Survival rates and causes of mortality of leopards <i>Panthera pardus</i> in southern Africa. <i>Oryx</i>, 49(4), 595-603.", "10.1017/S0030605313001282", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Fragoso, C. E., Rampim, L. E., Quigley, H., Haberfeld, M., Espindola, S. B., Araujo, G. R., Sartorello, L., and May Junior, J. A. (2023). Unveiling demographic and mating strategies of <i>Panthera onca</i> in the Pantanal, Brazil. <i>Journal of Mammalogy</i>, 104(2), 239-251.", "10.1093/jmammal/gyac123", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Monterrubio-Rico, T. C., Lopez-Ortiz, S., Nunez-Landa, E. A., Soto, J. E., and Charre-Medellin, J. F. (2024). Noteworthy records of survival, longevity and recruitment in a key area for jaguars in Western Mexico. <i>Mammalia</i>, 88(6), 495-499.", "10.1515/mammalia-2024-0043", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Kelly, M. J., Laurenson, M. K., FitzGibbon, C. D., Collins, D. A., Durant, S. M., Frame, G. W., Bertram, B. C. R., and Caro, T. M. (1998). Demography of the Serengeti cheetah (<i>Acinonyx jubatus</i>) population: the first 25 years. <i>Journal of Zoology</i>, 244(4), 473-488.", "10.1111/j.1469-7998.1998.tb00053.x", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Tidiere, M., Gaillard, J.-M., Berger, V., Muller, D. W. H., Lackey, L. B., Gimenez, O., Clauss, M., and Lemaitre, J.-F. (2016). Comparative analyses of longevity and senescence reveal variable survival benefits of living in zoos across mammals. <i>Scientific Reports</i>, 6, 36361.", "10.1038/srep36361", "blog/how-long-do-big-cats-live.html", "How long do big cats live?")]),
 ]
 rb = []
 n = 0
@@ -410,7 +419,7 @@ for topic, items in PAPERS:
     rb.append('</ul></section>')
 add("research/index.html", "Big Cat Research Papers: Sources for Students & Researchers | BigCatWise",
     "Peer reviewed big cat papers behind BigCatWise, grouped by topic with full references and DOIs checked on Crossref. A starting point for school reports.",
-    "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research",
+    "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research", modified="2026-11-02",
     lead="Every BigCatWise fact article cites its sources. This page gathers the peer reviewed papers we rely on in one place, grouped by topic, with full references and DOIs that we have checked against Crossref. It is a good starting point for a school report or a literature search.",
     body='''<section class="card"><h2>How to use this list</h2><ul>
 <li>Click a DOI to open the paper's official page. Many abstracts are free to read; full text may need a library login.</li>
@@ -419,8 +428,8 @@ add("research/index.html", "Big Cat Research Papers: Sources for Students & Rese
 <section class="card"><h2>Reference organisations</h2><ul>
 <li><a href="https://www.catsg.org/" rel="noopener">IUCN SSC Cat Specialist Group</a>: species accounts and status summaries for all wild cats.</li>
 <li><a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List of Threatened Species</a>: official conservation assessments.</li></ul>
-<p class="note">References are formatted in APA style. Each DOI is verified on Crossref when the article that cites it is published (most recently 21 October 2026). If you find a broken link or an error, tell us through our <a href="../contact.html">contact form</a>.</p></section>''',
-    related=[("Teachers hub", "teachers/index.html"), ("Blog", "blog/index.html"), ("Glossary", "glossary.html")],
+<p class="note">References are formatted in APA style. Each DOI is verified on Crossref when the article that cites it is published (most recently 2 November 2026). If you find a broken link or an error, tell us through our <a href="../contact.html">contact form</a>.</p></section>''',
+    related=[("Teachers hub", "teachers/index.html"), ("Blog", "blog/index.html"), ("Glossary", "glossary.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")],
     extra_ld=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Peer reviewed papers cited on BigCatWise", "numberOfItems": n,
                "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "ScholarlyArticle", "sameAs": "https://doi.org/" + d,
                                     "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": d}, "name": __import__("re").sub("<[^>]+>", "", r).split(". ", 1)[0]}}

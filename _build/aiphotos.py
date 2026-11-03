@@ -35,25 +35,27 @@ AI = {
  "blog/what-do-lions-eat.html": dict(slug="lions-shade", alt="A pride of lionesses and cubs resting together in the shade of an acacia tree"),
  "blog/how-often-do-lion-hunts-succeed.html": dict(slug="home-lioness-savanna", alt="A lioness walking through golden grass on the African savanna at sunrise, with acacia trees behind her"),
  "blog/why-do-leopards-drag-their-kills-into-trees.html": dict(slug="leopard-larder-tree", alt="A leopard lying on a tree branch above a carcass wedged in the fork of the tree"),
+ "blog/kazakhstan-releases-second-tiger.html": dict(slug="tiger-release-crate", alt="A tiger stepping out of an open wooden crate into dry reeds beside a river", after=1, cap="AI-generated image. It does not show the real release."),
  "blog/how-long-do-big-cats-live.html": dict(slug="lion-elderly-rest", alt="An elderly wild lioness with a grizzled, scarred face resting in golden grassland, with acacia trees in the distance"),
 }
 # Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second
 # image where it makes sense). Same file and caption convention as AI; placed at its own `after` position.
 AI2 = {
+ "blog/kazakhstan-releases-second-tiger.html": dict(slug="tiger-camera-trap", alt="A camera trap strapped to a tree above large tiger paw prints in riverside mud", after=5, cap="AI-generated image. Camera traps and collars help teams follow released tigers."),
  "blog/how-long-do-big-cats-live.html": dict(slug="tiger-captive-habitat", alt="A healthy adult tiger resting on a grassy bank in a spacious, naturalistic zoo habitat with a shallow pool and no visible fencing", after=6),
 }
 # image cards on the home page tiles: href -> thumbnail slug
 TILE_THUMBS = {
  "lion.html": "lion", "tiger.html": "tiger", "leopard.html": "leopard", "jaguar.html": "jaguar", "cheetah.html": "cheetah",
  "snow-leopard.html": "snow-leopard", "compare.html": "ai-leopard-portrait", "behavior.html": "ai-lions-shade",
- "habitats.html": "ai-habitat-savanna", "conservation.html": "ai-conservation-tigers",
+ "habitats.html": "ai-habitat-savanna", "blog/kazakhstan-releases-second-tiger.html": "ai-tiger-release-crate", "conservation.html": "ai-conservation-tigers",
 }
 TILE_ALT = {
  "lion.html": "A male African lion with a golden mane", "tiger.html": "A Bengal tigress sitting on a sandy track",
  "leopard.html": "A leopard resting in a tree", "jaguar.html": "A jaguar walking through grass",
  "cheetah.html": "A cheetah standing in long grass", "snow-leopard.html": "A snow leopard walking past green plants",
  "compare.html": "Close up of a leopard's face", "behavior.html": "Lions resting in the shade of a tree",
- "habitats.html": "African savanna with acacia trees", "conservation.html": "A tigress and her cub in a misty forest",
+ "habitats.html": "African savanna with acacia trees", "blog/kazakhstan-releases-second-tiger.html": "A tiger stepping out of a crate into riverside reeds", "conservation.html": "A tigress and her cub in a misty forest",
 }
 
 def have(slug):

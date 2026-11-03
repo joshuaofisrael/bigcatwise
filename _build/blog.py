@@ -1159,6 +1159,48 @@ post("how-long-do-big-cats-live", "How Long Do Big Cats Live? Wild vs Captivity,
           ("How do scientists know how long wild big cats live?", "Mainly from long term field studies using radio collars or GPS collars to track known individuals for years, plus camera trap photo identification using unique stripes or rosettes, and in some cases decades of direct observation, as in the 25 year Serengeti cheetah study (Kelly et al. 1998).")],
      related=[("Lion facts", "lion.html"), ("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Jaguar facts", "jaguar.html"), ("Cheetah facts", "cheetah.html"), ("Snow leopard facts", "snow-leopard.html"), ("Compare all six big cats", "compare.html"), ("Big cat behavior", "behavior.html"), ("Big cat research papers", "research/index.html"), ("How many big cats are left?", "blog/how-many-big-cats-are-left.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("Big cat FAQ", "faq.html")],
      sources=[NZP["lion"], UMN_LION_GUIDE, PACKER2010LION, NZP_TIGER_GENERAL, GOODRICH2008TIGER, AWF_LEOPARD, SDZ["leopard"], SWANEPOEL2014LEOPARD, SDZ["jaguar"], MONTERRUBIO2024JAGUAR, FRAGOSO2023JAGUAR, NZP["cheetah"], KELLY1998CHEETAH, SLT_LIFECYCLE, CSG["snow"], TIDIERE2016])
+# ---------------------------------------------------------------- KAZAKHSTAN TIGER RELEASE (3 Nov 2026)
+ASTANA_TIGER2 = ("The Astana Times (2 Nov 2026) Kazakhstan releases second tiger into wild as reintroduction program advances", "https://astanatimes.com/2026/11/kazakhstan-releases-second-tiger-into-wild-as-reintroduction-program-advances/")
+post("kazakhstan-releases-second-tiger", "Kazakhstan Releases a Second Tiger Into the Wild: What It Means | BigCatWise",
+     "On 31 October 2026 Kazakhstan released a male Amur tiger named Amur in the Ile-Balkhash reserve, joining the tigress Umit. How the tiger reintroduction works and what comes next.",
+     "Kazakhstan releases a second tiger into the wild", headline="Kazakhstan releases a second tiger into the wild", published="2026-11-03", modified="2026-11-03",
+     lead="On 31 October 2026, Kazakhstan released a male Amur tiger, named Amur, into the Ile-Balkhash State Nature Reserve near Lake Balkhash. He joins a tigress named Umit, released on 31 July. They are the first wild tigers in Kazakhstan in more than 70 years, and the release is the latest step in one of the most ambitious big cat reintroductions ever tried.",
+     body='''<section class="card"><h2>What happened</h2>
+<p>According to The Astana Times, the male tiger Amur was released on 31 October in the Ile-Balkhash State Nature Reserve in southeastern Kazakhstan. The release was attended by the country's Minister of Ecology and Natural Resources, Alibek Kuantyrov, and the head of Russia's Amur Tiger Centre, Sergei Aramilev, along with reserve staff and the reserve's anti-conflict team.</p>
+<p>Amur is the second tiger set free under the programme. The first, a female named Umit, was released on 31 July 2026. Officials say Umit is exploring the territory and hunting on her own, and that her adaptation is going well.</p>
+<p>The minister said the main goal is not just to return tigers to their old range, but to build a population that can live and breed independently in the wild.</p></section>
+<section class="card"><h2>Where the tigers came from</h2>
+<p>In May 2026, four Amur tigers caught in the wild in Russia's Khabarovsk Territory, two adults and two cubs, were brought to Kazakhstan and placed in acclimatisation enclosures inside the reserve. Wild born animals are a deliberate choice: tigers that grew up hunting real prey have the skills a captive bred cat would have to learn from scratch.</p>
+<p>The two cubs are still under specialist care. A decision on releasing them will be made once they are old enough and pass the same checks as the adults.</p></section>
+<section class="card"><h2>How a tiger is judged ready</h2>
+<p>Before release, Amur lived in a large acclimatisation enclosure under continuous supervision. Specialists ran veterinary examinations and behavioural assessments, checking his health, his hunting skills, his ability to find food on his own and how he reacted to people. Only after those results were in was he cleared to go.</p>
+<p>Both tigers wear satellite collars, so the team can follow their movements and see how they settle. That tracking matters most in the first months, when a newly released cat is learning a new landscape and setting up a territory. Tigers are solitary, and a male's range usually overlaps the ranges of one or more females; see <a href="how-big-is-a-tigers-territory.html">how big is a tiger's territory?</a></p></section>
+<section class="card"><h2>Why tigers in Kazakhstan?</h2>
+<p>The Ili River delta and the southern shores of Lake Balkhash were once home to the Caspian, or Turanian, tiger. It lived in tugai, the dense riverside forests and reed beds of Central Asia, along rivers such as the Ili and the Syr Darya. The subspecies disappeared from Kazakhstan in the mid 20th century because of habitat loss, falling numbers of wild hoofed prey and hunting.</p>
+<p>Genetic research has shown that the Caspian tiger and the Amur tiger are very closely related, which is why Amur tigers were chosen to fill the gap. In other words, this is not an exotic species being dropped into a new place: it is the closest living relative of the tiger that used to live there.</p></section>
+<section class="card"><h2>Prey first, tigers second</h2>
+<p>A tiger is only as safe as its food supply. Kazakhstan created the Ile-Balkhash reserve in 2018 and spent years restoring habitat and rebuilding the prey base before any tiger arrived. Bukhara deer and kulans, a wild ass, have been moved into the reserve; in September 2026, 30 kulans were relocated there from Altyn-Emel National Park.</p>
+<p>That order of work reflects what researchers have found elsewhere: tiger numbers track prey numbers closely. A tigress raising cubs needs a steady supply of large prey, and a reserve without enough deer and wild pigs pushes tigers toward livestock and people. For more on diet, see <a href="what-do-tigers-eat.html">what do tigers eat?</a></p></section>
+<section class="card"><h2>Keeping people and tigers safe</h2>
+<p>A dedicated anti-conflict team follows the tigers' movements, talks to local residents and responds to any incidents. The reserve's director, Kanat Kozhabekov, told The Astana Times that the release is only the start, and that the real work is the daily monitoring, protection and contact with local communities that follows.</p>
+<p>Conflict prevention is the part of a reintroduction most likely to decide its success. A single attack on livestock or people can turn local opinion against a whole project, which is why teams like this one exist from day one.</p></section>
+<section class="card"><h2>Who is involved</h2>
+<p>The programme is run by Kazakhstan with Russia, through the Amur Tiger Centre, and with international conservation groups. WWF has supported work on the tugai forests, prey populations and reserve infrastructure, and Kazakhstan's ecology ministry signed a memorandum with WWF International in 2024 on further cooperation.</p></section>
+<section class="card"><h2>What to watch next</h2>
+<ul>
+<li><b>Survival through winter.</b> The first winter in the wild is a big test for any released predator.</li>
+<li><b>Overlap between Amur and Umit.</b> A male whose range overlaps a female's is the first step toward wild born cubs.</li>
+<li><b>The two cubs.</b> Their release, once they are old enough, would bring the founding group to four.</li>
+<li><b>More tigers.</b> The long term goal is a self sustaining population in the Ili delta and southern Balkhash, which will need more releases over several years.</li>
+</ul>
+<p>Wild tigers live today only in parts of South and Southeast Asia and the Russian Far East and northeast China. A breeding population in Central Asia would be the first return of the species to a region it was lost from on this scale. You can read more on <a href="../tiger.html">our tiger page</a> and <a href="../conservation.html">big cat conservation</a>.</p></section>''',
+     faq=[("Are there tigers in Kazakhstan?", "Yes, again. Two Amur tigers have been released into the Ile-Balkhash State Nature Reserve: the tigress Umit on 31 July 2026 and the male Amur on 31 October 2026."),
+          ("Why were tigers extinct in Kazakhstan?", "The Caspian tiger disappeared from Kazakhstan in the mid 20th century because of habitat loss, falling prey numbers and hunting."),
+          ("Why use Amur tigers instead of Caspian tigers?", "The Caspian tiger is extinct, and genetic research shows it was very closely related to the Amur tiger, so the Amur tiger is the nearest living match."),
+          ("Where did Kazakhstan's tigers come from?", "Four wild Amur tigers, two adults and two cubs, were caught in Russia's Khabarovsk Territory and brought to Kazakhstan in May 2026."),
+          ("How are the released tigers monitored?", "Both wear satellite collars, and an anti-conflict team tracks their movements and works with local residents.")],
+     related=[("Tiger facts", "tiger.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("Big cat conservation", "conservation.html"), ("Blog home", "blog/index.html")],
+     sources=[ASTANA_TIGER2, CSG["tiger"], WWF["tiger"]])
 
 
 # ---------------------------------------------------------------- BLOG INDEX

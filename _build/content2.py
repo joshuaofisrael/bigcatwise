@@ -259,6 +259,7 @@ from blog import POSTS
 # ------------------------------------------------------------------ HOME
 from aiphotos import tile_thumb, post_thumb  # noqa: E402
 tiles = "".join('<a class="tile" href="%s">%s<h3>%s</h3><p>%s</p></a>' % (t[0], tile_thumb(t[0]), t[1], t[2]) for t in [
+ ("blog/kazakhstan-releases-second-tiger.html", "New: tigers return to Kazakhstan", "A second Amur tiger released, 31 Oct"),
  ("lion.html", "Lion", "The only social big cat"), ("tiger.html", "Tiger", "The largest cat on Earth"),
  ("leopard.html", "Leopard", "The most widespread big cat"), ("jaguar.html", "Jaguar", "Big cat of the Americas"),
  ("cheetah.html", "Cheetah", "The fastest land animal"), ("snow-leopard.html", "Snow leopard", "Ghost of the mountains"),

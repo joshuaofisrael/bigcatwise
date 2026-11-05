@@ -1203,6 +1203,82 @@ post("kazakhstan-releases-second-tiger", "Kazakhstan Releases a Second Tiger Int
      sources=[ASTANA_TIGER2, CSG["tiger"], WWF["tiger"]])
 
 
+# Inline sources for 5 Nov 2026 evergreen posts
+SDZG_TIGER_BEHAVIOR = ("San Diego Zoo Wildlife Alliance Library: Tiger behavior and ecology", "https://ielc.libguides.com/sdzg/factsheets/tiger/behavior")
+IFAW_LION_FACTS = ("IFAW: 10 fascinating lion facts", "https://www.ifaw.org/uk/journal/facts-about-lions")
+CONV_MAMMAL_SOUND = ("The Conversation: Animals can talk over huge distances (Journal of Mammalian Evolution summary)", "https://theconversation.com/animals-can-talk-over-huge-distances-but-humans-might-be-changing-their-range-277742")
+
+post("can-tigers-swim", "Can Tigers Swim? How Far and Why They Enter Water | BigCatWise",
+     "Yes. Tigers are strong swimmers that cool off, cross rivers and sometimes hunt in water. Sourced distances and behavior.",
+     "Can tigers swim? How far, and why they use water", headline="Can tigers swim?",
+     published="2026-11-05", modified="2026-11-05",
+     lead="Yes. Tigers are among the strongest swimmers of the big cats. They regularly enter rivers and pools to cool down, cross water barriers, and sometimes take prey in or beside water. Fact sheets from San Diego Zoo Wildlife Alliance and the Smithsonian's National Zoo report that tigers can cross rivers about 6 to 8 km (roughly 4 to 5 miles) wide, and they have been seen far offshore.",
+     body='''<section class="card"><h2>The short answer</h2>
+<p>Tigers swim well, and they often choose to. Unlike many smaller cats that avoid getting wet, wild tigers soak in shaded pools and streams in hot weather, swim across rivers that cut through their ranges, and in some wetland habitats use water as part of how they hunt. Our <a href="../tiger.html">tiger facts</a> page covers size, range and conservation; this post focuses on swimming.</p></section>
+<section class="card"><h2>How far can a tiger swim?</h2>
+<p>The San Diego Zoo Wildlife Alliance Library fact sheet on tiger behavior and ecology cites Mazak (1981) for river crossings of 6 to 8 km (about 4 to 5 miles), and Thapar (2004) for a tiger seen about 11 km (7 miles) out to sea. The Smithsonian National Zoo notes that tigers can cross rivers and lakes around 8 km (5 miles) wide. Those figures describe capable swimming over distance, not a daily commute. Most water use is shorter: a soak in a pool, a stream crossing, or a swim along a riverbank while hunting.</p></section>
+<section class="card"><h2>Why do tigers go in the water?</h2>
+<ul>
+<li><b>Cooling.</b> Larger subspecies often lie partly submerged in shaded pools or streams for much of a hot day (Tilson and Nyhus 2010, cited by San Diego Zoo Wildlife Alliance). Wet fur and evaporation help shed heat.</li>
+<li><b>Crossing habitat.</b> They swim to move between parts of a home range divided by rivers, channels or flooded forest.</li>
+<li><b>Hunting.</b> Tigers are ambush hunters that sometimes take prey near water and have been recorded hunting in water.</li>
+<li><b>Escape and refuge.</b> During floods, tigers have climbed trees and used high ground, and swimming lets them move when land routes flood.</li>
+</ul></section>
+<section class="card"><h2>How tiger swimming compares with other big cats</h2>
+<p>Among the six big cats on this site, the <a href="../jaguar.html">jaguar</a> is the clearest water specialist for diet: in some Pantanal wetlands aquatic prey dominates jaguar scats. Tigers are not as aquatic in diet as those jaguars, but they are far more willing swimmers than <a href="../cheetah.html">cheetahs</a> or <a href="../lion.html">lions</a>, which enter water far less often. <a href="../leopard.html">Leopards</a> can swim but more often cache kills in trees than hunt from water. See also <a href="do-jaguars-hunt-in-water.html">do jaguars hunt in water?</a></p></section>
+<section class="card"><h2>Webbed paws and a muscular body</h2>
+<p>Tigers have partially webbed toes and powerful limbs, which help propulsion. They are heavy animals, so swimming is hard work, but their strength and buoyancy in fresh water make long crossings possible. Captive tigers often play in pools when given the chance, which matches the wild pattern of seeking water rather than avoiding it.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Yes, tigers swim, and they often seek water to cool off.</li>
+<li>Documented crossings include rivers about 6 to 8 km wide, with rarer sightings farther offshore.</li>
+<li>Water use supports cooling, travel across flooded or riverine habitat, and sometimes hunting.</li>
+<li>Jaguars are the more aquatic hunter by diet; tigers are the other big cat that routinely treats water as normal habitat.</li>
+</ul></section>''',
+     faq=[("Can tigers swim?", "Yes. Tigers are strong, willing swimmers. They cool off in pools and streams, cross rivers, and sometimes hunt in or beside water."),
+          ("How far can a tiger swim?", "San Diego Zoo Wildlife Alliance cites crossings of rivers 6 to 8 km wide, and a report of a tiger about 11 km out to sea. The Smithsonian notes crossings of about 8 km."),
+          ("Do tigers like water?", "In hot climates they often do. Larger subspecies commonly rest partly submerged in shaded water for much of the day."),
+          ("Do tigers hunt in water?", "They can. They are ambush hunters that take prey near water and have been recorded hunting in water."),
+          ("Which big cat is the best swimmer?", "Jaguars are the clearest water specialists for hunting aquatic prey. Tigers are the other big cat that routinely swims long distances across rivers and lakes.")],
+     related=[("Tiger facts", "tiger.html"), ("Do jaguars hunt in water?", "blog/do-jaguars-hunt-in-water.html"), ("What do tigers eat?", "blog/what-do-tigers-eat.html"), ("How big is a tiger's territory?", "blog/how-big-is-a-tigers-territory.html"), ("Blog home", "blog/index.html")],
+     sources=[SDZG_TIGER_BEHAVIOR, NZP_TIGER_GENERAL, SDZ["tiger"], CSG["tiger"], WWF["tiger"]])
+
+post("how-far-can-a-lion-roar-be-heard", "How Far Can a Lion Roar Be Heard? Distance, Decibels and Why | BigCatWise",
+     "A lion's roar can carry about 8 km (5 miles) across open savanna. What the research says about distance, loudness and why lions roar.",
+     "How far can a lion roar be heard? About 8 km on open savanna", headline="How far can a lion roar be heard?",
+     published="2026-11-05", modified="2026-11-05",
+     lead="Under open savanna conditions, a lion's roar can be heard by people about 8 km (5 miles) away. That figure appears in classic big cat references (Sunquist and Sunquist 2002) and in recent summaries of mammal call distance. The roar is also very loud at close range, often cited around 114 decibels, and lions use it to advertise territory, reunite pride members and intimidate rivals.",
+     body='''<section class="card"><h2>The short answer</h2>
+<p>About 8 km, or 5 miles, is the widely cited maximum hearing distance for a lion roar across open African savanna. IFAW states the same 8 km figure and puts peak loudness near 114 dB. Distance still depends on wind, vegetation, ground, competing noise and whether the listener is a person or another lion.</p></section>
+<section class="card"><h2>Where the 8 km figure comes from</h2>
+<p>Field workers and acoustic studies repeatedly cite Sunquist and Sunquist (2002) for a human hearing distance of at least 8 km. A 2011 acoustic analysis of lion roars (from Antelope Park, Zimbabwe) used that figure when describing how far enclosure lions could be heard. A later review of mammal call distances in the <i>Journal of Mammalian Evolution</i>, summarised in The Conversation, lists lion sounds travelling about 8 km on a good day in the savanna, with elephant rumbles travelling even farther.</p>
+<p>So 8 km is a best case open country figure, not a guarantee in dense bush or near towns.</p></section>
+<section class="card"><h2>Why a roar carries so far</h2>
+<p>Lions, tigers, leopards and jaguars can roar; snow leopards and cheetahs cannot. Research by Klemuk and colleagues (2011) showed that lion and tiger vocal folds are shaped into flat pads with fatty tissue that vibrate easily at low frequencies. That helps produce a deep, rough roar without extreme lung effort. Low frequency sound also travels farther over open ground than high pitched calls, which is useful for a social cat whose pride members and rivals may be kilometres apart. See <a href="which-big-cats-can-roar.html">which big cats can roar?</a></p></section>
+<section class="card"><h2>What lions use the roar for</h2>
+<ul>
+<li><b>Territory.</b> A roar tells neighbouring lions that a pride or coalition holds this ground.</li>
+<li><b>Contact.</b> Pride members that have spread out while hunting can relocate each other at night.</li>
+<li><b>Intimidation.</b> Males especially roar to deter rivals before a fight.</li>
+</ul>
+<p>Roaring is most common around dusk, night and dawn, when sound carries well and lions are active. Our <a href="../lion.html">lion facts</a> and <a href="../behavior.html">behavior</a> pages put this in the wider social context of prides.</p></section>
+<section class="card"><h2>How loud is a lion roar?</h2>
+<p>Popular science and conservation sources often cite about 114 dB for a close range roar, louder than many power tools. Exact meter readings vary with distance from the animal and the recording gear. What matters for ecology is less the peak decibel number than the combination of loudness and low frequency that lets the signal cross kilometres of savanna.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>About 8 km (5 miles) is the standard open savanna hearing distance cited for a lion roar.</li>
+<li>Low frequency vocal fold design helps the roar stay loud over long range.</li>
+<li>Lions roar to mark territory, find pride mates and warn rivals.</li>
+<li>Real world distance shrinks with wind, trees, hills and human noise.</li>
+</ul></section>''',
+     faq=[("How far can a lion roar be heard?", "About 8 km (5 miles) across open savanna under good conditions, based on classic references and later mammal call distance reviews."),
+          ("How loud is a lion's roar?", "Close range figures are often given around 114 dB. Exact readings vary with distance and equipment."),
+          ("Why do lions roar?", "To advertise territory, keep contact with pride members and intimidate rivals, especially at night."),
+          ("Can other big cats roar as far?", "Lions are usually described as the loudest. Tigers, leopards and jaguars also roar, but the 8 km figure is specifically tied to lions in open savanna."),
+          ("Do female lions roar?", "Yes. Both sexes roar, though male roaring is often more conspicuous in territorial contests.")],
+     related=[("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Lion facts", "lion.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Big cat behavior", "behavior.html"), ("Blog home", "blog/index.html")],
+     sources=[IFAW_LION_FACTS, CONV_MAMMAL_SOUND, KLEMUK, CSG["lion"], NZP["lion"]])
+
+
+
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",
     "Sourced answers to big cat questions: which cats roar, why lions live in prides, cheetah speed, tiger territory, leopards in trees and more.",

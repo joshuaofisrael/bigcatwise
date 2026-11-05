@@ -115,3 +115,10 @@ figure.photo.ai{margin:1.2rem 0}figure.photo figcaption:empty{display:none}.form
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.tile:hover,.btn:hover{transform:none}h1,.brand,footer h2{text-shadow:none}.track .runner.bound{transform:none}}
 @media print{header,footer .contact-us,.menu,nav,.btn,.printbtn,.gamebox,.cite,aside.related{display:none!important}body{background:#fff;font-size:12pt;color:#000}
 .card,figure.photo{box-shadow:none;border:1px solid #999;break-inside:avoid}h1,h2,h3{color:#000;text-shadow:none}footer{background:#fff;color:#000;box-shadow:none;border-top:1px solid #999}footer a{color:#000}a{color:#000}}
+
+/* style-pass 2026-11-05: article measure, blog card images, footer wrap */
+.article-body,.post-body,main.article,.blog-post{max-width:42rem}
+.article-body p,.post-body p,main > article p{max-width:68ch;line-height:1.7}
+figure.photo img{aspect-ratio:3/2;object-fit:cover}
+footer .flinks{display:flex;flex-wrap:wrap;gap:.35rem 1rem;justify-content:center}
+@media (max-width:760px){main{padding:1.1rem .9rem}.grid{grid-template-columns:1fr}}

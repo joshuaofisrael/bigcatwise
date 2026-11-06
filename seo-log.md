@@ -164,3 +164,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - SEO action: behavior.html, compare.html, habitats.html, conservation.html and 5 blog posts (how-fast-is-a-cheetah, how-many-big-cats-are-left, which-big-cats-can-roar, why-do-tigers-have-stripes, leopard-vs-jaguar-vs-cheetah) had question style H2 headings with answer paragraphs but no FAQPage JSON-LD. Added `auto_faq()` to `_build/build.py`, which pulls Q&A pairs straight from each page's own existing `<section class="card"><h2>...?</h2><p>...</p></section>` content (skipping step headings and intro sentences ending in a colon) and emits the same FAQPage block the explicit `faq=` pages already use. No visible text changed, build.py +23/-0 lines, check.py problems 0.
 - Why: these pages already read like FAQs but were missing snippet/AI answer eligibility; generating the JSON-LD from the page's own content keeps it accurate with zero new copy to source or maintain.
 - News/outreach: none in this slot.
+
+## 2026-11-06 — Evergreen: What do cheetahs eat?
+- Published /blog/what-do-cheetahs-eat.html with 2 AI figures (ai-cheetah-mound, ai-habitat-savanna), blog index + homepage tiles, sitemap, llms.txt.

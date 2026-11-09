@@ -167,3 +167,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 
 ## 2026-11-06 — Evergreen: What do cheetahs eat?
 - Published /blog/what-do-cheetahs-eat.html with 2 AI figures (ai-cheetah-mound, ai-habitat-savanna), blog index + homepage tiles, sitemap, llms.txt.
+
+## 2026-11-09 — Evergreen: Why do snow leopards have such long tails?
+- Published /blog/why-do-snow-leopards-have-long-tails.html (ChatGPT draft, light edits) with 2 new AI figures (ai-snow-leopard-tail-ridge, ai-snow-leopard-tail-wrap), blog index + homepage tiles, sitemap, llms.txt. Sources: 3 WWF pages, all resolved 9 Nov.

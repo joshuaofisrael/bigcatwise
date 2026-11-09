@@ -39,6 +39,7 @@ AI = {
  "blog/how-long-do-big-cats-live.html": dict(slug="lion-elderly-rest", alt="An elderly wild lioness with a grizzled, scarred face resting in golden grassland, with acacia trees in the distance"),
  "blog/can-tigers-swim.html": dict(slug="tiger-swim", alt="A Bengal tiger swimming across a calm forest river with its head and shoulders above the water"),
  "blog/how-far-can-a-lion-roar-be-heard.html": dict(slug="lion-roar-distance", alt="A male African lion with a full mane roaring on the savanna at dusk"),
+ "blog/why-do-snow-leopards-have-long-tails.html": dict(slug="snow-leopard-tail-ridge", alt="A snow leopard crossing a narrow snowy rock ridge with its long tail extended behind it"),
 }
 # Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second
 # image where it makes sense). Same file and caption convention as AI; placed at its own `after` position.
@@ -47,6 +48,7 @@ AI2 = {
  "blog/how-long-do-big-cats-live.html": dict(slug="tiger-captive-habitat", alt="A healthy adult tiger resting on a grassy bank in a spacious, naturalistic zoo habitat with a shallow pool and no visible fencing", after=6),
  "blog/can-tigers-swim.html": dict(slug="tiger-water", alt="A Bengal tiger wading through shallow water in a green forest stream", after=3),
  "blog/how-far-can-a-lion-roar-be-heard.html": dict(slug="lion-mane-portrait", alt="A male lion with a full dark mane resting in the shade of a tree", after=3),
+ "blog/why-do-snow-leopards-have-long-tails.html": dict(slug="snow-leopard-tail-wrap", alt="A snow leopard resting against a mountain boulder with its thick tail wrapped around its muzzle", after=2),
 }
 # image cards on the home page tiles: href -> thumbnail slug
 TILE_THUMBS = {

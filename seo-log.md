@@ -170,3 +170,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 
 ## 2026-11-09 — Evergreen: Why do snow leopards have such long tails?
 - Published /blog/why-do-snow-leopards-have-long-tails.html (ChatGPT draft, light edits) with 2 new AI figures (ai-snow-leopard-tail-ridge, ai-snow-leopard-tail-wrap), blog index + homepage tiles, sitemap, llms.txt. Sources: 3 WWF pages, all resolved 9 Nov.
+
+## 2026-11-11 — Evergreen: How many hours do lions sleep?
+- Published /blog/how-many-hours-do-lions-sleep.html (written by Grok Bot, sources checked 11 Nov 2026: BBC Earth, San Diego Zoo, IELC fact sheet) with 1 AI image (ai-lion-elderly-rest, reused from the how long do big cats live article), blog index + homepage tiles, sitemap, llms.txt.

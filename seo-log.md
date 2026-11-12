@@ -173,3 +173,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 
 ## 2026-11-11 — Evergreen: How many hours do lions sleep?
 - Published /blog/how-many-hours-do-lions-sleep.html (written by Grok Bot, sources checked 11 Nov 2026: BBC Earth, San Diego Zoo, IELC fact sheet) with 1 AI image (ai-lion-elderly-rest, reused from the how long do big cats live article), blog index + homepage tiles, sitemap, llms.txt.
+
+## 2026-11-12 — Evergreen: How do snow leopards survive at high altitude?
+- Published /blog/how-do-snow-leopards-survive-at-high-altitude.html (written by Grok Bot, sources checked 12 Nov 2026: Snow Leopard Conservancy x2, Snow Leopard Trust, WWF Canada) with 1 AI image (ai-snow-leopard-rocky, reused from the snow leopard species page, caption links /credits/), blog index + homepage tiles, sitemap, llms.txt.

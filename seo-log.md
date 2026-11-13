@@ -176,3 +176,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 
 ## 2026-11-12 — Evergreen: How do snow leopards survive at high altitude?
 - Published /blog/how-do-snow-leopards-survive-at-high-altitude.html (written by Grok Bot, sources checked 12 Nov 2026: Snow Leopard Conservancy x2, Snow Leopard Trust, WWF Canada) with 1 AI image (ai-snow-leopard-rocky, reused from the snow leopard species page, caption links /credits/), blog index + homepage tiles, sitemap, llms.txt.
+
+## 2026-11-13 — Evergreen: How much does a leopard weigh?
+- Published /blog/how-much-does-a-leopard-weigh.html (written by Grok Bot, sources checked 13 Nov 2026: San Diego Zoo Wildlife Alliance, IUCN Cat Specialist Group, IELC fact sheet) with 1 AI image (ai-leopard-portrait, reused from the compare page and homepage, caption links /credits/), blog index + homepage tiles, sitemap, llms.txt.

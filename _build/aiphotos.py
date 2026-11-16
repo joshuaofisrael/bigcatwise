@@ -39,6 +39,7 @@ AI = {
  "blog/how-long-do-big-cats-live.html": dict(slug="lion-elderly-rest", alt="An elderly wild lioness with a grizzled, scarred face resting in golden grassland, with acacia trees in the distance"),
  "blog/can-tigers-swim.html": dict(slug="tiger-swim", alt="A Bengal tiger swimming across a calm forest river with its head and shoulders above the water"),
  "blog/how-far-can-a-lion-roar-be-heard.html": dict(slug="lion-roar-distance", alt="A male African lion with a full mane roaring on the savanna at dusk"),
+ "blog/how-do-tigers-mark-their-territory.html": dict(slug="tiger-territory", alt="A tiger scent marking a tree trunk in a green forest"),
  "blog/why-do-snow-leopards-have-long-tails.html": dict(slug="snow-leopard-tail-ridge", alt="A snow leopard crossing a narrow snowy rock ridge with its long tail extended behind it"),
 }
 # Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second

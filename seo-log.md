@@ -179,3 +179,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 
 ## 2026-11-13 — Evergreen: How much does a leopard weigh?
 - Published /blog/how-much-does-a-leopard-weigh.html (written by Grok Bot, sources checked 13 Nov 2026: San Diego Zoo Wildlife Alliance, IUCN Cat Specialist Group, IELC fact sheet) with 1 AI image (ai-leopard-portrait, reused from the compare page and homepage, caption links /credits/), blog index + homepage tiles, sitemap, llms.txt.
+
+## 2026-11-16 — Evergreen: How do tigers mark their territory?
+- Published /blog/how-do-tigers-mark-their-territory.html (ChatGPT draft; Animal Diversity Web tiger account loaded and matched 16 Nov 2026; dead flehmen-photo source and one over-specific claim removed) with 1 reused AI image (ai-tiger-territory, Source link to credits), blog index/homepage tile, sitemap, llms.txt.

@@ -6,7 +6,8 @@ from sources import CAVALCANTI2010, WECKEL2006JZ, WECKEL2006BT, NOVACK2005
 from sources import MARTINS2010, HART1996
 from sources import (PACKER2010LION, GOODRICH2008TIGER, SWANEPOEL2014LEOPARD, FRAGOSO2023JAGUAR,
                       MONTERRUBIO2024JAGUAR, KELLY1998CHEETAH, TIDIERE2016, NZP_TIGER_GENERAL, AWF_LEOPARD,
-                      SLT_LIFECYCLE, UMN_LION_GUIDE)
+                      SLT_LIFECYCLE, UMN_LION_GUIDE, GWR_LIGER, THETECH_LIGER, NATGEO_HYBRID, BCSA_HYBRID,
+                      WROE2005_BITE, ROZYCKA2024_BITE, SCIADV_SNOWLEOPARD_SKULL)
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -1277,7 +1278,64 @@ post("how-far-can-a-lion-roar-be-heard", "How Far Can a Lion Roar Be Heard? Dist
      related=[("Which big cats can roar?", "blog/which-big-cats-can-roar.html"), ("Lion facts", "lion.html"), ("Why do male lions have manes?", "blog/why-do-male-lions-have-manes.html"), ("Big cat behavior", "behavior.html"), ("Blog home", "blog/index.html")],
      sources=[IFAW_LION_FACTS, CONV_MAMMAL_SOUND, KLEMUK, CSG["lion"], NZP["lion"]])
 
+# ---------------------------------------------------------------- 29 CAN LIONS AND TIGERS INTERBREED (added 18 Nov 2026, R11)
+post("can-lions-and-tigers-interbreed", "Can Lions and Tigers Interbreed? Ligers and Tigons Explained | BigCatWise",
+     "Yes, in captivity. A liger (lion x tigress) grows far larger than either parent; a tigon (tiger x lioness) does not. Why, and why zoos do not breed them.",
+     "Can lions and tigers interbreed? Ligers and tigons explained", headline="Can lions and tigers interbreed?",
+     published="2026-11-18", modified="2026-11-18",
+     lead="Yes, but only where people keep the two species together. A liger, the offspring of a male lion and a female tiger, grows far larger than either parent and is the largest cat alive. A tigon, the offspring of a male tiger and a lioness, does not get that growth boost and stays closer to ordinary lion or tiger size. Both exist only in captivity: accredited zoos in North America do not breed them, and conservation biologists say they have no conservation value.",
+     body='''<section class="card"><h2>The short answer</h2>
+<div class="tablewrap"><table><thead><tr><th>Hybrid</th><th>Parents</th><th>Size versus parents</th></tr></thead><tbody>
+<tr><td>Liger</td><td>Male lion &times; female tiger</td><td>Much larger. Guinness World Records lists Hercules, a male liger at Myrtle Beach Safari, South Carolina, as the largest living cat: 418.2 kg (922 lb), 3.33 m (131 in) long and 1.25 m (49 in) at the shoulder.</td></tr>
+<tr><td>Tigon</td><td>Male tiger &times; female lion</td><td>Not larger. Guinness World Records notes that tigons, from the reciprocal cross, are often smaller than ligers and closer to normal lion or tiger size.</td></tr>
+</tbody></table></div></section>
+<section class="card"><h2>Why do ligers grow so much bigger?</h2>
+<p>The leading explanation is genomic imprinting, a process that switches some genes on or off depending on whether they came from the mother or the father, before fertilisation even happens. The Tech Interactive's Ask a Geneticist team explains that in mice, the growth gene <i>Igf2</i> is active only on the copy inherited from the father; the maternal copy is silenced. Lion sperm appears to carry a strong "grow large" signal, which lion eggs normally counteract with an opposing "do not grow too much" signal of their own. Tiger eggs do not carry that same counteracting signal, so when they combine with lion sperm in a liger, the growth signal goes unchecked and the cub grows much larger than either parent.</p>
+<p>Run the cross the other way and the effect disappears. A tigon inherits a tiger sperm's imprinting pattern, geared to ordinary tiger growth, combined with a lion egg, so there is no unusual growth signal to begin with. The Tech Interactive's explainer adds that lions live in prides where several males may mate with the same female, so a male lion's genes benefit from pushing his own cubs to grow larger and outcompete half siblings; tigers are solitary and do not face that same competitive pressure, so male tigers carry no comparable "grow large" signal.</p></section>
+<section class="card"><h2>Where does this happen?</h2>
+<p>Only in captivity. Wild lions live mainly in sub-Saharan Africa, with a single small population in and around Gir forest in Gujarat, India; wild tigers live only in parts of South, Southeast and East Asia and the Russian Far East, and Gir forest is not part of that range. See <a href="../lion.html#range">where lions live</a> and <a href="../tiger.html#range">where tigers live</a>. Because the two species do not share territory anywhere today, ligers and tigons are never found in the wild; every one on record has been bred by people who kept a lion and a tiger together.</p></section>
+<section class="card"><h2>Why don't zoos breed them?</h2>
+<p>The Association of Zoos and Aquariums, which accredits zoos across North America, does not approve of breeding ligers or other big cat hybrids, and no AZA accredited zoo does so, National Geographic reports. Lion researcher Craig Packer of the University of Minnesota Lion Research Center told the magazine that hybrids have no relevance to conservation, and National Geographic Society conservation scientist Luke Dollar called crossbreeding big cat species unethical.</p>
+<p>The Big Cat Sanctuary Alliance's position paper on big cat hybrids states that crossing species has no conservation or education value and lists serious health and welfare problems linked to it, including gigantism and unsustainable growth in ligers, and high neonatal mortality and shortened lifespans in tigons. For these reasons, legitimate sanctuaries that are members of the alliance do not breed hybrid cats, and the animals seen in the media are typically kept at private, for profit attractions rather than accredited zoos or true sanctuaries.</p></section>''',
+     faq=[("Can lions and tigers mate in the wild?", "No. Wild lions and wild tigers do not share any territory today, so hybrids such as ligers and tigons occur only where people keep the two species together in captivity."),
+          ("Is a liger bigger than a tiger?", "Yes, typically. The largest documented liger, Hercules, weighs 418.2 kg (922 lb), well above the largest reliably recorded wild tigers. Tigons do not show the same size boost."),
+          ("Why are ligers so much bigger than tigons?", "Genomic imprinting. A male lion's sperm appears to carry an unchecked growth signal that a tiger egg cannot counteract, producing oversized ligers. The reverse cross, a tigon, does not inherit that unchecked signal."),
+          ("Do accredited zoos breed ligers?", "No. The Association of Zoos and Aquariums does not approve of breeding hybrid big cats, and conservation biologists say hybrids have no conservation value.")],
+     related=[("Lion facts", "lion.html"), ("Tiger facts", "tiger.html"), ("Big cat comparison table", "compare.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html"), ("Big cat glossary", "glossary.html"), ("Blog home", "blog/index.html")],
+     sources=[GWR_LIGER, THETECH_LIGER, NATGEO_HYBRID, BCSA_HYBRID, CSG["lion"], CSG["tiger"]])
 
+# ---------------------------------------------------------------- 30 WHICH BIG CAT BITES THE HARDEST (added 18 Nov 2026, R4)
+post("which-big-cat-bites-the-hardest", "Which Big Cat Bites the Hardest? Measured Bite Force Compared | BigCatWise",
+     "Skull based studies put tiger and lion canine bite force above 1,500 newtons, but the jaguar bites hardest relative to its size. Bite force compared by species.",
+     "Which big cat bites the hardest? Measured bite force compared", headline="Which big cat bites the hardest?",
+     published="2026-11-18", modified="2026-11-18",
+     lead="In raw force, the tiger and lion bite hardest: a widely cited skull based study estimated their canine bite force above 1,500 newtons. But adjusted for body size, the jaguar comes out on top of the five big cats in that same study, consistent with its unusual habit of killing prey by piercing the skull. A second, more recent study of captive zoo specimens found even higher raw forces and a different order between lion and tiger, a reminder that method and the individual skull measured both matter.",
+     body='''<section class="card"><h2>The short answer</h2>
+<div class="tablewrap"><table><thead><tr><th>Species</th><th>Estimated body mass</th><th>Canine bite force</th><th>Bite force quotient (size adjusted)</th></tr></thead><tbody>
+<tr><td><a href="../lion.html">Lion</a></td><td>294.6 kg</td><td>1,768 N</td><td>112</td></tr>
+<tr><td><a href="../tiger.html">Tiger</a></td><td>186.9 kg</td><td>1,525 N</td><td>127</td></tr>
+<tr><td><a href="../jaguar.html">Jaguar</a></td><td>83.2 kg</td><td>1,014 N</td><td>137 (highest of the five)</td></tr>
+<tr><td><a href="../cheetah.html">Cheetah</a></td><td>29.5 kg</td><td>472 N</td><td>119</td></tr>
+<tr><td><a href="../leopard.html">Leopard</a></td><td>43.1 kg</td><td>467 N</td><td>94 (lowest of the five)</td></tr>
+</tbody></table></div>
+<p class="note">Figures are single specimen, skull based estimates from Wroe, McHenry and Thomason (2005), calculated at the canine teeth using the "dry skull" lever method. The snow leopard was not included in this study.</p></section>
+<section class="card"><h2>Why the jaguar punches above its weight</h2>
+<p>Bite force quotient (BFQ) adjusts raw bite force for body mass, so a small animal and a large one can be compared fairly; a BFQ of 100 is about average for the sample. In the Wroe, McHenry and Thomason study, the jaguar's BFQ of 137 was the highest of the five big cats measured, ahead of the tiger (127), cheetah (119), lion (112) and leopard (94). That fits the jaguar's reputation as an unusually hard biter for its size: the IUCN Cat Specialist Group describes it as the only big cat that regularly kills prey by piercing the skull with its canines, an adaptation that also lets it crack open the armoured shells of turtles and tortoises. See <a href="../jaguar.html#bite">how a jaguar kills its prey</a>.</p></section>
+<section class="card"><h2>Why published numbers do not agree</h2>
+<p>A 2024 study of captive zoo specimens at the Warsaw University of Life Sciences, using the same dry skull method on a small sample of lion and Bengal tiger skulls, reported much higher average canine bite forces: about 2,609 N for the lions studied and about 3,375 N for the tigers, reversing the order found by Wroe and colleagues. The authors note that each estimate depends on the particular skulls measured, that the dry skull method is known to underestimate force compared with direct, in vivo measurements in lions and tigers, and that body mass, sex and individual skull shape all affect the result. Both studies agree on the broader pattern: the big cats of the genus <i>Panthera</i> and the jaguar bite far harder, in absolute terms, than the cheetah or leopard, because bite force scales strongly with body size.</p></section>
+<section class="card"><h2>What about the snow leopard?</h2>
+<p>Neither of the studies above measured a snow leopard specimen, so there is no directly comparable bite force figure for it here. Separate skull and finite element research on the snow leopard's anatomy, published in Science Advances, found that its short, deep skull gives the jaw strong mechanical resistance at the canines, built for a strong but relatively slow bite that suits its main prey, wild mountain sheep and goats. See <a href="../snow-leopard.html">snow leopard facts</a> for more on its build.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Tiger and lion have the highest raw canine bite force among the big cats, estimated above 1,500 newtons in one widely cited study.</li>
+<li>Adjusted for body size, the jaguar bites hardest of the five species measured, matching its unusual skull piercing kill method.</li>
+<li>A newer study of captive specimens found higher absolute forces and reversed the lion and tiger order, showing results vary with the specimens and method used.</li>
+<li>No directly comparable measured bite force exists yet for the snow leopard.</li></ul></section>''',
+     faq=[("Which big cat has the strongest bite relative to its size?", "The jaguar. In a widely cited skull based study its bite force quotient of 137 was the highest of the five big cats measured, ahead of the tiger, cheetah, lion and leopard."),
+          ("Does a tiger bite harder than a lion?", "Studies disagree. One widely cited study put the lion slightly ahead of the tiger in raw canine bite force; a newer study of different, captive specimens found the tiger ahead of the lion. Both are far harder biters than the leopard or cheetah."),
+          ("What is bite force quotient?", "A way to compare bite force fairly across animals of different sizes, calculated from bite force adjusted for body mass. A quotient of 100 is about average for the sample it comes from."),
+          ("Why does the jaguar bite so hard for its size?", "The jaguar is the only big cat that regularly kills prey by piercing the skull with its canines, including armoured prey like turtles, which favours a strong bite relative to its body size.")],
+     related=[("How a jaguar kills its prey", "jaguar.html#bite"), ("Lion facts", "lion.html"), ("Tiger facts", "tiger.html"), ("Snow leopard facts", "snow-leopard.html"), ("Big cat behavior", "behavior.html"), ("Blog home", "blog/index.html")],
+     sources=[WROE2005_BITE, ROZYCKA2024_BITE, SCIADV_SNOWLEOPARD_SKULL, CSG["jaguar"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

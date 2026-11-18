@@ -408,6 +408,9 @@ PAPERS = [
   ("Monterrubio-Rico, T. C., Lopez-Ortiz, S., Nunez-Landa, E. A., Soto, J. E., and Charre-Medellin, J. F. (2024). Noteworthy records of survival, longevity and recruitment in a key area for jaguars in Western Mexico. <i>Mammalia</i>, 88(6), 495-499.", "10.1515/mammalia-2024-0043", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
   ("Kelly, M. J., Laurenson, M. K., FitzGibbon, C. D., Collins, D. A., Durant, S. M., Frame, G. W., Bertram, B. C. R., and Caro, T. M. (1998). Demography of the Serengeti cheetah (<i>Acinonyx jubatus</i>) population: the first 25 years. <i>Journal of Zoology</i>, 244(4), 473-488.", "10.1111/j.1469-7998.1998.tb00053.x", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
   ("Tidiere, M., Gaillard, J.-M., Berger, V., Muller, D. W. H., Lackey, L. B., Gimenez, O., Clauss, M., and Lemaitre, J.-F. (2016). Comparative analyses of longevity and senescence reveal variable survival benefits of living in zoos across mammals. <i>Scientific Reports</i>, 6, 36361.", "10.1038/srep36361", "blog/how-long-do-big-cats-live.html", "How long do big cats live?")]),
+ ("Bite force and skull biomechanics", [
+  ("Wroe, S., McHenry, C., and Thomason, J. (2005). Bite club: comparative bite force in big biting mammals and the prediction of predatory behaviour in fossil taxa. <i>Proceedings of the Royal Society B</i>, 272(1563), 619-625.", "10.1098/rspb.2004.2986", "blog/which-big-cat-bites-the-hardest.html", "Which big cat bites the hardest?"),
+  ("Rozycka, M., Skibniewska, K., Rajkowski, L., and Skibniewski, M. (2024). Craniometric characteristics of selected Carnivora species kept in captivity in relation to bite force and bending strength of the upper canines. <i>Animals</i>, 14(9), 1367.", "10.3390/ani14091367", "blog/which-big-cat-bites-the-hardest.html", "Which big cat bites the hardest?")]),
 ]
 rb = []
 n = 0

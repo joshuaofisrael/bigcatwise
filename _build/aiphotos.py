@@ -42,6 +42,8 @@ AI = {
  "blog/how-do-tigers-mark-their-territory.html": dict(slug="tiger-territory", alt="A tiger scent marking a tree trunk in a green forest"),
  "blog/how-much-does-a-tiger-weigh.html": dict(slug="tiger-dusk", alt="A tiger walking along a forest track in the blue light of dusk"),
  "blog/why-do-snow-leopards-have-long-tails.html": dict(slug="snow-leopard-tail-ridge", alt="A snow leopard crossing a narrow snowy rock ridge with its long tail extended behind it"),
+ "blog/can-lions-and-tigers-interbreed.html": dict(slug="lion-mane-portrait", alt="A male lion with a full dark mane resting in the shade of a tree", cap="Generic AI-generated image of a lion. It does not show a liger or tigon, which only exist in captivity."),
+ "blog/which-big-cat-bites-the-hardest.html": dict(slug="jaguar-rainforest", alt="A jaguar resting on a mossy branch in dense rainforest", cap="AI-generated image."),
 }
 # Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second
 # image where it makes sense). Same file and caption convention as AI; placed at its own `after` position.

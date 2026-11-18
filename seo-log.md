@@ -182,3 +182,6 @@ No GSC or analytics data yet (no verification token, no beacon token).
 
 ## 2026-11-16 — Evergreen: How do tigers mark their territory?
 - Published /blog/how-do-tigers-mark-their-territory.html (ChatGPT draft; Animal Diversity Web tiger account loaded and matched 16 Nov 2026; dead flehmen-photo source and one over-specific claim removed) with 1 reused AI image (ai-tiger-territory, Source link to credits), blog index/homepage tile, sitemap, llms.txt.
+
+## 2026-11-18 — Evergreen: How much does a tiger weigh?
+- Published /blog/how-much-does-a-tiger-weigh.html (sources fetched 18 Nov 2026, all HTTP 200: San Diego Zoo Wildlife Alliance, IUCN SSC Cat Specialist Group, International Environment Library Consortium tiger fact sheet, Smithsonian's National Zoo tiger page, Marwell Zoo Amur tiger). One reused AI image (img/ai-tiger-dusk, previously the hero on are-tigers-nocturnal only; caption links /credits/#ai-images). Added at the top of the blog index and the homepage latest list, plus sitemap lastmod 2026-11-18 and llms.txt.

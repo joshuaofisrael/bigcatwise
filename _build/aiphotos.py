@@ -77,7 +77,8 @@ def _fig_html(p, rel):
     c = p.get("cap") or "AI-generated image."
     if "ai-generated" not in c.lower() and "ai generated" not in c.lower():
         c = "AI-generated image. " + c
-    cap = '<figcaption>%s</figcaption>' % html.escape(c)
+    # every photo caption links to the image policy page (added 18 Nov 2026)
+    cap = '<figcaption>%s <a href="%simage-policy/">Source</a></figcaption>' % (html.escape(c), rel)
     return ('<figure class="photo ai"><img src="%s-960.webp" srcset="%s-480.webp 480w, %s-960.webp 960w" sizes="(max-width: 1000px) 94vw, 940px" '
             'width="960" height="640" alt="%s" loading="lazy" decoding="async">%s</figure>') % (s, s, s, html.escape(p["alt"]), cap)
 

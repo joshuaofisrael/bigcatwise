@@ -26,6 +26,8 @@ Content is general education. Population figures are estimates that change as ne
 - [Comparison table rows](https://bigcatwise.com/compare.html#table): deep links such as #row-tiger and #row-cheetah
 
 ## Blog
+- [Can lions and tigers interbreed? Ligers and tigons explained](https://bigcatwise.com/blog/can-lions-and-tigers-interbreed.html): Yes, in captivity. A liger (lion x tigress) grows far larger than either parent; a tigon (tiger x lioness) does not. Why, and why zoos do not breed them.
+- [Which big cat bites the hardest? Measured bite force compared](https://bigcatwise.com/blog/which-big-cat-bites-the-hardest.html): Skull based studies put tiger and lion canine bite force above 1,500 newtons, but the jaguar bites hardest relative to its size. Bite force compared by species.
 - [How much does a tiger weigh?](https://bigcatwise.com/blog/how-much-does-a-tiger-weigh.html): Adult tigers weigh about 75 to 325 kg. Males are heavier than females, and Amur tigers are much larger than Sumatran tigers.
 - [How Do Tigers Mark Their Territory?](https://bigcatwise.com/blog/how-do-tigers-mark-their-territory.html): tigers mark territory with sprayed urine and musky secretion, ground scrapes, scratches and calls; flehmen is scent investigation, not a snarl (Animal Diversity Web).
 - [Why do snow leopards have such long tails?](https://bigcatwise.com/blog/why-do-snow-leopards-have-long-tails.html): Snow leopards use their long, thick tails for balance on steep rocks and as a warm wrap while resting in cold mountains.
@@ -82,6 +84,7 @@ Content is general education. Population figures are estimates that change as ne
 ## Optional
 - [About](https://bigcatwise.com/about.html): About BigCatWise: an independent big cat education site. How we research, source and update our content.
 - [Photo credits](https://bigcatwise.com/credits/): Credits and licences for every photo on BigCatWise: source file, photographer, licence and where each image is used. All photos are CC0 or Creative Commons licensed.
+- [Image policy](https://bigcatwise.com/image-policy/): How BigCatWise uses pictures: AI generated photo style illustrations and licensed Wikimedia Commons photographs, and where the Source link under every image leads.
 - [Contact](https://bigcatwise.com/contact.html): Contact the BigCatWise team with questions, corrections or suggestions about our big cat guides. Use the contact form.
 - [Terms of use](https://bigcatwise.com/terms.html): BigCatWise terms of use: educational information only, use at your own risk, no warranties, limitation of liability, indemnification and Florida law.
 - [Privacy](https://bigcatwise.com/privacy.html): BigCatWise privacy policy: Joshua Israel Ventures LLC is the data controller. What we collect, how contact messages are handled, analytics and your choices.

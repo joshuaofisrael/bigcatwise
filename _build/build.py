@@ -65,7 +65,7 @@ def footer(rel):
             '<p>%s: original educational content about lions, tigers, leopards, jaguars, cheetahs and snow leopards. Text and drawings are original; photos are credited on our photo credits page, and some are AI generated.</p>'
             '<p class="flinks"><a href="%sterms.html">Terms of use</a> | <a href="%sprivacy.html">Privacy</a> | <a href="%sdisclaimer.html">Disclaimer</a> | '
             '<a href="%sdisclaimer.html#affiliate">Advertising disclosure</a> | <a href="%scopyright.html">Copyright and takedown</a> | <a href="%scorrections.html">Corrections</a> | '
-            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a> | <a href="/privacy.html#google-analytics" data-consent-open>Cookie settings</a></p></footer>') % (SITE, rel, rel, rel, rel, rel, rel, rel, rel, rel)
+            '<a href="%scontact.html">Contact</a> | <a href="%sabout.html">About</a> | <a href="%scredits/">Photo credits</a> | <a href="%simage-policy/">Image policy</a> | <a href="/privacy.html#google-analytics" data-consent-open>Cookie settings</a></p></footer>') % (SITE, rel, rel, rel, rel, rel, rel, rel, rel, rel, rel)
 
 def header(rel, current):
     links = []

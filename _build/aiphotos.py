@@ -42,6 +42,8 @@ AI = {
  "blog/how-do-tigers-mark-their-territory.html": dict(slug="tiger-territory", alt="A tiger scent marking a tree trunk in a green forest"),
  "blog/how-much-does-a-tiger-weigh.html": dict(slug="tiger-dusk", alt="A tiger walking along a forest track in the blue light of dusk"),
  "blog/why-do-snow-leopards-have-long-tails.html": dict(slug="snow-leopard-tail-ridge", alt="A snow leopard crossing a narrow snowy rock ridge with its long tail extended behind it"),
+ "blog/can-lions-and-tigers-interbreed.html": dict(slug="lion-mane-portrait", alt="A male lion with a full dark mane resting in the shade of a tree", cap="Generic AI-generated image of a lion. It does not show a liger or tigon, which only exist in captivity."),
+ "blog/which-big-cat-bites-the-hardest.html": dict(slug="jaguar-rainforest", alt="A jaguar resting on a mossy branch in dense rainforest", cap="AI-generated image."),
 }
 # Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second
 # image where it makes sense). Same file and caption convention as AI; placed at its own `after` position.
@@ -77,7 +79,8 @@ def _fig_html(p, rel):
     c = p.get("cap") or "AI-generated image."
     if "ai-generated" not in c.lower() and "ai generated" not in c.lower():
         c = "AI-generated image. " + c
-    cap = '<figcaption>%s</figcaption>' % html.escape(c)
+    # every photo caption links to the image policy page (added 18 Nov 2026)
+    cap = '<figcaption>%s <a href="%simage-policy/">Source</a></figcaption>' % (html.escape(c), rel)
     return ('<figure class="photo ai"><img src="%s-960.webp" srcset="%s-480.webp 480w, %s-960.webp 960w" sizes="(max-width: 1000px) 94vw, 940px" '
             'width="960" height="640" alt="%s" loading="lazy" decoding="async">%s</figure>') % (s, s, s, html.escape(p["alt"]), cap)
 

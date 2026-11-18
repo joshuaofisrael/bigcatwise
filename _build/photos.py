@@ -33,6 +33,7 @@ def photo_html(path, rel, lazy=True):
     if not have(p["slug"]):
         return ""
     load = ' loading="lazy"' if lazy else ' fetchpriority="high"'
+    # every photo caption links to the image policy page (added 18 Nov 2026), alongside the full per-photo credit
     return ('<figure class="photo"><img src="%s-960.webp" srcset="%s-480.webp 480w, %s-960.webp 960w" sizes="(max-width: 1000px) 94vw, 940px" '
-            'width="960" height="640" alt="%s"%s decoding="async"><figcaption>%s. %s.</figcaption></figure>') % (
-            s, s, s, html.escape(p["alt"]), load, html.escape(p["alt"]), credit_line(p))
+            'width="960" height="640" alt="%s"%s decoding="async"><figcaption>%s. %s. <a href="%simage-policy/">Source</a></figcaption></figure>') % (
+            s, s, s, html.escape(p["alt"]), load, html.escape(p["alt"]), credit_line(p), rel)

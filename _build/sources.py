@@ -129,3 +129,14 @@ NZP_TIGER_GENERAL = ("Smithsonian's National Zoo and Conservation Biology Instit
 AWF_LEOPARD = ("African Wildlife Foundation: Leopard", "https://www.awf.org/wildlife-conservation/leopard")
 SLT_LIFECYCLE = ("Snow Leopard Trust: Life Cycle", "https://snowleopard.org/snow-leopard-facts/life-cycle/")
 UMN_LION_GUIDE = ("University of Minnesota Lion Research Center: Aging Lions in Eastern and Southern Africa", "https://cbs.umn.edu/sites/cbs.umn.edu/files/migrated-files/downloads/Lion_Aging_Guide.pdf")
+
+# Liger/tigon sources, checked 18 Nov 2026.
+GWR_LIGER = ("Guinness World Records: Largest living cat (Hercules the liger)", "https://www.guinnessworldrecords.com/world-records/largest-living-cat")
+THETECH_LIGER = ("The Tech Interactive, Ask a Geneticist: Why are ligers so big?", "https://www.thetech.org/ask-a-geneticist/articles/2018/why-are-ligers-so-big/")
+NATGEO_HYBRID = ("National Geographic: Cat experts say ligers and other designer hybrids are pointless and unethical", "https://www.nationalgeographic.com/adventure/article/wildlife-watch-liger-tigon-big-cat-hybrid")
+BCSA_HYBRID = ("Big Cat Sanctuary Alliance: Position paper, big cat hybrids and breeding big cats for rare colors", "https://www.bigcatalliance.org/wp-content/uploads/2019/04/White-tigers_hybrids-white-paper_FINAL.pdf")
+
+# Bite force sources, checked 18 Nov 2026 (DOIs verified on Crossref).
+WROE2005_BITE = ("Wroe, McHenry and Thomason (2005) Bite club: comparative bite force in big biting mammals and the prediction of predatory behaviour in fossil taxa, Proceedings of the Royal Society B 272(1563): 619-625. DOI 10.1098/rspb.2004.2986", "https://doi.org/10.1098/rspb.2004.2986")
+ROZYCKA2024_BITE = ("Rozycka, Skibniewska, Rajkowski and Skibniewski (2024) Craniometric characteristics of selected Carnivora species kept in captivity in relation to bite force and bending strength of the upper canines, Animals 14(9): 1367. DOI 10.3390/ani14091367", "https://doi.org/10.3390/ani14091367")
+SCIADV_SNOWLEOPARD_SKULL = ("Science Advances: Insights on the evolution and adaptation toward high-altitude and cold environments in the snow leopard lineage. DOI 10.1126/sciadv.adp5243", "https://doi.org/10.1126/sciadv.adp5243")

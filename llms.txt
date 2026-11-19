@@ -26,15 +26,6 @@ Content is general education. Population figures are estimates that change as ne
 - [Comparison table rows](https://bigcatwise.com/compare.html#table): deep links such as #row-tiger and #row-cheetah
 
 ## Blog
-- [Can lions and tigers interbreed? Ligers and tigons explained](https://bigcatwise.com/blog/can-lions-and-tigers-interbreed.html): Yes, in captivity. A liger (lion x tigress) grows far larger than either parent; a tigon (tiger x lioness) does not. Why, and why zoos do not breed them.
-- [Which big cat bites the hardest? Measured bite force compared](https://bigcatwise.com/blog/which-big-cat-bites-the-hardest.html): Skull based studies put tiger and lion canine bite force above 1,500 newtons, but the jaguar bites hardest relative to its size. Bite force compared by species.
-- [How much does a tiger weigh?](https://bigcatwise.com/blog/how-much-does-a-tiger-weigh.html): Adult tigers weigh about 75 to 325 kg. Males are heavier than females, and Amur tigers are much larger than Sumatran tigers.
-- [How Do Tigers Mark Their Territory?](https://bigcatwise.com/blog/how-do-tigers-mark-their-territory.html): tigers mark territory with sprayed urine and musky secretion, ground scrapes, scratches and calls; flehmen is scent investigation, not a snarl (Animal Diversity Web).
-- [Why do snow leopards have such long tails?](https://bigcatwise.com/blog/why-do-snow-leopards-have-long-tails.html): Snow leopards use their long, thick tails for balance on steep rocks and as a warm wrap while resting in cold mountains.
-- [How many hours do lions sleep?](https://bigcatwise.com/blog/how-many-hours-do-lions-sleep.html): Lions rest for up to 21 hours a day. Why wild lions spend so long lying around, how that differs from sleep, and why males rest longer.
-- [How do snow leopards survive at high altitude?](https://bigcatwise.com/blog/how-do-snow-leopards-survive-at-high-altitude.html): Snow leopards cope with thin, cold mountain air using an enlarged nasal cavity, a deep chest, thick fur, a long tail and snowshoe paws.
-- [How much does a leopard weigh?](https://bigcatwise.com/blog/how-much-does-a-leopard-weigh.html): Leopards weigh roughly 17 to 90 kg depending on sex and region. Typical sizes for males and females, and why published figures differ.
-- [What do cheetahs eat?](https://bigcatwise.com/blog/what-do-cheetahs-eat.html): Cheetah prey preferences from 23 diet studies; medium antelope of about 23 to 56 kg.
 - [Which big cats can roar?](https://bigcatwise.com/blog/which-big-cats-can-roar.html): Lions, tigers, leopards and jaguars can roar; snow leopards and cheetahs cannot. Here is what the anatomy research says about why, and what the others say instead.
 - [Leopard vs jaguar vs cheetah](https://bigcatwise.com/blog/leopard-vs-jaguar-vs-cheetah.html): How to tell a leopard, jaguar and cheetah apart in seconds: location, spot pattern, build, face and behavior, with a side by side comparison table.
 - [How fast is a cheetah?](https://bigcatwise.com/blog/how-fast-is-a-cheetah.html): How fast cheetahs really run: 93 km/h measured in wild cheetahs, why most hunts are slower, how long a sprint lasts and what makes them so quick.
@@ -63,6 +54,9 @@ Content is general education. Population figures are estimates that change as ne
 - [Kazakhstan releases a second tiger into the wild](https://bigcatwise.com/blog/kazakhstan-releases-second-tiger.html): On 31 October 2026 Kazakhstan released a male Amur tiger named Amur in the Ile-Balkhash reserve, joining the tigress Umit. How the tiger reintroduction works and what comes next.
 - [Can tigers swim?](https://bigcatwise.com/blog/can-tigers-swim.html): Yes. Tigers are strong swimmers that cool off, cross rivers and sometimes hunt in water. Sourced distances and behavior.
 - [How far can a lion roar be heard?](https://bigcatwise.com/blog/how-far-can-a-lion-roar-be-heard.html): A lion's roar can carry about 8 km (5 miles) across open savanna. What the research says about distance, loudness and why lions roar.
+- [Can lions and tigers interbreed?](https://bigcatwise.com/blog/can-lions-and-tigers-interbreed.html): Yes, in captivity. A liger (lion x tigress) grows far larger than either parent; a tigon (tiger x lioness) does not. Why, and why zoos do not breed them.
+- [Which big cat bites the hardest?](https://bigcatwise.com/blog/which-big-cat-bites-the-hardest.html): Skull based studies put tiger and lion canine bite force above 1,500 newtons, but the jaguar bites hardest relative to its size. Bite force compared by species.
+- [Why do cheetahs have black tear marks?](https://bigcatwise.com/blog/why-do-cheetahs-have-tear-marks.html): Cheetah tear marks may cut sun glare for daytime hunts, zoos and CCF say. That is a hypothesis, not a lab proof. How to spot them vs leopard spots.
 
 ## Games (free, no sign up, no personal data collected by us)
 - [Games](https://bigcatwise.com/games/): Free big cat games that teach real facts: identify big cats by their coats, sprint like a cheetah and round up big cats by habitat. No sign up.

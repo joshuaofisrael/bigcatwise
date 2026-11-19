@@ -44,6 +44,7 @@ AI = {
  "blog/why-do-snow-leopards-have-long-tails.html": dict(slug="snow-leopard-tail-ridge", alt="A snow leopard crossing a narrow snowy rock ridge with its long tail extended behind it"),
  "blog/can-lions-and-tigers-interbreed.html": dict(slug="lion-mane-portrait", alt="A male lion with a full dark mane resting in the shade of a tree", cap="Generic AI-generated image of a lion. It does not show a liger or tigon, which only exist in captivity."),
  "blog/which-big-cat-bites-the-hardest.html": dict(slug="jaguar-rainforest", alt="A jaguar resting on a mossy branch in dense rainforest", cap="AI-generated image."),
+ "blog/why-do-cheetahs-have-tear-marks.html": dict(slug="cheetah-mound", alt="A cheetah standing on a termite mound, face in profile with black tear marks from eye to mouth", cap="AI-generated image."),
 }
 # Second AI image for an article, added partway through the body (Joshua's rule, 2 Nov 2026: hero plus a second
 # image where it makes sense). Same file and caption convention as AI; placed at its own `after` position.
@@ -59,6 +60,15 @@ TILE_THUMBS = {
  "lion.html": "lion", "tiger.html": "tiger", "leopard.html": "leopard", "jaguar.html": "jaguar", "cheetah.html": "cheetah",
  "snow-leopard.html": "snow-leopard", "compare.html": "ai-leopard-portrait", "behavior.html": "ai-lions-shade",
  "habitats.html": "ai-habitat-savanna", "blog/kazakhstan-releases-second-tiger.html": "ai-tiger-release-crate", "conservation.html": "ai-conservation-tigers",
+ # Older blog posts that use site photos (not AI masters) still need next-read thumbnails
+ "blog/how-fast-is-a-cheetah.html": "cheetah-run",
+ "blog/leopard-vs-jaguar-vs-cheetah.html": "cheetah",
+ "blog/do-cheetahs-abandon-hunts-because-they-overheat.html": "cheetah-grass",
+ "blog/which-big-cats-can-roar.html": "lion-yawn",
+ "blog/why-do-tigers-have-stripes.html": "tiger",
+ "blog/how-many-big-cats-are-left.html": "home-tiger-cub",
+ "blog/why-do-lions-live-in-prides.html": "lion-pride",
+ "which-big-cat-is-it.html": "ai-leopard-portrait",
 }
 TILE_ALT = {
  "lion.html": "A male African lion with a golden mane", "tiger.html": "A Bengal tigress sitting on a sandy track",
@@ -66,6 +76,14 @@ TILE_ALT = {
  "cheetah.html": "A cheetah standing in long grass", "snow-leopard.html": "A snow leopard walking past green plants",
  "compare.html": "Close up of a leopard's face", "behavior.html": "Lions resting in the shade of a tree",
  "habitats.html": "African savanna with acacia trees", "blog/kazakhstan-releases-second-tiger.html": "A tiger stepping out of a crate into riverside reeds", "conservation.html": "A tigress and her cub in a misty forest",
+ "blog/how-fast-is-a-cheetah.html": "A cheetah at full sprint across short grass",
+ "blog/leopard-vs-jaguar-vs-cheetah.html": "A cheetah standing in long grass",
+ "blog/do-cheetahs-abandon-hunts-because-they-overheat.html": "A cheetah lying in golden grass",
+ "blog/which-big-cats-can-roar.html": "A lion yawning widely",
+ "blog/why-do-tigers-have-stripes.html": "A Bengal tigress sitting on a sandy track",
+ "blog/how-many-big-cats-are-left.html": "A tiger cub in forest undergrowth",
+ "blog/why-do-lions-live-in-prides.html": "A lion pride resting together",
+ "which-big-cat-is-it.html": "Close up of a leopard's face",
 }
 
 def have(slug):
@@ -121,4 +139,42 @@ def tile_thumb(href, rel=""):
     if not all(os.path.exists(os.path.join(ROOT, "%s-%d.webp" % (base, w))) for w in (480,)):
         return ""
     lab = '<span class="ailabel">AI-generated image.</span>' if slug.startswith("ai-") else ""
-    return '<img src="%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">%s' % (base, html.escape(TILE_ALT[href]), lab)
+    return '<img src="%s%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">%s' % (rel, base, html.escape(TILE_ALT[href]), lab)
+
+def _thumb_for_href(href, rel=""):
+    """Thumbnail HTML for a related-link href (blog AI figure or species/hub tile), or empty string."""
+    path = href.split("#", 1)[0]
+    if path in AI and have(AI[path]["slug"]):
+        p = AI[path]
+        base = rel + "img/ai-" + p["slug"]
+        return ('<img src="%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">'
+                % (base, html.escape(p["alt"])))
+    if path in TILE_THUMBS:
+        slug = TILE_THUMBS[path]
+        base_fs = "img/%s" % slug
+        if all(os.path.exists(os.path.join(ROOT, "%s-%d.webp" % (base_fs, w))) for w in (480,)):
+            return ('<img src="%s%s-480.webp" width="480" height="320" alt="%s" loading="lazy" decoding="async">'
+                    % (rel, base_fs, html.escape(TILE_ALT[path])))
+    return ""
+
+def related_reads_html(items, rel="", heading="Keep reading", limit=4):
+    """3 to 4 related next-read cards with thumbnails (engagement rule, 18 Nov 2026)."""
+    if not items:
+        return ""
+    cards = []
+    for name, url in items:
+        if len(cards) >= limit:
+            break
+        thumb = _thumb_for_href(url, rel)
+        if not thumb:
+            continue
+        cards.append('<a class="read" href="%s%s">%s<span>%s</span></a>' % (rel, url, thumb, html.escape(name)))
+    if len(cards) < 3:
+        return ""
+    return ('<aside class="card reads" aria-label="%s"><h2>%s</h2><div class="reads-grid">%s</div></aside>'
+            % (html.escape(heading), html.escape(heading), "".join(cards)))
+
+def insert_mid_reads(body, related, rel="", after=3):
+    """Place related next-reads with thumbnails partway through the article body."""
+    block = related_reads_html(related, rel, heading="Related reading", limit=4)
+    return _insert_after(body, after, block) if block else body

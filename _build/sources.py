@@ -34,6 +34,9 @@ NZP = {
  "tiger": ("Smithsonian's National Zoo and Conservation Biology Institute: Sumatran tiger", "https://nationalzoo.si.edu/animals/sumatran-tiger"),
  "cheetah": ("Smithsonian's National Zoo and Conservation Biology Institute: Cheetah", "https://nationalzoo.si.edu/animals/cheetah"),
 }
+CCF_FACTS = ("Cheetah Conservation Fund: Cheetah facts (tear marks and daytime hunting)", "https://cheetah.org/kids/cheetah-facts/")
+CCF_EYESIGHT = ("Cheetah Conservation Fund Canada (2020): For cheetahs speed is important, but so is eyesight", "https://cheetah.org/canada/2020/06/22/for-cheetahs-speed-is-important-but-so-is-eyesight/")
+CCF_FACTSHEET = ("Cheetah Conservation Fund (2023): Cheetahs: Big Cats Built for Speed fact sheet", "https://cheetah.org/wp-content/uploads/2021/11/CCFFactSheets2023.pdf")
 IUCN = ("IUCN Red List of Threatened Species", "https://www.iucnredlist.org/")
 WILSON = ("Wilson et al. (2013) Locomotion dynamics of hunting in wild cheetahs, Nature 498", "https://www.nature.com/articles/nature12295")
 DURANT = ("Durant et al. (2017) The global decline of cheetah and what it means for conservation, PNAS", "https://www.pnas.org/doi/10.1073/pnas.1611122114")

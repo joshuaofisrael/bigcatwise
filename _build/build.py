@@ -107,7 +107,7 @@ class Page:
         self.__dict__.update(locals()); del self.__dict__["self"]
 
 from photos import PHOTOS, photo_html  # noqa: E402
-from aiphotos import insert_ai, AI as AI_PHOTOS  # noqa: E402
+from aiphotos import insert_ai, insert_mid_reads, related_reads_html, AI as AI_PHOTOS  # noqa: E402
 
 PAGES = []
 def add(*a, **k):
@@ -212,7 +212,11 @@ def render(p):
     if p.path in PHOTOS and p.kind != "home":
         out.append(photo_html(p.path, rel, lazy=True))
     body = p.body.replace("{rel}", rel).replace("{photo}", photo_html(p.path, rel, lazy=False) if p.path in PHOTOS else "")
-    out.append(insert_ai(body, p.path, rel))
+    body = insert_ai(body, p.path, rel)
+    # Engagement: mid-article next-reads with thumbnails on articles that have related links (18 Nov 2026 rule).
+    if p.kind == "article" and p.related and not p.noindex:
+        body = insert_mid_reads(body, p.related, rel, after=3)
+    out.append(body)
     if p.path in LEGAL_PAGES:
         out.append('<p class="legal-owner">%s</p>' % LEGAL_LINE)
     if p.faq:
@@ -221,8 +225,13 @@ def render(p):
             out.append('<h3>%s</h3><p>%s</p>' % (esc(q), a.replace("{rel}", rel)))
         out.append('</section>')
     if p.related:
-        out.append('<aside class="card related"><h2>Keep exploring</h2><ul>%s</ul></aside>' %
-                   "".join('<li><a href="%s%s">%s</a></li>' % (rel, u, esc(n)) for n, u in p.related))
+        # Prefer 3 to 4 next-reads with thumbnails; fall back to the plain list if thumbs are missing.
+        thumbs = related_reads_html(p.related, rel, heading="Keep exploring", limit=4) if (p.kind == "article" and not p.noindex) else ""
+        if thumbs:
+            out.append(thumbs)
+        else:
+            out.append('<aside class="card related"><h2>Keep exploring</h2><ul>%s</ul></aside>' %
+                       "".join('<li><a href="%s%s">%s</a></li>' % (rel, u, esc(n)) for n, u in p.related))
     if (p.kind == "article" and p.show_dates and not p.noindex) or p.cite:
         out.append(cite_box(p, canon))
     if p.sources:

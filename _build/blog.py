@@ -7,7 +7,8 @@ from sources import MARTINS2010, HART1996
 from sources import (PACKER2010LION, GOODRICH2008TIGER, SWANEPOEL2014LEOPARD, FRAGOSO2023JAGUAR,
                       MONTERRUBIO2024JAGUAR, KELLY1998CHEETAH, TIDIERE2016, NZP_TIGER_GENERAL, AWF_LEOPARD,
                       SLT_LIFECYCLE, UMN_LION_GUIDE, GWR_LIGER, THETECH_LIGER, NATGEO_HYBRID, BCSA_HYBRID,
-                      WROE2005_BITE, ROZYCKA2024_BITE, SCIADV_SNOWLEOPARD_SKULL)
+                      WROE2005_BITE, ROZYCKA2024_BITE, SCIADV_SNOWLEOPARD_SKULL,
+                      CCF_FACTS, CCF_EYESIGHT, CCF_FACTSHEET)
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -1336,6 +1337,44 @@ post("which-big-cat-bites-the-hardest", "Which Big Cat Bites the Hardest? Measur
           ("Why does the jaguar bite so hard for its size?", "The jaguar is the only big cat that regularly kills prey by piercing the skull with its canines, including armoured prey like turtles, which favours a strong bite relative to its body size.")],
      related=[("How a jaguar kills its prey", "jaguar.html#bite"), ("Lion facts", "lion.html"), ("Tiger facts", "tiger.html"), ("Snow leopard facts", "snow-leopard.html"), ("Big cat behavior", "behavior.html"), ("Blog home", "blog/index.html")],
      sources=[WROE2005_BITE, ROZYCKA2024_BITE, SCIADV_SNOWLEOPARD_SKULL, CSG["jaguar"]])
+
+# ---------------------------------------------------------------- 31 WHY CHEETAHS HAVE TEAR MARKS (added 19 Nov 2026, R11/R2)
+post("why-do-cheetahs-have-tear-marks", "Why Do Cheetahs Have Black Tear Marks? The Daytime Glare Hypothesis | BigCatWise",
+     "Cheetah tear marks may cut sun glare for daytime hunts, zoos and CCF say. That is a hypothesis, not a lab proof. How to spot them vs leopard spots.",
+     "Why do cheetahs have black tear marks?", headline="Why do cheetahs have black tear marks?",
+     published="2026-11-19", modified="2026-11-19", reviewed="2026-11-19",
+     lead="The black lines that run from the inner corner of each cheetah eye down to the mouth are often called tear marks (or malar stripes). Zoos and the Cheetah Conservation Fund describe them as a way to cut sun glare so a daytime hunter can keep its eyes on prey. That glare idea is a widely repeated hypothesis, not a result that has been proven in a controlled experiment, and the Smithsonian National Zoo itself phrases it carefully as something the marks <i>may</i> do.",
+     body='''<section class="card"><h2>What are cheetah tear marks?</h2>
+<p>On every wild cheetah, a dark stripe of fur runs from the inner corner of each eye along the side of the muzzle to the mouth. San Diego Zoo Wildlife Alliance notes that cheetahs are the only cats with these black facial marks, which it also calls malar stripes. Together with solid round body spots (not rosettes) and a small, rounded head, the marks are one of the fastest ways to separate a cheetah from a <a href="leopard-vs-jaguar-vs-cheetah.html">leopard or jaguar</a>.</p>
+<p>The marks are part of the coat pattern, not wounds or staining. They show on adults and cubs, and they are present on both sides of the face.</p></section>
+<section class="card"><h2>What do the sources say they are for?</h2>
+<p>The leading explanation is glare reduction. Smithsonian's National Zoo and Conservation Biology Institute writes that the dark tear marks beneath each eye <b>may</b> aid hunting by minimising the sun's glare, and that they may also help with intimidation. The Cheetah Conservation Fund's fact materials put the same idea in everyday terms: the marks reduce sun glare so cheetahs can see clearly over long distances, comparing the effect to the black grease athletes put under their eyes.</p>
+<p>That framing matches how cheetahs hunt. Unlike lions, leopards and hyenas, which are often most active at night or in low light, cheetahs hunt mainly by day on open plains and grassland. Daytime hunting helps them avoid larger competitors, but it also means they often track prey under bright sky. CCF Canada's eyesight explainer links the tear marks to that daytime niche: other large African cats mainly hunt when the sun is not a problem, while cheetahs need clear vision in glare.</p>
+<p class="note">Important: glare reduction is what these organisations propose. We have not found a peer reviewed experiment that measures how much the marks change retinal glare or hunting success. Treat it as a plausible, widely cited hypothesis, not as a settled laboratory fact.</p></section>
+<section class="card"><h2>How tear marks fit the rest of cheetah vision</h2>
+<p>Tear marks sit alongside other daytime hunting adaptations. The Smithsonian cheetah page notes elongated retinal foveas that give a sharp, wide angle view, and a flat face that places the eyes for strong binocular vision. CCF Canada adds that cheetah retinas have more cone cells (better for daylight colour and detail) and fewer rod cells than other cats, and that a horizontal streak of photoreceptors helps them scan the horizon of open habitats. High set eyes and a reported field of view around 210 degrees help a cheetah watch a herd from a mound before the sprint starts.</p>
+<p>None of those traits prove the tear marks work as anti glare paint. They do show why a daytime sprinter would benefit from any feature that keeps the eyes working in bright light. For how the sprint itself works, see <a href="how-fast-is-a-cheetah.html">how fast is a cheetah?</a> and <a href="../cheetah.html#hunting">how cheetahs hunt</a>.</p>
+<div class="compare-box" id="check-another"><h3>Check another spotted cat</h3>
+<p>Tear marks plus solid spots almost always mean cheetah. Empty rosettes usually mean leopard; dotted rosettes and a heavy head usually mean jaguar.</p>
+<ul>
+<li><a href="leopard-vs-jaguar-vs-cheetah.html">Leopard vs jaguar vs cheetah</a></li>
+<li><a href="../which-big-cat-is-it.html">Which big cat is it? ID guide</a></li>
+<li><a href="../compare.html#row-cheetah">Compare all six big cats</a></li>
+</ul></div></section>
+<section class="card"><h2>Why other big cats lack them</h2>
+<p>Lions, tigers, leopards, jaguars and snow leopards do not wear matching eye to mouth tear stripes. That fits their hunting styles: most rely more on night or twilight activity, cover and ambush than on long, sunlit chases across open ground. A leopard's face has small spots; a jaguar's head is broad and heavy; neither shows the cheetah's continuous dark stripe from eye to mouth. Spot pattern and face shape remain the practical field marks even when lighting is poor.</p></section>
+<section class="card"><h2>Key takeaways</h2><ul>
+<li>Cheetah tear marks (malar stripes) run from each eye to the mouth and are unique among cats.</li>
+<li>Zoos and the Cheetah Conservation Fund present glare reduction for daytime hunting as the main function.</li>
+<li>Smithsonian phrases the glare role as something the marks <i>may</i> do; it is a hypothesis, not a measured proof.</li>
+<li>Combined with solid spots and a slim build, tear marks are a reliable ID cue against leopards and jaguars.</li></ul>
+<p>More species context on our <a href="../cheetah.html">cheetah facts</a> page and the <a href="../behavior.html#hunting">behavior hub</a>.</p></section>''',
+     faq=[("Do tear marks reduce glare?", "That is the leading hypothesis. Smithsonian says the marks may minimise sun glare while hunting; the Cheetah Conservation Fund describes the same glare reducing role. It has not been proven in a controlled experiment."),
+          ("Are cheetah tear marks unique?", "Yes among cats. San Diego Zoo Wildlife Alliance states that cheetahs are the only cats with black tear marks (malar stripes) on the face."),
+          ("How do I tell a cheetah from a leopard by the face?", "Look for continuous black lines from eye to mouth and a small rounded head on the cheetah. Leopards lack those tear stripes and have a face covered in small spots, with empty rosettes on the body."),
+          ("Why would a cheetah need anti glare marks?", "Cheetahs hunt mainly by day on open ground, when sun glare is a real problem, partly to avoid night active lions and hyenas. Daytime vision adaptations are a theme across cheetah eyesight research.")],
+     related=[("Cheetah facts", "cheetah.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Big cat behavior", "behavior.html")],
+     sources=[NZP["cheetah"], CCF_FACTS, CCF_EYESIGHT, CCF_FACTSHEET, SDZ["cheetah"], CSG["cheetah"]])
 
 # ---------------------------------------------------------------- BLOG INDEX
 add("blog/index.html", "BigCatWise Blog: Answers to Big Cat Questions | BigCatWise",

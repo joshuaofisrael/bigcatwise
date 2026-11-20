@@ -215,3 +215,8 @@ No GSC or analytics data yet (no verification token, no beacon token).
 - Queued for the next MWF run, not published today: a standalone page "How long do lions live (wild vs zoo)?" The species page now answers that query. Niche file is not in this repo.
 - check.py: 0 problems. legal_gate: 0 held. AdSense tag, ads.txt, GA4 (via consent.js) and the Cloudflare beacon left in place.
 - Link asset (big cats compared table) not built today, per the brief.
+- Live 20 Nov 2026 after squash merge of PR #16 (a1100ed): every changed URL returned 200 with the AdSense tag, consent.js (GA4) and the Cloudflare beacon. IndexNow HTTP 200 for 12 URLs. Niche file is not in this repo.
+- Covered 2026-11-20: https://bigcatwise.com/lion.html | How long do lions live in the wild versus in zoos? | PR #16 a1100ed | gate 0 held | 200 | IndexNow 200
+- Covered 2026-11-20: https://bigcatwise.com/blog/how-fast-is-a-cheetah.html | How fast is a cheetah? 93 km/h in the wild, 29 m/s on a straight run | PR #16 a1100ed | gate 0 held | 200 | IndexNow 200
+- Also 200 and in the same IndexNow batch: cheetah.html, faq.html, behavior.html, blog/how-long-do-big-cats-live.html, blog/, games/cheetah-burst/, teachers/big-cat-worksheets.html, teachers/cheetah-worksheet-3rd-grade.html, research/, llms.txt.
+- Still queued for the next MWF run: standalone page "How long do lions live (wild vs zoo)?" Do not treat the lion species upgrade as that new URL.

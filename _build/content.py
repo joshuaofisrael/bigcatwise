@@ -1,30 +1,55 @@
 from build import add, BASE_URL
-from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, RL
+from sources import CSG, SDZ, PAN, WWF, NZP, IUCN, WILSON, DURANT, KLEMUK, WEISS, FENNELL, SLT, RL, PACKER2010LION, UMN_LION_GUIDE, PHILSON2024, SHARP1997, WILSON2013KGALAGADI
 
 SPECIES_REL = [("Which big cat is it? ID guide", "which-big-cat-is-it.html"), ("Big cat comparison table", "compare.html"), ("Big cat behavior", "behavior.html"),
                ("Where big cats live", "habitats.html"), ("Big cat conservation", "conservation.html")]
 
-def facts(rows):
+def facts(rows, note=None):
+    if note is None:
+        note = "Size and lifespan ranges are those listed by the IUCN SSC Cat Specialist Group and cover both sexes and all populations."
     return ('<section class="card facts"><h2>Quick facts</h2><div class="tablewrap"><table><tbody>' +
             "".join('<tr><th scope="row">%s</th><td>%s</td></tr>' % r for r in rows) +
-            '</tbody></table></div><p class="note">Size and lifespan ranges are those listed by the IUCN SSC Cat Specialist Group and cover both sexes and all populations.</p></section>')
+            '</tbody></table></div><p class="note">%s</p></section>' % note)
 
 def jump(items):
     return '<p class="jump">Jump to: ' + " | ".join('<a href="#%s">%s</a>' % (i, t) for i, t in items) + '</p>'
 
 # ------------------------------------------------------------------ LION
-add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
-    "Lion facts in plain English: how prides work, who does the hunting, where wild lions live today, how many are left and why the species is Vulnerable.",
-    "Lion facts: prides, hunting, habitat and conservation status",
-    lead="The lion (<i>Panthera leo</i>) is the only truly social big cat. Wild lions live in prides built around related females, mainly in sub-Saharan Africa, with one small population in and around Gir forest in western India. The species is listed as Vulnerable on the IUCN Red List, and the IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025.",
-    crumbs=[("Species", "compare.html")], headline="Lion facts", modified="2026-11-02",
-    body=jump([("facts", "Quick facts"), ("appearance", "Appearance"), ("pride", "Pride life"), ("hunting", "Hunting"),
+add("lion.html", "How Long Do Lions Live? Wild vs Zoo, by Sex | BigCatWise",
+    "Wild male lions rarely pass 12 years and lionesses can reach 16 to 19. Zoo lions may live into their early 20s. Pride, hunting and status too.",
+    "How long do lions live in the wild versus in zoos?",
+    lead="Wild male lions rarely live past 12 years, wild lionesses can reach 16 to 19 years, and lions in zoos may live into their late teens or early 20s. The lion (<i>Panthera leo</i>) is the only truly social big cat. Wild lions live in prides built around related females, mainly in sub-Saharan Africa, with one small population in and around Gir forest in western India. The species is listed as Vulnerable on the IUCN Red List, and the IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025.",
+    crumbs=[("Species", "compare.html")], headline="How long do lions live in the wild versus in zoos?", modified="2026-11-20", reviewed="2026-11-20",
+    body=jump([("facts", "Quick facts"), ("lifespan", "Lifespan"), ("appearance", "Appearance"), ("pride", "Pride life"), ("hunting", "Hunting"),
                ("roar", "Roaring"), ("range", "Where lions live"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Panthera leo</i>"), ("Weight", "110 to 272 kg (males are much heavier than females)"),
-                ("Head and body length", "137 to 250 cm, plus a 60 to 100 cm tail"), ("Lifespan", "About 12 to 18 years"),
+                ("Head and body length", "137 to 250 cm, plus a 60 to 100 cm tail"),
+                ("Lifespan", "Wild males rarely past 12 years; wild females 16 to 19; zoos into the early 20s"),
                 ("Litter size", "1 to 4 cubs"), ("Range", "Sub-Saharan Africa; Gir landscape, Gujarat, India"),
-                ("IUCN Red List", "Vulnerable, assessed 2025 (northern subspecies <i>P. l. leo</i>: Endangered)")]) + '</div>' +
-    '''<section class="card" id="appearance"><h2>What does a lion look like?</h2>
+                ("IUCN Red List", "Vulnerable, assessed 2025 (northern subspecies <i>P. l. leo</i>: Endangered)")],
+                note="Weight and length are IUCN SSC Cat Specialist Group ranges and cover both sexes and all populations. The lifespan row is split by sex and by wild versus zoo; the sources and the date checked are in the lifespan section.") + '</div>' +
+    '''<section class="card" id="lifespan"><h2>How long do lions live in the wild versus in zoos?</h2>
+<p>Wild male lions rarely live past 12 years. Wild lionesses live longer: one zoo species page says up to 16 years, and the long running Serengeti field study records a maximum of 19. Lions in zoos may live into their late teens or early 20s. A single "12 to 18 years" hides that split. The pages and papers in the table were opened on 20 November 2026.</p>
+<div class="tablewrap"><table><thead><tr><th>What was measured</th><th>Figure</th><th>Source, opened 20 Nov 2026</th></tr></thead><tbody>
+<tr><td>Wild males, how long most survive</td><td>Rarely past 12 years</td><td>Smithsonian's National Zoo; University of Minnesota Lion Research Center field guide</td></tr>
+<tr><td>Wild females, zoo species page</td><td>Up to 16 years</td><td>Smithsonian's National Zoo</td></tr>
+<tr><td>Wild maximum from the Serengeti studies</td><td>19 years for females, 15 years for males</td><td>Packer 2010, <i>Current Biology</i></td></tr>
+<tr><td>Oldest Serengeti lion named in a 2024 dispatch</td><td>Lychee, a lioness, 19 years</td><td>Philson 2024, <i>Current Biology</i></td></tr>
+<tr><td>One range for the species, not split by sex or captivity</td><td>12 to 18 years</td><td>IUCN SSC Cat Specialist Group</td></tr>
+<tr><td>Lions kept in zoos</td><td>Late teens or early 20s</td><td>Smithsonian's National Zoo</td></tr>
+</tbody></table></div>
+<p>The gap between males and females is social. A male holds a pride only while he and his coalition can keep rival males out. Smithsonian's lion page says resident males hold a pride for about two years on average and are often pushed out by another coalition. A male who loses that contest is killed or driven off. Lionesses usually stay in the pride where they were born, so they face fewer takeover fights. Packer's 2010 quick guide, written from the same Serengeti work, puts the wild maximum at 19 years for females and 15 for males. Females first give birth at 3 to 4 years and show a marked drop in breeding by about 14. Males typically start breeding at 4 to 5 years, so a male who dies around 12 has had only a short run as a pride holder. How the pride is built, and why new males kill cubs, is covered in <a href="blog/why-do-lions-live-in-prides.html">why lions live in prides</a> and <a href="blog/why-do-male-lions-kill-cubs.html">why male lions kill cubs</a>.</p>
+<p>The 19 year female figure is a named animal, not a rounded slogan. Philson's 2024 dispatch on a Serengeti social aging study by Lauren Rudd, Craig Packer and colleagues says females live as long as 15 to 19 years, and that nearly all males live about 10 years. The figure caption names Lychee, photographed by Packer, as the oldest recorded Serengeti lion, at 19. The Minnesota field guide, drawn from that known age population, says males rarely reach 12 in the wild and females may live up to 19. Smithsonian's wild lioness line, up to 16 years, is shorter than that field maximum. Both were on the pages we opened. Averaging them would invent a number none of these sources published.</p>
+<p>Zoo life takes away the takeover fights, the lean seasons and most of the snaring that cuts wild lives short. Smithsonian states the result in one sentence: lions in zoos may live into their late teens or early 20s. That is a ceiling for animals in human care, not a promise for every zoo lion, and it is not a wild lifespan. The Cat Specialist Group's 12 to 18 years is one range for the species. It matches neither the male field figure nor the zoo ceiling, which is why the row above splits them. The other five species are set out the same way in <a href="blog/how-long-do-big-cats-live.html">how long do big cats live?</a></p>
+<div class="compare-box" id="check-another"><h3>Check another lifespan</h3>
+<p>The lion's sex split is the sharpest of the six. Tigers are usually given one wild range for both sexes, and cheetahs are the short lived end of the group.</p>
+<ul>
+<li><a href="blog/how-long-do-big-cats-live.html">How long do big cats live? Wild versus captivity, by species</a></li>
+<li><a href="tiger.html">Tiger facts</a></li>
+<li><a href="cheetah.html">Cheetah facts</a></li>
+<li><a href="compare.html">Compare all six big cats</a></li>
+</ul></div></section>
+<section class="card" id="appearance"><h2>What does a lion look like?</h2>
 <p>Lions have a plain tawny coat, a long tail ending in a dark tuft and, in adult males, a mane around the head and neck. The mane makes males look larger and is the most obvious difference between the sexes; no other wild cat shows such a striking visual difference between males and females. Cubs are born with faint spots that usually fade as they grow. Why the mane? Research suggests it is a signal of condition to lionesses and rivals; see <a href="blog/why-do-male-lions-have-manes.html">why do male lions have manes?</a></p>
 <p>Size varies by region and sex. Adult males are clearly bigger and heavier than lionesses, and large male lions can match or exceed smaller tigers, although the tiger is the largest cat species overall. See the <a href="compare.html">big cat comparison table</a> for side by side sizes.</p></section>
 <section class="card" id="pride"><h2>How does a lion pride work?</h2>
@@ -44,12 +69,13 @@ add("lion.html", "Lion Facts: Prides, Hunting, Habitat & Status | BigCatWise",
 <section class="card" id="status"><h2>How many lions are left and why are they declining?</h2>
 <p>Estimates for Africa compiled by the IUCN Cat Specialist Group fell from about 33,000 lions in 2006 to about 25,000 in 2018, and the 2025 estimate was roughly 22,000 to 25,000 adults and subadults. Populations in southern Africa, many in fenced reserves, are stable or increasing, while the steepest losses are in West and Central Africa.</p>
 <p>The main threats are conflict with people over livestock, loss of habitat and of the wild prey lions depend on (often through snaring and the bushmeat trade), and a growing illegal trade in lion bones and other parts. The Asiatic population is protected but vulnerable because all of it sits in one landscape, so a single disease outbreak could hit the whole population. Read more on our <a href="conservation.html">big cat conservation</a> page.</p></section>''',
-    faq=[("Do male lions kill cubs?", 'Yes. When a new male coalition takes over a pride it often kills young cubs fathered by the previous males, so the mothers can breed again sooner. Lionesses defend or hide their cubs; see <a href="blog/why-do-male-lions-kill-cubs.html">why do male lions kill cubs?</a>'),
+    faq=[("How long do lions live in the wild versus in zoos?", "Wild males rarely live past 12 years. Wild lionesses are reported up to 16 years by the Smithsonian National Zoo and up to a field maximum of 19 years, including a Serengeti lioness named Lychee (Packer 2010; Philson 2024). Zoo lions may live into their late teens or early 20s. All three sources were opened on 20 November 2026."),
+         ("Do male lions kill cubs?", 'Yes. When a new male coalition takes over a pride it often kills young cubs fathered by the previous males, so the mothers can breed again sooner. Lionesses defend or hide their cubs; see <a href="blog/why-do-male-lions-kill-cubs.html">why do male lions kill cubs?</a>'),
          ("Where do lions live besides Africa?", "The only wild lions outside Africa live in and around Gir forest in Gujarat, western India. They belong to the northern subspecies <i>Panthera leo leo</i>."),
          ("How many lions are left in the wild?", "The IUCN Cat Specialist Group estimated roughly 22,000 to 25,000 adult and subadult lions in Africa in 2025, plus about 670 adult and subadult Asiatic lions counted in India in 2020."),
          ("Do lions really live in the jungle?", "No. Lions prefer savanna, grassland and open woodland. The nickname king of the jungle is a figure of speech, not a description of their habitat.")],
-    related=[("Tiger facts", "tiger.html"), ("Leopard facts", "leopard.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html"), ("Can lions and tigers interbreed?", "blog/can-lions-and-tigers-interbreed.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")] + SPECIES_REL,
-    sources=[CSG["lion"], NZP["lion"], SDZ["lion"], PAN["lion"], RL["lion"]], priority="0.9")
+    related=[("How long do big cats live?", "blog/how-long-do-big-cats-live.html"), ("Why do lions live in prides?", "blog/why-do-lions-live-in-prides.html"), ("Why do male lions kill cubs?", "blog/why-do-male-lions-kill-cubs.html"), ("Tiger facts", "tiger.html"), ("Cheetah facts", "cheetah.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html"), ("What do lions eat?", "blog/what-do-lions-eat.html"), ("Leopard facts", "leopard.html"), ("Can lions and tigers interbreed?", "blog/can-lions-and-tigers-interbreed.html"), ("Lion pride lesson plan", "teachers/lion-pride-lesson-plan.html")] + SPECIES_REL,
+    sources=[NZP["lion"], UMN_LION_GUIDE, PACKER2010LION, PHILSON2024, CSG["lion"], SDZ["lion"], PAN["lion"], RL["lion"]], priority="0.9")
 
 # ------------------------------------------------------------------ TIGER
 add("tiger.html", "Tiger Facts: Size, Stripes, Range & How Many Are Left | BigCatWise",
@@ -154,7 +180,7 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
     "Cheetah facts: how fast cheetahs really run, why they cannot roar, how they hunt by day, where they live and why only about 6,500 mature adults remain.",
     "Cheetah facts: speed, hunting, range and conservation status",
     lead="The cheetah (<i>Acinonyx jubatus</i>) is the fastest land animal, a slender daytime hunter of open country that sprints in short bursts after gazelles and impala. It is not a roaring cat and sits outside the genus <i>Panthera</i>. Listed as Vulnerable on the IUCN Red List (assessed 2021; amended publication 2024), it numbers about 6,517 mature individuals, mostly in southern and eastern Africa, plus a critically endangered remnant in Iran.",
-    crumbs=[("Species", "compare.html")], headline="Cheetah facts", modified="2026-11-19", reviewed="2026-11-19",
+    crumbs=[("Species", "compare.html")], headline="Cheetah facts", modified="2026-11-20", reviewed="2026-11-20",
     body=jump([("facts", "Quick facts"), ("speed", "Speed"), ("body", "Built for speed"), ("hunting", "Hunting"),
                ("social", "Social life"), ("range", "Range"), ("status", "Status")]) +
     '<div id="facts">' + facts([("Scientific name", "<i>Acinonyx jubatus</i>"), ("Weight", "23 to 65 kg"),
@@ -162,7 +188,7 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
                 ("Litter size", "1 to 6 cubs"), ("Range", "Mainly southern and eastern Africa; Sahara; Iran"),
                 ("IUCN Red List", "Vulnerable, assessed 17 May 2021 (amended 2024; Asiatic cheetah: Critically Endangered)")]) + '</div>' +
     '''<section class="card" id="speed"><h2>How fast is a cheetah?</h2>
-<p>The IUCN Cat Specialist Group gives speeds of up to about 103 km/h during a chase. The best measured wild data come from a 2013 study in Botswana that fitted five cheetahs with GPS and motion sensor collars: the fastest of 367 runs reached 25.9 m/s (93 km/h, 58 mph), but most hunts used only moderate speeds, and acceleration, braking and sharp turns mattered as much as top speed. Chases seldom cover more than about 300 m. Our post <a href="blog/how-fast-is-a-cheetah.html">how fast is a cheetah</a> goes into the details.</p></section>
+<p>Two records get confused. A 2013 collar study in Botswana measured a wild hunting peak of 25.9 m/s (93 km/h, 58 mph) across 367 runs, while the average run topped out at 14.9 m/s. A straight line timing of a captive cheetah reached 29 m/s (Sharp 1997). The IUCN Cat Specialist Group page, opened 20 November 2026, says cheetahs reach speeds up to 29 m/s and take strides up to 7 m. It does not state a 300 m chase limit. Our post <a href="blog/how-fast-is-a-cheetah.html">how fast is a cheetah</a> sets the two studies side by side, including a Kgalagadi collar study that peaked at 18.94 m/s.</p></section>
 <section class="card" id="body"><h2>What makes a cheetah so fast?</h2>
 <ul><li>Long legs, big thigh muscles and a very flexible spine allow strides of up to about 7 m.</li>
 <li>Semi retractable claws grip the ground like running spikes.</li>
@@ -180,14 +206,14 @@ add("cheetah.html", "Cheetah Facts: Speed, Hunting, Range & Status | BigCatWise"
 <p>A major 2017 study led by Sarah Durant estimated about 7,100 adult and adolescent cheetahs (around 6,500 mature individuals) in 33 subpopulations, occupying about 9 percent of the species' historical range. Only two subpopulations exceed 1,000 mature individuals, and most of those whose trend could be assessed are declining. Threats include habitat loss and fragmentation, conflict with livestock and game farmers, prey depletion, road deaths and the illegal trade in live cubs and skins. Cheetahs also have very low genetic diversity, the legacy of ancient population bottlenecks.</p></section>''',
     faq=[("Is a cheetah a big cat?", "In the strict sense no: big cats are the roaring cats of the genus Panthera, and the cheetah belongs to its own genus, Acinonyx. In everyday use the cheetah is usually included as a big cat, as it is on this site."),
          ("Can cheetahs roar?", "No. Cheetahs purr and make chirping and other calls, but they cannot roar."),
-         ("What is the top speed of a cheetah?", "The fastest run measured in a study of wild cheetahs was 25.9 m/s, about 93 km/h or 58 mph. The IUCN Cat Specialist Group gives up to about 103 km/h."),
+         ("What is the top speed of a cheetah?", "The fastest wild hunting run measured with collars was 25.9 m/s, about 93 km/h or 58 mph (Wilson et al. 2013, Botswana). A straight line timing of a captive cheetah reached 29 m/s (Sharp 1997). The IUCN Cat Specialist Group page, checked 20 November 2026, says cheetahs reach speeds up to 29 m/s."),
          ("Why do cheetahs have black tear marks?", 'Zoos and the Cheetah Conservation Fund describe the marks as reducing sun glare for daytime hunting; Smithsonian phrases this as something the marks may do. It is a hypothesis. See <a href="blog/why-do-cheetahs-have-tear-marks.html">why do cheetahs have black tear marks?</a>'),
          ("Do lions kill cheetahs?", 'Yes. Lions and spotted hyenas kill cheetah cubs and sometimes adults, and often steal cheetah kills. Cheetahs cope mainly by avoiding them; see <a href="blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html">how cheetahs live alongside lions and hyenas</a>.'),
          ("Do cheetahs abandon hunts because they overheat?", 'No. Free living cheetahs in Namibia ended chases at about 38.4&deg;C, within their normal daily range. Heat rises more after a kill than during the sprint; see <a href="blog/do-cheetahs-abandon-hunts-because-they-overheat.html">the research summary</a>.'),
          ("What is the cheetah's IUCN status?", "Vulnerable, assessed 17 May 2021 (amended Red List publication 2024). Rechecked on iucnredlist.org on 19 November 2026."),
          ],
     related=[("Why do cheetahs have tear marks?", "blog/why-do-cheetahs-have-tear-marks.html"), ("How fast is a cheetah?", "blog/how-fast-is-a-cheetah.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Why do so few cheetah cubs survive?", "blog/why-do-so-few-cheetah-cubs-survive.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("How do cheetahs live alongside lions and hyenas?", "blog/how-do-cheetahs-live-alongside-lions-and-hyenas.html"), ("Leopard facts", "leopard.html"), ("Lion facts", "lion.html")] + SPECIES_REL,
-    sources=[CSG["cheetah"], DURANT, WILSON, NZP["cheetah"], WWF["cheetah"], SDZ["cheetah"], PAN["cheetah"], RL["cheetah"]], priority="0.9")
+    sources=[CSG["cheetah"], DURANT, WILSON, SHARP1997, WILSON2013KGALAGADI, NZP["cheetah"], WWF["cheetah"], SDZ["cheetah"], PAN["cheetah"], RL["cheetah"]], priority="0.9")
 
 # ------------------------------------------------------------------ SNOW LEOPARD
 add("snow-leopard.html", "Snow Leopard Facts: Adaptations, Range, Diet & Status | BigCatWise",

@@ -62,6 +62,8 @@ a.read:hover{border-color:var(--orange);box-shadow:var(--glow-o)}
 a.read img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:0 0 .45rem;border:2px solid var(--line)}
 a.read span{display:block;font:600 .95rem "Fredoka",system-ui,sans-serif;color:var(--title);line-height:1.25;padding:0 .15rem .15rem}
 @media(max-width:760px){.reads-grid{grid-template-columns:1fr}}
+.compare-box{background:#fff8ec;border:2px solid var(--line);border-radius:16px;padding:.85rem 1rem;margin:1rem 0}
+.compare-box h3{margin:.1rem 0 .35rem;font-size:1.05rem}
 .compare-box ul{margin:.4rem 0 0;padding-left:1.1rem}.compare-box li{margin:.25rem 0}
 form.contact{display:grid;gap:.4rem;max-width:560px}form.contact input,form.contact textarea{font:inherit;padding:.6rem .8rem;border-radius:14px;border:2px solid var(--line);background:#fff;color:var(--ink)}
 form.contact input:focus,form.contact textarea:focus{outline:3px solid var(--orange);outline-offset:1px;box-shadow:var(--glow-o)}form.contact button{justify-self:start;margin-top:.6rem}

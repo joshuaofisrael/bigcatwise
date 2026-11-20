@@ -8,7 +8,8 @@ from sources import (PACKER2010LION, GOODRICH2008TIGER, SWANEPOEL2014LEOPARD, FR
                       MONTERRUBIO2024JAGUAR, KELLY1998CHEETAH, TIDIERE2016, NZP_TIGER_GENERAL, AWF_LEOPARD,
                       SLT_LIFECYCLE, UMN_LION_GUIDE, GWR_LIGER, THETECH_LIGER, NATGEO_HYBRID, BCSA_HYBRID,
                       WROE2005_BITE, ROZYCKA2024_BITE, SCIADV_SNOWLEOPARD_SKULL,
-                      CCF_FACTS, CCF_EYESIGHT, CCF_FACTSHEET)
+                      CCF_FACTS, CCF_EYESIGHT, CCF_FACTSHEET, PHILSON2024,
+                      SHARP1997, WILSON2013KGALAGADI, SHIELD2023, SCIAM2013)
 
 HETEM = ("Hetem et al. (2013) Cheetah do not abandon hunts because they overheat, Biology Letters", "https://doi.org/10.1098/rsbl.2013.0472")
 BC = [("Blog", "blog/index.html")]
@@ -93,42 +94,59 @@ post("leopard-vs-jaguar-vs-cheetah", "Leopard vs Jaguar vs Cheetah: How to Tell 
      sources=[CSG["leopard"], CSG["jaguar"], CSG["cheetah"], SDZ["leopard"], SDZ["jaguar"], SDZ["cheetah"]])
 
 # ---------------------------------------------------------------- 3 CHEETAH SPEED
-post("how-fast-is-a-cheetah", "How Fast Is a Cheetah? Top Speed, Acceleration & Limits | BigCatWise",
-     "How fast cheetahs really run: 93 km/h measured in wild cheetahs, why most hunts are slower, how long a sprint lasts and what makes them so quick.",
-     "How fast is a cheetah? What the research actually measured", headline="How fast is a cheetah?",
-     lead="The fastest speed measured in wild hunting cheetahs is 25.9 metres per second, about 93 km/h or 58 mph, recorded with GPS collars in Botswana. The IUCN Cat Specialist Group gives speeds of up to about 103 km/h. But most real hunts are much slower, chases rarely last more than about 300 m, and acceleration, braking and turning matter as much as top speed.",
+post("how-fast-is-a-cheetah", "How Fast Is a Cheetah? 93 km/h Wild, 29 m/s Straight | BigCatWise",
+     "Wild hunting cheetahs reached 25.9 m/s (93 km/h) in Botswana. A straight line record is 29 m/s. Most hunts are much slower.",
+     "How fast is a cheetah? 93 km/h in the wild, 29 m/s on a straight run", headline="How fast is a cheetah?",
+     published="2026-10-08", modified="2026-11-20", reviewed="2026-11-20",
+     lead="The fastest speed measured in wild hunting cheetahs is 25.9 metres per second, about 93 km/h or 58 mph, from GPS collars on five cheetahs in Botswana. A straight line timing of one captive cheetah reached 29 m/s, nearly 105 km/h, and that is the class of figure the IUCN Cat Specialist Group still prints. Most wild hunts never get close to either number. Sources below were opened on 20 November 2026.",
      body='''<section class="card"><h2>The numbers at a glance</h2>
-<div class="tablewrap"><table><tbody>
-<tr><th scope="row">Fastest run measured in wild cheetahs</th><td>25.9 m/s, about 93 km/h (58 mph)</td></tr>
-<tr><th scope="row">Average top speed per run in the same study</th><td>14.9 m/s, about 54 km/h</td></tr>
-<tr><th scope="row">Speed given by the IUCN Cat Specialist Group</th><td>Up to about 103 km/h during a chase</td></tr>
-<tr><th scope="row">Typical chase length</th><td>Seldom more than about 300 m</td></tr>
-<tr><th scope="row">Stride length</th><td>Up to about 7 m</td></tr>
-</tbody></table></div></section>
-<section class="card"><h2>How scientists measured wild cheetahs</h2>
-<p>Older top speed figures came mostly from a handful of timed runs, often by captive cheetahs chasing a lure on a track. In 2013 a team led by Alan Wilson at the Royal Veterinary College, working with the Botswana Predator Conservation Trust, published the first detailed measurements of wild cheetahs hunting. They designed collars combining GPS with motion sensors and fitted them to five cheetahs in northern Botswana.</p>
-<p>Over 367 runs, mostly hunts, the fastest speed recorded was 25.9 m/s. The five cheetahs' individual best speeds ranged from 20.1 to 25.9 m/s, and the average top speed of a run was 14.9 m/s. In other words, wild cheetahs usually do not run anywhere near flat out.</p></section>
+<p>Two different records get mixed together in popular accounts. One is a wild hunt. The other is a straight run by a captive cheetah. They are not the same measurement.</p>
+<div class="tablewrap"><table><thead><tr><th>What was measured</th><th>Figure</th><th>Source</th></tr></thead><tbody>
+<tr><td>Fastest wild hunting run, five collared cheetahs, 367 runs, northern Botswana</td><td>25.9 m/s, about 93 km/h (58 mph)</td><td>Wilson et al. 2013, <i>Nature</i>, as reported by Scientific American</td></tr>
+<tr><td>The other four cheetahs in that study, each animal's best</td><td>25.4, 22.0, 21.1 and 20.1 m/s</td><td>Same report of the Nature study</td></tr>
+<tr><td>Average top speed of a run in that study</td><td>14.9 m/s, about 54 km/h</td><td>Same report</td></tr>
+<tr><td>Straight line timing, one captive cheetah</td><td>29 m/s, nearly 105 km/h</td><td>Sharp 1997, <i>Journal of Zoology</i>, cited by Scientific American and by Shield et al. 2023</td></tr>
+<tr><td>IUCN Cat Specialist Group species page</td><td>Strides up to 7 m, and speeds up to 29 m/s</td><td>catsg.org, opened 20 Nov 2026</td></tr>
+<tr><td>Separate wild collar study, six cheetahs, Kgalagadi</td><td>Peak 18.94 m/s (about 68 km/h); longest run 59 s; longest stretch above 13.9 m/s covered 379 m</td><td>J. W. Wilson et al. 2013, <i>Biology Letters</i></td></tr>
+</tbody></table></div>
+<p class="note">Checked 20 November 2026. The Cat Specialist Group page no longer prints "up to about 103 km/h" or a 300 m chase limit. The 29 m/s line matches the straight line record, not the Botswana hunting peak.</p></section>
+<section class="card"><h2>How the wild 93 km/h was measured</h2>
+<p>Older top speed figures came mostly from a handful of timed runs, often by captive cheetahs chasing a lure on a straight track. Sharp's 1997 note in the <i>Journal of Zoology</i> is the one Scientific American cites for 29 m/s, nearly 105 km/h. A 2023 review in the <i>Journal of Experimental Biology</i> by Shield, Muramatsu, Da Silva and Patel calls that timed run the first reliably measured confirmation, and describes the animal as a rewilded cheetah. Nobody had shown that wild cheetahs, hunting real prey, reached the same speed.</p>
+<p>In 2013 a team led by Alan Wilson at the Royal Veterinary College, working with the Botswana Predator Conservation Trust, published collar measurements of wild hunts in the Okavango. Scientific American's report of that <i>Nature</i> paper, which we reopened on 20 November 2026, gives the detail the abstract summarises: five cheetahs, 17 months, 367 runs. The five individual bests were 25.9, 25.4, 22.0, 21.1 and 20.1 m/s. Only one run hit 25.9 m/s, about 93 km/h or 58 mph. The average top speed of a run was 14.9 m/s, about 54 km/h. The famous number is one animal's best, not a typical hunt.</p></section>
+<section class="card"><h2>A second wild study never got near 93 km/h</h2>
+<p>The same year, a different group (John W. Wilson, Michael Mills and colleagues, not Alan Wilson's Royal Veterinary College team) collared six free ranging cheetahs in Kgalagadi Transfrontier Park. Their <i>Biology Letters</i> paper, which we read in full on PMC on 20 November 2026, recorded a fastest speed of 18.94 m/s, about 68 km/h, and a fastest GPS acceleration of 7.5 m/s&sup2;. The mean of the greatest speeds in the six GPS tracked hunts was 12.90 m/s. Prey in the observed chases included steenbok, springbok and an ostrich chick, not the impala of the Okavango study.</p>
+<p>That paper also gives the chase lengths that collar data can actually support. Every chase was brief. The longest run lasted 59 seconds. The longest stretch of continuous running above 13.9 m/s lasted 23 seconds and covered 379 m. Those are measured runs in one park, not a species wide rule that chases "seldom" pass 300 m. We no longer attribute a 300 m limit to the Cat Specialist Group, because the species page opened on 20 November 2026 does not state one.</p></section>
 <section class="card"><h2>If not top speed, what wins the hunt?</h2>
-<p>The same study recorded some of the highest values ever measured in a land mammal for acceleration, deceleration and turning. Reporting on the study noted acceleration power of up to about 120 watts per kilogram of body mass, roughly double that of the fastest racing greyhounds. Successful hunts typically involved hard braking and sharp turns as the prey dodged. The cheetahs in this study mostly hunted impala, often in fairly thick vegetation, so agility mattered more than straight line speed. The authors suggested cheetahs chasing fast gazelles on open East African plains may use higher speeds.</p></section>
+<p>The Botswana collars recorded some of the highest values measured in a land mammal for acceleration, deceleration and turning. Scientific American's report of the study gives acceleration power of up to 120 watts per kilogram of body mass, about double that of the fastest racing greyhounds. The Kgalagadi paper cites that same 120 W/kg figure from the <i>Nature</i> study and argues that turns cost extra energy the forward speed figure leaves out. In the Kgalagadi hunts, speed was not what separated success from failure. Angular velocity in the last 5 seconds was higher when the hunt succeeded.</p>
+<p>The Botswana cheetahs mostly hunted impala in fairly thick vegetation, so braking and sharp turns mattered more than a straight sprint. Wilson told the <i>Nature</i> news piece that sprinting is only part of the story. The authors suggested cheetahs chasing fast gazelles on open East African plains may use higher speeds. That suggestion is still a suggestion: the open plains measurement has not replaced the Okavango numbers.</p>
+<div class="compare-box" id="check-another"><h3>Check another hunting style</h3>
+<p>Cheetahs win short daytime chases. Lions hunt in a group and usually at much lower speed. The tear marks and the heat question are the other two cheetah pages readers open next.</p>
+<ul>
+<li><a href="do-cheetahs-abandon-hunts-because-they-overheat.html">Do cheetahs abandon hunts because they overheat?</a></li>
+<li><a href="why-do-cheetahs-have-tear-marks.html">Why do cheetahs have black tear marks?</a></li>
+<li><a href="../cheetah.html#hunting">How cheetahs hunt</a></li>
+<li><a href="how-often-do-lion-hunts-succeed.html">How often do lion hunts succeed?</a></li>
+</ul></div></section>
 <section class="card"><h2>What makes a cheetah so fast?</h2>
-<ul><li><b>Flexible spine:</b> it flexes and extends with each bound, adding to stride length, which can reach about 7 m.</li>
-<li><b>Long legs and big thigh muscles</b> on a light, slim frame of 23 to 65 kg.</li>
-<li><b>Semi retractable claws</b> that stay partly out, acting like the spikes on running shoes for grip when accelerating and turning.</li>
-<li><b>A long tail</b>, about half the head and body length, used for balance and steering in turns.</li>
-<li><b>Large lungs, heart and nasal passages</b>, which help it take in air quickly, including while it holds a suffocating bite on its prey after the chase.</li></ul></section>
+<p>The Cat Specialist Group's species page, opened 20 November 2026, still lists the same body plan, now tied to the 29 m/s straight line class of speed rather than to a 103 km/h chase:</p>
+<ul><li><b>Flexible spine, long legs and large thigh muscles</b> on a light frame of 23 to 65 kg. The group says this build allows strides up to 7 m.</li>
+<li><b>Semi retractable claws</b> that stay partly out and grip when the cat accelerates and turns.</li>
+<li><b>A long tail</b>, about half the head and body length, used for balance in turns.</li>
+<li><b>Large lungs, heart and nasal passages</b>, and smaller canine roots, which leave room for a larger nasal opening. The group notes that the extra air intake matters while the cheetah holds a throttling bite after the sprint.</li></ul>
+<p>Spot pattern and the black tear marks are identification, not a speed measurement. See <a href="why-do-cheetahs-have-tear-marks.html">why cheetahs have black tear marks</a>.</p></section>
 <section class="card"><h2>How long can a cheetah keep it up?</h2>
-<p>Not long. Cheetahs are sprinters, and the IUCN Cat Specialist Group notes that chases seldom cover more than about 300 m. A common explanation was that cheetahs give up because they overheat. A 2013 study by Hetem and colleagues, which measured body temperature in free living cheetahs, found that body temperature did not rise enough during hunts to explain stopping, and that it rose more after a successful hunt than during the chase. Their conclusion was that cheetahs do not abandon hunts because they overheat. The more likely limit is the extreme energy and muscle effort of each sprint. Our deeper dive is <a href="do-cheetahs-abandon-hunts-because-they-overheat.html">do cheetahs abandon hunts because they overheat?</a></p>
-<p>After a chase a cheetah usually needs to rest and recover its breath before eating, and this is when lions and spotted hyenas may steal its kill.</p></section>
+<p>Not long, but the limit is not the old "300 metre" line. The two collar studies above measured short runs: a 59 second maximum in the Kgalagadi, and a 379 m stretch at the higher speeds there, against 367 Botswana runs whose average top speed was only 14.9 m/s. A common explanation used to be that cheetahs quit because they overheat. Hetem and colleagues measured body temperature in free living cheetahs and found it did not rise enough during hunts to explain stopping, and that it rose more after a successful hunt than during the chase. They concluded that cheetahs do not abandon hunts because they overheat. The more likely limit is the muscle cost of each sprint, including the turns. Our deeper dive is <a href="do-cheetahs-abandon-hunts-because-they-overheat.html">do cheetahs abandon hunts because they overheat?</a></p>
+<p>After a chase a cheetah usually needs to rest and recover its breath before eating, and this is when <a href="../lion.html">lions</a> and spotted hyenas may steal its kill. How cheetahs live with those larger carnivores is covered in <a href="how-do-cheetahs-live-alongside-lions-and-hyenas.html">how cheetahs live alongside lions and hyenas</a>.</p></section>
 <section class="card"><h2>Is the cheetah really the fastest land animal?</h2>
-<p>Yes. No other land animal has been reliably measured running faster over a short sprint. For comparison, the Nature paper's editorial summary notes that racing greyhounds reach about 18 m/s, well below the cheetah's measured best of 25.9 m/s.</p></section>
+<p>Yes, on the measurements that have been published. No other land animal has a reliable sprint faster than these. The <i>Nature</i> paper's own summary notes that racing greyhounds reach about 18 m/s, below even the Kgalagadi peak of 18.94 m/s and well below the Botswana best of 25.9 m/s. The 29 m/s straight line record is faster again, and it is a captive timing, not a hunt. Shield and colleagues' 2023 review still treats the Wilson collar study as the landmark record of wild hunting, and it does not cite a later wild run that beat 25.9 m/s.</p></section>
 <section class="card"><h2>Key takeaways</h2><ul>
-<li>Best measured wild speed: about 93 km/h (58 mph).</li>
-<li>Most hunts are run at moderate speeds; agility decides success.</li>
-<li>Sprints are short, rarely over about 300 m.</li>
-<li>Overheating is not why cheetahs stop, according to direct temperature measurements.</li></ul>
-<p>More on the species in our <a href="../cheetah.html">cheetah facts</a> page.</p></section>''',
-     related=[("Cheetah facts", "cheetah.html"), ("Big cat behavior", "behavior.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Cheetah worksheet for 3rd grade", "teachers/cheetah-worksheet-3rd-grade.html"), ("Blog home", "blog/index.html")],
-     sources=[WILSON, HETEM, ("Scientific American (2013) Speed test devised for wild cheetahs", "https://www.scientificamerican.com/article/speed-test-devised-for-wild-cheetahs/"), CSG["cheetah"], NZP["cheetah"]])
+<li>Best measured wild hunting speed: 25.9 m/s, about 93 km/h, one run among 367 in Botswana. The average run topped out at 14.9 m/s.</li>
+<li>The 29 m/s figure is a straight line timing of a captive cheetah (Sharp 1997). The Cat Specialist Group page checked on 20 November 2026 says "up to 29 m/s", not 103 km/h, and it does not give a chase length.</li>
+<li>A second wild study, in the Kgalagadi, peaked at 18.94 m/s. Its longest fast stretch covered 379 m.</li>
+<li>Overheating is not why cheetahs stop, according to direct temperature measurements (Hetem et al. 2013).</li></ul>
+<p>More on the species in our <a href="../cheetah.html">cheetah facts</a> page, and the <a href="../behavior.html#hunting">behavior hub</a>.</p></section>''',
+     related=[("Cheetah facts", "cheetah.html"), ("Do cheetahs abandon hunts because they overheat?", "blog/do-cheetahs-abandon-hunts-because-they-overheat.html"), ("Why do cheetahs have tear marks?", "blog/why-do-cheetahs-have-tear-marks.html"), ("Leopard vs jaguar vs cheetah", "blog/leopard-vs-jaguar-vs-cheetah.html"), ("Big cat behavior", "behavior.html"), ("How often do lion hunts succeed?", "blog/how-often-do-lion-hunts-succeed.html")],
+     sources=[WILSON, SCIAM2013, SHARP1997, SHIELD2023, WILSON2013KGALAGADI, HETEM, CSG["cheetah"], NZP["cheetah"]])
 
 # ---------------------------------------------------------------- 4 TIGER STRIPES
 post("why-do-tigers-have-stripes", "Why Do Tigers Have Stripes? The Science of Camouflage | BigCatWise",
@@ -1110,7 +1128,7 @@ post("what-do-leopards-eat", "What Do Leopards Eat? Leopard Diet and Prey Prefer
 post("how-long-do-big-cats-live", "How Long Do Big Cats Live? Wild vs Captivity, by Species | BigCatWise",
      "Lions, tigers, leopards, jaguars, cheetahs and snow leopards usually live far longer in zoos than in the wild. Species by species lifespans, sourced.",
      "How long do big cats live? Wild vs captivity, by species", headline="How long do big cats live?",
-     published="2026-11-02", modified="2026-11-02",
+     published="2026-11-02", modified="2026-11-20", reviewed="2026-11-20",
      lead="Most big cats live noticeably longer in accredited zoos than in the wild. In the wild, cheetahs survive on average only about 8 to 10 years, lions and tigers typically reach 10 to 15 years, leopards and snow leopards usually live into their early teens, and jaguars often reach the mid teens. In zoos, every one of these six species regularly lives well into its late teens, and several routinely reach their twenties. The gap comes mostly from what captivity removes: starvation, disease, territorial fights and conflict with people.",
      body='''<section class="card" id="table"><h2>Wild vs captivity, species by species</h2>
 <p>The table below gives a typical range for each species. These are rounded, sourced estimates, not guarantees for any one animal; see the notes under each species for how the figures were measured.</p>
@@ -1127,7 +1145,7 @@ post("how-long-do-big-cats-live", "How Long Do Big Cats Live? Wild vs Captivity,
 <p>For big cats, the things that usually cut a wild life short are rarely simple old age. Starvation during lean seasons, disease, fights with rivals of the same species, and conflict with people, including poaching, snaring and road deaths, all take a steady toll that reliable food, veterinary care and no territorial rivals mostly remove in a managed zoo setting. The study's authors also note that a fair before and after comparison needs an "extinct cohort," a full group of animals that have already died, so today's improved husbandry has not yet fully shown up in the data.</p></section>
 <section class="card" id="lion"><h2>Lions: pride takeovers cut male lifespans short</h2>
 <p>In a 2010 overview of lion biology for <i>Current Biology</i>, Craig Packer of the University of Minnesota's Lion Research Center put the maximum wild lifespan at 19 years for females and 15 years for males. The Lion Research Center's own field guide to ageing lions puts it more plainly for the typical case: males rarely reach 12 years of age in the wild, while females may live up to 19.</p>
-<p>The reason is social rather than biological. A male lion holds a pride only for as long as he and any coalition partners can defend it against rival males, and a male that loses a takeover fight is usually killed or driven off to a harder life outside a pride. Lionesses, who typically stay in the pride where they were born, face fewer violent challenges over their lifetime. In zoos, where there are no rival coalitions to fight and no territory to defend, the Smithsonian's National Zoo reports that lions can live into their late teens or early 20s.</p></section>
+<p>The reason is social rather than biological. A male lion holds a pride only for as long as he and any coalition partners can defend it against rival males, and a male that loses a takeover fight is usually killed or driven off to a harder life outside a pride. Lionesses, who typically stay in the pride where they were born, face fewer violent challenges over their lifetime. In zoos, where there are no rival coalitions to fight and no territory to defend, the Smithsonian's National Zoo reports that lions can live into their late teens or early 20s. The species page sets the same figures out as a direct answer, including a 2024 Serengeti note that names the lioness Lychee at 19 years: <a href="../lion.html#lifespan">how long do lions live in the wild versus in zoos?</a></p></section>
 <section class="card" id="tiger"><h2>Tigers: it is rarely old age that ends a wild tiger's life</h2>
 <p>The Smithsonian's National Zoo gives a wild tiger lifespan of 10 to 15 years, rising to as much as 20 in human care; its Sumatran tiger Rokan lived to almost 20, about five years past the typical wild life expectancy for his subspecies.</p>
 <p>A long term radio tracking study of Amur tigers on and around Russia's Sikhote Alin Biosphere Zapovednik found that most tigers never got the chance to grow old (Goodrich and colleagues, <i>Journal of Zoology</i>, 2008). Of 24 radio collared tiger deaths recorded during the study, 83% were human caused, mostly poaching, and every radio collared subadult that tried to disperse into new territory was poached. Estimated annual survival was highest for adult females, at 81%, and lowest for dispersing subadult males, at 41%, which matches the pattern seen in lions: young, dispersing animals face the most risk.</p></section>

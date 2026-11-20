@@ -83,7 +83,7 @@ add("games/rosette-detective/index.html", "Rosette Detective: Guess the Big Cat 
 # ---------------------------------------------------------------- CHEETAH BURST
 add("games/cheetah-burst/index.html", "Cheetah Burst: Free Cheetah Speed Tapping Game | BigCatWise Games",
     "Tap to sprint like a cheetah, turn when the prey swerves and catch it before you run out of energy. A free speed game based on real wild cheetah research.",
-    "Cheetah Burst: sprint, turn, catch", kind="page", headline="Cheetah Burst", crumbs=GC,
+    "Cheetah Burst: sprint, turn, catch", kind="page", headline="Cheetah Burst", crumbs=GC, modified="2026-11-20", reviewed="2026-11-20",
     lead="Wild cheetahs have been measured at 93 km/h, but they win hunts with bursts of speed, hard braking and sharp turns, and their chases are short. Tap to build speed, turn when the prey swerves, and catch it before your energy or the 300 m run out.",
     body='''<div class="gamebox" id="cb">''' + bar("cb") + '''
 <div class="track" id="cb-stage"><div class="ground" id="cb-ground"></div>
@@ -103,7 +103,7 @@ add("games/cheetah-burst/index.html", "Cheetah Burst: Free Cheetah Speed Tapping
 <li>The fastest speed measured in wild hunting cheetahs is 25.9 m/s, about 93 km/h, from GPS collars in Botswana (Wilson et al., 2013, <i>Nature</i>).</li>
 <li>The average top speed of a run in that study was much lower, 14.9 m/s or about 54 km/h.</li>
 <li>Successful hunts involved hard braking and sharp turns, so agility matters as much as top speed.</li>
-<li>Chases seldom cover more than about 300 m (IUCN SSC Cat Specialist Group).</li>
+<li>The 300 m finish line is a game limit, not a measured chase length. A separate wild study in the Kgalagadi timed a fast stretch of 379 m (J. W. Wilson et al. 2013).</li>
 <li>Cheetahs do not stop because they overheat (Hetem et al., 2013, <i>Biology Letters</i>).</li></ul>
 <p>Read the full story in <a href="{rel}blog/how-fast-is-a-cheetah.html">how fast is a cheetah?</a> The energy bar, prey speed and swerve timing are game rules, not measurements.</p></section>
 <p class="gameline">''' + GL + '''</p>''' + PRIV + '''

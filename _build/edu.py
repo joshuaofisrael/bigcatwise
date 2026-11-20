@@ -114,7 +114,7 @@ W1 = [("I have stripes, and no two of us have the same pattern. I live in Asia."
       ("I live in a group called a pride.", ""), ("I often carry my food up a tree. My small rosettes are usually empty.", "")]
 add("teachers/big-cat-worksheets.html", "Free Big Cat Worksheets (Printable, Grades 2 to 12) | BigCatWise",
     "Four free printable big cat worksheets: which big cat am I riddles, a habitat match, cheetah speed math and a lion research reading for older students.",
-    "Printable big cat worksheets", kind="page", headline="Worksheets", crumbs=TC,
+    "Printable big cat worksheets", kind="page", headline="Worksheets", crumbs=TC, modified="2026-11-20", reviewed="2026-11-20",
     lead="Four printable worksheets that use real, sourced facts. Answers are on the separate answer key page, so you can print the questions on their own.",
     body=PRINT + '''<p class="jump">Jump to: <a href="#w1">1. Which big cat am I? (grades 2 to 4)</a> | <a href="#w2">2. Habitat match (grades 2 to 5)</a> | <a href="#w3">3. Cheetah speed math (grades 4 to 6)</a> | <a href="#w4">4. Reading the research (grades 9 to 12)</a></p>
 <section class="card sheet" id="w1" style="break-after:page"><h2>Worksheet 1: Which big cat am I?</h2><p>Name: <span class="lines" style="display:inline-block;width:60%"></span></p>
@@ -130,7 +130,7 @@ add("teachers/big-cat-worksheets.html", "Free Big Cat Worksheets (Printable, Gra
 <tr><td>Asiatic lion</td><td>E. Open grassland of eastern and southern Africa</td></tr></tbody></table></div>
 <p><b>Bonus:</b> Which continent has no wild big cats today: Africa, Asia or Australia? <span class="lines" style="display:inline-block;width:30%"></span></p></section>
 <section class="card sheet" id="w3" style="break-after:page"><h2>Worksheet 3: Cheetah speed math</h2><p>Name: <span class="lines" style="display:inline-block;width:60%"></span></p>
-<p>Scientists in Botswana put GPS collars on wild cheetahs. The fastest run they measured was 25.9 metres per second, about 93 kilometres per hour. The average top speed of a run was 14.9 metres per second, about 54 km/h. Cheetah chases seldom go further than about 300 m.</p><ol>
+<p>Scientists in Botswana put GPS collars on wild cheetahs. The fastest run they measured was 25.9 metres per second, about 93 kilometres per hour. The average top speed of a run was 14.9 metres per second, about 54 km/h. Question 4 uses 300 m as a practice distance, not as a measured limit.</p><ol>
 <li>Round 25.9 m/s to the nearest whole number. <span class="lines" style="display:block"></span></li>
 <li>How much faster is 93 km/h than 54 km/h? <span class="lines" style="display:block"></span></li>
 <li>A cheetah runs at 25 m/s. How many metres does it cover in 4 seconds? <span class="lines" style="display:block"></span></li>
@@ -252,12 +252,12 @@ add("teachers/big-cat-adaptations-lesson-plan.html", "Big Cat Adaptations Lesson
 # ---------------------------------------------------------------- CHEETAH WORKSHEET (target: cheetah worksheet for 3rd grade)
 add("teachers/cheetah-worksheet-3rd-grade.html", "Cheetah Worksheet for 3rd Grade (Free Printable) | BigCatWise",
     "A free printable cheetah worksheet for 3rd grade: a short reading passage about the fastest land animal, comprehension questions, speed math and an answer key.",
-    "Cheetah worksheet for 3rd grade", kind="page", headline="Cheetah worksheet for 3rd grade", crumbs=TC,
+    "Cheetah worksheet for 3rd grade", kind="page", headline="Cheetah worksheet for 3rd grade", crumbs=TC, modified="2026-11-20", reviewed="2026-11-20",
     lead="A one page reading passage written for third graders, followed by comprehension questions, a little speed math and a draw and label task. The answer key is at the bottom, so print only the first section for students.",
     body=PRINT + '''<section class="card sheet" style="break-after:page"><h2>Reading: The fastest runner on land</h2><p>Name: <span class="lines" style="display:inline-block;width:60%"></span></p>
 <p>The cheetah is the fastest land animal. Scientists put special collars on wild cheetahs in Botswana, in Africa. The fastest cheetah ran about 93 kilometres per hour. That is as fast as a car on a highway!</p>
 <p>A cheetah has a slim body and long legs. Its back can bend and stretch like a spring, so each jump forward is very long. Its claws stay partly out, like the spikes on running shoes, so it can grip the ground. Its long tail helps it balance when it turns quickly.</p>
-<p>Cheetahs cannot run fast for long. Most chases are shorter than about 300 metres. After a chase, a cheetah must rest and catch its breath before it eats. Lions and hyenas sometimes steal its food while it rests.</p>
+<p>Cheetahs cannot run fast for long. Most of those hunts were much slower than 93 kilometres per hour. After a chase, a cheetah must rest and catch its breath before it eats. Lions and hyenas sometimes steal its food while it rests.</p>
 <p>You can tell a cheetah by its solid round black spots and the black lines that run from its eyes to its mouth, like tear marks. Cheetahs cannot roar. They purr and make chirping sounds, like a bird.</p>
 <h3>Questions</h3><ol>
 <li>What is the fastest land animal? <span class="lines" style="display:block"></span></li>
@@ -313,6 +313,9 @@ PAPERS = [
   ("Klemuk, S. A., Riede, T., Walsh, E. J., and Titze, I. R. (2011). Adapted to roar: functional morphology of tiger and lion vocal folds. <i>PLoS ONE</i>, 6(11), e27029.", "10.1371/journal.pone.0027029", "blog/which-big-cats-can-roar.html", "Which big cats can roar?")]),
  ("Cheetah locomotion and physiology", [
   ("Wilson, A. M., Lowe, J. C., Roskilly, K., Hudson, P. E., Golabek, K. A., and McNutt, J. W. (2013). Locomotion dynamics of hunting in wild cheetahs. <i>Nature</i>, 498(7453), 185-189.", "10.1038/nature12295", "blog/how-fast-is-a-cheetah.html", "How fast is a cheetah?"),
+  ("Sharp, N. C. C. (1997). Timed running speed of a cheetah (<i>Acinonyx jubatus</i>). <i>Journal of Zoology</i>, 241, 493-494.", "10.1111/j.1469-7998.1997.tb04840.x", "blog/how-fast-is-a-cheetah.html", "How fast is a cheetah?"),
+  ("Wilson, J. W., Mills, M. G. L., Wilson, R. P., Peters, G., Mills, M. E. J., Speakman, J. R., Durant, S. M., Bennett, N. C., Marks, N. J., and Scantlebury, M. (2013). Cheetahs, <i>Acinonyx jubatus</i>, balance turn capacity with pace when chasing prey. <i>Biology Letters</i>, 9, 20130620.", "10.1098/rsbl.2013.0620", "blog/how-fast-is-a-cheetah.html", "How fast is a cheetah?"),
+  ("Shield, S., Muramatsu, N., Da Silva, Z., and Patel, A. (2023). Chasing the cheetah: how field biomechanics has evolved to keep up with the fastest land animal. <i>Journal of Experimental Biology</i>, 226, jeb245122.", "10.1242/jeb.245122", "blog/how-fast-is-a-cheetah.html", "How fast is a cheetah?"),
   ("Hetem, R. S., Mitchell, D., de Witt, B. A., Fick, L. G., Meyer, L. C. R., Maloney, S. K., and Fuller, A. (2013). Cheetah do not abandon hunts because they overheat. <i>Biology Letters</i>, 9(5), 20130472.", "10.1098/rsbl.2013.0472", "blog/how-fast-is-a-cheetah.html", "How fast is a cheetah?")]),
  ("Coat colour and camouflage", [
   ("Fennell, J. G., Talas, L., Baddeley, R. J., Cuthill, I. C., and Scott-Samuel, N. E. (2019). Optimizing colour for camouflage and visibility using deep learning: the effects of the environment and the observer's visual system. <i>Journal of the Royal Society Interface</i>, 16(154), 20190183.", "10.1098/rsif.2019.0183", "blog/why-do-tigers-have-stripes.html", "Why do tigers have stripes?")]),
@@ -402,6 +405,7 @@ PAPERS = [
   ("Durant, S. M., Mitchell, N., Groom, R., et al. (2017). The global decline of cheetah <i>Acinonyx jubatus</i> and what it means for conservation. <i>Proceedings of the National Academy of Sciences</i>, 114(3), 528-533.", "10.1073/pnas.1611122114", "blog/how-many-big-cats-are-left.html", "How many big cats are left?")]),
  ("Lifespan, longevity and ageing", [
   ("Packer, C. (2010). Lions. <i>Current Biology</i>, 20(14), R590-R591.", "10.1016/j.cub.2010.05.003", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
+  ("Philson, C. S. (2024). Social behavior: male and female lions age differently. <i>Current Biology</i>, 34.", "10.1016/j.cub.2024.07.048", "lion.html#lifespan", "How long do lions live?"),
   ("Goodrich, J. M., Kerley, L. L., Smirnov, E. N., Miquelle, D. G., McDonald, L., Quigley, H. B., Hornocker, M. G., and McDonald, T. (2008). Survival rates and causes of mortality of Amur tigers on and near the Sikhote-Alin Biosphere Zapovednik. <i>Journal of Zoology</i>, 276(4), 323-329.", "10.1111/j.1469-7998.2008.00458.x", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
   ("Swanepoel, L. H., Somers, M. J., van Hoven, W., Schiess-Meier, M., Owen, C., Snyman, A., Martins, Q., Senekal, C., Camacho, G., Boshoff, W., and Dalerum, F. (2014). Survival rates and causes of mortality of leopards <i>Panthera pardus</i> in southern Africa. <i>Oryx</i>, 49(4), 595-603.", "10.1017/S0030605313001282", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
   ("Fragoso, C. E., Rampim, L. E., Quigley, H., Haberfeld, M., Espindola, S. B., Araujo, G. R., Sartorello, L., and May Junior, J. A. (2023). Unveiling demographic and mating strategies of <i>Panthera onca</i> in the Pantanal, Brazil. <i>Journal of Mammalogy</i>, 104(2), 239-251.", "10.1093/jmammal/gyac123", "blog/how-long-do-big-cats-live.html", "How long do big cats live?"),
@@ -422,7 +426,7 @@ for topic, items in PAPERS:
     rb.append('</ul></section>')
 add("research/index.html", "Big Cat Research Papers: Sources for Students & Researchers | BigCatWise",
     "Peer reviewed big cat papers behind BigCatWise, grouped by topic with full references and DOIs checked on Crossref. A starting point for school reports.",
-    "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research", modified="2026-11-02",
+    "For students and researchers: the papers behind BigCatWise", kind="page", headline="Research", modified="2026-11-20", reviewed="2026-11-20",
     lead="Every BigCatWise fact article cites its sources. This page gathers the peer reviewed papers we rely on in one place, grouped by topic, with full references and DOIs that we have checked against Crossref. It is a good starting point for a school report or a literature search.",
     body='''<section class="card"><h2>How to use this list</h2><ul>
 <li>Click a DOI to open the paper's official page. Many abstracts are free to read; full text may need a library login.</li>
@@ -431,7 +435,7 @@ add("research/index.html", "Big Cat Research Papers: Sources for Students & Rese
 <section class="card"><h2>Reference organisations</h2><ul>
 <li><a href="https://www.catsg.org/" rel="noopener">IUCN SSC Cat Specialist Group</a>: species accounts and status summaries for all wild cats.</li>
 <li><a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List of Threatened Species</a>: official conservation assessments.</li></ul>
-<p class="note">References are formatted in APA style. Each DOI is verified on Crossref when the article that cites it is published (most recently 2 November 2026). If you find a broken link or an error, tell us through our <a href="../contact.html">contact form</a>.</p></section>''',
+<p class="note">References are formatted in APA style. Each DOI is verified on Crossref when the article that cites it is published (most recently 20 November 2026). If you find a broken link or an error, tell us through our <a href="../contact.html">contact form</a>.</p></section>''',
     related=[("Teachers hub", "teachers/index.html"), ("Blog", "blog/index.html"), ("Glossary", "glossary.html"), ("How long do big cats live?", "blog/how-long-do-big-cats-live.html")],
     extra_ld=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Peer reviewed papers cited on BigCatWise", "numberOfItems": n,
                "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "ScholarlyArticle", "sameAs": "https://doi.org/" + d,
@@ -472,4 +476,5 @@ from build import PAGES  # noqa: E402
 for _p in PAGES:
     if _p.path.startswith(("teachers/big-cat-", "teachers/answer-keys", "teachers/cheetah-", "teachers/lion-", "research/")):
         _p.cite = True
-        _p.reviewed = "2026-10-08"
+        if not _p.reviewed:
+            _p.reviewed = "2026-10-08"

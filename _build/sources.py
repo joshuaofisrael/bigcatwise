@@ -132,6 +132,13 @@ NZP_TIGER_GENERAL = ("Smithsonian's National Zoo and Conservation Biology Instit
 AWF_LEOPARD = ("African Wildlife Foundation: Leopard", "https://www.awf.org/wildlife-conservation/leopard")
 SLT_LIFECYCLE = ("Snow Leopard Trust: Life Cycle", "https://snowleopard.org/snow-leopard-facts/life-cycle/")
 UMN_LION_GUIDE = ("University of Minnesota Lion Research Center: Aging Lions in Eastern and Southern Africa", "https://cbs.umn.edu/sites/cbs.umn.edu/files/migrated-files/downloads/Lion_Aging_Guide.pdf")
+PHILSON2024 = ("Philson (2024) Social behavior: male and female lions age differently, Current Biology. DOI 10.1016/j.cub.2024.07.048", "https://doi.org/10.1016/j.cub.2024.07.048")
+
+# Cheetah speed sources rechecked 20 Nov 2026.
+SHARP1997 = ("Sharp (1997) Timed running speed of a cheetah (Acinonyx jubatus), Journal of Zoology 241: 493-494. DOI 10.1111/j.1469-7998.1997.tb04840.x", "https://doi.org/10.1111/j.1469-7998.1997.tb04840.x")
+WILSON2013KGALAGADI = ("Wilson, Mills, Wilson, Peters, Mills, Speakman, Durant, Bennett, Marks and Scantlebury (2013) Cheetahs balance turn capacity with pace when chasing prey, Biology Letters 9: 20130620. DOI 10.1098/rsbl.2013.0620", "https://doi.org/10.1098/rsbl.2013.0620")
+SHIELD2023 = ("Shield, Muramatsu, Da Silva and Patel (2023) Chasing the cheetah: how field biomechanics has evolved to keep up with the fastest land animal, Journal of Experimental Biology 226: jeb245122. DOI 10.1242/jeb.245122", "https://doi.org/10.1242/jeb.245122")
+SCIAM2013 = ("Kaplan, Scientific American / Nature (13 June 2013) Speed test devised for wild cheetahs", "https://www.scientificamerican.com/article/speed-test-devised-for-wild-cheetahs/")
 
 # Liger/tigon sources, checked 18 Nov 2026.
 GWR_LIGER = ("Guinness World Records: Largest living cat (Hercules the liger)", "https://www.guinnessworldrecords.com/world-records/largest-living-cat")

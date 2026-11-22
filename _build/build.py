@@ -127,8 +127,7 @@ def render(p):
                 'gtag("consent","default",{ad_storage:"granted",analytics_storage:"granted",ad_user_data:"granted",ad_personalization:"granted"});'
                 '</script><script defer src="/consent.js"></script>' % CONSENT_REGIONS)
     # gtag.js and gtag config load only from /consent.js after the visitor accepts the opt-in banner (SnakeWise protocol).
-    head.append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>'
-                '<meta name="google-adsense-account" content="%s">' % (ADSENSE_ID, ADSENSE_ID))
+    # AdSense detached 21 Nov 2026 until the account is approved (see seo-central/site-seo-rules.md). Do not re-add.
     if GSC_TOKEN and p.path == "index.html":
         head.append('<meta name="google-site-verification" content="%s">' % esc(GSC_TOKEN))
     head.append('<title>%s</title><meta name="description" content="%s">' % (esc(p.title), esc(p.description)))
@@ -282,7 +281,7 @@ def main():
     # llms.txt
     open(os.path.join(ROOT, "llms.txt"), "w").write(content.llms(BASE_URL))
     # ads.txt (Google AdSense authorised sellers, exactly one line)
-    open(os.path.join(ROOT, "ads.txt"), "w").write("google.com, pub-5681559774142917, DIRECT, f08c47fec0942fa0\n")
+    open(os.path.join(ROOT, "ads.txt"), "w").write("")  # AdSense detached 21 Nov 2026 until the account is approved (see seo-central/site-seo-rules.md). Do not re-add.
     # IndexNow key
     open(os.path.join(ROOT, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY)
     print("built %d pages, %d sitemap urls" % (len(PAGES), len(urls) + 1))
